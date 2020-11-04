@@ -1,0 +1,15 @@
+\babel@toc {spanish}{}
+\babel@toc {english}{}
+\babel@toc {spanish}{}
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.9}%
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.10}%
+\contentsline {section}{\numberline {1.2}Goals}{2}{section.11}%
+\contentsline {section}{\numberline {1.3}Software development methodology}{2}{section.12}%
+\contentsline {section}{\numberline {1.4}Document structure}{3}{section.13}%
+\contentsline {chapter}{\numberline {2}State of the Art}{5}{chapter.14}%
+\contentsline {section}{\numberline {2.1}Pict2Text version 1}{5}{section.15}%
+\contentsline {chapter}{\numberline {3}Conclusiones y Trabajo Futuro}{7}{chapter.16}%
+\contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo}{9}{appendix.17}%
+\contentsline {chapter}{\numberline {B}T\IeC {\'\i }tulo}{11}{appendix.18}%
+\contentsline {chapter}{Bibliography}{13}{appendix*.19}%
