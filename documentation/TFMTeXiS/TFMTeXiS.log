@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.11.2)  4 NOV 2020 16:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.11)  12 NOV 2020 00:16
 entering extended mode
 **./TFMTeXiS.tex
 (TFMTeXiS.tex
@@ -596,15 +596,8 @@ Package csquotes Info: Redefining alias 'default' -> 'spanish'.
 (TFMTeXiS.aux (Cascaras/cover.aux)
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
- (Cascaras/autorizacion.aux)
-(Cascaras/dedicatoria.aux) (Cascaras/agradecimientos.aux) (Cascaras/resumen.aux
-) (Cascaras/abstract.aux)
-LaTeX Info: Redefining \. on input line 34.
-LaTeX Info: Redefining \% on input line 34.
- (TeXiS/TeXiS_toc.aux) (Capitulos/Introduccion.aux)
-(Capitulos/EstadoDeLaCuestion.aux) (Capitulos/ConclusionesTrabajoFuturo.aux)
-(Apendices/appendixA.aux) (Apendices/appendixB.aux) (Cascaras/bibliografia.aux)
-(Cascaras/fin.aux))
+ (TeXiS/TeXiS_toc.aux)
+(Capitulos/Introduccion.aux) (Capitulos/EstadoDeLaCuestion.aux))
 \openout1 = `TFMTeXiS.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
@@ -687,13 +680,14 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 \evensidemarginOriginal=\skip85
 \oddsidemarginOriginal=\skip86
 \longTitulo=\skip87
-<Imagenes/Vectorial/escudoUCM.pdf, id=71, 597.23125pt x 844.15375pt>
+<Imagenes/Vectorial/escudoUCM.pdf, id=55, 597.23125pt x 844.15375pt>
 File: Imagenes/Vectorial/escudoUCM.pdf Graphic file (type pdf)
 <use Imagenes/Vectorial/escudoUCM.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/escudoUCM.pdf  used on input line 1
 57.
 (pdftex.def)             Requested size: 119.44412pt x 168.82776pt.
 \c@lastyear=\count313
+\c@nextyear=\count314
  [1
 
 
@@ -721,60 +715,10 @@ Package pdftex.def Info: Imagenes/Vectorial/escudoUCM.pdf  used on input line 1
 
 {/home/gasan/.miktex/texmfs/data/pdftex/config/pdftex.map} <./Imagenes/Vectoria
 l/escudoUCM.pdf>] [2] [3])
-\openout2 = `Cascaras/autorizacion.aux'.
-
-
-(Cascaras/autorizacion.tex [4
-
-
-
-
-]
-Overfull \hbox (114.11209pt too wide) in paragraph at lines 6--7
-\T1/cmr/m/n/10.95 bajo la dirección de DIRECTORES en el Departamento de XXXXXXX
-XXXXXXXXXXXXXXXXX,
- []
-
-) [5]
-\openout2 = `Cascaras/dedicatoria.aux'.
-
- (Cascaras/dedicatoria.tex [6
-
-
-
-
-]) [7]
-\openout2 = `Cascaras/agradecimientos.aux'.
-
- (Cascaras/agradecimientos.tex [8
-
-
-
-
-])
-[9]
-\openout2 = `Cascaras/resumen.aux'.
-
- (Cascaras/resumen.tex [10
-
-
-
-
-]) [11]
-LaTeX Info: Redefining \. on input line 121.
-LaTeX Info: Redefining \% on input line 121.
-\openout2 = `Cascaras/abstract.aux'.
-
- (Cascaras/abstract.tex [12
-
-
-
-
-]) [13]
 \openout2 = `TeXiS/TeXiS_toc.aux'.
 
 
-(TeXiS/TeXiS_toc.tex [14
+(TeXiS/TeXiS_toc.tex [4
 
 
 
@@ -782,42 +726,17 @@ LaTeX Info: Redefining \% on input line 121.
 ] (TFMTeXiS.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 3.
-LaTeX Info: Redefining \% on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 6.
+(Font)              <10.95> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 6.
+(Font)              <8> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 6.
+(Font)              <6> on input line 4.
 )
 \tf@toc=\write6
 \openout6 = `TFMTeXiS.toc'.
 
- [15] [16
-
-] (TFMTeXiS.lof
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 3.
-LaTeX Info: Redefining \% on input line 3.
-)
-\tf@lof=\write7
-\openout7 = `TFMTeXiS.lof'.
-
- [17] [18
-
-]
-(TFMTeXiS.lot
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 3.
-LaTeX Info: Redefining \% on input line 3.
-)
-\tf@lot=\write8
-\openout8 = `TFMTeXiS.lot'.
-
- [19]) [20
+) [5] [6
 
 
 
@@ -843,15 +762,35 @@ t, its objectives,
  []
 
 
-Overfull \hbox (15.53651pt too wide) in paragraph at lines 11--13
-[]\T1/cmr/m/n/10.95 To completely include pictograms and transform the communic
-ation between
+Underfull \hbox (badness 10000) in paragraph at lines 9--17
+
  []
 
 
-Overfull \hbox (13.57259pt too wide) in paragraph at lines 11--13
+Overfull \hbox (13.57259pt too wide) in paragraph at lines 9--17
 \T1/cmr/m/n/10.95 people with disabilities and those without, it is needed to h
 arvest the capabilities
+ []
+
+
+Overfull \hbox (4.60385pt too wide) in paragraph at lines 9--17
+\T1/cmr/m/n/10.95 Currently, multiple tools allow transforming na-tu-ral langua
+ge into pictograms.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--17
+
  []
 
 [1
@@ -863,16 +802,16 @@ Overfull \hbox (5.63141pt too wide) in paragraph at lines 18--19
 ltiple pictograms
  []
 
+
+Overfull \hbox (1.69893pt too wide) in paragraph at lines 20--21
+[]\T1/cmr/m/n/10.95 Integrate a pictogram classification model as new functiona
+lity and extend
+ []
+
 [2]
 Overfull \hbox (26.0534pt too wide) in paragraph at lines 42--45
 \T1/cmr/m/n/10.95 include code review and automated and/or ma-nual testing. If 
 documentation
- []
-
-
-Overfull \hbox (15.23369pt too wide) in paragraph at lines 54--55
-[]\T1/cmr/m/n/10.95 Chapter 2(State of the Art) covers the state of the first v
-ersion of ``Pict2Text'',
  []
 
 [3]) [4]
@@ -880,96 +819,77 @@ ersion of ``Pict2Text'',
 
  (Capitulos/EstadoDeLaCuestion.tex
 Chapter 2.
-) [5
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 11.
+<Imagenes/Pict2Text2.0/pict2text_v1_1.png, id=125, 938.00438pt x 457.20813pt>
+File: Imagenes/Pict2Text2.0/pict2text_v1_1.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/pict2text_v1_1.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/pict2text_v1_1.png  used on inpu
+t line 16.
+(pdftex.def)             Requested size: 360.0pt x 175.47104pt.
+<Imagenes/Pict2Text2.0/pict2text_v1_2.png, id=128, 933.98938pt x 458.71375pt>
+File: Imagenes/Pict2Text2.0/pict2text_v1_2.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/pict2text_v1_2.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/pict2text_v1_2.png  used on inpu
+t line 27.
+(pdftex.def)             Requested size: 360.0pt x 176.80482pt.
+<Imagenes/Pict2Text2.0/pict2text_v1_3.png, id=130, 932.48375pt x 460.21938pt>
+File: Imagenes/Pict2Text2.0/pict2text_v1_3.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/pict2text_v1_3.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/pict2text_v1_3.png  used on inpu
+t line 38.
+(pdftex.def)             Requested size: 360.0pt x 177.67305pt.
+[5
 
 
 
 
 ]
-\openout2 = `Capitulos/ConclusionesTrabajoFuturo.aux'.
+<Imagenes/Pict2Text2.0/pict2text_v1_4.png, id=143, 915.92188pt x 462.72874pt>
+File: Imagenes/Pict2Text2.0/pict2text_v1_4.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/pict2text_v1_4.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/pict2text_v1_4.png  used on inpu
+t line 49.
+(pdftex.def)             Requested size: 360.0pt x 181.87561pt.
 
- (Capitulos/ConclusionesTrabajoFuturo.tex [6
-
-
-
-
-]
-Chapter 3.
-) [7]
-\openout2 = `Apendices/appendixA.aux'.
-
- (Apendices/appendixA.tex [8
+Overfull \hbox (19.63051pt too wide) in paragraph at lines 58--59
+\T1/cmr/m/n/10.95 With this information, SimpleNLG can generate grammatically c
+orrect sentences. 
+ []
 
 
+Underfull \vbox (badness 3942) has occurred while \output is active []
 
-
-]
-Appendix A.
-) [9]
-\openout2 = `Apendices/appendixB.aux'.
-
- (Apendices/appendixB.tex [10
-
-
-
-
-]
-Appendix B.
-) [11] [12
-
-
-
-]
-\openout2 = `Cascaras/bibliografia.aux'.
-
- (Cascaras/bibliografia.tex (TFMTeXiS.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 4.
-
-)) [13
-
-
-]
-\openout2 = `Cascaras/fin.aux'.
-
- (Cascaras/fin.tex [14
-
-
-
-] [15])
+ [6 <./Imagenes/Pict2Text2.0/pict2text_v1_1.png>]) [7 <./Imagenes/Pict2Text2.0/
+pict2text_v1_2.png>] [8 <./Imagenes/Pict2Text2.0/pict2text_v1_3.png> <./Imagene
+s/Pict2Text2.0/pict2text_v1_4.png>]
 LaTeX Info: Redefining \. on input line 215.
 LaTeX Info: Redefining \% on input line 215.
  (TFMTeXiS.aux (Cascaras/cover.aux)
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
-
-(Cascaras/autorizacion.aux) (Cascaras/dedicatoria.aux)
-(Cascaras/agradecimientos.aux) (Cascaras/resumen.aux) (Cascaras/abstract.aux)
-LaTeX Info: Redefining \. on input line 34.
-LaTeX Info: Redefining \% on input line 34.
-
-(TeXiS/TeXiS_toc.aux) (Capitulos/Introduccion.aux)
-(Capitulos/EstadoDeLaCuestion.aux) (Capitulos/ConclusionesTrabajoFuturo.aux)
-(Apendices/appendixA.aux) (Apendices/appendixB.aux) (Cascaras/bibliografia.aux)
-(Cascaras/fin.aux))
+ (TeXiS/TeXiS_toc.aux) (Capitulos/Introduccion.aux) (Capitulos/EstadoDeLaCuesti
+on.aux))
 Package rerunfilecheck Info: File `TFMTeXiS.out' has not changed.
-(rerunfilecheck)             Checksum: 74EA04C0F69AAC4365D0956895D4050A;980.
+(rerunfilecheck)             Checksum: 9DB2EDED91C06B88198C8FDD3E65F836;789.
  ) 
 Here is how much of TeX's memory you used:
- 13406 strings out of 481737
- 209342 string characters out of 2921369
- 708732 words of memory out of 3000000
- 29470 multiletter control sequences out of 15000+200000
- 551712 words of font info for 56 fonts, out of 3000000 for 9000
+ 13318 strings out of 481732
+ 206174 string characters out of 2921282
+ 701060 words of memory out of 3000000
+ 29481 multiletter control sequences out of 15000+200000
+ 553470 words of font info for 60 fonts, out of 3000000 for 9000
  238 hyphenation exceptions out of 8191
- 100i,11n,102p,979b,1026s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1000
-.pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti10
-00.pk>{/home/gasan/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc} </home/g
-asan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk> </home
+ 100i,11n,102p,916b,774s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0900
+.pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm06
+00.pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm
+0800.pk>{/home/gasan/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc} </home
 /gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/eccc1095.pk> </ho
-me/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk> </
-home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1095.pk> 
+me/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1095.pk> </
+home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk> 
 </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1200.pk
 > </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm2488.
 pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx120
@@ -977,9 +897,9 @@ pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx120
 440.pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecb
 x2074.pk></home/gasan/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvr8a.pf
 b></home/gasan/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb>
-Output written on TFMTeXiS.pdf (35 pages, 514834 bytes).
+Output written on TFMTeXiS.pdf (14 pages, 1092196 bytes).
 PDF statistics:
- 660 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
- 142 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 479 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
+ 130 words of extra memory for PDF output out of 10000 (max. 10000000)
 

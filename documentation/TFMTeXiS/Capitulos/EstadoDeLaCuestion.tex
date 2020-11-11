@@ -4,6 +4,70 @@
 \label{State of the Art}
 
 \section{Pict2Text version 1}
-As described previously ``Pict2Text'' version 1 is the initial state and the base of our project. The first version of this project is a web application which permits the translation of pictograms to natural language- spanish. 
+As described previously, Pict2Text version 1 is the initial state and the base of our project. The first version of this project is a web application that permits the translation of pictograms to natural language- Spanish.
+\subsection{User perspective}
+Using the user interface we can write and search a specific word from the ARASAAC pictogram database and display it into a panel on the right part of the web page. After that, we can include the chosen one into the pictogram sentence panel, from where later the message with pictograms will be translated into natural language.
+The following images and descriptions present a simple flow of actions a user can do to achieve the above-mentioned behavior.
+When entering the website\footnote{\href{https://holstein.fdi.ucm.es/tfg-pict2text}{https://holstein.fdi.ucm.es/tfg-pict2text}} the user can see on the left part, a big panel, the pictogram sentence panel, with a caption ``Pictograms'' above it, and a button ``Traducir'' below it. On the right part, an input box with a caption ``Nombre del picto'', and a button ``Buscar'' on the left of it. (See picture \ref{fig:pict2text_v1_1})
 
-Using the user interface we can write and search a specific word from the ARASAAC pictogram database and display it into the pictogram container of the right part of the web page.
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/pict2text_v1_1}
+\caption{Pict2Text version 1 website}
+\label{fig:pict2text_v1_1}
+\end{center}
+\end{figure}
+
+To translate pictograms to natural language, the user should first search for a pictogram. To do that, they should write the world they are looking for in the input box of the right side and click the button ``Buscar''. In image \ref{fig:pict2text_v1_2} it is shown a search of the word ``Hombre'' and the corresponding pictogram.
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/pict2text_v1_2}
+\caption{Searching the word "Hombre"}
+\label{fig:pict2text_v1_2}
+\end{center}
+\end{figure}
+
+Having the pictogram, the next action needed is to include it into the left panel with pictograms by clicking the button ``A\~{n}adir''. In image \ref{fig:pict2text_v1_3} it is shown the pictogram corresponding to the word ``Hombre'' included in the pictogram sentence panel.
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/pict2text_v1_3}
+\caption{Adding the pictogram "Hombre" to the pictogram sentence panel}
+\label{fig:pict2text_v1_3}
+\end{center}
+\end{figure}
+
+Repeating the previous steps with other words, a sentence can be formed. In image \ref{fig:pict2text_v1_4} it is shown a translation of a sentence written with the pictogram corresponding to the searched words ``Hombre'', ``Comer'', ``pizza''.
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/pict2text_v1_4}
+\caption{Translating the sentence "El hombre come una pizza."}
+\label{fig:pict2text_v1_4}
+\end{center}
+\end{figure}
+
+\subsection{Engineering perspective}
+The core of Pict2Text is the API of ARASAAC. It provides the searching mechanism used to match words to pictograms, the graphical images of pictograms, and additional information about them.
+
+A generator of grammatically correct phrases in Spanish was needed. In version 1 of this project was used SimpleNLG, a Java library for natural language generation. This library permits the creation of simple and complex phrases. To do that, it requires sentence structure- subject, verb, adjectives, gender, and number (singular or plural) of every word in the formed sentence. With this information, SimpleNLG can generate grammatically correct sentences.
+
+Spacy is the tool that gives the previous word characteristics. It is a python library with a high accuracy used for advanced natural language processing.
+
+As all of the different functionalities from the project were implemented as web service, most of them in Python, the team of Pict2Text version 1 have decided to use the framework Django for integration and intercommunication between them.
+
+For the front-end of the project, it was used Angular. As the website itself is a SPA(Single-Page Applications), which needs to respond fast, a framework like Angular fulfills this performance requirement. 
+
+\subsection{Pict2Text version 1 issue}
+Although the first version of Pict2Text translates the pictograms into natural language, it requires the user to manually select the pictograms they want to use in the construction of their sentence. Writing the words is impossible for people with disabilities who need pictograms to communicate if it was not, they would have used the natural language in the first place. 
+
+This problem can be solved, giving those people the option to upload a picture of a sentence constructed with pictograms. The functionality we are building will be able to separate the different pictograms from the original image and later translate the phrase using the implementation in Pict2Text version 1. 
+
+
+
+
