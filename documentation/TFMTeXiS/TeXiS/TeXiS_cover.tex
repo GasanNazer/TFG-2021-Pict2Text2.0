@@ -306,9 +306,14 @@
 \setcounter{lastyear}{\the\year}
 \addtocounter{lastyear}{-1}
 
+\newcounter{nextyear}
+\setcounter{nextyear}{\the\year}
+\addtocounter{nextyear}{+1}
+
 \begin{center}
   {\Large \textbf{\tipoDocumentoVal}}\\
-  {\Large \textbf{Curso \thelastyear--\the\year}}
+  {\Large \textbf{Course \the\year--\thenextyear}}
+  %\thelastyear--\the\year
   
 \end{center}
 
@@ -316,9 +321,9 @@
 
 \begin{large}
 \begin{center}
-{\Large \bfseries Autor}\\
+{\Large \bfseries Autors}\\
 \textbf{\autorPortadaVal}\\[0.5cm]
-{\Large \bfseries Director}\\
+{\Large \bfseries Directors}\\
 \textbf{\directorPortadaVal}\\[0.5cm]
 \textbf{\institucionVal}\\[1em]
 %\textbf{\fechaPublicacionVal}
@@ -380,9 +385,9 @@
 \begin{center}
 \textoPrimerSubtituloPortadaVal
 \mbox{ } \\ \mbox{ } \\ 
-{\Large \bfseries Autor}\\
+{\Large \bfseries Autors}\\
 \textbf{\autorPortadaVal}\\[1.0cm]
-{\Large \bfseries Director}\\
+{\Large \bfseries Directors}\\
 \textbf{\directorPortadaVal}\\[0.3cm]
 \mbox{ } \\ \mbox{ } \\ 
 \textoSegundoSubtituloPortadaVal \\ [0.3em]

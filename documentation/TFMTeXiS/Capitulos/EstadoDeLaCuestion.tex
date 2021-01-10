@@ -3,7 +3,135 @@
 \chapter{State of the Art}
 \label{State of the Art}
 
-\section{Pict2Text version 1}
-As described previously ``Pict2Text'' version 1 is the initial state and the base of our project. The first version of this project is a web application which permits the translation of pictograms to natural language- spanish. 
+In this chapter, we have briefly defined Augmentative and Alternative Systems of Communication (section 2.1) and pictograms (section 2.2). More information regarding the first two sections you can find in the documentation of Pict2Text version 1.
+In continuation, we will explain Pict2Text version 1, its functionality, and its issue in section 2.3 and 2.4 respectively. 
+In section 2.5. we will present the machine learning models we have analyzed to solve our problem and their characteristics.
 
-Using the user interface we can write and search a specific word from the ARASAAC pictogram database and display it into the pictogram container of the right part of the web page.
+
+\section{Augmentative and Alternative Systems of Communication (AAC)}
+The Augmentative and Alternative Systems of Communication (AAC) is a way of communication that does not include verbal speech or writing. It is used to assist people with disabilities such as autism, cerebral palsy, dual sensory impairments, genetic syndromes, intellectual disability, multiple disabilities, hearing impairment, disease, stroke, head injury, and etcetera. AAC helps those people to express their needs, thoughts, and desires and improves their abilities to interact with others. AAC is often being personalized to match the needs of its user. It includes different systems of symbols: graphic (pictures, drawings, pictograms, words or letters) and gestural (mimicry, gestures, or hand signals).
+
+\section{Pictograms}
+Pictograms are ideograms that contain a meaning represented through their resemblance to a physical object, activity, etcetera. They can be used to form a sentence (image \ref{fig:pictogramSentence}), which makes them suitable for people who cannot use written or verbal speech.
+As pictograms are not universal, various systems exist, such as Blissymbolics, CSUP, ARASAAC, and more.
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=0.32\textwidth]%
+{Imagenes/Pict2Text2.0/we}
+\includegraphics[width=0.32\textwidth]%
+{Imagenes/Pict2Text2.0/like}
+\includegraphics[width=0.32\textwidth]%
+{Imagenes/Pict2Text2.0/icecream}
+\caption{Pictograms making the sentence "We like icecream"}
+\label{fig:pictogramSentence}
+\end{center}
+\end{figure}
+
+\subsection{Blissymbolics}
+Blissymbolics\footnote{\href{https://en.wikipedia.org/wiki/Blissymbols}{https://en.wikipedia.org/wiki/Blissymbols}} is an ideographic language consisting of several hundred basic symbols, each representing a concept, which can be combined to generate new symbols that represent new concepts (image \ref{fig:Blissymbolics}). Blissymbolics characters do not correspond to the sounds of any spoken language and have their use in the education of people with communication difficulties.
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/Blissymbolics.jpg}
+\caption{Blissymbolics pictogram system}
+\label{fig:Blissymbolics}
+\end{center}
+\end{figure}
+
+
+\subsection{CSUP}
+The Communication System Using Pictograms (CSP) uses pictograms to support interactive non-verbal communication. This system uses pictograms not only for objects but with events as well. It is designed in a way that it can be used between a person with a disability and a non-disabled person, child and adult, people speaking different languages, and so on. 
+\subsection{ARASAAC}
+The ARASAAC\footnote{\href{https://arasaac.org/}{https://arasaac.org/}} project was created in 2007, and it currently consists of more than  30.000 pictograms, including complex pictograms with already constructed phrases, in more than 20 languages, differentiating between singular and plural, as well as gender differentiation (image \ref{fig:ARASAAC}). Verbs come with a different pictogram for every conjugation, and the tense is determined by pictograms representing yesterday, today, and tomorrow. The pictograms are separated into five groups - coloured pictograms, black and white, photographs, and sign language videos and pictures. 
+With a wide variety of pictograms, ARASAAC is free to use an internationally recognized pictogram system, used by many people in numerous countries. Taking in consideration the beforementioned and the fact that Pict2Text vesion 1 works with the pictograms they obtain from their website, we decided to use them as well.
+
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/ARASAAC}
+\caption{Pictograms in ARASAAC website}
+\label{fig:ARASAAC}
+\end{center}
+\end{figure}
+
+\section{Pict2Text version 1}
+As described previously, Pict2Text version 1 is the initial state and the base of our project. The first version of this project is a web application that permits the translation of pictograms to natural language- Spanish.
+\subsection{User perspective}
+Using the user interface we can write and search a specific word from the ARASAAC pictogram database and display it into a panel on the right part of the web page. After that, we can include the chosen one into the pictogram sentence panel, from where later the message with pictograms will be translated into natural language.
+The following images and descriptions present a simple flow of actions a user can do to achieve the above-mentioned behavior.
+When entering the website\footnote{\href{https://holstein.fdi.ucm.es/tfg-pict2text}{https://holstein.fdi.ucm.es/tfg-pict2text}} the user can see on the left part, a big panel, the pictogram sentence panel, with a caption ``Pictograms'' above it, and a button ``Traducir'' below it. On the right part, an input box with a caption ``Nombre del picto'', and a button ``Buscar'' on the left of it. (See picture \ref{fig:pict2text_v1_1})
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/pict2text_v1_1}
+\caption{Pict2Text version 1 website}
+\label{fig:pict2text_v1_1}
+\end{center}
+\end{figure}
+
+To translate pictograms to natural language, the user should first search for a pictogram. To do that, they should write the world they are looking for in the input box of the right side and click the button ``Buscar''. In image \ref{fig:pict2text_v1_2} it is shown a search of the word ``Hombre'' and the corresponding pictogram.
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/pict2text_v1_2}
+\caption{Searching the word "Hombre"}
+\label{fig:pict2text_v1_2}
+\end{center}
+\end{figure}
+
+Having the pictogram, the next action needed is to include it into the left panel with pictograms by clicking the button ``A\~{n}adir''. In image \ref{fig:pict2text_v1_3} it is shown the pictogram corresponding to the word ``Hombre'' included in the pictogram sentence panel.
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/pict2text_v1_3}
+\caption{Adding the pictogram "Hombre" to the pictogram sentence panel}
+\label{fig:pict2text_v1_3}
+\end{center}
+\end{figure}
+
+Repeating the previous steps with other words, a sentence can be formed. In image \ref{fig:pict2text_v1_4} it is shown a translation of a sentence written with the pictogram corresponding to the searched words ``Hombre'', ``Comer'', ``pizza''.
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/pict2text_v1_4}
+\caption{Translating the sentence "El hombre come una pizza."}
+\label{fig:pict2text_v1_4}
+\end{center}
+\end{figure}
+
+\subsection{Engineering perspective}
+The core of Pict2Text is the API of ARASAAC. It provides the searching mechanism used to match words to pictograms, the graphical images of pictograms, and additional information about them.
+
+A generator of grammatically correct phrases in Spanish was needed. In version 1 of this project was used SimpleNLG, a Java library for natural language generation. This library permits the creation of simple and complex phrases. To do that, it requires sentence structure- subject, verb, adjectives, gender, and number (singular or plural) of every word in the formed sentence. With this information, SimpleNLG can generate grammatically correct sentences.
+
+Spacy is the tool that gives the previous word characteristics. It is a python library with a high accuracy used for advanced natural language processing.
+
+As all of the different functionalities from the project were implemented as web service, most of them in Python, the team of Pict2Text version 1 have decided to use the framework Django for integration and intercommunication between them.
+
+For the front-end of the project, it was used Angular. As the website itself is a SPA(Single-Page Applications), which needs to respond fast, a framework like Angular fulfills this performance requirement. 
+
+\subsection{Pict2Text version 1 issue}
+Although the first version of Pict2Text translates the pictograms into natural language, it requires the user to manually select the pictograms they want to use in the construction of their sentence. Writing the words is impossible for people with disabilities who need pictograms to communicate if it was not, they would have used the natural language in the first place. 
+
+This problem can be solved, giving those people the option to upload a picture of a sentence constructed with pictograms. The functionality we are building will be able to separate the different pictograms from the original image and later translate the phrase using the implementation in Pict2Text version 1. 
+
+\section{One-shot learning algorithm}
+One-shot\footnote{\href{https://bdtechtalks.com/2020/08/12/what-is-one-shot-learning/}{https://bdtechtalks.com/2020/08/12/what-is-one-shot-learning/}} is a machine learning algorithm that aims at object categorization based on one or a few training examples. As shown in image \ref{fig:oneShotModel}, the algorithm is based on comparing the similarity between pictures. Given two images, if the objects are the same, the neural network returns a value that is smaller than a specific threshold. In the other case, the returned value will be higher than the threshold. 
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/oneShotModel}
+\caption{One-shot learning algorithm model}
+\label{fig:oneShotModel}
+\end{center}
+\end{figure}
+
+
