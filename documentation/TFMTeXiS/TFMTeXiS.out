@@ -7,7 +7,13 @@
 \BOOKMARK [1][-]{section.5}{Software development methodology}{chapter.2}% 7
 \BOOKMARK [1][-]{section.6}{Document structure}{chapter.2}% 8
 \BOOKMARK [0][-]{chapter.7}{State of the Art}{}% 9
-\BOOKMARK [1][-]{section.8}{Pict2Text version 1}{chapter.7}% 10
-\BOOKMARK [2][-]{subsection.9}{User perspective}{section.8}% 11
-\BOOKMARK [2][-]{subsection.15}{Engineering perspective}{section.8}% 12
-\BOOKMARK [2][-]{subsection.16}{Pict2Text version 1 issue}{section.8}% 13
+\BOOKMARK [1][-]{section.8}{Augmentative and Alternative Systems of Communication \(AAC\)}{chapter.7}% 10
+\BOOKMARK [1][-]{section.9}{Pictograms}{chapter.7}% 11
+\BOOKMARK [2][-]{subsection.11}{Blissymbolics}{section.9}% 12
+\BOOKMARK [2][-]{subsection.14}{CSUP}{section.9}% 13
+\BOOKMARK [2][-]{subsection.15}{ARASAAC}{section.9}% 14
+\BOOKMARK [1][-]{section.18}{Pict2Text version 1}{chapter.7}% 15
+\BOOKMARK [2][-]{subsection.19}{User perspective}{section.18}% 16
+\BOOKMARK [2][-]{subsection.25}{Engineering perspective}{section.18}% 17
+\BOOKMARK [2][-]{subsection.26}{Pict2Text version 1 issue}{section.18}% 18
+\BOOKMARK [1][-]{section.27}{One-shot learning algorithm}{chapter.7}% 19

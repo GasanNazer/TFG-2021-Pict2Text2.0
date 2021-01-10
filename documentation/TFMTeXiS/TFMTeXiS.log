@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.11)  12 NOV 2020 00:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.11)  12 NOV 2020 09:02
 entering extended mode
 **./TFMTeXiS.tex
 (TFMTeXiS.tex
@@ -680,7 +680,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 \evensidemarginOriginal=\skip85
 \oddsidemarginOriginal=\skip86
 \longTitulo=\skip87
-<Imagenes/Vectorial/escudoUCM.pdf, id=55, 597.23125pt x 844.15375pt>
+<Imagenes/Vectorial/escudoUCM.pdf, id=79, 597.23125pt x 844.15375pt>
 File: Imagenes/Vectorial/escudoUCM.pdf Graphic file (type pdf)
 <use Imagenes/Vectorial/escudoUCM.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/escudoUCM.pdf  used on input line 1
@@ -732,6 +732,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 4.
+
+Overfull \hbox (5.34645pt too wide) in paragraph at lines 9--9
+ [][] [][]\T1/cmr/m/n/10.95 Augmentative and Alternative Systems of Communicati
+on (AAC)[] [][]  
+ []
+
 )
 \tf@toc=\write6
 \openout6 = `TFMTeXiS.toc'.
@@ -819,70 +825,147 @@ documentation
 
  (Capitulos/EstadoDeLaCuestion.tex
 Chapter 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 11.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 11.
-<Imagenes/Pict2Text2.0/pict2text_v1_1.png, id=125, 938.00438pt x 457.20813pt>
-File: Imagenes/Pict2Text2.0/pict2text_v1_1.png Graphic file (type png)
-<use Imagenes/Pict2Text2.0/pict2text_v1_1.png>
-Package pdftex.def Info: Imagenes/Pict2Text2.0/pict2text_v1_1.png  used on inpu
-t line 16.
-(pdftex.def)             Requested size: 360.0pt x 175.47104pt.
-<Imagenes/Pict2Text2.0/pict2text_v1_2.png, id=128, 933.98938pt x 458.71375pt>
-File: Imagenes/Pict2Text2.0/pict2text_v1_2.png Graphic file (type png)
-<use Imagenes/Pict2Text2.0/pict2text_v1_2.png>
-Package pdftex.def Info: Imagenes/Pict2Text2.0/pict2text_v1_2.png  used on inpu
-t line 27.
-(pdftex.def)             Requested size: 360.0pt x 176.80482pt.
-<Imagenes/Pict2Text2.0/pict2text_v1_3.png, id=130, 932.48375pt x 460.21938pt>
-File: Imagenes/Pict2Text2.0/pict2text_v1_3.png Graphic file (type png)
-<use Imagenes/Pict2Text2.0/pict2text_v1_3.png>
-Package pdftex.def Info: Imagenes/Pict2Text2.0/pict2text_v1_3.png  used on inpu
-t line 38.
-(pdftex.def)             Requested size: 360.0pt x 177.67305pt.
+
+Overfull \hbox (1.03741pt too wide) in paragraph at lines 6--9
+\T1/cmr/m/n/10.95 information regarding the first two sections you can find in 
+the documentation
+ []
+
+
+Overfull \hbox (77.78723pt too wide) in paragraph at lines 11--11
+|[]\T1/cmr/bx/n/14.4 Augmentative and Alternative Systems of Communication
+ []
+
+
+Overfull \hbox (8.91989pt too wide) in paragraph at lines 12--13
+\T1/cmr/m/n/10.95 improves their abilities to interact with others. AAC is ofte
+n being personalized
+ []
+
+
+Overfull \hbox (14.34703pt too wide) in paragraph at lines 12--13
+\T1/cmr/m/n/10.95 graphic (pictures, drawings, pictograms, words or letters) an
+d gestural (mimicry,
+ []
+
+<Imagenes/Pict2Text2.0/we.png, id=153, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/we.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/we.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/we.png  used on input line 21.
+(pdftex.def)             Requested size: 115.20264pt x 115.19908pt.
+<Imagenes/Pict2Text2.0/like.png, id=154, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/like.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/like.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/like.png  used on input line 23.
+
+(pdftex.def)             Requested size: 115.20264pt x 115.19908pt.
+<Imagenes/Pict2Text2.0/icecream.png, id=155, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/icecream.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/icecream.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/icecream.png  used on input line
+ 25.
+(pdftex.def)             Requested size: 115.20264pt x 115.19908pt.
 [5
 
 
 
 
 ]
-<Imagenes/Pict2Text2.0/pict2text_v1_4.png, id=143, 915.92188pt x 462.72874pt>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 32.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 32.
+
+Overfull \hbox (4.90219pt too wide) in paragraph at lines 32--33
+\T1/cmr/m/n/10.95 basic symbols, each representing a concept, which can be comb
+ined to generate
+ []
+
+
+Overfull \hbox (8.33614pt too wide) in paragraph at lines 32--33
+\T1/cmr/m/n/10.95 new symbols that represent new concepts (image []2.2[]). Blis
+symbolics characters
+ []
+
+<Imagenes/Pict2Text2.0/Blissymbolics.jpg, id=164, 738.76pt x 915.42pt>
+File: Imagenes/Pict2Text2.0/Blissymbolics.jpg Graphic file (type jpg)
+<use Imagenes/Pict2Text2.0/Blissymbolics.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/Blissymbolics.jpg  used on input
+ line 37.
+(pdftex.def)             Requested size: 360.0pt x 446.08736pt.
+[6 <./Imagenes/Pict2Text2.0/we.png> <./Imagenes/Pict2Text2.0/like.png> <./Image
+nes/Pict2Text2.0/icecream.png>]
+<Imagenes/Pict2Text2.0/ARASAAC.png, id=182, 1288.815pt x 663.47874pt>
+File: Imagenes/Pict2Text2.0/ARASAAC.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/ARASAAC.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/ARASAAC.png  used on input line 
+54.
+(pdftex.def)             Requested size: 360.0pt x 185.32733pt.
+<Imagenes/Pict2Text2.0/pict2text_v1_1.png, id=187, 938.00438pt x 457.20813pt>
+File: Imagenes/Pict2Text2.0/pict2text_v1_1.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/pict2text_v1_1.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/pict2text_v1_1.png  used on inpu
+t line 70.
+(pdftex.def)             Requested size: 360.0pt x 175.47104pt.
+<Imagenes/Pict2Text2.0/pict2text_v1_2.png, id=189, 933.98938pt x 458.71375pt>
+File: Imagenes/Pict2Text2.0/pict2text_v1_2.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/pict2text_v1_2.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/pict2text_v1_2.png  used on inpu
+t line 81.
+(pdftex.def)             Requested size: 360.0pt x 176.80482pt.
+<Imagenes/Pict2Text2.0/pict2text_v1_3.png, id=191, 932.48375pt x 460.21938pt>
+File: Imagenes/Pict2Text2.0/pict2text_v1_3.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/pict2text_v1_3.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/pict2text_v1_3.png  used on inpu
+t line 92.
+(pdftex.def)             Requested size: 360.0pt x 177.67305pt.
+<Imagenes/Pict2Text2.0/pict2text_v1_4.png, id=193, 915.92188pt x 462.72874pt>
 File: Imagenes/Pict2Text2.0/pict2text_v1_4.png Graphic file (type png)
 <use Imagenes/Pict2Text2.0/pict2text_v1_4.png>
 Package pdftex.def Info: Imagenes/Pict2Text2.0/pict2text_v1_4.png  used on inpu
-t line 49.
+t line 103.
 (pdftex.def)             Requested size: 360.0pt x 181.87561pt.
 
-Overfull \hbox (19.63051pt too wide) in paragraph at lines 58--59
+Overfull \hbox (19.63051pt too wide) in paragraph at lines 112--113
 \T1/cmr/m/n/10.95 With this information, SimpleNLG can generate grammatically c
 orrect sentences. 
  []
 
+[7]
+Overfull \hbox (12.19705pt too wide) in paragraph at lines 126--127
+[]\T1/cmr/m/n/10.95 One-shot[][][] is a machine learning algorithm that aims at
+ object categorization
+ []
 
-Underfull \vbox (badness 3942) has occurred while \output is active []
-
- [6 <./Imagenes/Pict2Text2.0/pict2text_v1_1.png>]) [7 <./Imagenes/Pict2Text2.0/
-pict2text_v1_2.png>] [8 <./Imagenes/Pict2Text2.0/pict2text_v1_3.png> <./Imagene
-s/Pict2Text2.0/pict2text_v1_4.png>]
+<Imagenes/Pict2Text2.0/oneShotModel.PNG, id=207, 432.86719pt x 178.41656pt>
+File: Imagenes/Pict2Text2.0/oneShotModel.PNG Graphic file (type png)
+<use Imagenes/Pict2Text2.0/oneShotModel.PNG>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/oneShotModel.PNG  used on input 
+line 131.
+(pdftex.def)             Requested size: 360.0pt x 148.38788pt.
+) [8] [9 <./Imagenes/Pict2Text2.0/Blissymbolics.jpg>] [10 <./Imagenes/Pict2Text
+2.0/ARASAAC.png> <./Imagenes/Pict2Text2.0/pict2text_v1_1.png>] [11 <./Imagenes/
+Pict2Text2.0/pict2text_v1_2.png> <./Imagenes/Pict2Text2.0/pict2text_v1_3.png>]
+[12 <./Imagenes/Pict2Text2.0/pict2text_v1_4.png> <./Imagenes/Pict2Text2.0/oneSh
+otModel.PNG>]
 LaTeX Info: Redefining \. on input line 215.
 LaTeX Info: Redefining \% on input line 215.
  (TFMTeXiS.aux (Cascaras/cover.aux)
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
- (TeXiS/TeXiS_toc.aux) (Capitulos/Introduccion.aux) (Capitulos/EstadoDeLaCuesti
-on.aux))
+ (TeXiS/TeXiS_toc.aux)
+(Capitulos/Introduccion.aux) (Capitulos/EstadoDeLaCuestion.aux))
 Package rerunfilecheck Info: File `TFMTeXiS.out' has not changed.
-(rerunfilecheck)             Checksum: 9DB2EDED91C06B88198C8FDD3E65F836;789.
+(rerunfilecheck)             Checksum: 04CF26A76C4270FD0BDB5837C21730C9;1199.
  ) 
 Here is how much of TeX's memory you used:
- 13318 strings out of 481732
- 206174 string characters out of 2921282
- 701060 words of memory out of 3000000
- 29481 multiletter control sequences out of 15000+200000
+ 13405 strings out of 481732
+ 208329 string characters out of 2921282
+ 703060 words of memory out of 3000000
+ 29538 multiletter control sequences out of 15000+200000
  553470 words of font info for 60 fonts, out of 3000000 for 9000
  238 hyphenation exceptions out of 8191
- 100i,11n,102p,916b,774s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 100i,11n,102p,916b,796s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0900
 .pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm06
 00.pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm
@@ -897,9 +980,9 @@ pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx120
 440.pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecb
 x2074.pk></home/gasan/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvr8a.pf
 b></home/gasan/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb>
-Output written on TFMTeXiS.pdf (14 pages, 1092196 bytes).
+Output written on TFMTeXiS.pdf (18 pages, 1389719 bytes).
 PDF statistics:
- 479 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
- 130 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 584 PDF objects out of 1000 (max. 8388607)
+ 51 named destinations out of 1000 (max. 500000)
+ 208 words of extra memory for PDF output out of 10000 (max. 10000000)
 
