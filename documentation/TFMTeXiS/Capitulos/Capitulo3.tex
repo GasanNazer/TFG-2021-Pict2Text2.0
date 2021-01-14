@@ -1,0 +1,25 @@
+% !TeX encoding = ISO-8859-1
+\chapter{Software development methodology}
+\label{Software development methodology}
+
+Software development methodologies\footnote{\href{https://www.researchgate.net/publication/278300889_Comparison_between_Agile_and_Traditional_software_development_methodologies}{Comparison between Agile and Traditional software development methodologies}} are used to make software development more efficient and predictable. The two types that exist today are traditional and agile. 
+Traditional methodologies, also known as heavyweight methodologies, follow a linear approach going through those steps - requirements definition, solution building, testing, and deployment. They require defining and documenting all the requirements at the beginning of the process. Some examples of heavyweight methodologies, among many others, are Waterfall, Spiral Model, and Unified Process.
+Agile methodologies are centered around the idea of iterative development. They are more flexible and focus less on initial planning. Some of the most popular being Scrum, Kanban, and Extreme Programming (XP).
+
+\section{Kanban}
+
+Kanban\footnote{\href{https://www.wseas.org/multimedia/journals/information/2013/5709-110.pdf}{A Review of Lean-Kanban Approaches in the Software Development}} is a system, oriented towards visualizing the work, making it flow, reducing waste, and maximizing the product value. The primary practices are visualization, usually via a dashboard, and limit the work in progress (WIP). We chose it as a methodology for our project because the product is delivered continuously, and changes are allowed during the whole process, and no estimation of the tasks is needed. That will increase our flexibility and productivity and will decrease the effect of our lack of experience in estimating.
+
+During every meeting, the tutors will give us the tasks - code and memory- that we have to finish until the next one, including their priority. The date for the next meeting also will be decided during the current one, as the sprint may vary between two and four weeks, depending on the given tasks.
+
+We decided to have the following columns:
+\begin{itemize}
+\item To do. Tasks given to us by the tutors created according to the priority given by the tutors to each task (from higher to lower priority). 
+\item In progress. Tasks we are currently working on. All tasks in that column will have a particular person assigned. As we are using Kanban, we have limited the WIP (Work In Progress) of the column to 4 assignments to avoid doing more tasks than we can reasonably manage. The completed tasks will be moved to `Testing`.
+\item On hold. Activities that we can't continue at the moment. The reason behind this is that they are waiting for another task to finish. When the task could be continued, it is returned to the column `In progress`.
+\item Testing. In the case of a coding task, the testing will include code review and automated and/or manual testing. In the case of a memory task, the person who didn't write the particular part will read and correct it. If a problem is spotted, the task will be moved to the column `In progress`. If not, it will go to the column `Ready for review`.
+\item Ready for review.  Tasks we have finished but are not yet reviewed by our tutors. The tasks in that column will be reviewed during the next meeting and the tutors will decide which of them will be moved to the column "Done" and which ones are not finished and must be remade.
+\item Done. Tasks that are finished, reviewed and approved by the tutors.
+\end{itemize}
+
+If the WIP of any of the columns does not allow more tasks, any additional ones will be moved to the column `Hold on`. 
