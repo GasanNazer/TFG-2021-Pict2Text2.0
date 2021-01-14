@@ -9,12 +9,14 @@ Reallocating 'name_of_file' (item size: 1) to 27 items.
 A level-1 auxiliary file: Capitulos/Introduccion.aux
 Reallocating 'name_of_file' (item size: 1) to 33 items.
 A level-1 auxiliary file: Capitulos/EstadoDeLaCuestion.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: Capitulos/Capitulo3.aux
 I found no \citation commands---while reading file TFMTeXiS.aux
 I found no \bibdata command---while reading file TFMTeXiS.aux
 I found no \bibstyle command---while reading file TFMTeXiS.aux
 You've used 0 entries,
             0 wiz_defined-function locations,
-            87 strings with 585 characters,
+            88 strings with 608 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0
