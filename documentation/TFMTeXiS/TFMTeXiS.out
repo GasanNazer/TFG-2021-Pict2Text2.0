@@ -4,16 +4,20 @@
 \BOOKMARK [0][-]{chapter.2}{Introduction}{}% 4
 \BOOKMARK [1][-]{section.3}{Motivation}{chapter.2}% 5
 \BOOKMARK [1][-]{section.4}{Goals}{chapter.2}% 6
-\BOOKMARK [1][-]{section.5}{Software development methodology}{chapter.2}% 7
-\BOOKMARK [1][-]{section.6}{Document structure}{chapter.2}% 8
-\BOOKMARK [0][-]{chapter.7}{State of the Art}{}% 9
-\BOOKMARK [1][-]{section.8}{Augmentative and Alternative Systems of Communication \(AAC\)}{chapter.7}% 10
-\BOOKMARK [1][-]{section.9}{Pictograms}{chapter.7}% 11
-\BOOKMARK [2][-]{subsection.11}{Blissymbolics}{section.9}% 12
-\BOOKMARK [2][-]{subsection.14}{CSUP}{section.9}% 13
-\BOOKMARK [2][-]{subsection.15}{ARASAAC}{section.9}% 14
-\BOOKMARK [1][-]{section.18}{Pict2Text version 1}{chapter.7}% 15
-\BOOKMARK [2][-]{subsection.19}{User perspective}{section.18}% 16
-\BOOKMARK [2][-]{subsection.25}{Engineering perspective}{section.18}% 17
-\BOOKMARK [2][-]{subsection.26}{Pict2Text version 1 issue}{section.18}% 18
-\BOOKMARK [1][-]{section.27}{One-shot learning algorithm}{chapter.7}% 19
+\BOOKMARK [1][-]{section.5}{Document structure}{chapter.2}% 7
+\BOOKMARK [0][-]{chapter.6}{State of the Art}{}% 8
+\BOOKMARK [1][-]{section.7}{Augmentative and Alternative Systems of Communication \(AASC\)}{chapter.6}% 9
+\BOOKMARK [1][-]{section.11}{Pictograms}{chapter.6}% 10
+\BOOKMARK [2][-]{subsection.13}{Pictogram systems}{section.11}% 11
+\BOOKMARK [2][-]{subsection.28}{Communication based on pictograms}{section.11}% 12
+\BOOKMARK [1][-]{section.30}{Pict2Text 1.0}{chapter.6}% 13
+\BOOKMARK [2][-]{subsection.36}{Implementation}{section.30}% 14
+\BOOKMARK [2][-]{subsection.42}{Conclusions}{section.30}% 15
+\BOOKMARK [1][-]{section.43}{Machine learning algorithms}{chapter.6}% 16
+\BOOKMARK [2][-]{subsection.44}{Why a conventional algorithm is not going to resolve the problem?}{section.43}% 17
+\BOOKMARK [2][-]{subsection.47}{What is a Machine Learning and Machine Learning model?}{section.43}% 18
+\BOOKMARK [2][-]{subsection.50}{Why no other tool or ML model is helpful to resolve our problem?}{section.43}% 19
+\BOOKMARK [2][-]{subsection.51}{What is a Neural Network?}{section.43}% 20
+\BOOKMARK [2][-]{subsection.55}{Convolutional Neural Network}{section.43}% 21
+\BOOKMARK [0][-]{chapter.66}{Software development methodology}{}% 22
+\BOOKMARK [1][-]{section.68}{Kanban}{chapter.66}% 23
