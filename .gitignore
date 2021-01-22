@@ -5,7 +5,7 @@
 **/.pytest_cache
 .idea
 /venv
-../../fetching_publication_tool/venv
-**/venv
-/../../fetching_publication_tool
-/fetching_publication_tool/venv
+fetching_publication_tool/venv
+fetching_publication_tool/.idea
+fetching_publication_tool/pictograms
+model/load_images/pictograms
