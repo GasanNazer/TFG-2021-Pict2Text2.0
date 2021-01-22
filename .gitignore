@@ -1,0 +1,11 @@
+**/*.pyc
+**/*pycache*
+**/tmp
+**/.pytest*
+**/.pytest_cache
+.idea
+/venv
+fetching_publication_tool/venv
+fetching_publication_tool/.idea
+fetching_publication_tool/pictograms
+model/load_images/pictograms
