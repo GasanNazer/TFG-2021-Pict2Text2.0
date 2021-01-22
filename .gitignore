@@ -1,0 +1,11 @@
+**/*.pyc
+**/*pycache*
+**/tmp
+**/.pytest*
+**/.pytest_cache
+.idea
+/venv
+../../fetching_publication_tool/venv
+**/venv
+/../../fetching_publication_tool
+/fetching_publication_tool/venv
