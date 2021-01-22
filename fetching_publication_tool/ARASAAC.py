@@ -1,11 +1,15 @@
+import concurrent
+
 import requests
 import os
 from os import listdir
 from os.path import isfile, join
 import shutil
 
+from concurrent.futures import ThreadPoolExecutor
+
 PICTOGRAM_SIZE = 500
-LIMIT_FETCHING = 40000 #fetch only 4000
+#LIMIT_FETCHING = 40000 #fetch only 4000
 BATCH = 0
 DIRECTORY_NAME = "pictograms" + "/" + str(BATCH)
 
@@ -33,9 +37,9 @@ def change_directory_if_needed():
     if not os.path.exists(DIRECTORY_NAME):
         os.makedirs(DIRECTORY_NAME)
 
-currently_fetched_files = 1
+#currently_fetched_files = 1
 
-for picto_id in pictograms_id_keywords:
+def fetch():
     change_directory_if_needed()
     if not os.path.exists(f"{DIRECTORY_NAME}/{picto_id}-{pictograms_id_keywords[picto_id][0]['keyword']}.png"):
         pic_keyword = pictograms_id_keywords[picto_id][0]['keyword']
@@ -47,9 +51,12 @@ for picto_id in pictograms_id_keywords:
         f.write(image)
         f.close()
 
-    if currently_fetched_files > LIMIT_FETCHING:
-        break
-    currently_fetched_files += 1
+for picto_id in pictograms_id_keywords:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+        thread1 = executor.submit(fetch)
+    #if currently_fetched_files > LIMIT_FETCHING:
+    #    break
+    #currently_fetched_files += 1
 
 
 print("fetching done")
