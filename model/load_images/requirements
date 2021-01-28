@@ -34,3 +34,4 @@ typing-extensions==3.7.4.3
 werkzeug==1.0.1
 wheel==0.36.2
 wrapt==1.12.1
+opencv-python==4.5.1.48
