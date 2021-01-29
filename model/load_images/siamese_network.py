@@ -1,9 +1,6 @@
 import sys
 import numpy as np
 import pickle
-import os
-
-import time
 
 import tensorflow as tf
 from keras.models import Sequential
