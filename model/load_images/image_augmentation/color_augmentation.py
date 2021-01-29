@@ -1,26 +1,32 @@
-import cv2
-import numpy as np
-from PIL import Image
-from numpy import expand_dims
-from keras.preprocessing.image import load_img
-from keras.preprocessing.image import img_to_array, save_img
-from keras.preprocessing.image import ImageDataGenerator
 import os
+from random import random
+from PIL import Image, ImageDraw
+from keras_preprocessing.image import load_img
 
-filename = "2239-abeja.png"
-image = load_img(os.path.join("../pictograms/0/", filename), color_mode="rgba")
 
-train_datagen = ImageDataGenerator(channel_shift_range=10, rescale=1./255)
-samples = expand_dims(image, 0)
-it = train_datagen.flow(samples, batch_size=1)
+def generate_images_with_augmented_color(file_path, filename, image_folder, augmentation_type, samples):
+    image = load_img(file_path, color_mode="rgba")
+    input_pixels = image.load()
 
-count = 0
+    count = 1
 
-for i in it:
-    print(i)
-    #show_image_from_array(i, 0)
-    save_img(f'a_{count}.png', i[0], file_format="png")
-    count += 1
+    while count < samples:
+        rand_r = random()
+        rand_b = random()
+        rand_g = random()
 
-    if count > 5:
-        break
+        # Create output image
+        output_image = Image.new("RGBA", image.size)
+        draw = ImageDraw.Draw(output_image)
+
+        # Generate image
+        for x in range(output_image.width):
+            for y in range(output_image.height):
+                r, g, b, a = input_pixels[x, y]
+                r = int(r * 5 * rand_r + 50)
+                g = int(g * 5 * rand_g * rand_g + 50)
+                b = int(b * 5 * rand_b + 50)
+                draw.point((x, y), (r, g, b, a))
+
+        output_image.save(os.path.join(image_folder, f'{filename.split(".")[0]}_{augmentation_type}_{count}.png'))
+        count += 1
