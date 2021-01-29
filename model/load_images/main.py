@@ -5,7 +5,7 @@ import os
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    model = get_siamese_model((500, 500, 4))
+    model = get_siamese_model((105, 105, 4))
     optimizer = Adam(lr=0.00006)
     model.compile(loss="binary_crossentropy", optimizer=optimizer)
     evaluate_every = 1  # interval for evaluating on one-shot tasks

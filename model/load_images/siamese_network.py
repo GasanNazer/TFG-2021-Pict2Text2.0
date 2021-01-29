@@ -59,7 +59,7 @@ def get_siamese_model(input_shape):
     model.add(Conv2D(256, (4, 4), activation='relu', kernel_initializer=initialize_weights,
                      bias_initializer=initialize_bias, kernel_regularizer=l2(2e-4)))
     model.add(Flatten())
-    model.add(Dense(4096, activation='sigmoid',
+    model.add(Dense(32, activation='sigmoid',
                     kernel_regularizer=l2(1e-3),
                     kernel_initializer=initialize_weights, bias_initializer=initialize_bias))
 
