@@ -8,11 +8,11 @@ if __name__ == '__main__':
     model = get_siamese_model((105, 105, 4))
     optimizer = Adam(lr=0.00006)
     model.compile(loss="binary_crossentropy", optimizer=optimizer)
-    evaluate_every = 1  # interval for evaluating on one-shot tasks
-    batch_size = 1
-    n_iter = 1 # No. of training iterations
-    N_way = 1  # how many classes for testing one-shot tasks
-    n_val = 1  # how many one-shot tasks to validate on
+    evaluate_every = 10  # interval for evaluating on one-shot tasks
+    batch_size = 9
+    n_iter = 50 # No. of training iterations
+    N_way = 2  # how many classes for testing one-shot tasks
+    n_val = 10  # how many one-shot tasks to validate on
     best = -1
     model_path = './weights/'
     for i in range(1, n_iter + 1):

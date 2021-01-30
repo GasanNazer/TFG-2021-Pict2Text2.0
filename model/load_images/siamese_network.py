@@ -1,20 +1,12 @@
-import sys
 import numpy as np
-import pickle
 
-import tensorflow as tf
 from keras.models import Sequential
-from keras.optimizers import Adam
-from keras.layers import Conv2D, ZeroPadding2D, Activation, Input, concatenate
+from keras.layers import Conv2D, Input
 from keras.models import Model
 
-from keras.layers.normalization import BatchNormalization
 from keras.layers.pooling import MaxPooling2D
-from keras.layers.merge import Concatenate
 from keras.layers.core import Lambda, Flatten, Dense
-from keras.initializers import glorot_uniform
 
-from keras.engine.topology import Layer
 from keras.regularizers import l2
 from keras import backend as K
 
