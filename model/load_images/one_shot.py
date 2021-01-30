@@ -1,10 +1,14 @@
+from sklearn.utils import shuffle
 import numpy.random as rng
 import numpy as np
+
 from load_images import load_images
 
-Xtrain, train_classes, _ = load_images()
-Xval = Xtrain[:, 0, :, :]
-val_classes = train_classes[0::Xtrain.shape[1], :]
+X, Y, _ = load_images()
+Xtrain = X[0:-2]
+train_classes = Y[0:-2]
+Xval = X[-2:]
+val_classes = Y[-2:]
 
 def get_batch(batch_size, s="train"):
     """
@@ -81,7 +85,7 @@ def make_oneshot_task(N, s="val", language=None):
     support_set = support_set.reshape(N, w, h, d)
     targets = np.zeros((N,))
     targets[0] = 1
-    targets, test_image, support_set = rng.shuffle(targets, test_image, support_set)
+    targets, test_image, support_set = shuffle(targets, test_image, support_set)
     pairs = [test_image, support_set]
 
     return pairs, targets
