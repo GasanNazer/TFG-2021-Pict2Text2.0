@@ -5,10 +5,10 @@ import numpy as np
 from load_images import load_images
 
 X, Y, _ = load_images()
-Xtrain = X[0:-2]
-train_classes = Y[0:-2]
-Xval = X[-2:]
-val_classes = Y[-2:]
+Xtrain = X[0:-20]
+train_classes = Y[0:-20]
+Xval = X[-20:]
+val_classes = Y[-20:]
 
 def get_batch(batch_size, s="train"):
     """

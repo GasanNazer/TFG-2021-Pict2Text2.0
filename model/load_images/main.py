@@ -9,9 +9,9 @@ if __name__ == '__main__':
     optimizer = Adam(lr=0.00006)
     model.compile(loss="binary_crossentropy", optimizer=optimizer)
     evaluate_every = 10  # interval for evaluating on one-shot tasks
-    batch_size = 9
+    batch_size = 30
     n_iter = 50 # No. of training iterations
-    N_way = 2  # how many classes for testing one-shot tasks
+    N_way = 20  # how many classes for testing one-shot tasks
     n_val = 10  # how many one-shot tasks to validate on
     best = -1
     model_path = './weights/'
