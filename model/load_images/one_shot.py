@@ -5,7 +5,7 @@ import numpy as np
 from load_images import load_images
 
 X, Y, _ = load_images()
-Xtrain = X[0:-20]
+Xtrain = X[:-1]
 train_classes = Y[0:-20]
 Xval = X[-20:]
 val_classes = Y[-20:]
@@ -21,6 +21,9 @@ def get_batch(batch_size, s="train"):
         X = Xval
         categories = val_classes
     n_classes, n_examples, w, h, d = X.shape
+
+    if n_classes == 0:
+        n_classes += 1
 
     # randomly sample several classes to use in the batch
     categories = rng.choice(n_classes, size=(batch_size,), replace=False)
