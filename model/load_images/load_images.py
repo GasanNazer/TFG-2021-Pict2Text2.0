@@ -38,9 +38,9 @@ def load_images(folder = "pictograms", classes_loaded = 0):
 def show_image_from_array(images_array, image):
     array_to_img(images_array[image][0]).show()
 
-X, Y, folders = load_images()
+#X, Y, folders = load_images()
 
-X_val, Y_val, folders_val = load_images("pictograms_val", classes_loaded= len(folders))
+#X_val, Y_val, folders_val = load_images("pictograms_val", classes_loaded= len(folders))
 
 #show_image_from_array(X, 0)
 #show_image_from_array(X, 1)

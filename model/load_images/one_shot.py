@@ -2,7 +2,7 @@ from sklearn.utils import shuffle
 import numpy.random as rng
 import numpy as np
 
-from load_images import load_images
+from load_images import load_images, show_image_from_array
 
 X, Y, folders = load_images()
 Xtrain = X
@@ -21,9 +21,6 @@ def get_batch(batch_size, s="train"):
         X = Xval
         categories = val_classes
     n_classes, n_examples, w, h, d = X.shape
-
-    if n_classes == 0:
-        n_classes += 1
 
     # randomly sample several classes to use in the batch
     categories = rng.choice(n_classes, size=(batch_size,), replace=False)
@@ -108,3 +105,23 @@ def test_oneshot(model, N, k, s = "val", verbose = 0):
     if verbose:
         print("Got an average of {}% {} way one-shot learning accuracy \n".format(percent_correct,N))
     return percent_correct
+
+
+def test(model):
+    input = Xval
+    #show_image_from_array(Xval, 0)
+    val = Y_val[0][0]
+    a = np.argmax(val)
+    print(f"Id: {folders_val[np.argmax(val)]}")
+
+    val = Y_val[20][0]
+    a = np.argmax(val)
+    print(f"Id: {folders_val[np.argmax(val)]}")
+    show_image_from_array(Xval, 1)
+    input = np.expand_dims(Xval[0][0], axis= 0) #take all images class 0 / take the 1 image of the class 0
+    input2 = np.expand_dims(Xval[1][0], axis= 0) #take all images class 1 / take the 1 image of the clase 1
+    inputs = []
+    inputs.append(input)
+    inputs.append(input2)
+    a = model.predict(inputs)
+    a = 5
