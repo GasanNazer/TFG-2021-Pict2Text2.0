@@ -9,3 +9,6 @@ fetching_publication_tool/venv
 fetching_publication_tool/.idea
 fetching_publication_tool/pictograms
 model/load_images/pictograms
+model/load_images/pictograms_val
+model/load_images/weights
+model/load_images/venv
