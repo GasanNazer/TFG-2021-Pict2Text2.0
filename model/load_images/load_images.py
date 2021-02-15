@@ -21,7 +21,7 @@ def load_images():
             images_class = []
             for filename in os.listdir(subsubfolder_complete_path):
                 # load the image
-                img = load_img(os.path.join(subsubfolder_complete_path, filename), color_mode="rgba")
+                img = load_img(os.path.join(subsubfolder_complete_path, filename), color_mode="rgba", target_size=(105, 105))
                 # report details about the image
                 #print(type(img))
                 #print(img.format)
@@ -37,8 +37,8 @@ def load_images():
     return np.array(images), np.reshape(np.array(Y), (-1, 1)), {v: k for k, v in folders.items()}
 
 def show_image_from_array(images_array, image):
-    array_to_img(images_array[image]).show()
+    array_to_img(images_array[image][0]).show()
 
 #X, Y, folders = load_images()
 
-#show_image_from_array(images, 16)
+#show_image_from_array(X, 0)
