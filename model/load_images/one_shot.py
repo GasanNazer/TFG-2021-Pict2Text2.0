@@ -8,7 +8,7 @@ X, Y, _ = load_images()
 Xtrain = X[:-1]
 train_classes = Y[0:-20]
 Xval = X[-20:]
-val_classes = Y[-20:]
+val_classes = Y[::20][-20:]
 
 def get_batch(batch_size, s="train"):
     """
