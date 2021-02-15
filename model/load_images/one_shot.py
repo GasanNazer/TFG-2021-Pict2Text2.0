@@ -4,11 +4,11 @@ import numpy as np
 
 from load_images import load_images
 
-X, Y, _ = load_images()
-Xtrain = X[:-1]
-train_classes = Y[0:-20]
-Xval = X[-20:]
-val_classes = Y[::20][-20:]
+X, Y, folders = load_images()
+Xtrain = X
+train_classes = Y
+Xval, Y_val, folders_val = load_images("pictograms_val", classes_loaded= len(folders))
+val_classes = Y_val
 
 def get_batch(batch_size, s="train"):
     """
