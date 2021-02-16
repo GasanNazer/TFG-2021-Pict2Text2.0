@@ -1,3 +1,4 @@
+from keras_preprocessing.image import array_to_img
 from sklearn.utils import shuffle
 import numpy.random as rng
 import numpy as np
