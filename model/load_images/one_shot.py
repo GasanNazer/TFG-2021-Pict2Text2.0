@@ -13,6 +13,7 @@ val_classes = Y_val
 
 Xtest, folders_test = load_test_images(MAX=1000) # (#pictograms, 105,105,4)
 
+
 def get_batch(batch_size, s="train"):
     """
     Create batch of n pairs, half same class, half different class
@@ -140,3 +141,4 @@ def test_one_pictogram(model, pictogram_num = 5):
     print(f"Id real: {folders_test[pictogram_num]}")
     print(f"Id: {folders_test[predicted]}")
     print(probs[predicted])
+
