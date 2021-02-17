@@ -1,5 +1,5 @@
 from siamese_network import get_siamese_model
-from one_shot import get_batch, test_oneshot, test
+from one_shot import get_batch, test_oneshot, test, test_one_pictogram
 from keras.optimizers import Adam
 import os
 
@@ -11,7 +11,7 @@ if __name__ == '__main__':
     evaluate_every = 1  # interval for evaluating on one-shot tasks
     batch_size = 20
     n_iter = 10 # No. of training iterations
-    N_way = 20  # how many classes for testing one-shot tasks
+    N_way = 5  # how many classes for testing one-shot tasks
     n_val = 5  # how many one-shot tasks to validate on
     best = -1
     model_path = './weights/'
@@ -31,8 +31,11 @@ if __name__ == '__main__':
     '''
 
     model.load_weights(os.path.join(model_path, 'weights.10.h5'))
-    test(model)
-    val_acc = test_oneshot(model, N_way, n_val, verbose=True)
-    print(val_acc)
+    test_one_pictogram(model)
+    test_one_pictogram(model, 7)
+    test_one_pictogram(model, 275)
+    #test(model)
+    #val_acc = test_oneshot(model, N_way, n_val, verbose=True)
+    #print(val_acc)
 
     model.summary()

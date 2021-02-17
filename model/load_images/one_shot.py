@@ -3,13 +3,16 @@ from sklearn.utils import shuffle
 import numpy.random as rng
 import numpy as np
 
-from load_images import load_images, show_image_from_array
+from load_images import load_images, show_image_from_array, load_test_images
 
 X, Y, folders = load_images()
 Xtrain = X
 train_classes = Y
 Xval, Y_val, folders_val = load_images("pictograms_val", classes_loaded= len(folders))
 val_classes = Y_val
+
+Xtest, folders_test = load_test_images(MAX=1000) # (#pictograms, 105,105,4)
+
 
 def get_batch(batch_size, s="train"):
     """
@@ -59,7 +62,7 @@ def generate(batch_size, s="train"):
         pairs, targets = get_batch(batch_size,s)
         yield (pairs, targets)
 
-def make_oneshot_task(N, s="val", language=None):
+def make_oneshot_task(N, s="val", pictogram=None):
     """Create pairs of test image, support set for testing N way one-shot learning. """
     if s == 'train':
         X = Xtrain
@@ -70,19 +73,19 @@ def make_oneshot_task(N, s="val", language=None):
     n_classes, n_examples, w, h, d = X.shape
 
     indices = rng.randint(0, n_examples, size=(N,))
-    if language is not None:  # if language is specified, select characters for that language
-        low, high = categories[language]
+    if pictogram is not None:  # if pictogram is specified
+        low, high = categories[pictogram]
         if N > high - low:
-            raise ValueError("This language ({}) has less than {} letters".format(language, N))
+            raise ValueError("This pictogram ({}) has less than {} letters".format(pictogram, N))
         categories = rng.choice(range(low, high), size=(N,), replace=False)
 
-    else:  # if no language specified just pick a bunch of random letters
+    else:  # if no pictogram specified just pick a bunch of random ones
         categories = rng.choice(range(n_classes), size=(N,), replace=False)
     true_category = categories[0]
     ex1, ex2 = rng.choice(n_examples, replace=False, size=(2,))
-    test_image = np.asarray([X[true_category, ex1, :, :]] * N).reshape(N, w, h, d)
-    support_set = X[categories, indices, :, :]
-    support_set[0, :, :] = X[true_category, ex2]
+    test_image = np.asarray([X[true_category, ex1, :, :, :]] * N).reshape(N, w, h, d)
+    support_set = X[categories, indices, :, :, :]
+    support_set[0, :, :, :] = X[true_category, ex2]
     support_set = support_set.reshape(N, w, h, d)
     targets = np.zeros((N,))
     targets[0] = 1
@@ -115,7 +118,7 @@ def test(model):
     a = np.argmax(val)
     print(f"Id: {folders_val[np.argmax(val)]}")
 
-    val = Y_val[20][0]
+    val = Y_val[25][0]
     a = np.argmax(val)
     print(f"Id: {folders_val[np.argmax(val)]}")
     show_image_from_array(Xval, 1)
@@ -125,4 +128,17 @@ def test(model):
     inputs.append(input)
     inputs.append(input2)
     a = model.predict(inputs)
-    a = 5
+    print(a)
+
+def test_one_pictogram(model, pictogram_num = 5):
+    pictogram = Xtest[pictogram_num]
+    n_classes, w, h, d = Xtest.shape
+    test_image = np.asarray([pictogram] * n_classes)
+    test_image = test_image.reshape(n_classes, w, h, d)
+    pairs = [test_image, Xtest]
+    probs = model.predict(pairs)
+    predicted = np.argmax(probs)
+    print(f"Id real: {folders_test[pictogram_num]}")
+    print(f"Id: {folders_test[predicted]}")
+    print(probs[predicted])
+
