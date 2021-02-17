@@ -1,5 +1,5 @@
 from siamese_network import get_siamese_model
-from one_shot import get_batch, test_oneshot, test
+from model_evaluator import test_one_pictogram, concurent_checker
 from keras.optimizers import Adam
 import os
 
@@ -29,5 +29,14 @@ if __name__ == '__main__':
                 print("Current best: {0}, previous best: {1}".format(val_acc, best))
                 best = val_acc
     '''
+
+    model.load_weights(os.path.join(model_path, 'weights.10.h5'))
+    concurent_checker(model, 5)
+    #test_one_pictogram(model)
+    #test_one_pictogram(model, 7)
+    #test_one_pictogram(model, 275)
+    #test(model)
+    #val_acc = test_oneshot(model, N_way, n_val, verbose=True)
+    #print(val_acc)
 
     model.summary()

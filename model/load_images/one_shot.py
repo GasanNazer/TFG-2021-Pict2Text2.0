@@ -11,9 +11,6 @@ train_classes = Y
 Xval, Y_val, folders_val = load_images("pictograms_val", classes_loaded= len(folders))
 val_classes = Y_val
 
-Xtest, folders_test = load_test_images(MAX=1000) # (#pictograms, 105,105,4)
-
-
 def get_batch(batch_size, s="train"):
     """
     Create batch of n pairs, half same class, half different class
@@ -129,16 +126,4 @@ def test(model):
     inputs.append(input2)
     a = model.predict(inputs)
     print(a)
-
-def test_one_pictogram(model, pictogram_num = 5):
-    pictogram = Xtest[pictogram_num]
-    n_classes, w, h, d = Xtest.shape
-    test_image = np.asarray([pictogram] * n_classes)
-    test_image = test_image.reshape(n_classes, w, h, d)
-    pairs = [test_image, Xtest]
-    probs = model.predict(pairs)
-    predicted = np.argmax(probs)
-    print(f"Id real: {folders_test[pictogram_num]}")
-    print(f"Id: {folders_test[predicted]}")
-    print(probs[predicted])
 
