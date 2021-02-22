@@ -1,4 +1,4 @@
-from keras_preprocessing.image import ImageDataGenerator, array_to_img
+from keras_preprocessing.image import ImageDataGenerator, array_to_img, load_img, img_to_array
 
 from siamese_network import get_siamese_model
 #from one_shot import get_batch, test_oneshot, test
@@ -8,9 +8,15 @@ import numpy.random as rng
 import numpy as np
 from sklearn.utils import shuffle
 
+import time
+
 datagen = ImageDataGenerator()
 
-NUMBER_OF_ITERATIONS = 30
+NUMBER_OF_ITERATIONS = 150
+# with 100 iterations => 6/7 of the testing set
+# with 100 iterations not shuffled =>  0/7 of the testing set
+
+# with 150 iterations => 7/7 of the testing set
 CLASSES = 3
 NUM_IMAGES_PER_CLASS = 20 # used when constructing batches with pairs
 BATCH_SIZE = CLASSES * NUM_IMAGES_PER_CLASS
@@ -22,6 +28,8 @@ train_it = datagen.flow_from_directory('pictograms/0', target_size= TARGET_SIZE,
 val_it = datagen.flow_from_directory('pictograms_val/0', target_size= TARGET_SIZE, color_mode="rgba", class_mode='categorical', batch_size=BATCH_SIZE, shuffle= False)
 # load and iterate test dataset
 test_it = datagen.flow_from_directory('pictograms_test', target_size= TARGET_SIZE, color_mode="rgba", class_mode='categorical', batch_size=BATCH_SIZE, shuffle= False)
+
+test_real_it = datagen.flow_from_directory('pictograms_test_real', target_size= TARGET_SIZE, color_mode="rgba", class_mode='categorical', batch_size=BATCH_SIZE, shuffle= False)
 
 ##############################################
 model = get_siamese_model(train_it.image_shape)
@@ -78,7 +86,10 @@ def get_batch(batch_size, Xtrain, train_classes, s="train"):
             category_2 = category
         else:
             # add a random number to the category modulo n classes to ensure 2nd image has a different category
-            category_2 = (category + rng.randint(1, n_classes)) % n_classes
+            try:
+                category_2 = (category + rng.randint(1, n_classes)) % n_classes
+            except Exception:
+                print("Not enough pictograms in the training set. Cannot construct pairs with categories.")
 
         cat_1.append(category)
         cat_2.append(category_2)
@@ -91,9 +102,9 @@ def get_batch(batch_size, Xtrain, train_classes, s="train"):
 def show_batch_images(batch):
     import matplotlib.pyplot as plt
 
-    fig = plt.figure(figsize=(8, 8))
-    columns = 6
-    rows = 6
+    fig = plt.figure(figsize=(10, 10))
+    columns = 10
+    rows = 10
     count = 0
     for i in range(1, columns * rows + 1):
         fig.add_subplot(rows, columns, i)
@@ -156,6 +167,7 @@ for i in range(1, NUMBER_OF_ITERATIONS + 1):
     batchX, batchy = train_it.next()
     (inputs, targets) = get_batch(BATCH_SIZE, batchX, batchy)
     loss = model.train_on_batch(inputs, targets)
+    print(f"Loss:{loss}")
 
     batchX_val, batchY_val = val_it.next()
     inputs, targets = make_oneshot_task(BATCH_SIZE, batchX_val, batchY_val, N_way)
@@ -170,13 +182,12 @@ for i in range(1, NUMBER_OF_ITERATIONS + 1):
         model.save_weights(os.path.join(model_path, 'weights.{}.h5'.format(i)))
 
     print(f"Iteration number: {i}")
+
 '''
+model.load_weights(os.path.join(model_path, 'weights.150.h5'))
 
-model.load_weights(os.path.join(model_path, 'weights.30.h5'))
-
-batchX_test, batchY_test = train_it.next()
-
-folders = {v: k for k, v in train_it.class_indices.items()}
+folders = {v: k for k, v in test_real_it.class_indices.items()}
+#folders = {v: k for k, v in test_it.class_indices.items()}
 
 def test_one_pictogram(model, X, pictogram_num = 5):
     n_classes, w, h, d = X.shape
@@ -193,9 +204,59 @@ def test_one_pictogram(model, X, pictogram_num = 5):
     print(f"Id: {folders[predicted]}")
     print(probs[predicted])
 
+    return folders[pictogram_num] == folders[predicted]
+
+
+def test_pictogram_against_all(model, X, pictogram):
+    n_classes, w, h, d = X.shape
+    test_image = np.asarray([pictogram] * n_classes)
+    test_image = test_image.reshape(n_classes, w, h, d)
+    pairs = [test_image, X]
+    #start_time = time.time()
+    probs = model.predict(pairs)
+    #print(f"Calculating probability in {(time.time() - start_time)} seconds.")
+    #print("Probabilities: ")
+    #print(probs)
+    predicted = np.argmax(probs)
+    #print(f"Id real: {folders[pictogram_num]}")
+    print(f"Predicted id: {folders[predicted]}")
+    print(probs[predicted])
+
+    return folders[predicted], X[predicted]
+
+img = img_to_array(load_img(os.path.join("./test", "test.png"), color_mode="rgba", target_size=(105, 105)))
+
+predictions = dict()
+count = 0
+
+start_total_time = time.time()
+
+for batch in test_real_it:
+    start_time = time.time()
+    batchX_test, batchY_test = batch
+    #show_batch_images(batchX_test)
+    id, predicted_pictogram = test_pictogram_against_all(model, batchX_test, img)
+    predictions[id] = predicted_pictogram
+    #array_to_img(predictions[id]).show()
+    print(f"Batch number: {count}")
+    count += 1
+
+    print(f"Time:{time.time() - start_time}")
+
+print(f"Total time: {time.time() - start_total_time}")
+a = 5
+'''
+for j in range(10):
+    print(f"Testing batch {j}")
+    #batchX_test, batchY_test = train_it.next()
+    batchX_test, batchY_test = test_real_it.next()
+    show_batch_images(batchX_test)
+    for i in range(len(batchX_test)):
+        n_correct += test_one_pictogram(model, batchX_test, i)
+
+    break
+'''
 
 print(f"Correctly matched: {n_correct}")
 
-for i in range(7):
-    test_one_pictogram(model, batchX_test, i)
 model.summary()
