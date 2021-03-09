@@ -17,7 +17,7 @@ def iterate_and_save_augmented_images(iterator, image_folder, filename, augmenta
         if count > number_of_samples:
             break
 
-def augment_images_from_folder(folder = "../pictograms"):
+def augment_images_from_folder(folder = "../pictograms", file_suffix = ""):
     for subfolder in os.listdir(folder):
         subfolder_complete_path = os.path.join(folder, subfolder)
         for filename in os.listdir(subfolder_complete_path):
@@ -25,16 +25,19 @@ def augment_images_from_folder(folder = "../pictograms"):
                 image_folder = os.path.join(subfolder_complete_path, filename.split("-")[0])
                 make_directory(image_folder)
 
-                it_brightness = create_random_brightness_augmentation_iterator(os.path.join(subfolder_complete_path, filename))
-                it_rotation = create_random_rotation_augmentation_iterator(os.path.join(subfolder_complete_path, filename))
+                original_filename = filename
+                filename = os.path.splitext(filename)[0] + "_" + file_suffix + ".png"
+
+                it_brightness = create_random_brightness_augmentation_iterator(os.path.join(subfolder_complete_path, original_filename))
+                it_rotation = create_random_rotation_augmentation_iterator(os.path.join(subfolder_complete_path, original_filename))
 
                 iterate_and_save_augmented_images(it_brightness, image_folder, filename, "brightness", 10)
                 iterate_and_save_augmented_images(it_rotation, image_folder, filename, "rotation", 4)
 
-                generate_images_with_augmented_color(os.path.join(subfolder_complete_path, filename), filename, image_folder, "color", 6)
+                generate_images_with_augmented_color(os.path.join(subfolder_complete_path, original_filename), filename, image_folder, "color", 6)
 
-                os.rename(os.path.join(subfolder_complete_path, filename), os.path.join(image_folder, filename))
+                os.rename(os.path.join(subfolder_complete_path, original_filename), os.path.join(image_folder, original_filename))
 
     print("Augmentation finished!")
 
-augment_images_from_folder()
+augment_images_from_folder("/media/gasan/External_PRO/TFG/pictograms/png_new_pictograms", "")

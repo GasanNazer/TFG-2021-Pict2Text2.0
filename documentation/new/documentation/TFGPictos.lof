@@ -1,0 +1,24 @@
+\babel@toc {spanish}{}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Pictogram representing an icecream.\relax }}{4}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of Blissymbolics\relax }}{5}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Construction of symbologic in Minspeak.\relax }}{6}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Example for gender diferenciation for the word `teacher` in ARASAAC.\relax }}{6}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Pictograms in ARASAAC associated with the word `teacher`.\relax }}{6}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Example of ACC communication book.\relax }}{7}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Searching for the word "Hombre" in PICT2Text 1.0.\relax }}{8}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Adding the pictogram "Hombre" to the pictogram sentence panel.\relax }}{8}{figure.caption.32}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Translating the sentence "El hombre come una pizza."\relax }}{9}{figure.caption.33}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces A simple neural network architecture.\relax }}{12}{figure.caption.47}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Filtering over the input image and constructing the feature map.\relax }}{14}{figure.caption.56}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Filtering over an input image, representing the convolution operation in CNN.\relax }}{15}{figure.caption.57}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces A convolutional neural network formed by several features layers followed by classifications.\relax }}{15}{figure.caption.59}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The original image of the pictogram bee(`abeja`) from the ARASAAC.\relax }}{20}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Augmented images of the pictogram bee(`abeja`) using the random brightness augmentation script.\relax }}{20}{figure.caption.66}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Two 90 degree rotations of the pictogram bee(`abeja`) generated using the augmentation script.\relax }}{21}{figure.caption.67}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Four color augmented images of the pictogram bee(`abeja`) generated using the color augmentation script.\relax }}{21}{figure.caption.68}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Image represented in grayscale image and the corresponding matrix.\relax }}{22}{figure.caption.70}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Colourful RGB image with its RGB three matrices.\relax }}{23}{figure.caption.71}%

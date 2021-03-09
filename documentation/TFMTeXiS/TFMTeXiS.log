@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.11.11)  10 JAN 2021 21:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2020.11.11)  9 MAR 2021 21:31
 entering extended mode
 **./TFMTeXiS.tex
 (TFMTeXiS.tex
@@ -598,7 +598,8 @@ LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
  (TeXiS/TeXiS_toc.aux)
 (Capitulos/Introduccion.aux) (Capitulos/EstadoDeLaCuestion.aux)
-(Capitulos/Capitulo3.aux))
+(Capitulos/SoftwareDevelopmentMethodology.aux) (Capitulos/Implementation.aux)
+(Cascaras/bibliografia.aux) (TeXiS/TeXiS_indice.aux))
 \openout1 = `TFMTeXiS.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
@@ -681,7 +682,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 \evensidemarginOriginal=\skip85
 \oddsidemarginOriginal=\skip86
 \longTitulo=\skip87
-<Imagenes/Vectorial/escudoUCM.pdf, id=95, 597.23125pt x 844.15375pt>
+<Imagenes/Vectorial/escudoUCM.pdf, id=103, 597.23125pt x 844.15375pt>
 File: Imagenes/Vectorial/escudoUCM.pdf Graphic file (type pdf)
 <use Imagenes/Vectorial/escudoUCM.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/escudoUCM.pdf  used on input line 1
@@ -784,8 +785,8 @@ Overfull \hbox (3.93884pt too wide) in paragraph at lines 15--16
  []
 
 
-Overfull \hbox (11.20036pt too wide) in paragraph at lines 20--21
-[]\T1/cmr/m/n/10.95 We use services-oriented application architecture, construc
+Overfull \hbox (18.8583pt too wide) in paragraph at lines 22--23
+[]\T1/cmr/m/n/10.95 To use services-oriented application architecture, construc
 ting web services,
  []
 
@@ -795,22 +796,12 @@ ting web services,
  (Capitulos/EstadoDeLaCuestion.tex
 Chapter 2.
 
-Overfull \hbox (77.78723pt too wide) in paragraph at lines 10--10
+Overfull \hbox (77.78723pt too wide) in paragraph at lines 9--9
 |[]\T1/cmr/bx/n/14.4 Augmentative and Alternative Systems of Communication
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 11.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 11.
 
-Overfull \hbox (11.58734pt too wide) in paragraph at lines 11--12
-[]\T1/cmr/m/n/10.95 The Augmentative and Alternative Systems of Communication (
-AASC)[][][]$[]$[][][]$[]$[][][]
- []
-
-
-Overfull \hbox (5.27638pt too wide) in paragraph at lines 17--18
+Overfull \hbox (5.27638pt too wide) in paragraph at lines 16--17
 \T1/cmr/m/n/10.95 decrease the isolation of people with disabilities, helping w
 ith the improvement
  []
@@ -821,25 +812,47 @@ ith the improvement
 
 
 ]
-Overfull \hbox (15.04088pt too wide) in paragraph at lines 22--23
+Overfull \hbox (5.85248pt too wide) in paragraph at lines 20--21
+[]\T1/cmr/m/n/10.95 An example for AASCs that need additional equipment are the
+ pictograms.
+ []
+
+<Imagenes/Pict2Text2.0/icecream.png, id=183, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/icecream.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/icecream.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/icecream.png  used on input line
+ 25.
+(pdftex.def)             Requested size: 250.93687pt x 250.93687pt.
+
+Overfull \hbox (15.04088pt too wide) in paragraph at lines 33--34
 []\T1/cmr/m/n/10.95 As pictograms are not universal, various systems exist, suc
 h as Blissymbolics,
  []
 
-<Imagenes/Pict2Text2.0/icecream.png, id=185, 501.875pt x 501.875pt>
-File: Imagenes/Pict2Text2.0/icecream.png Graphic file (type png)
-<use Imagenes/Pict2Text2.0/icecream.png>
-Package pdftex.def Info: Imagenes/Pict2Text2.0/icecream.png  used on input line
- 27.
-(pdftex.def)             Requested size: 250.93687pt x 250.93687pt.
-<Imagenes/Pict2Text2.0/Basicsymbols.jpeg, id=189, 354.57469pt x 130.23656pt>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 36.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 36.
+
+Overfull \hbox (7.34676pt too wide) in paragraph at lines 36--37
+[]\T1/cmr/m/n/10.95 Blissymbolics[][][] was created in 1949. It is an ideograph
+ic language consisting
+ []
+
+
+Overfull \hbox (4.41866pt too wide) in paragraph at lines 36--37
+\T1/cmr/m/n/10.95 punctuation signs) and uses colour codification to mark the g
+rammar category.
+ []
+
+<Imagenes/Pict2Text2.0/Basicsymbols.jpeg, id=187, 354.57469pt x 130.23656pt>
 File: Imagenes/Pict2Text2.0/Basicsymbols.jpeg Graphic file (type jpg)
 <use Imagenes/Pict2Text2.0/Basicsymbols.jpeg>
 Package pdftex.def Info: Imagenes/Pict2Text2.0/Basicsymbols.jpeg  used on input
  line 41.
 (pdftex.def)             Requested size: 360.0pt x 132.23341pt.
 [4 <./Imagenes/Pict2Text2.0/icecream.png>]
-<Imagenes/Pict2Text2.0/Minspeak.jpg, id=204, 411.03563pt x 178.41656pt>
+<Imagenes/Pict2Text2.0/Minspeak.jpg, id=202, 411.03563pt x 178.41656pt>
 File: Imagenes/Pict2Text2.0/Minspeak.jpg Graphic file (type jpg)
 <use Imagenes/Pict2Text2.0/Minspeak.jpg>
 Package pdftex.def Info: Imagenes/Pict2Text2.0/Minspeak.jpg  used on input line
@@ -857,257 +870,382 @@ Overfull \hbox (9.33751pt too wide) in paragraph at lines 63--64
 tems, ARASAAC
  []
 
-[5 <./Imagenes/Pict2Text2.0/Basicsymbols.jpeg>]
-<Imagenes/Pict2Text2.0/profesor.png, id=225, 501.875pt x 501.875pt>
+<Imagenes/Pict2Text2.0/profesor.png, id=206, 501.875pt x 501.875pt>
 File: Imagenes/Pict2Text2.0/profesor.png Graphic file (type png)
 <use Imagenes/Pict2Text2.0/profesor.png>
 Package pdftex.def Info: Imagenes/Pict2Text2.0/profesor.png  used on input line
  68.
 (pdftex.def)             Requested size: 108.0011pt x 108.00056pt.
-<Imagenes/Pict2Text2.0/profesora.png, id=226, 501.875pt x 501.875pt>
+<Imagenes/Pict2Text2.0/profesora.png, id=207, 501.875pt x 501.875pt>
 File: Imagenes/Pict2Text2.0/profesora.png Graphic file (type png)
 <use Imagenes/Pict2Text2.0/profesora.png>
 Package pdftex.def Info: Imagenes/Pict2Text2.0/profesora.png  used on input lin
 e 70.
 (pdftex.def)             Requested size: 108.0011pt x 108.00056pt.
+[5 <./Imagenes/Pict2Text2.0/Basicsymbols.jpeg>]
 File: Imagenes/Pict2Text2.0/profesor.png Graphic file (type png)
 <use Imagenes/Pict2Text2.0/profesor.png>
 Package pdftex.def Info: Imagenes/Pict2Text2.0/profesor.png  used on input line
- 82.
+ 81.
 (pdftex.def)             Requested size: 71.9989pt x 71.99272pt.
-<Imagenes/Pict2Text2.0/profesor1.png, id=228, 501.875pt x 501.875pt>
+<Imagenes/Pict2Text2.0/profesor1.png, id=218, 501.875pt x 501.875pt>
 File: Imagenes/Pict2Text2.0/profesor1.png Graphic file (type png)
 <use Imagenes/Pict2Text2.0/profesor1.png>
 Package pdftex.def Info: Imagenes/Pict2Text2.0/profesor1.png  used on input lin
-e 84.
+e 83.
 (pdftex.def)             Requested size: 71.9989pt x 71.99272pt.
-<Imagenes/Pict2Text2.0/profesor2.png, id=229, 501.875pt x 501.875pt>
+<Imagenes/Pict2Text2.0/profesor2.png, id=219, 501.875pt x 501.875pt>
 File: Imagenes/Pict2Text2.0/profesor2.png Graphic file (type png)
 <use Imagenes/Pict2Text2.0/profesor2.png>
 Package pdftex.def Info: Imagenes/Pict2Text2.0/profesor2.png  used on input lin
-e 86.
+e 85.
 (pdftex.def)             Requested size: 71.9989pt x 71.99272pt.
 
-Underfull \hbox (badness 1418) in paragraph at lines 87--87
-[]\T1/cmr/m/n/10.95 Figure 2.5: |Example for different pictograms representing 
-the same
- []
-
-
-Overfull \hbox (10.70891pt too wide) in paragraph at lines 92--93
+Overfull \hbox (10.70891pt too wide) in paragraph at lines 91--92
 \T1/cmr/m/n/10.95 tense is determined by pictograms representing yesterday, tod
 ay, and tomorrow. 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 <./Imagenes/Pict2Text2.0/Minspeak.jpg> <./Imagenes/Pict2Text2.0/profesor.pn
-g> <./Imagenes/Pict2Text2.0/profesora.png>]
-<Imagenes/Pict2Text2.0/board.png, id=239, 352.31625pt x 359.09157pt>
+[6 <./Imagenes/Pict2Text2.0/Minspeak.jpg> <./Imagenes/Pict2Text2.0/profesor.png
+> <./Imagenes/Pict2Text2.0/profesora.png> <./Imagenes/Pict2Text2.0/profesor1.pn
+g> <./Imagenes/Pict2Text2.0/profesor2.png>]
+<Imagenes/Pict2Text2.0/board.png, id=230, 352.31625pt x 359.09157pt>
 File: Imagenes/Pict2Text2.0/board.png Graphic file (type png)
 <use Imagenes/Pict2Text2.0/board.png>
 Package pdftex.def Info: Imagenes/Pict2Text2.0/board.png  used on input line 10
-2.
+1.
 (pdftex.def)             Requested size: 176.15768pt x 179.54533pt.
- [7 <./Imagenes/Pict2Text2.0/profesor1.png> <./Imagenes/Pict2Text2.0/profesor2.
-png> <./Imagenes/Pict2Text2.0/board.png>]
-<Imagenes/Pict2Text2.0/pict2text_v1_2.png, id=254, 933.98938pt x 458.71375pt>
+ [7 <./Imagenes/Pict2Text2.0/board.png>]
+<Imagenes/Pict2Text2.0/pict2text_v1_2.png, id=241, 933.98938pt x 458.71375pt>
 File: Imagenes/Pict2Text2.0/pict2text_v1_2.png Graphic file (type png)
 <use Imagenes/Pict2Text2.0/pict2text_v1_2.png>
 Package pdftex.def Info: Imagenes/Pict2Text2.0/pict2text_v1_2.png  used on inpu
-t line 121.
+t line 120.
 (pdftex.def)             Requested size: 360.0pt x 176.80482pt.
-<Imagenes/Pict2Text2.0/pict2text_v1_3.png, id=257, 932.48375pt x 460.21938pt>
+<Imagenes/Pict2Text2.0/pict2text_v1_3.png, id=244, 932.48375pt x 460.21938pt>
 File: Imagenes/Pict2Text2.0/pict2text_v1_3.png Graphic file (type png)
 <use Imagenes/Pict2Text2.0/pict2text_v1_3.png>
 Package pdftex.def Info: Imagenes/Pict2Text2.0/pict2text_v1_3.png  used on inpu
-t line 134.
+t line 132.
 (pdftex.def)             Requested size: 360.0pt x 177.67305pt.
-<Imagenes/Pict2Text2.0/pict2text_v1_4.png, id=259, 915.92188pt x 462.72874pt>
+ [8 <./Imagenes/Pict2Text2.0/pict2text_v1_2.png> <./Imagenes/Pict2Text2.0/pict2
+text_v1_3.png>]
+<Imagenes/Pict2Text2.0/pict2text_v1_4.png, id=254, 915.92188pt x 462.72874pt>
 File: Imagenes/Pict2Text2.0/pict2text_v1_4.png Graphic file (type png)
 <use Imagenes/Pict2Text2.0/pict2text_v1_4.png>
 Package pdftex.def Info: Imagenes/Pict2Text2.0/pict2text_v1_4.png  used on inpu
-t line 145.
+t line 143.
 (pdftex.def)             Requested size: 360.0pt x 181.87561pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8 <./Imagenes/Pict2Text2.0/pict2text_v1_2.png>]
-Overfull \hbox (30.92183pt too wide) in paragraph at lines 154--155
-\T1/cmr/m/n/10.95 have decided to use the framework Django[][][] for integratio
-n and intercommunication
- []
-
-[9 <./Imagenes/Pict2Text2.0/pict2text_v1_3.png> <./Imagenes/Pict2Text2.0/pict2t
-ext_v1_4.png>]
-Overfull \hbox (6.19571pt too wide) in paragraph at lines 171--172
-\T1/cmr/m/n/10.95 images of the different pictograms are not the same. Their co
-lor and sometimes
- []
-
-[10]
-<Imagenes/Pict2Text2.0/man_colored.png, id=297, 501.875pt x 501.875pt>
-File: Imagenes/Pict2Text2.0/man_colored.png Graphic file (type png)
-<use Imagenes/Pict2Text2.0/man_colored.png>
-Package pdftex.def Info: Imagenes/Pict2Text2.0/man_colored.png  used on input l
-ine 179.
-(pdftex.def)             Requested size: 108.0011pt x 108.00056pt.
-<Imagenes/Pict2Text2.0/man_grayscale.png, id=298, 501.875pt x 501.875pt>
-File: Imagenes/Pict2Text2.0/man_grayscale.png Graphic file (type png)
-<use Imagenes/Pict2Text2.0/man_grayscale.png>
-Package pdftex.def Info: Imagenes/Pict2Text2.0/man_grayscale.png  used on input
- line 181.
-(pdftex.def)             Requested size: 108.0011pt x 108.00056pt.
-
-Overfull \hbox (3.87584pt too wide) in paragraph at lines 190--191
-[]\T1/cmr/m/n/10.95 Machine learning (ML)[][][] is the study of computer algori
-thms that improve
+Overfull \hbox (7.89705pt too wide) in paragraph at lines 159--160
+[]\T1/cmr/m/n/10.95 Although the first version of Pict2Text translates messages
+ with pictograms
  []
 
 
-Overfull \hbox (8.33098pt too wide) in paragraph at lines 190--191
+Underfull \vbox (badness 3895) has occurred while \output is active []
+
+ [9 <./Imagenes/Pict2Text2.0/pict2text_v1_4.png>]
+Overfull \hbox (8.33098pt too wide) in paragraph at lines 168--169
 \T1/cmr/m/n/10.95 automatically through experience. It is seen as a subset of a
 rtificial intelligence.
  []
 
-[11 <./Imagenes/Pict2Text2.0/man_colored.png> <./Imagenes/Pict2Text2.0/man_gray
-scale.png>]
-Overfull \hbox (4.38805pt too wide) in paragraph at lines 200--202
+[10]
+Overfull \hbox (4.38805pt too wide) in paragraph at lines 178--180
 []\T1/cmr/m/n/10.95 Artificial neural networks (ANNs)[][][], usually called neu
 ral networks (NNs),
  []
 
-<Imagenes/Pict2Text2.0/NN.png, id=316, 803.0pt x 1071.00125pt>
+<Imagenes/Pict2Text2.0/NN.png, id=287, 803.0pt x 1071.00125pt>
 File: Imagenes/Pict2Text2.0/NN.png Graphic file (type png)
 <use Imagenes/Pict2Text2.0/NN.png>
-Package pdftex.def Info: Imagenes/Pict2Text2.0/NN.png  used on input line 206.
+Package pdftex.def Info: Imagenes/Pict2Text2.0/NN.png  used on input line 184.
 (pdftex.def)             Requested size: 401.49902pt x 535.49931pt.
-[12] [13 <./Imagenes/Pict2Text2.0/NN.png>] [14]
-<Imagenes/Pict2Text2.0/convolution.png, id=352, 450.68375pt x 450.68375pt>
+[11] [12 <./Imagenes/Pict2Text2.0/NN.png>] [13]
+<Imagenes/Pict2Text2.0/convolution.png, id=323, 450.68375pt x 450.68375pt>
 File: Imagenes/Pict2Text2.0/convolution.png Graphic file (type png)
 <use Imagenes/Pict2Text2.0/convolution.png>
 Package pdftex.def Info: Imagenes/Pict2Text2.0/convolution.png  used on input l
-ine 236.
+ine 214.
 (pdftex.def)             Requested size: 360.0pt x 360.01796pt.
-<Imagenes/Pict2Text2.0/convolution_operation.png, id=354, 733.74126pt x 308.151
+<Imagenes/Pict2Text2.0/convolution_operation.png, id=325, 733.74126pt x 308.151
 25pt>
 File: Imagenes/Pict2Text2.0/convolution_operation.png Graphic file (type png)
 <use Imagenes/Pict2Text2.0/convolution_operation.png>
 Package pdftex.def Info: Imagenes/Pict2Text2.0/convolution_operation.png  used 
-on input line 248.
+on input line 226.
 (pdftex.def)             Requested size: 360.0pt x 151.1929pt.
 
 
-LaTeX Warning: Reference `fig:cnn_architecture' on page 15 undefined on input l
-ine 255.
+LaTeX Warning: Reference `fig:cnn_architecture' on page 14 undefined on input l
+ine 233.
 
 
-Overfull \hbox (0.80696pt too wide) in paragraph at lines 255--256
+Overfull \hbox (0.80696pt too wide) in paragraph at lines 233--234
 \T1/cmr/m/n/10.95 input of the fully connected layers (neural network layers) w
 ith a classification
  []
 
-
-Underfull \vbox (badness 2359) has occurred while \output is active []
-
- [15 <./Imagenes/Pict2Text2.0/convolution.png>]
-<Imagenes/Pict2Text2.0/CNN-architecture.jpg, id=364, 1259.70625pt x 425.59pt>
+[14 <./Imagenes/Pict2Text2.0/convolution.png>]
+<Imagenes/Pict2Text2.0/CNN-architecture.jpg, id=335, 1259.70625pt x 425.59pt>
 File: Imagenes/Pict2Text2.0/CNN-architecture.jpg Graphic file (type jpg)
 <use Imagenes/Pict2Text2.0/CNN-architecture.jpg>
 Package pdftex.def Info: Imagenes/Pict2Text2.0/CNN-architecture.jpg  used on in
-put line 261.
+put line 239.
 (pdftex.def)             Requested size: 360.0pt x 121.6256pt.
-) [16 <./Imagenes/Pict2Text2.0/convolution_operation.png> <./Imagenes/Pict2Text
+) [15 <./Imagenes/Pict2Text2.0/convolution_operation.png> <./Imagenes/Pict2Text
 2.0/CNN-architecture.jpg>]
-\openout2 = `Capitulos/Capitulo3.aux'.
+\openout2 = `Capitulos/SoftwareDevelopmentMethodology.aux'.
 
 
-(Capitulos/Capitulo3.tex
+(Capitulos/SoftwareDevelopmentMethodology.tex [16
+
+
+
+
+]
 Chapter 3.
 
-Overfull \hbox (17.92816pt too wide) in paragraph at lines 5--8
+Overfull \hbox (17.92816pt too wide) in paragraph at lines 5--6
 []\T1/cmr/m/n/10.95 Software development methodologies[][][] are used to make s
 oftware development
  []
 
 
-Overfull \hbox (15.14168pt too wide) in paragraph at lines 5--8
-\T1/cmr/m/n/10.95 and agile. Traditional methodologies, also known as heavyweig
-ht methodologies,
+Overfull \hbox (2.67035pt too wide) in paragraph at lines 7--8
+\T1/cmr/m/n/10.95 Spiral Model, and Rational Unified Process. Agile methodologi
+es are adaptive
  []
 
-
-Overfull \hbox (27.66524pt too wide) in paragraph at lines 5--8
-\T1/cmr/m/n/10.95 solution building, testing, and deployment. They require defi
-ning and documenting
- []
-
-
-Overfull \hbox (0.47253pt too wide) in paragraph at lines 5--8
-\T1/cmr/m/n/10.95 heavyweight methodologies, among many others, are Waterfall, 
-Spiral Model,
- []
-
-
-Overfull \hbox (0.94484pt too wide) in paragraph at lines 13--14
-[]\T1/cmr/m/n/10.95 During every meeting, the tutors will give us the tasks - c
-ode and memory-
- []
-
-[17
-
-
-
-
-])
-Overfull \hbox (0.93462pt too wide) in paragraph at lines 25--150
+[17])
+Overfull \hbox (0.93462pt too wide) in paragraph at lines 27--150
 []\T1/cmr/m/n/10.95 If the WIP of any of the columns does not allow more tasks,
  any additional
  []
 
 [18]
-LaTeX Info: Redefining \. on input line 215.
-LaTeX Info: Redefining \% on input line 215.
- (TFMTeXiS.aux (Cascaras/cover.aux)
+\openout2 = `Capitulos/Implementation.aux'.
+
+ (Capitulos/Implementation.tex
+Chapter 4.
+
+Overfull \hbox (2.94414pt too wide) in paragraph at lines 5--6
+[]\T1/cmr/m/n/10.95 In this chapter, we are going to present all we have develo
+ped for Pict2Text
+ []
+
+
+Overfull \hbox (9.9843pt too wide) in paragraph at lines 8--9
+[]\T1/cmr/m/n/10.95 We started by obtaining our dataset, the ARASAAC pictograms
+ in Spanish.
+ []
+
+
+Overfull \hbox (13.84529pt too wide) in paragraph at lines 8--9
+\T1/cmr/m/n/10.95 API. The script does a request to the ARASAAC API, returning 
+the information
+ []
+
+[19
+
+
+
+
+]
+<Imagenes/Pict2Text2.0/bee.png, id=363, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/bee.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/bee.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/bee.png  used on input line 19.
+(pdftex.def)             Requested size: 250.93687pt x 250.93687pt.
+<Imagenes/Pict2Text2.0/beeShade.png, id=365, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeShade.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeShade.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeShade.png  used on input line
+ 30.
+(pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
+<Imagenes/Pict2Text2.0/beeShade2.png, id=366, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeShade2.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeShade2.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeShade2.png  used on input lin
+e 32.
+(pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
+<Imagenes/Pict2Text2.0/beeShade3.png, id=367, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeShade3.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeShade3.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeShade3.png  used on input lin
+e 34.
+(pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
+<Imagenes/Pict2Text2.0/beeShade4.png, id=368, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeShade4.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeShade4.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeShade4.png  used on input lin
+e 36.
+(pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
+
+Overfull \hbox (8.96347pt too wide) in paragraph at lines 42--43
+\T1/cmr/m/n/10.95 represented in the pictogram independently of the light or br
+ightness conditions
+ []
+
+[20 <./Imagenes/Pict2Text2.0/bee.png> <./Imagenes/Pict2Text2.0/beeShade.png> <.
+/Imagenes/Pict2Text2.0/beeShade2.png> <./Imagenes/Pict2Text2.0/beeShade3.png> <
+./Imagenes/Pict2Text2.0/beeShade4.png>]
+Overfull \hbox (10.20503pt too wide) in paragraph at lines 44--45
+\T1/cmr/m/n/10.95 to the brightness augmentation script this one is using the I
+mageDataGenerator
+ []
+
+
+Overfull \hbox (3.78539pt too wide) in paragraph at lines 44--45
+\T1/cmr/m/n/10.95 class, specifying the rotation_range attribute to 90 degrees.
+ This specification
+ []
+
+
+Overfull \hbox (0.36134pt too wide) in paragraph at lines 44--45
+\T1/cmr/m/n/10.95 will augment the provided pictogram generating random 90 degr
+ees rotations.
+ []
+
+<Imagenes/Pict2Text2.0/beeUp.png, id=381, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeUp.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeUp.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeUp.png  used on input line 49
+.
+(pdftex.def)             Requested size: 250.93687pt x 250.93687pt.
+<Imagenes/Pict2Text2.0/beeDown.png, id=382, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeDown.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeDown.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeDown.png  used on input line 
+51.
+(pdftex.def)             Requested size: 250.93687pt x 250.93687pt.
+<Imagenes/Pict2Text2.0/beeColour.png, id=384, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeColour.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeColour.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeColour.png  used on input lin
+e 64.
+(pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
+<Imagenes/Pict2Text2.0/beeColour2.png, id=385, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeColour2.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeColour2.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeColour2.png  used on input li
+ne 66.
+(pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
+<Imagenes/Pict2Text2.0/beeColour3.png, id=386, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeColour3.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeColour3.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeColour3.png  used on input li
+ne 68.
+(pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
+<Imagenes/Pict2Text2.0/beeColour4.png, id=387, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeColour4.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeColour4.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeColour4.png  used on input li
+ne 70.
+(pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
+
+Package natbib Warning: Citation `oneShot' on page 21 undefined on input line 8
+0.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21 <./Imagenes/Pict2Text2.0/beeUp.png> <./Imagenes/Pict2Text2.0/beeDown.png> 
+<./Imagenes/Pict2Text2.0/beeColour.png> <./Imagenes/Pict2Text2.0/beeColour2.png
+> <./Imagenes/Pict2Text2.0/beeColour3.png> <./Imagenes/Pict2Text2.0/beeColour4.
+png>]
+Overfull \hbox (4.16907pt too wide) in paragraph at lines 82--83
+\T1/cmr/m/n/10.95 with dimensions the width and the height of the picture. Each
+ cell corresponds
+ []
+
+<Imagenes/Pict2Text2.0/grayscale.png, id=402, 335.2525pt x 251.94125pt>
+File: Imagenes/Pict2Text2.0/grayscale.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/grayscale.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/grayscale.png  used on input lin
+e 87.
+(pdftex.def)             Requested size: 167.62584pt x 125.9703pt.
+<Imagenes/Pict2Text2.0/reign_pic_breakdown.png, id=403, 973.7178pt x 608.9952pt
+>
+File: Imagenes/Pict2Text2.0/reign_pic_breakdown.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/reign_pic_breakdown.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/reign_pic_breakdown.png  used on
+ input line 96.
+(pdftex.def)             Requested size: 730.28658pt x 456.74529pt.
+<Imagenes/Pict2Text2.0/three_d_array.png, id=404, 369.0588pt x 354.123pt>
+File: Imagenes/Pict2Text2.0/three_d_array.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/three_d_array.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/three_d_array.png  used on input
+ line 98.
+(pdftex.def)             Requested size: 92.26447pt x 88.53052pt.
+[22 <./Imagenes/Pict2Text2.0/grayscale.png>]
+Overfull \hbox (5.10841pt too wide) in paragraph at lines 106--107
+\T1/cmr/m/n/10.95 the script described before. After the augmentation, our trai
+ning set contained
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23 <./Imagenes/Pict2Text2.0/reign_pic_breakdown.png> <./Imagenes/Pict2Text2.0
+/three_d_array.png>]) [24]
+\openout2 = `Cascaras/bibliografia.aux'.
+
+
+No file Cascaras/bibliografia.tex.
+\openout2 = `TeXiS/TeXiS_indice.aux'.
+
+(TeXiS/TeXiS_indice.tex
+No file TFMTeXiS.ind.
+)
+LaTeX Info: Redefining \. on input line 216.
+LaTeX Info: Redefining \% on input line 216.
+
+
+Package natbib Warning: There were undefined citations.
+
+(TFMTeXiS.aux (Cascaras/cover.aux)
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
  (TeXiS/TeXiS_toc.aux)
 (Capitulos/Introduccion.aux) (Capitulos/EstadoDeLaCuestion.aux)
-(Capitulos/Capitulo3.aux))
+(Capitulos/SoftwareDevelopmentMethodology.aux) (Capitulos/Implementation.aux)
+(Cascaras/bibliografia.aux) (TeXiS/TeXiS_indice.aux))
 Package rerunfilecheck Info: File `TFMTeXiS.out' has not changed.
-(rerunfilecheck)             Checksum: BF335C54BA243FFE62134A78ED92D7CE;1616.
+(rerunfilecheck)             Checksum: 4F1F8D5770A84AABAD1BC2B3B4A1F442;1673.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 13528 strings out of 481732
- 211607 string characters out of 2921282
+ 13675 strings out of 481732
+ 216486 string characters out of 2921282
  702060 words of memory out of 3000000
- 29605 multiletter control sequences out of 15000+200000
- 553470 words of font info for 60 fonts, out of 3000000 for 9000
+ 29712 multiletter control sequences out of 15000+200000
+ 554500 words of font info for 62 fonts, out of 3000000 for 9000
  238 hyphenation exceptions out of 8191
- 100i,12n,102p,1155b,890s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0900
-.pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm06
-00.pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm
-0800.pk>{/home/gasan/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc} </home
-/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/eccc1095.pk> </ho
-me/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1095.pk> </
-home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk> 
-</home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1200.pk
-> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm2488.
-pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx120
-0.pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1
-440.pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecb
-x2074.pk></home/gasan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmm
-i8.pfb></home/gasan/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvr8a.pfb>
-</home/gasan/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb>
-Output written on TFMTeXiS.pdf (24 pages, 1494834 bytes).
+ 100i,12n,102p,1188b,846s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1095
+.pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm10
+95.pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm
+0900.pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ec
+rm0600.pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/
+ecrm0800.pk>{/home/gasan/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc} </
+home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/eccc1095.pk> 
+</home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1095.pk
+> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.
+pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti120
+0.pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm2
+488.pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecb
+x1200.pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/e
+cbx1440.pk> </home/gasan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600
+/ecbx2074.pk></home/gasan/.miktex/texmfs/install/fonts/type1/urw/helvetic/uhvr8
+a.pfb></home/gasan/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb>
+Output written on TFMTeXiS.pdf (30 pages, 4647453 bytes).
 PDF statistics:
- 804 PDF objects out of 1000 (max. 8388607)
- 97 named destinations out of 1000 (max. 500000)
- 275 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 869 PDF objects out of 1000 (max. 8388607)
+ 103 named destinations out of 1000 (max. 500000)
+ 351 words of extra memory for PDF output out of 10000 (max. 10000000)
 

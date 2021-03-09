@@ -11,7 +11,7 @@ Xtest, folders_test = load_test_images(MAX=1000)  # (#pictograms, 105,105,4) # s
 
 print(f"Loading images in {(time.time() - start_time)} seconds.")
 
-def test_one_pictogram(model, X, pictogram, pictogram_num):
+def test_one_pictogram(model, X = Xtest, pictogram = Xtest[5], pictogram_num = 5):
     n_classes, w, h, d = X.shape
     test_image = np.asarray([pictogram] * n_classes)
     test_image = test_image.reshape(n_classes, w, h, d)
@@ -19,8 +19,8 @@ def test_one_pictogram(model, X, pictogram, pictogram_num):
     #start_time = time.time()
     probs = model.predict(pairs)
     #print(f"Calculating probability in {(time.time() - start_time)} seconds.")
-    print("Probabilities: ")
-    print(probs)
+    #print("Probabilities: ")
+    #print(probs)
     predicted = np.argmax(probs)
     print(f"Id real: {folders_test[pictogram_num]}")
     print(f"Id: {folders_test[predicted]}")
@@ -43,7 +43,7 @@ def concurent_checker(model, pictogram_num):
     #test_one_pictogram(model, Xtest, pictogram, pictogram_num)
 
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
         thread = executor.map(test_one_pictogram, repeat(model), X, repeat(pictogram), repeat(pictogram_num))
 
     print(f"Calculating probability in {(time.time() - start_time)} seconds.")

@@ -12,24 +12,36 @@ import time
 
 datagen = ImageDataGenerator()
 
-NUMBER_OF_ITERATIONS = 150
+NUMBER_OF_ITERATIONS = 250
 # with 100 iterations => 6/7 of the testing set
 # with 100 iterations not shuffled =>  0/7 of the testing set
 
-# with 150 iterations => 7/7 of the testing set
-CLASSES = 3
-NUM_IMAGES_PER_CLASS = 20 # used when constructing batches with pairs
+# with 150 iterations => 7/7 of the testing set (105, 105) doesn't detect the one image
+# with 150 iterations => 44/44 of the testing set (64, 64) doesn't detect the one image
+# with 200 iterations => 44/44 of the testing set (64, 64) doesn't detect the one image
+# with 300 iterations => 44/44 of the testing set (64, 64) doesn't detect the one image
+# with 400 iterations => 44/44 of the testing set (64, 64) doesn't detect the one image
+# with 400 iterations with 4 classes batch => 44/44 of the testing set (64, 64) doesn't detect the one image
+# with 1000 iterations with 4 classes batch => 44/44 of the testing set (64, 64) doesn't detect the one image
+# with 25 iterations with 4 classes batch  training set with photos and pictos mix => 44/44 of the testing set (64, 64) doesn't detect the sky and balls yes others no
+# with 50 iterations with 2 classes batch  training set with photos and pictos mix => 44/44 of the testing set (64, 64) doesn't detect the pavement yes others no
+# with 100 iterations with 2 classes batch training set with photos and pictos mix => only the balls were correctly detected
+# with 150 iterations with 2 classes batch training set with photos and pictos mix => only the balls were correctly detected
+CLASSES = 4
+NUM_IMAGES_PER_CLASS = 40 # used when constructing batches with pairs
 BATCH_SIZE = CLASSES * NUM_IMAGES_PER_CLASS
-TARGET_SIZE = (105,105)
+TARGET_SIZE = (65, 65)
 
 # load and iterate training dataset
-train_it = datagen.flow_from_directory('pictograms/0', target_size= TARGET_SIZE, color_mode="rgba", class_mode='categorical', batch_size=BATCH_SIZE, shuffle= True)
+train_it = datagen.flow_from_directory('/media/gasan/External_PRO/TFG/pictograms/png_new_pictograms/0', target_size= TARGET_SIZE, color_mode="rgba", class_mode='categorical', batch_size=BATCH_SIZE, shuffle= True)
 # load and iterate validation dataset
 val_it = datagen.flow_from_directory('pictograms_val/0', target_size= TARGET_SIZE, color_mode="rgba", class_mode='categorical', batch_size=BATCH_SIZE, shuffle= False)
 # load and iterate test dataset
 test_it = datagen.flow_from_directory('pictograms_test', target_size= TARGET_SIZE, color_mode="rgba", class_mode='categorical', batch_size=BATCH_SIZE, shuffle= False)
 
 test_real_it = datagen.flow_from_directory('pictograms_test_real', target_size= TARGET_SIZE, color_mode="rgba", class_mode='categorical', batch_size=BATCH_SIZE, shuffle= False)
+
+test_small_it = datagen.flow_from_directory('pictograms_test_small', target_size= TARGET_SIZE, color_mode="rgba", class_mode='categorical', batch_size=BATCH_SIZE, shuffle= False)
 
 ##############################################
 model = get_siamese_model(train_it.image_shape)
@@ -162,32 +174,33 @@ def make_oneshot_task(batch_size, Xtrain, train_classes, N, s="val", pictogram=N
 
 n_correct = 0
 
-'''
-for i in range(1, NUMBER_OF_ITERATIONS + 1):
-    batchX, batchy = train_it.next()
-    (inputs, targets) = get_batch(BATCH_SIZE, batchX, batchy)
-    loss = model.train_on_batch(inputs, targets)
-    print(f"Loss:{loss}")
+def train_model():
+    global n_correct
+    for i in range(1, NUMBER_OF_ITERATIONS + 1):
+        batchX, batchy = train_it.next()
+        (inputs, targets) = get_batch(BATCH_SIZE, batchX, batchy)
+        loss = model.train_on_batch(inputs, targets)
+        print(f"Loss:{loss}")
 
-    batchX_val, batchY_val = val_it.next()
-    inputs, targets = make_oneshot_task(BATCH_SIZE, batchX_val, batchY_val, N_way)
-    probs = model.predict(inputs)
-    #print(f"Probabilities: {probs}")
+        batchX_val, batchY_val = val_it.next()
+        inputs, targets = make_oneshot_task(BATCH_SIZE, batchX_val, batchY_val, N_way)
+        probs = model.predict(inputs)
+        # print(f"Probabilities: {probs}")
+
+        if np.argmax(probs) == np.argmax(targets):
+            n_correct += 1
+
+        if i % 5 == 0:
+            model.save_weights(os.path.join(model_path, 'weights.{}.h5'.format(i)))
+
+        print(f"Iteration number: {i}")
 
 
-    if np.argmax(probs) == np.argmax(targets):
-        n_correct += 1
+model.load_weights(os.path.join(model_path, f'weights.{NUMBER_OF_ITERATIONS}.h5'))
 
-    if i % 10 == 0:
-        model.save_weights(os.path.join(model_path, 'weights.{}.h5'.format(i)))
-
-    print(f"Iteration number: {i}")
-
-'''
-model.load_weights(os.path.join(model_path, 'weights.150.h5'))
-
-folders = {v: k for k, v in test_real_it.class_indices.items()}
 #folders = {v: k for k, v in test_it.class_indices.items()}
+#folders = {v: k for k, v in test_real_it.class_indices.items()}
+folders = {v: k for k, v in test_small_it.class_indices.items()}
 
 def test_one_pictogram(model, X, pictogram_num = 5):
     n_classes, w, h, d = X.shape
@@ -224,39 +237,48 @@ def test_pictogram_against_all(model, X, pictogram):
 
     return folders[predicted], X[predicted]
 
-img = img_to_array(load_img(os.path.join("./test", "test.png"), color_mode="rgba", target_size=(105, 105)))
 
-predictions = dict()
-count = 0
+def test_single_pictogram():
 
-start_total_time = time.time()
+    predictions = dict()
+    count = 0
 
-for batch in test_real_it:
-    start_time = time.time()
-    batchX_test, batchY_test = batch
-    #show_batch_images(batchX_test)
-    id, predicted_pictogram = test_pictogram_against_all(model, batchX_test, img)
-    predictions[id] = predicted_pictogram
-    #array_to_img(predictions[id]).show()
-    print(f"Batch number: {count}")
-    count += 1
+    start_total_time = time.time()
 
-    print(f"Time:{time.time() - start_time}")
+    for photo in os.listdir("./test"):
+        img = img_to_array(load_img(os.path.join("./test", photo), color_mode="rgba", target_size=TARGET_SIZE))
+        while True:
+            try:
+                start_time = time.time()
+                batchX_test, batchY_test = test_small_it.next()
+                # show_batch_images(batchX_test)
+                id, predicted_pictogram = test_pictogram_against_all(model, batchX_test, img)
+                predictions[id] = predicted_pictogram
+                # array_to_img(predictions[id]).show()
+                print(f"Batch number: {count}")
+                count += 1
 
-print(f"Total time: {time.time() - start_total_time}")
-a = 5
-'''
-for j in range(10):
-    print(f"Testing batch {j}")
-    #batchX_test, batchY_test = train_it.next()
-    batchX_test, batchY_test = test_real_it.next()
-    show_batch_images(batchX_test)
-    for i in range(len(batchX_test)):
-        n_correct += test_one_pictogram(model, batchX_test, i)
+                print(f"Time:{time.time() - start_time}")
+                break
+            except Exception:
+                break
 
-    break
-'''
+    print(f"Total time: {time.time() - start_total_time}")
 
-print(f"Correctly matched: {n_correct}")
+def test_set_pictograms():
+    global n_correct
+    for j in range(10):
+        print(f"Testing batch {j}")
+        # batchX_test, batchY_test = test_small_it.next()
+        batchX_test, batchY_test = test_real_it.next()
+        # show_batch_images(batchX_test)
+        for i in range(len(batchX_test)):
+            n_correct += test_one_pictogram(model, batchX_test, i)
 
+        break
+    print(f"Correctly matched: {n_correct}")
+
+
+train_model()
+test_single_pictogram()
 model.summary()

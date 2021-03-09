@@ -13,3 +13,8 @@ model/load_images/pictograms_val
 model/load_images/weights
 model/load_images/venv
 model/load_images/pictograms_test
+model/load_images/convert_jpg_to_png/jpg_images/*
+model/load_images/convert_jpg_to_png/png_images/*
+model/load_images/pictograms_test_real/*
+model/load_images/pictograms_test_small/*
+model/load_images/test/*

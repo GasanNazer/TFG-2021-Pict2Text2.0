@@ -30,9 +30,9 @@ if __name__ == '__main__':
                 best = val_acc
     '''
 
-    model.load_weights(os.path.join(model_path, 'weights.10.h5'))
-    concurent_checker(model, 5)
-    #test_one_pictogram(model)
+    model.load_weights(os.path.join(model_path, 'weights.40.h5'))
+    #concurent_checker(model, 5)
+    test_one_pictogram(model)
     #test_one_pictogram(model, 7)
     #test_one_pictogram(model, 275)
     #test(model)

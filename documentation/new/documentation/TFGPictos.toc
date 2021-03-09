@@ -1,0 +1,30 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.4}%
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.5}%
+\contentsline {section}{\numberline {1.2}Goals}{2}{section.6}%
+\contentsline {section}{\numberline {1.3}Document structure}{2}{section.11}%
+\contentsline {chapter}{\numberline {2}State of the Art}{3}{chapter.12}%
+\contentsline {section}{\numberline {2.1}Augmentative and Alternative Systems of Communication (AASC)}{3}{section.13}%
+\contentsline {section}{\numberline {2.2}Pictograms}{4}{section.14}%
+\contentsline {subsection}{\numberline {2.2.1}Pictogram systems}{4}{subsection.16}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}Blissymbolics}{4}{subsubsection.17}%
+\contentsline {subsubsection}{\numberline {2.2.1.2}CSUP}{5}{subsubsection.20}%
+\contentsline {subsubsection}{\numberline {2.2.1.3}Minspeak}{5}{subsubsection.21}%
+\contentsline {subsubsection}{\numberline {2.2.1.4}ARASAAC}{5}{subsubsection.23}%
+\contentsline {subsection}{\numberline {2.2.2}Communication based on pictograms}{7}{subsection.27}%
+\contentsline {section}{\numberline {2.3}Pict2Text 1.0}{7}{section.29}%
+\contentsline {subsection}{\numberline {2.3.1}Implementation}{9}{subsection.34}%
+\contentsline {subsection}{\numberline {2.3.2}Conclusions}{9}{subsection.39}%
+\contentsline {section}{\numberline {2.4}Image recognition}{10}{section.40}%
+\contentsline {subsection}{\numberline {2.4.1}Machine Learning and Machine Learning model}{10}{subsection.41}%
+\contentsline {subsection}{\numberline {2.4.2}Other tools and Machine Learning models}{11}{subsection.44}%
+\contentsline {subsection}{\numberline {2.4.3}Neural Network}{11}{subsection.45}%
+\contentsline {subsection}{\numberline {2.4.4}Convolutional Neural Network}{12}{subsection.49}%
+\contentsline {subsubsection}{\numberline {2.4.4.1}Convolution and Convolution operation}{13}{subsubsection.53}%
+\contentsline {subsubsection}{\numberline {2.4.4.2}Architecture}{14}{subsubsection.58}%
+\contentsline {chapter}{\numberline {3}Software development methodology}{17}{chapter.60}%
+\contentsline {section}{\numberline {3.1}Kanban}{17}{section.62}%
+\contentsline {chapter}{\numberline {4}Implementation}{19}{chapter.63}%
+\contentsline {section}{\numberline {4.1}Scripts for fetching and loading ARASAAC pictograms}{19}{section.64}%
+\contentsline {section}{\numberline {4.2}One-shot learning algorithm}{22}{section.69}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{25}{chapter*.72}%

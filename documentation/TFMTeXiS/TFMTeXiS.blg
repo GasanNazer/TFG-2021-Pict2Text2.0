@@ -9,14 +9,19 @@ Reallocating 'name_of_file' (item size: 1) to 27 items.
 A level-1 auxiliary file: Capitulos/Introduccion.aux
 Reallocating 'name_of_file' (item size: 1) to 33 items.
 A level-1 auxiliary file: Capitulos/EstadoDeLaCuestion.aux
-Reallocating 'name_of_file' (item size: 1) to 24 items.
-A level-1 auxiliary file: Capitulos/Capitulo3.aux
-I found no \citation commands---while reading file TFMTeXiS.aux
+Reallocating 'name_of_file' (item size: 1) to 45 items.
+A level-1 auxiliary file: Capitulos/SoftwareDevelopmentMethodology.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
+A level-1 auxiliary file: Capitulos/Implementation.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: Cascaras/bibliografia.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: TeXiS/TeXiS_indice.aux
 I found no \bibdata command---while reading file TFMTeXiS.aux
 I found no \bibstyle command---while reading file TFMTeXiS.aux
-You've used 0 entries,
+You've used 1 entry,
             0 wiz_defined-function locations,
-            88 strings with 608 characters,
+            93 strings with 718 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0
@@ -55,4 +60,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 0
-(There were 3 error messages)
+(There were 2 error messages)

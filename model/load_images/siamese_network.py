@@ -37,23 +37,23 @@ def get_siamese_model(input_shape):
     right_input = Input(input_shape)
 
     # Convolutional Neural Network
-    model = Sequential()
+    model = Sequential(name= "sequential_model")
     model.add(Conv2D(64, (10, 10), activation='relu', input_shape=input_shape,
-                     kernel_initializer=initialize_weights, kernel_regularizer=l2(2e-4)))
-    model.add(MaxPooling2D())
+                     kernel_initializer=initialize_weights, kernel_regularizer=l2(2e-4), name="first_Conv_2D"))
+    model.add(MaxPooling2D(name="first_MaxPooling2D"))
     model.add(Conv2D(128, (7, 7), activation='relu',
                      kernel_initializer=initialize_weights,
-                     bias_initializer=initialize_bias, kernel_regularizer=l2(2e-4)))
-    model.add(MaxPooling2D())
+                     bias_initializer=initialize_bias, kernel_regularizer=l2(2e-4), name="second_Conv_2D"))
+    model.add(MaxPooling2D(name="second_MaxPooling2D"))
     model.add(Conv2D(128, (4, 4), activation='relu', kernel_initializer=initialize_weights,
-                     bias_initializer=initialize_bias, kernel_regularizer=l2(2e-4)))
-    model.add(MaxPooling2D())
+                     bias_initializer=initialize_bias, kernel_regularizer=l2(2e-4), name="third_Conv_2D"))
+    model.add(MaxPooling2D(name="3_MaxPooling2D"))
     model.add(Conv2D(256, (4, 4), activation='relu', kernel_initializer=initialize_weights,
                      bias_initializer=initialize_bias, kernel_regularizer=l2(2e-4)))
-    model.add(Flatten())
+    model.add(Flatten(name="flat"))
     model.add(Dense(4096, activation='sigmoid',
                     kernel_regularizer=l2(1e-3),
-                    kernel_initializer=initialize_weights, bias_initializer=initialize_bias))
+                    kernel_initializer=initialize_weights, bias_initializer=initialize_bias, name="Dense"))
 
     # Generate the encodings (feature vectors) for the two images
     encoded_l = model(left_input)
@@ -64,7 +64,7 @@ def get_siamese_model(input_shape):
     L1_distance = L1_layer([encoded_l, encoded_r])
 
     # Add a dense layer with a sigmoid unit to generate the similarity score
-    prediction = Dense(1, activation='sigmoid', bias_initializer=initialize_bias)(L1_distance)
+    prediction = Dense(1, activation='sigmoid', bias_initializer=initialize_bias, name="final_dense")(L1_distance)
 
     # Connect the inputs with the outputs
     siamese_net = Model(inputs=[left_input, right_input], outputs=prediction)
