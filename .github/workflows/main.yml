@@ -23,18 +23,23 @@ jobs:
       - name: ls -a via ssh to the UCM container
         uses: garygrossgarten/github-action-ssh@release
         with:
-          command: |
-            ls -a
-            cd TFG/TFG-2021-Pict2Text2.0
-            ls -a
+          command: ls -a
           host: ${{ secrets.HOST }}
           port: ${{ secrets.PORT }}
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.SSH_PASSWORD }}
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      # go to the project folder, pull the new changes
+      - name: Update the project in the conatiner
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-          ls -a
+          cd TFG/TFG-2021-Pict2Text2.0
+          ls
+          git pull
+          cd API
+          tmux ls
+          tmux a -t flask-app
+          source venv/bin/activate
+          authbind --deep gunicorn3 -w 1 --threads 3 --bind 0.0.0.0:80 app:app
+
+          
+          
