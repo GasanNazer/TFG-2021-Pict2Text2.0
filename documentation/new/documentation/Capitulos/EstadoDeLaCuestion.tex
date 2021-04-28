@@ -3,7 +3,7 @@
 \chapter{State of the Art}
 \label{State of the Art}
 
-In this chapter, we have briefly defined Augmentative and Alternative Systems of Communication (section 2.1) and pictograms (section 2.2). Also, in section 2.3, we review Pict2Text 1.0, which is the tool that serves as the basis for our work. In section 2.4. we present what solution we have found for the pictogram recognition.
+In this chapter, we have briefly defined Augmentative and Alternative Systems of Communication (section 2.1) and pictograms (section 2.2). Also, in section 2.3, we review Pict2Text 1.0, which is the tool that serves as the basis for our work. In section 2.4. we present the solution that we have found for the recognition of the pictograms included in an image.
 
 
 \section{Augmentative and Alternative Systems of Communication (AASC)}
@@ -17,7 +17,7 @@ Those systems provide various benefits for their users. They prevent or decrease
 
 
 \section{Pictograms}
-An example for AASCs that need additional equipment are the pictograms. They are written signs representing objects from the real world, as shown in Figure \ref{fig:icecream} where a pictogram of an ice cream is shown. Pictograms are used in the day to day life at hospitals, malls, airports, etcetera. They are also widely used by people with special needs, to help with communication and social integration.
+Pictograms are AASCs that need additional equipment. They are written signs representing objects from the real world, as shown in Figure \ref{fig:icecream} where a pictogram of an ice cream is shown. Pictograms are used in the day to day life at hospitals, malls, airports, etcetera. They are also widely used by people with special needs, to help with communication and social integration.
 
 % width=50mm,scale=0.5
 
@@ -32,14 +32,14 @@ An example for AASCs that need additional equipment are the pictograms. They are
 
 \subsection{Pictogram systems}
 
-As pictograms are not universal, various systems exist, such as Blissymbolics, CSUP, Minspeak and ARASAAC.
+As pictograms are not universal, various systems exist, such as Blissymbolics, CSUP, Minspeak and ARASAAC, that we will see in more detail in the following subsections.
 
 \subsubsection{Blissymbolics}
-Blissymbolics\footnote{\href{https://www.blissymbolics.org/}{https://www.blissymbolics.org/}} was created in 1949. It is an ideographic language consisting of several hundred basic symbols, each representing a concept. Each symbol is represented by basic forms (circles, triangles) and universal signs (numbers, punctuation signs) and uses colour codification to mark the grammar category. They can be combined to generate new symbols that represent new concepts. Figure \ref{fig:Basicsymbols} shows some Blissymbolics pictograms. Blissymbolics characters do not correspond to the sounds of any spoken language and have their use in the education of people with communication difficulties.
+Blissymbolics\footnote{\href{https://www.blissymbolics.org/}{https://www.blissymbolics.org/}} was created in 1949. It is an ideographic language consisting of several hundred basic symbols, each representing a concept. Each symbol is represented by basic forms (circles, triangles) and universal signs (numbers, punctuation signs) and uses colour codification to mark the grammar category. They can be combined to generate new symbols that represent new concepts. Figure \ref{fig:Basicsymbols} shows some Blissymbolics pictograms such as house, person, love, etcetera. Blissymbolics characters do not correspond to the sounds of any spoken language and have their use in the education of people with communication difficulties.
 
 \begin{figure}[!ht]
 \begin{center}
-\includegraphics[width=1\textwidth]%
+\includegraphics[width=0.5\textwidth]%
 {Imagenes/Pict2Text2.0/Basicsymbols}
 \caption{Example of Blissymbolics}
 \label{fig:Basicsymbols}
@@ -47,10 +47,19 @@ Blissymbolics\footnote{\href{https://www.blissymbolics.org/}{https://www.blissym
 \end{figure}
 
 \subsubsection{CSUP}
-The Communication System Using Pictograms (CSP), developed in 1981 by Mayer-Johnson, is one of the systems that use pictograms to support interactive non-verbal communication. This AASC can be used with a physical or digital board. CSP uses pictograms not only for objects but with events as well. It is designed in a way that it can be used between a person with a disability and a non-disabled person, child and adult, people speaking different languages, and so on. 
+The Communication System Using Pictograms (CSP), developed in 1981 by Mayer-Johnson, is one of the systems that use pictograms to support interactive non-verbal communication. This AASC can be used with a physical or digital board. As shown in Figure \ref{fig:CSUP} CSP uses pictograms for physical objects: school and mother, for events like talk, draw, and also for descriptions as big, cold, close, etcetera. It is designed in a way that it can be used between a person with a disability and a non-disabled person, child and adult, people speaking different languages, and so on. 
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/csup}
+\caption{Example of Communication System Using Pictograms (CSP)}
+\label{fig:CSUP}
+\end{center}
+\end{figure}
 
 \subsubsection{Minspeak}
-Minspeak is a pictographic system created by Bruce Baker in 1992. Unlike other systems, this system is based on multi-meaning icons whose meaning is determined by the speech therapist and the user. As can be seen in Figure \ref{fig:Minspeak}, two or three icons are combined, determined by rule-driven patterns, to code vocabulary.
+Minspeak is a pictographic system created by Bruce Baker in 1992. Unlike other systems, this system is based on multi-meaning icons whose meaning is determined by the speech therapist and the user. Two or three icons can combine, determined by rule-driven patterns, to code vocabulary. An example for this can be seen in Figure \ref{fig:Minspeak}, where the icons for house and a bed combine to make the word bedroom. In the same figure we can observe how changing the order of the icons can change the meaning - the combination of bed and clothes after that means wardrobe, but if we swap the icons the meaning is pijamas.
 
 \begin{figure}[!ht]
 \begin{center}
@@ -92,10 +101,12 @@ In ARASAAC one word can be represented by various pictograms. In Figure \ref{fig
 
 Verbs come with a different pictogram for every conjugation, and the tense is determined by pictograms representing yesterday, today, and tomorrow.
 
-ARASAAC is free to use, internationally recognized, and has a wide variety of pictograms. For those reasons, we decided to use the pictograms we can download from their website or their API.
+ARASAAC is free to use under Creative Commons license, internationally recognized, and has a wide variety of pictograms. ARASAAC also provides a web page from where you can search and/or download the pictograms. For the developers an API is provided that gives functionalities such as: obtaining a pictogram given the id, or the pictograms corresponding to a certain word.
 
 \subsection{Communication based on pictograms}
-Communication via pictograms happens with the help of a board or a communication book, example of which you can see in Figure \ref{fig:board} - an ACC communication book, where the person points to the pictograms one by one to form a sentence. The complexity of the phrases is limited, usually consisting only of subject, verb, and object. Often, only the most significant words are used, although ARASAAC has pictograms for determinatives and prepositions.
+Communication via pictograms happens with the help of a board or a communication book. Figure \ref{fig:board} shows an ACC communication book, where the person points to the pictograms one by one to form a sentence. The complexity of the phrases with pictograms is limited, usually consisting only of subject, verb, and object. Often, only the most significant words are used, although ARASAAC has pictograms for determinatives and prepositions.
+
+The ARASAAC pictograms for verbs do not have conjugations. That means that no matter the tense, number, and person we want to construct the sentence for, we have to use the same pictogram. In a phrase, past, present, and future are expressed by the pictograms for yesterday, today, and tomorrow respectively.
 
 \begin{figure}[!ht]
 \begin{center}
@@ -109,10 +120,7 @@ Communication via pictograms happens with the help of a board or a communication
 \section{Pict2Text 1.0}
 As described previously, Pict2Text 1.0 is the base of our project. The first version of this project is a web application that allows the translation of sentences written using pictograms to natural language (Spanish).
 
-
-When entering the website\footnote{\href{https://holstein.fdi.ucm.es/tfg-pict2text}{https://holstein.fdi.ucm.es/tfg-pict2text}} the user can see on the left part, a big panel, the pictogram sentence panel, with a caption `Pictograms` above it, and a button `Traducir` below it. On the right part, an input box with the caption `Nombre del picto`, and a button `Buscar` on the left of it.
-
-We can write and search a specific word from the ARASAAC pictogram database and display it into a panel on the right part of the web page. After that, we can include the chosen one into the pictogram sentence panel, from where later the message is translated into natural language.
+When entering the website\footnote{\href{https://holstein.fdi.ucm.es/tfg-pict2text}{https://holstein.fdi.ucm.es/tfg-pict2text}} the user can see on the left part, the pictogram sentence panel, with a caption `Pictograms` above it, and a button `Traducir` below it. On the right part, an input box with the caption `Nombre del picto`, and a button `Buscar` on the left of it. The user can write and search a specific word from the ARASAAC pictogram database and display it into a panel on the right part of the web page. After that, they can include the chosen one into the pictogram sentence panel, from where later the message is translated into natural language.
 
 To search for a specific pictogram, the user should write the world they are looking for in the input box of the right side and click the button 'Buscar'. In Figure \ref{fig:pict2text_v1_2} it can be seen the search for the word 'Hombre'.
 
@@ -137,7 +145,7 @@ After searching the pictogram, the user needs to include it into the left panel 
 \end{center}
 \end{figure}
 
-We can form a sentence by repeating the previous actions with other words. Figure \ref{fig:pict2text_v1_4} displays a translation of a sentence written with the pictograms corresponding to the words ``Hombre'', ``Comer'', ``pizza''. As we can see that is translated to "El hombre come una pizza" ("The man is eating a pizza").
+The user can form a sentence by repeating the previous actions with other words. Figure \ref{fig:pict2text_v1_4} displays a translation of a sentence written with the pictograms corresponding to the words ``Hombre'', ``Comer'', ``pizza''. As we can see the sentence is translated to "El hombre come una pizza" ("The man is eating a pizza").
 
 \begin{figure}[!ht]
 \begin{center}
@@ -155,31 +163,27 @@ The framework Django\footnote{\href{https://www.djangoproject.com/}{Django}} was
 
 The API of ARASAAC\footnote{\href{https://arasaac.org/developers/api}{ARASAAC API}} provides the searching mechanism used to match words to pictograms, the graphical images of pictograms, and additional information about them.
 
-When the pictograms are selected, Pict2Text 1.0 constructs the sentence by looking for the subject, verb and proper tense, object, etcetera. To do that Spacy\footnote{\href{https://spacy.io/}{Spacy}}, a python library, was used. The library is with a high accuracy therefore it is utilized for advanced natural language processing.
+When the pictograms are selected, Pict2Text 1.0 constructs the sentence by looking for the subject, verb and proper tense, object, etcetera. To do that Spacy\footnote{\href{https://spacy.io/}{Spacy}}, a python library for advanced natural language processing with a high accuracy, was used. The library has an additional support for tokenization -  the process of demarcating and possibly classification of words in a given sentence, for more than 65 languages makes it suitable for training on a custom dataset.
 
 \subsection{Conclusions}
-Although the first version of Pict2Text translates messages with pictograms into natural language, it requires the user to manually select the pictograms they want to use in the construction of the sentence with pictograms. Writing the words is impossible for people with disabilities who need pictograms to communicate if it was not, they would have used the natural language in the first place.
+Although Pict2Text 1.0 translates messages with pictograms into natural language, it requires the user to manually select the pictograms they want to use in the construction of the sentence with pictograms. Constructing the sentence in this way is not possible for end users of the application. 
 
-The algorithm used by Pict2Text 1.0 allows the correct translation of simple phrases with one subject, one verb, and one object. One of our goals is to improve that performance and provide the opportunity to construct complex sentences with a high level of assertion. 
+In addition, although Pict2Text 1.0 provides a good translation of simple sentences, having only one subject, verb, and object, there are aspects that should be improved in the translation to increase its coverage.
 
 \section{Image recognition}
 
-To reach the first goal we have established - recognition of pictograms on a given image, we have to be able to detect the pictograms in the image and then tell which image to which ARASAAC pictogram corresponds to. First we need a machine learning algorithm to identify the pictograms on the image. Once the pictograms are identified, we have to determine the exact pictograms shown on the image. Due to a different light, angle or colouring the image of the pictogram may appear different from the original digital version of it, which makes the comparison pixel by pixel impossible. That’s why we need a second machine learning model that will be able to tell us which are the pictograms on the picture even with the aforementioned inconsistencies. 
+To reach the first goal we have established - recognition of pictograms included in a given image, we have to be able to detect the pictograms in the image and its correspondence with ARASAAC pictograms. First we need a machine learning algorithm to identify the pictograms that the image contains. Once the pictograms are identified, we have to determine the exact pictograms shown on the image. Due to a different light, angle or colouring the image of the pictogram may appear different from the original digital version of it, which makes the comparison pixel by pixel impossible. That's why we need a second machine learning model that will be able to tell us which are the pictograms on the picture even with the aforementioned inconsistencies.
 
 \subsection{Machine Learning and Machine Learning model}
 Machine learning (ML)\footnote{\href{https://en.wikipedia.org/wiki/Machine_learning}{Machine learning}} is the study of computer algorithms that improve automatically through experience. It is seen as a subset of artificial intelligence. Machine learning algorithms build a model based on sample data, known as "training data", to make predictions or decisions without being explicitly programmed to do so. Machine learning algorithms are used in a wide variety of applications, such as email filtering and computer vision, where it is difficult or unfeasible to develop conventional algorithms to perform the needed tasks.
 
 A machine learning model\footnote{\href{https://docs.microsoft.com/en-us/windows/ai/windows-ml/what-is-a-machine-learning-model}{What is a machine learning model?}} is a file that has been trained to recognize certain types of patterns. You train a model over a set of data, providing it an algorithm that it can use to reason over and learn from those data.
-Once you have trained the model, you can use it to reason over data that it hasn't seen before, and make predictions about those data
-
-\subsection{Other tools and Machine Learning models}
-After analyzing the ARASAAC Spanish pictograms - our dataset, we realized there are several difficulties and problems we have to consider. The main one is that there are above 8000 pictograms and more than 6000 represent different concepts. 
-Having a dataset with as few representatives of the different classes as ours does not apply to most of the ML models. To train a model from scratch a dataset with a lot of representatives of the different classes is needed. In our case with a single or less than 3 applying even the simplest shallow Neural Network, Logistic Regression will overfit to the data and gives a high but unrealistic accuracy. Providing images not included in the original dataset to an overfitted model will show poor accuracy and incorrect results. With a more complex Neural Network model, the situation described above  will be the same, even worse, because they need even more data as they find better functions and more distinct features of the given images.
+Once you have trained the model, you can use it to reason over data that it hasn't seen before, and make predictions about those data.
 
 \subsection{Neural Network}
 Artificial neural networks (ANNs)\footnote{\href{https://en.wikipedia.org/wiki/Artificial_neural_network}{Artificial neural network}}, usually called neural networks (NNs), are computing systems vaguely inspired by the biological neural networks that constitute animal brains.
 An ANN is based on a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain. Each connection, like the synapses in a brain, can transmit a signal to other neurons. An artificial neuron that receives a signal then processes it and can signal neurons connected to it. The "signal" at a connection is a real number, and the output of each neuron is computed by some non-linear function of the sum of its inputs. The connections are called edges. Neurons and edges typically have a weight that adjusts as learning proceeds. The weight increases or decreases the strength of the signal at a connection. Neurons may have a threshold such that a signal is sent only if the aggregate signal crosses that threshold. Typically, as presented in Figure \ref{fig:NN}, neurons are aggregated into layers. Different layers may perform different transformations on their inputs. Signals travel from the first layer (the input layer) to the last layer (the output layer), possibly after traversing the layers multiple times.
-   
+
 \begin{figure}[!ht]
 \begin{center}
 \includegraphics[width=50mm,scale=0.5]%
@@ -192,19 +196,20 @@ An ANN is based on a collection of connected units or nodes called artificial ne
 Supervised learning is learning through pre-labelled inputs, which act as targets. For each training example there will be a set of input values (vectors) and one or more associated designated output values. The goal of this form of training is to reduce the models overall classification error, through correct calculation of the output value of training example by training. 
 Unsupervised learning differs in that the training set does not include any labels. Success is usually determined by whether the network is able to reduce or increase an associated cost function. However, it is important to note that most image-focused pattern-recognition tasks usually depend on classification using supervised learning\footnote{\href{https://arxiv.org/pdf/1511.08458.pdf}{An Introduction to Convolutional Neural Networks}}.
 
+One of the largest limitations of traditional forms of ANN is that they tend to struggle with the computational complexity required to compute image data. Common machine learning benchmarking datasets such as the MNIST\footnote{\href{http://yann.lecun.com/exdb/mnist/}{MNIST}} database of handwritten digits are suitable for most forms of ANN, due to its relatively small image dimensionality of just 28 x 28. With this dataset, a single neuron in the first hidden layer will contain 784 weights (28x28x1 where 1 bare in mind that MNIST is normalised to just black and white values), which is manageable for most forms of ANN. If you consider a more substantial coloured image input of 64 x 64, the number of weights on just a single neuron of the first layer increases substantially to 12288(64x64x3- Height, Width, RGB\footnote{\href{https://en.wikipedia.org/wiki/RGB_color_model}{RGB}}
+ channels). Also, take into account that to deal with this scale of input, the network will also need to be a lot larger than one used to classify colour-normalised MNIST digits, then you will understand the drawbacks of using such models.
+
 
 \subsection{Convolutional Neural Network}
 
 Convolutional Neural Networks (CNNs)\footnote{\href{https://arxiv.org/pdf/1511.08458.pdf}{An Introduction to Convolutional Neural Networks}} are analogous to traditional ANNs in that they are composed of neurons that self-optimize through learning. Each neuron will still receive input and perform an operation, such as a scalar product followed by a nonlinear function - the basis of countless ANNs. From the input raw image vectors to the final output of the class score, the entire network will still express a single perceptive score function (the weight). The last layer will contain loss functions associated with the classes.
-The only notable difference between CNNs and traditional ANNs is that CNNs are primarily used in the field of pattern recognition within images. This allows us to encode image-specific features into the architecture, making the network more suited for image-focused tasks - whilst further reducing the parameters required to set up the model. 
-One of the largest limitations of traditional forms of ANN is that they tend to struggle with the computational complexity required to compute image data. Common machine learning benchmarking datasets such as the MNIST\footnote{\href{http://yann.lecun.com/exdb/mnist/}{MNIST}} database of handwritten digits are suitable for most forms of ANN, due to its relatively small image dimensionality of just 28 x 28. With this dataset, a single neuron in the first hidden layer will contain 784 weights (28x28x1 where 1 bare in mind that MNIST is normalised to just black and white values), which is manageable for most forms of ANN. If you consider a more substantial coloured image input of 64 x 64, the number of weights on just a single neuron of the first layer increases substantially to 12288(64x64x3- Height, Width, RGB\footnote{\href{https://en.wikipedia.org/wiki/RGB_color_model}{RGB}}
- channels). Also, take into account that to deal with this scale of input, the network will also need to be a lot larger than one used to classify colour-normalised MNIST digits, then you will understand the drawbacks of using such models.
- 
-\subsubsection{Convolution and Convolution operation}
-The convolution operation\footnote{\href{https://en.wikipedia.org/wiki/Convolution}{Convolution}} is one of the fundamental building blocks of a Convolutional Neural Network.
-Although in mathematics (in particular, functional analysis), convolution is a mathematical operation on two functions (f and g) that produces a third function that expresses how the shape of one is modified by the other, in computer vision, this term has a slightly different meaning (the convolution as described in the use of convolutional neural networks, bellow, is a 'cross-correlation').
 
-In the context of a convolutional neural network, convolution is a linear operation that involves the multiplication of a set of weights with the input, much like in a traditional neural network. Given that the technique was designed for two-dimensional input, the multiplication is performed between an array of input data and a two-dimensional array of weights, called a filter or a kernel.
+The only notable difference between CNNs and traditional ANNs is that CNNs are primarily used in the field of pattern recognition within images. This allows us to encode image-specific features into the architecture, making the network more suited for image-focused tasks - whilst further reducing the parameters required to set up the model.
+
+One of the fundamental building blocks of a Convolutional Neural Network is the convolution operation\footnote{\href{https://en.wikipedia.org/wiki/Convolution}{Convolution}}, which is explained in the next subsection. 
+ 
+\subsubsection{Convolution operation}
+Although in mathematics (in particular, functional analysis), convolution is a mathematical operation on two functions (f and g) that produces a third function that expresses how the shape of one is modified by the other, in computer vision, this term has a slightly different meaning (the convolution as described in the use of convolutional neural networks, bellow, is a 'cross-correlation'). In the context of a convolutional neural network, convolution is a linear operation that involves the multiplication of a set of weights with the input, much like in a traditional neural network. Given that the technique was designed for two-dimensional input, the multiplication is performed between an array of input data and a two-dimensional array of weights, called a filter or a kernel.
 The filter is smaller than the input data, and the type of multiplication is applied between a filter-sized patch of the input, and the filter is a dot product. A dot product is an element-wise multiplication between the filter-sized patch of the input and filter, which is then summed, always resulting in a single value. Because it results in a single value, the operation is often referred to as the `scalar product`.
 Using a filter smaller than the input is intentional as it allows the same filter (set of weights) to be multiplied by the input array multiple times at different points on the input. Specifically, the filter is applied systematically to each overlapping part or filter-sized patch of the input data, left to right, top to bottom.
 If the filter is designed to detect a specific type of feature in the input, then the application of that filter systematically across the entire input image allows the filter an opportunity to discover that feature anywhere in the image.
@@ -212,7 +217,7 @@ The output from multiplying the filter with the input array one time is a single
 
 \begin{figure}[!ht]
 \begin{center}
-\includegraphics[width=1\textwidth]%
+\includegraphics[width=0.5\textwidth]%
 {Imagenes/Pict2Text2.0/convolution}
 \caption{Filtering over the input image and constructing the feature map.}
 \label{fig:convolution}
@@ -231,8 +236,8 @@ As you can see in the Figure \ref{fig:convolution_operation}, 3 by 3 filter for 
 \end{center}
 \end{figure}
 
-\subsubsection{Architecture}
-A typical CNN starts with the input image, sent to a network, formed by convolutional and pooling layers where the learning of the features of the image is performed. Later the final result of these is flattened, forming the input of the fully connected layers (neural network layers) with a classification (activation) function in the end. This way, the characteristics of the input image are detected in the beginning, and later, the picture is classified according to them. IN Figure \ref{fig:cnn_architecture} you can see a CNN architecture.
+\subsubsection{Convolutional Neural Network Architecture}
+A typical CNN starts with the input image, sent to a network, formed by convolutional and pooling layers where the learning of the features of the image is performed. Later the final result of these is flattened, forming the input of the fully connected layers (neural network layers) with a classification (activation) function in the end. This way, the characteristics of the input image are detected in the beginning, and later, the picture is classified according to them. IN Figure \ref{fig:cnn-architecture} you can see a CNN architecture can be seen.
 
 
 \begin{figure}[!ht]
@@ -240,9 +245,56 @@ A typical CNN starts with the input image, sent to a network, formed by convolut
 \includegraphics[width=1\textwidth]%
 {Imagenes/Pict2Text2.0/CNN-architecture}
 \caption{A convolutional neural network formed by several features layers followed by classifications.}
-\label{fig:CNN-architecture}
+\label{fig:cnn-architecture}
 \end{center}
 \end{figure}
+
+\subsection{One-shot learning algorithm}
+Most computer vision machine learning algorithms are based on object categorization and require a large amount of data. Instead of treating the task as a classification problem, one-shot learning turns it into a difference-evaluation problem. That allows the algorithm to be able to categorize objects with one, or only a few, training examples. After the algorithm is trained, it takes two inputs and returns a value that shows the similarity between the two pictures. If the two inputs are similar, the algorithm returns a value smaller than a specific threshold, for example 0.001, and if they are not the same object, the returned value will be higher than the threshold. 
+
+One shot learning uses an architecture called Siamese neural network, that is explained in the following subsection. During the training phase some hyperparameters should be tuned - the number of iterations - the number of times the algorithm's parameters are updated, number of pairs to compare during every iteration, etcetera. 
+
+During the training phase one-shot learning trains to be able to measure the distance between the features in two inputs. To achieve that, the algorithm uses a function called triplet loss. This function trains the network giving it 3 inputs: an anchor, a positive example, and a negative one. The network should adjust its parameters in a way that the feature values for the anchor and the positive example are very close, while those of the anchor and negative example - very different. 
+
+An example for one-shot learning is the article One Shot Learning with Siamese Networks using Keras, which will also be explained in a following subsection. The problem it solves is letters recognition. The dataset the authors use consists of 1623 characters from 50 alphabets. The images are of handwritten characters in grayscale with 105x105 resolution, with only 20 examples of each of the 1623 classes.
+
+\subsubsection{Siamese Neural Network}
+Usually, neural networks learn to predict a certain amount of classes. In that case, if we add a new class, we have to retrain the neural network with the new classes and the new data. Also, the traditional neural network requires a large volume of data to train on. On the other hand, the Siamese Neural Networks learns how to find similarity functions, patterns that bring classes together, and that enables us to add new classes without training the model again.
+
+In Figure \ref{fig:snn-architecture} we can see the architecture of a Siamese neural network. It consists of two identical twin subnetworks joined at their outputs. The subnetworks have the same configuration with the same parameters and weights. We feed each input that we want to compare into one of the identical models, usually composed of various convolutional layers. Each model outputs an n-dimensional embedding where the dimensions represent a  pattern found in the input. Those embeddings are given to the similarity function. This is a real-valued function that quantifies the similarity between two objects by their feature vectors - vectors that represent numeric or symbolic characteristics in a way that is easier to analyze. In the end, the siamese neural network returns a similarity score that represents the level of similarity between the inputs. The smaller the similarity score is, the more similar the pictures are, and the opposite - if it is a big number the inputs are not similar at all.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/SNN-architecture}
+\caption{Architecture of the Siamese Neural Network.}
+\label{fig:snn-architecture}
+\end{center}
+\end{figure}
+
+On the other hand, the cons of the SNN compared to the traditional neural networks are that it needs more training and it takes more time than normal networks and doesn’t output probabilities.
+
+\subsubsection{Keras}
+Keras is a deep learning API written in Python, running on top of the machine learning platform TensorFlow. It was developed with a focus on enabling fast experimentation. 
+
+TensorFlow is an end-to-end open source platform for machine learning. It has a comprehensive, flexible ecosystem of tools, libraries, and community resources that lets researchers push the state-of-the-art in ML and developers easily build and deploy ML-powered applications.
+
+TensorFlow was originally developed by researchers and engineers working on the Google Brain team within Google's Machine Intelligence Research organization to conduct machine learning and deep neural networks research. The system is general enough to be applicable in a wide variety of other domains, as well.
+
+Keras is the high-level API of TensorFlow 2: an approachable, highly-productive interface for solving machine learning problems, with a focus on modern deep learning. It provides essential abstractions and building blocks for developing and shipping machine learning solutions with high iteration velocity.
+
+The data preprocessing module is one of the essential modules in Keras it provides different utilities for image, timeseries, and text preprocessing. The image preprocessing submodule includes the functions image_dataset_from_directory, load_img, img_to_array, flow_from_directory and the class ImageDataGenerator.
+
+The function image_dataset_from_directory provides the functionality to load in memory images from a specific directory. In addition to that, it can automatically generate the labels of the images, change their size, separate the loaded images into batches or in train and validation sets.
+
+The function load_img provides the functionality to load a single image in memory. load_img comes with additional capabilities like changing the size of the image.
+
+The function img_to_array provides the functionality to convert a PIL Image(Pillow library format) instance to a Numpy array. Depending on the image color channels the return array will be 2D for grayscale, 3D for RGB, or 4D for RGB-A.
+
+
+
+
+
 
 
 

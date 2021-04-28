@@ -1,17 +1,18 @@
 % !TeX encoding = ISO-8859-1
-\chapter{Implementation}
-\label{Implementation}
+\chapter{Pict2Text 2.0}
+\label{Pict2Text 2.0}
 
-In this chapter, we are going to present all we have developed for Pict2Text 2.0. In section 4.1 we describe the pre required scripts we had created to download the dataset and preprocess it. As one of the main goals of this project is to provide the functionality to import a picture of a message written with pictograms and translate it, we had to construct a machine learning model to do that in 4.2 we describe the actual implementation of it. 
+In this chapter, we are going to present Pict2Text 2.0. In section 4.1 we describe the pre required scripts we had created to download all the pictograms from ARASAAC and preprocess them. As one of the main goals of this project is to provide the functionality to import a picture of a message written with pictograms and translate it, we had to construct a machine learning model to do that. In section 4.2 we describe the machine learning model implemented to recognize an image of a single pictogram. 
 
-\section{Scripts for fetching and loading ARASAAC pictograms}
-We started by obtaining our dataset, the ARASAAC pictograms in Spanish. We created a python script that uses a REST client to call the ARASAAC API. The script does a request to the ARASAAC API, returning the information of all pictograms in Spanish. Later it downloads every one of them calling to the same API. The fetched pictograms are stored locally in separate folders with a maximum size of 4000 images. As the process of downloading the pictograms required more than 3 hours for the complete fetching of over 11000 images, we included concurrency and reduced the execution time to under an hour. 
+\section{Loading ARASAAC pictograms}
+First of all, we needed to obtain the ARASAAC pictograms dataset in Spanish, in order to be able to train our model, and later to compare the given image with the whole dataset. We created a Python script that uses a REST client to call the ARASAAC API. The script does a request to the ARASAAC API, which returns the information of all ARASAAC pictograms in Spanish. Later it downloads every one of them calling to the same API. The fetched pictograms are stored locally in separate folders with a maximum size of 4000 images. As the process of downloading the pictograms required more than 3 hours for the complete fetching of over 11000 images, we included concurrency and reduced the execution time to under an hour. 
 
-Having the dataset fetched we had to load it in memory in a way that the model we had constructed could use it. We have implemented another python script to achieve that. In it, we have used the image preprocessing module of Keras, to read the pictograms from a directory and store them in memory. All ARASAAC pictograms are in the image format png and during loading, we had to configure the module of Keras to load them as four-color channels- RGBA and resize them to 105 height by 105 width.
+Having the dataset fetched we had to load it in memory in a way that the model we had constructed could use it. We have implemented another python script to achieve that. In it, we have used the image preprocessing module of Keras, explained in chapter 2, to read the pictograms from a directory and store them in memory. All ARASAAC pictograms are in the image format png and during loading, we had to configure the module of Keras to load them as four-color channels- RGBA and resize them to 105 height by 105 width.
 
-In the pictogram dataset, for most of the words, there was a single pictogram representing an actual concept. Due to the lack of images, a machine learning model could not be able to extract a pattern for every concept, hence the algorithm would provide poor results. As a result of that, during the preprocessing of the dataset, we needed to augment the dataset and generate different representatives of every one of the pictograms. To achieve that, we had created three augmentations scripts. All of them use Keras's preprocessing module but they differ in the way they manipulate the pictograms. Keras's module includes the class ImageDataGenerator which comes with different image manipulation and augmentation capabilities like changing the brightness of an image, rotating it, zooming it, and more.
-
-The first script changes the brightness of the pictogram. We provided a range between 0.2 and 1.0 to the ImageDataGenerator, specifying that the augmented image brightness should take a random value in that range. The two extremes represent a very dark and very bright image. In Figure \ref{fig:bee} is shown the original pictogram of a bee(`abeja`).
+\section{Processing ARASAAC pictograms}
+When the user uploads a picture of a pictogram, likely, it will not be the same as the original online version. It could be rotated, the colours may not be the same, it could be blurred. As a result of that, during the preprocessing of the dataset, we needed to augment the dataset and generate different representatives of every one of the pictograms. To achieve that, we had created three augmentations scripts. All of them use Keras's preprocessing module but they differ in the way they manipulate the pictograms. Keras's module includes the class ImageDataGenerator which comes with different image manipulation and augmentation capabilities like changing the brightness of an image, rotating it, zooming it, and more.
+\subsection{Changing brightness}
+The first script changes the brightness of the pictogram. We provided a range between 0.2 and 1.0 to the ImageDataGenerator, specifying that the augmented image brightness should take a random value in that range. The two extremes represent a very dark and very bright image. In Figure \ref{fig:bee} is shown the original pictogram of a bee (`abeja`).
 
 \begin{figure}[!ht]
 \begin{center}
@@ -22,7 +23,7 @@ The first script changes the brightness of the pictogram. We provided a range be
 \end{center}
 \end{figure}
 
-In figure \ref{fig:beeShade} are shown augmented images of the pictogram bee(`abeja`) using our random brightness augmentation script.
+In figure \ref{fig:beeShade} are shown augmented images of the pictogram bee (`abeja`) using our random brightness augmentation script.
 
 \begin{figure}[!ht]
 \begin{center}
@@ -34,14 +35,15 @@ In figure \ref{fig:beeShade} are shown augmented images of the pictogram bee(`ab
 {Imagenes/Pict2Text2.0/beeShade3}
 \includegraphics[width=25mm,scale=0.25]%
 {Imagenes/Pict2Text2.0/beeShade4}
-\caption{Augmented images of the pictogram bee(`abeja`) using the random brightness augmentation script.}
+\caption{Augmented images of the pictogram bee (`abeja`) using the random brightness augmentation script.}
 \label{fig:beeShade}
 \end{center}
 \end{figure}
 
 This type of augmentation will help the model to detect the concept represented in the pictogram independently of the light or brightness conditions from the provided image.
 
-The second augmentation script rotates the pictogram randomly. Similar to the brightness augmentation script this one is using the ImageDataGenerator class, specifying the rotation\_range attribute to 90 degrees. This specification will augment the provided pictogram generating random 90 degrees rotations. In Figure \ref{fig:beeUpDown} are shown two augmented images of the bee pictogram using the random augmentation script.
+\subsection{Rotating images}
+The second script rotates the pictogram randomly. Similar to the brightness augmentation script this one is using the ImageDataGenerator class, specifying the rotation\_range attribute to 90 degrees. This specification will augment the provided pictogram generating random 90 degrees rotations. In Figure \ref{fig:beeUpDown} are shown two augmented images of the bee pictogram using the rotating script.
 
 \begin{figure}[!ht]
 \begin{center}
@@ -49,14 +51,15 @@ The second augmentation script rotates the pictogram randomly. Similar to the br
 {Imagenes/Pict2Text2.0/beeUp}
 \includegraphics[width=30mm,scale=0.5]%
 {Imagenes/Pict2Text2.0/beeDown}
-\caption{Two 90 degree rotations of the pictogram bee(`abeja`) generated using the augmentation script.}
+\caption{Two 90 degree rotations of the pictogram bee (`abeja`) generated using the augmentation script.}
 \label{fig:beeUpDown}
 \end{center}
 \end{figure}
 
 This type of augmentation will help the model to recognize the pictogram even if the provided image of it is rotated or tilted aside.
 
-The third augmentation script changes the color of the pictogram. The script iterates through the width and height of the given pictogram and changes randomly the RGB channels of it. The script does not change the alpha channel of the image as we would like to keep the original, in most cases transparent, background. In Figure \ref{fig:beeColour} are shown four augmentations of the pictogram bee(`abeja`) using the color augmentation script.
+\subsection{Changing colours}
+The third augmentation script changes the color of the pictogram. The script iterates through the width and height of the given pictogram and changes randomly the RGB channels of it. The script does not change the alpha channel of the image as we would like to keep the original background. In Figure \ref{fig:beeColour} are shown four augmentations of the pictogram bee (`abeja`) using the color augmentation script.
 
 \begin{figure}[!ht]
 \begin{center}
@@ -68,7 +71,7 @@ The third augmentation script changes the color of the pictogram. The script ite
 {Imagenes/Pict2Text2.0/beeColour3}
 \includegraphics[width=25mm,scale=0.25]%
 {Imagenes/Pict2Text2.0/beeColour4}
-\caption{Four color augmented images of the pictogram bee(`abeja`) generated using the color augmentation script.}
+\caption{Four color augmented images of the pictogram bee (`abeja`) generated using the color augmentation script.}
 \label{fig:beeColour}
 \end{center}
 \end{figure}
@@ -77,9 +80,9 @@ This type of augmentation will help the model to find the pictogram even if the 
 
 \section{One-shot learning algorithm}
 
-For the implementation of the one-shot learning algorithm, we have taken an already implemented one from the \emph{One-Shot Learning with Siamese Networks using Keras} \cite{oneShot}. The implementation shown in the article is suitable for our needs, given that the problem with letter recognition is similar to the one with pictogram recognition. 
+For the implementation of the one-shot learning algorithm, we have taken an already implemented one from the \emph{One-Shot Learning with Siamese Networks using Keras} \cite{oneShot}, recognizing an image of a single letter, as we have explained previously in chapter 2. The implementation shown in the article is suitable for our needs, given that the problem with letter recognition is similar to the one with pictogram recognition. 
 
-A difference between the two problems - the one solved in the article and the one we are solving, is the dataset. The original algorithm is implemented to work with a dataset formed by pictures of letters from different alphabets. The aforementioned letters the original algorithm recognizes are in grayscale, and our pictograms are in PNG format. As shown in Figure \ref{fig:grayscale}, in machine learning a picture in grayscale is represented by a two-dimensional matrix, with dimensions the width and the height of the picture. Each cell corresponds to 1 pixel and contains a number between 0 and 255, representing the shade of grey where 0 is black and 255 is white. On the other hand, as you can see in Figure \ref{fig:rgb}, the colorful images need three matrices for the channels red, green, and blue for every pixel. In our case, we have a fourth matrix representing the alpha channel (the opacity of the picture), as it is included in the RGBA, png images we use. For that reason, we had to include one additional layer to the input matrices used by the algorithm for the colors and the opacity of our data.
+A difference between the two problems - the one solved in the article and the one we are solving, is the dataset. The original algorithm is implemented to work with a dataset formed by pictures of letters from different alphabets. The aforementioned letters are in grayscale, and our pictograms are in PNG format. As shown in Figure \ref{fig:grayscale}, in machine learning a picture in grayscale is represented by a two-dimensional matrix, with dimensions the width and the height of the picture. Each cell corresponds to 1 pixel and contains a number between 0 and 255, representing the shade of grey where 0 is black and 255 is white. On the other hand, as you can see in Figure \ref{fig:rgb}, the colorful images need three matrices for the channels red, green, and blue for every pixel. In our case, we have a fourth matrix representing the alpha channel (the opacity of the picture), as it is included in the RGBA, png images we use. For that reason, we had to include one additional layer to the input matrices used by the algorithm for the colors and the opacity of our data.
 
 \begin{figure}[!ht]
 \begin{center}
@@ -110,7 +113,37 @@ After we have reached the maximum accuracy, we took 100 different non-augmented 
 The problems we faced, which was the main reason why we used only 22 pictograms (440 images with the augmentation) and only 100 pictograms for the test set, were the following. First, we couldn't load all the pictograms we obtained from ARASAAC to try it at once because of a lack of system memory. The second problem was the time the model takes to make a prediction. To correctly compute how similar a given pictogram is to every other pictogram in the test set, the model requires pairs of images. A pair is constructed by the pictogram we want to recognize and one of the test sets. Mapping every pictogram of the test set to the given one creates the list of pairs we give to the algorithm to make predictions on.
 
 The objective is to have all pictograms of the ARASAAC dataset to the test set so that we could compare a given pictogram against all others.
+\subsection{First Iteration of the One-shot model}
+In the first iteration(implementation) of the One-shot model we had constructed, we detected several problems. 
 
+First, we were able to train it with a small number of pictograms (22 pictograms with augmentation 440) because we faced a problem loading more pictograms as we were not batching them during loading. As the model was trained with this small number of pictograms it was overfitting. Although the non-realistic tests were showing good results, the realistic testing was affected by the overfitting problem and its result was bad.
 
+The second problem our algorithm had was the consumption of system memory. This problem was also related to not loading the images in batches.
+
+The third problem our algorithm had was related to the prediction time and the pairing before the predictions step. Although we tried a small testing set of 100 pictograms the construction of the pairs was taking a lot of time. Also as it was not compared against all other pictograms from the whole dataset it was not a real representation of the actual requirement of the algorithm(The objective of the model is to detect a pictogram from a given image of a pictogram.
+
+\subsection{Second Iteration of the One-shot model}
+In the second iteration of the algorithm we constructed, we aimed to fix the problems from its previous implementation. One of the biggest problems we faced in the first implementation was related to the way we were loading the pictograms because of it we were facing memory capacity problems, we were not able to train the model sufficiently hence it was overfitting and it was giving bad results. As a result of that, the first thing we corrected in the second iteration was loading the images in batches.
+
+To load the images in batches we used the method flow_from_directory from ImageDataGenerator class of the preprocessing module of Keras. The method takes as an input the directory name(where the augmented pictograms are situated), the size of the pictograms(we specified size of 105 width by 105 height), the color channels(in our case RGBA), the batch size(we selected to have batches of 3 pictograms which augmented have a size of 60 images) and returns a DirectoryIterator which contains the loaded images separated in batches and other relevant information. The above-described way of creating a DirectoryIterator with the batches of images was used to load the train, validation, and testing sets.
+
+By loading the images in batches we needed to adapt our previous implementation of the algorithm changing the function for creating pairs of half similar images and half different used to create the input and the target for the model to train on. Also, we needed to modify the function for mapping a pictogram to all other pictograms used in the prediction of the model. 
+
+Additionally, we added a new function to display all pictograms of a currently loaded batch to visually verify the loaded images.
+In the training of the model, the only change we made in the new version is calling next of the DirectoryIterator, on every training iteration, getting the next batch of pictograms of the training set.
+
+\subsubsection{Testing the model}
+In this iteration of the model, we continue using the previous testing mechanism, taking a random image from the testing set and searching the most similar to it from the same data set. This test was showing 100\% accuracy, correctly predicting all pictograms of the test set in the first iteration of the model. Although this result, we detected that this test was not sufficient to verify the effectiveness of our model. The two main reasons for that are:
+\begin{itemize}
+\item The test set consisted of a sample of the original pictograms from ARASAAC. These pictograms had the same high quality, format, and characteristics as the training set used to train the model (the pictograms in the test and train sets were different but their domain distribution was the same) and they were not representing the real use case. In it, the users of the application are going to import an image(a photo) of a message written with pictograms to the system. This photo will never have the quality or the characteristics of the original pictograms used during the training. Hence the model will never predict correctly.
+
+\item The testing function we were using was randomly choosing a pictogram from the test set and it was comparing it against all other pictograms from the same set. In the real use case, the model should detect the ARASAAC pictogram from a photo of it. The model should be able to predict how similar a specific, not randomly taken from the test set, pictogram is to all others. 
+\end{itemize}
+
+To resolve the first problem we included photos of pictograms taken by us to the test set.
+
+Our new testing set includes both pictograms from the original dataset and also pictures of pictograms. 
+
+Retraining the model with 100 iterations and batches of 2 augmented pictograms (40 images), the model managed to detect all pictograms from the original dataset but from our pictures of the pictograms it managed to correctly predict similarity for 6 out of 10.
 
 

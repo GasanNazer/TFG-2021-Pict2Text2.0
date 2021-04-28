@@ -8,20 +8,22 @@ This chapter will display the motivation behind this project and its objectives.
 \section{Motivation}
 Communication is a pillar in interpersonal relationships, a fundamental need in our society. However, for some people communication requires a lot of effort. Their differences create an uncrossable barrier and almost impossible human connection using the traditional way of communication. To remove this barrier an alternative approach should be used, for example the use of alternative ways of communication as pictograms. These graphic images, representing an object or a concept, have helped people with special needs to communicate. However, the majority of the population does not understand pictograms.
 
-In order to include pictograms into the communication between people with disabilities and those without, we can use modern technology and create a software to be a mediator between the two sides. 
+In order to include pictograms into the communication between people with disabilities and those without, we can use modern technology and create a software to be a mediator between the two sides.
 
-Currently, multiple tools allow transforming natural language into pictograms, but there is only one tool that converts a message written with pictograms into text - Pict2Text 1.0. Although Pict2Text 1.0 translates pictograms into natural language, but to create the text with pictograms, the pictograms must be selected manually searching for every single one in a search engine by entering the word associated with the pictogram. This is not good enough as people with disabilities who need the pictograms, cannot think about the words that compose the sentence and search for them in the search engine. This problem can be solved, giving those people the option to upload or take a picture of a sentence constructed with pictograms. Our aim is to build a new version of Pict2Text, to reduce the exclusion of those people with special needs from the society and break the communication barrier, providing the aforementioned functionality and improving the translator coverage.
+Currently, multiple tools allow transforming natural language into pictograms, but there is only one tool that converts a message written with pictograms into text: Pict2Text 1.0. Pict2Text 1.0 translates pictograms into natural language, but to create the text with pictograms, the pictograms must be selected manually searching for every single one in a search engine by entering the word associated with the pictogram. This is not good enough as people with disabilities who need the pictograms, cannot think about the words that compose the sentence and search for them in the search engine. This problem can be solved, giving those people the option to upload or take a picture of a sentence constructed with pictograms. Our aim is to build a new version of Pict2Text, to reduce the exclusion of those people with special needs from the society and break the communication barrier, providing the aforementioned functionality and improving the translator coverage.
 
 The beneficiaries of this software are people who don't understand pictograms but want to communicate with people who are using them. This project will help people understand each other better, creating a more equal society, independently of the ability to use the natural language in our communication. 
 
 \section{Goals}
-The main goal of our project is to improve Pict2Text. To do that, we have two objectives:
+The main goal of our project is to improve Pict2Text. In order to do that, we have two main objectives:
 \begin{enumerate}
-\item To build an application that will allow the user to upload a picture, and to recognize which pictograms are on the given picture
-\item To improve the translation that Pict2Text 1.0 provides given a set of pictograms. At the moment Pict2Text 1.0 can translate only simple phrases containing one subject, one object, and one verb.  
-\item To use services-oriented application architecture, constructing web services, and microservices, and to increase maintainability and scalability.
-\item To consolidate and expand the knowledge acquired during the Software Engineering Degree.
+\item To change the form in which the existing Pict2Text 1.0 application receives the text written with pictograms, allowing the user to upload a picture, as the current application requires the user to write the word in order to select a certain pictogram
+\item To improve the translations provided by Pict2Text 1.0. At the moment, Pict2Text 1.0 can translate only simple phrases containing one subject, one object, and one verb. We aim to provide the opportunity to translate more complicated sentences.
 \end{enumerate}
+
+During the implementation, we will follow a Services-Oriented Architecture (SOA), constructing web services that implement each of the functionalities. This will increase the maintainability of the application.
+
+In addition, we would like this work to allow us to consolidate and expand the knowledge acquired during the Software Engineering Degree.
 
 \section{Document structure}
 The document is structured as follows.
