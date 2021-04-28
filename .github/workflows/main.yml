@@ -33,30 +33,10 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             ls
-            cd TFG
-            cd TFG-2021-Pict2Text2.0
-            ls
+            cd TFG/TFG-2021-Pict2Text2.0
             git pull
             cd API
-            tmux ls
-            tmux a -t flask-app
             source venv/bin/activate
-            authbind --deep gunicorn3 -w 1 --threads 3 --bind 0.0.0.0:80 app:app
-
-      # go to the project folder, pull the new changes
-      #- name: Update the project in the conatiner
-      #  run: |
-      #    sshpass -p ${{ secrets.SSH_PASSWORD }} ssh ${{ secrets.SSH_USER }}@${{ secrets.HOST }} -p${{ secrets.PORT }}
-      #    ls
-      #    cd TFG
-      #    cd TFG-2021-Pict2Text2.0
-      #    ls
-      #    git pull
-      #    cd API
-      #    tmux ls
-      #    tmux a -t flask-app
-      #    source venv/bin/activate
-      #    authbind --deep gunicorn3 -w 1 --threads 3 --bind 0.0.0.0:80 app:app
-
-          
-          
+            authbind --deep gunicorn3 -w 1 --threads 3 --bind 0.0.0.0:80 app:app > log.txt 2>&1 &
+            jobs
+            echo "Pipeline finished"
