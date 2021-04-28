@@ -24,7 +24,7 @@ jobs:
 
       # Connect to the UCM container using SHH
       - name: ls -a via ssh to the UCM container
-        uses: appleboy/ssh-action@master#garygrossgarten/github-action-ssh@release
+        uses: appleboy/ssh-action@master #garygrossgarten/github-action-ssh@release
         with:
           command: ls -a
           host: ${{ secrets.HOST }}
