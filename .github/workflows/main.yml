@@ -32,7 +32,9 @@ jobs:
       # go to the project folder, pull the new changes
       - name: Update the project in the conatiner
         run: |
-          cd TFG/TFG-2021-Pict2Text2.0
+          ls
+          cd TFG
+          cd TFG-2021-Pict2Text2.0
           ls
           git pull
           cd API
