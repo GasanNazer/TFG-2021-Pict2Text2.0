@@ -17,11 +17,14 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      #- uses: actions/checkout@v2
+      
+      #Moving the SHH action above the definition to share its path between the two steps
+      - uses: garygrossgarten/github-action-ssh@release
 
       # Connect to the UCM container using SHH
       - name: ls -a via ssh to the UCM container
-        uses: garygrossgarten/github-action-ssh@release
+        #uses: garygrossgarten/github-action-ssh@release
         with:
           command: ls -a
           host: ${{ secrets.HOST }}
