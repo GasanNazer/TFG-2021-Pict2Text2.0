@@ -35,6 +35,7 @@ jobs:
       # go to the project folder, pull the new changes
       - name: Update the project in the conatiner
         run: |
+          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh ${{ secrets.SSH_USER }}@${{ secrets.HOST }} -p${{ secrets.PORT }}
           ls
           cd TFG
           cd TFG-2021-Pict2Text2.0
