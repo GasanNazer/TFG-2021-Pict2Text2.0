@@ -12,7 +12,7 @@ source venv/bin/activate
 
 tmux a -t flask-app
 
-gunicorn3 -w 1 --threads 3 --bind 0.0.0.0:80 app:app &
+authbind --deep gunicorn3 -w 1 --threads 3 --bind 0.0.0.0:80 app:app > log.txt 2>&1 &
 
 echo "In tmux"
 
