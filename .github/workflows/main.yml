@@ -32,6 +32,6 @@ jobs:
             git pull
             cd API
             export HISTIGNORE="*sudo -S*"
-            echo ${{ secrets.SSH_USER }} | sudo -S -k systemctl restart pict2text2.service
+            echo ${{ secrets.SSH_PASSWORD }} | sudo -S -k systemctl restart pict2text2.service
             systemctl status pict2text2.service
             echo "Pipeline finished"
