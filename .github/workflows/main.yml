@@ -1,0 +1,42 @@
+name: Deploy the API
+on:
+  # Triggers the workflow on push event on master
+  push:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      #- uses: actions/checkout@v2
+      
+      #Moving the SHH action above the definition to share its path between the two steps
+      #- uses: garygrossgarten/github-action-ssh@release
+
+      # Connect to the UCM container using SHH
+      - name: ls -a via ssh to the UCM container
+        uses: appleboy/ssh-action@master #garygrossgarten/github-action-ssh@release
+        with:
+          command: ls -a
+          host: ${{ secrets.HOST }}
+          port: ${{ secrets.PORT }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            ls
+            cd TFG/TFG-2021-Pict2Text2.0
+            git pull
+            cd API
+            source venv/bin/activate
+            authbind --deep gunicorn3 -w 1 --threads 3 --bind 0.0.0.0:80 app:app > log.txt 2>&1 &
+            jobs
+            echo "Pipeline finished"
