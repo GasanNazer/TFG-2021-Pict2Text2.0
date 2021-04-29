@@ -16,14 +16,9 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      #- uses: actions/checkout@v2
-      
-      #Moving the SHH action above the definition to share its path between the two steps
-      #- uses: garygrossgarten/github-action-ssh@release
 
-      # Connect to the UCM container using SHH
-      - name: ls -a via ssh to the UCM container
+      # Connect to the UCM container using SHH, push the changes of the repository and restart the API service
+      - name: API deployment
         uses: appleboy/ssh-action@master #garygrossgarten/github-action-ssh@release
         with:
           command: ls -a
@@ -36,7 +31,7 @@ jobs:
             cd TFG/TFG-2021-Pict2Text2.0
             git pull
             cd API
-            # source venv/bin/activate
-            # authbind --deep gunicorn3 -w 1 --threads 3 --bind 0.0.0.0:80 app:app > log.txt 2>&1 &
-            #jobs
+            export HISTIGNORE="*sudo -S*"
+            echo ${{ secrets.SSH_USER }} | sudo -S -k systemctl restart pict2text2.service
+            systemctl status pict2text2.service
             echo "Pipeline finished"
