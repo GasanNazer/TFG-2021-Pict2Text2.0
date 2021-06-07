@@ -18,3 +18,7 @@ model/load_images/convert_jpg_to_png/png_images/*
 model/load_images/pictograms_test_real/*
 model/load_images/pictograms_test_small/*
 model/load_images/test/*
+API/YOLO/*
+Yolo/*
+backup_app/*
+API/venv/*
