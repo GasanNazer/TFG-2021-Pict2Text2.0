@@ -38,7 +38,7 @@ def execute_yolo(filename):
 app.config['UPLOAD_FOLDER'] = app.root_path + "/YOLO/t"
 
 @app.route('/upload')
-def upload_f():
+def upload():
    return render_template('upload.html')
 
 @app.route('/detect_pictograms', methods = ['GET', 'POST'])
