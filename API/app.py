@@ -12,7 +12,7 @@ from werkzeug.utils import secure_filename, redirect
 
 app = Flask(__name__)
 
-@app.route('/')
+#@app.route('/')
 def hello_world():
     return render_template('index.html')
 
@@ -37,6 +37,7 @@ def execute_yolo(filename):
 
 app.config['UPLOAD_FOLDER'] = app.root_path + "/YOLO/t"
 
+@app.route('/')
 @app.route('/upload')
 def upload():
    return render_template('upload.html')
