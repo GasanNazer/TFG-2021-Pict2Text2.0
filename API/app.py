@@ -1,14 +1,17 @@
 import base64
-import datetime
-import hashlib
 import time
 
-from flask import Flask, render_template, request, jsonify, send_file
+from flask import Flask, render_template, request, send_file
 from PIL import Image
 import os
 import io
 
 from werkzeug.utils import secure_filename, redirect
+
+import routers.classify_pictograms as pictogram_classification
+import crop_bounding_boxes as cropper
+from Utils import filename_hashing
+from routers.classify_pictograms import classify_pictograms_web
 
 app = Flask(__name__)
 
@@ -30,7 +33,6 @@ def execute_yolo(filename):
     os.system(f"{path_config}script.sh {path_config}")
     os.system(f"cd {path}; ./darknet detector test {path_config}obj.data {path_config}yolov4-obj-test.cfg -ext_output {path_config}yolov4-obj_best.weights {path_prediction}{filename} -thresh 0.1 > {prediction_name}_output.txt -dont_show;")
     os.system(f"mv {path}/predictions.jpg {prediction_name}_predictions.jpg")
-    print("Finished")
 
     return path_prediction
 
@@ -77,19 +79,24 @@ def detect_pictogram_web():
       im.save(data, "JPEG")
       encoded_img_data = base64.b64encode(data.getvalue())
 
-      return render_template("result.html", img_data=encoded_img_data.decode('utf-8'))
+      cropper.crop_bounding_boxes(path)
+
+      # executing the One-shot model
+      predictions = classify_pictograms_web(path)
+
+      print(predictions)
+
+      print("Finished")
+
+      return "Finished"
+
+      #return render_template("result.html", img_data=encoded_img_data.decode('utf-8'))
 
    else:
        return redirect('/upload')
 
-
-
-def filename_hashing(filename):
-    name = filename + "_" + str(datetime.datetime.now())
-    print(name)
-    result = hashlib.md5(name.encode()).hexdigest()
-    print(result)
-
-    return result
+# routers /classify_pictograms
+app.add_url_rule('/classify_pictograms', '/classify_pictograms', pictogram_classification.classify_pictograms, methods=["POST"])
+app.add_url_rule('/classify_pictograms_web', '/classify_pictograms_web', pictogram_classification.classify_pictograms_web)
 
 
