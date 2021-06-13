@@ -1,0 +1,6626 @@
+Found 7806 images belonging to 200 classes.
+Found 0 images belonging to 0 classes.
+Found 0 images belonging to 0 classes.
+Found 44 images belonging to 44 classes.
+Found 100 images belonging to 1 classes.
+Model: "model"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_1 (InputLayer)            [(None, 105, 105, 4) 0                                            
+__________________________________________________________________________________________________
+input_2 (InputLayer)            [(None, 105, 105, 4) 0                                            
+__________________________________________________________________________________________________
+sequential_model (Sequential)   (None, 4096)         38966848    input_1[0][0]                    
+                                                                 input_2[0][0]                    
+__________________________________________________________________________________________________
+lambda (Lambda)                 (None, 4096)         0           sequential_model[0][0]           
+                                                                 sequential_model[1][0]           
+__________________________________________________________________________________________________
+final_dense (Dense)             (None, 1)            4097        lambda[0][0]                     
+==================================================================================================
+Total params: 38,970,945
+Trainable params: 38,970,945
+Non-trainable params: 0
+__________________________________________________________________________________________________
+iteration: 1
+iteration: 2
+iteration: 3
+iteration: 4
+iteration: 5
+iteration: 6
+iteration: 7
+iteration: 8
+iteration: 9
+iteration: 10
+iteration: 11
+iteration: 12
+iteration: 13
+iteration: 14
+iteration: 15
+iteration: 16
+iteration: 17
+iteration: 18
+iteration: 19
+iteration: 20
+iteration: 21
+iteration: 22
+iteration: 23
+iteration: 24
+iteration: 25
+iteration: 26
+iteration: 27
+iteration: 28
+iteration: 29
+iteration: 30
+iteration: 31
+iteration: 32
+iteration: 33
+iteration: 34
+iteration: 35
+iteration: 36
+iteration: 37
+iteration: 38
+iteration: 39
+iteration: 40
+iteration: 41
+iteration: 42
+iteration: 43
+iteration: 44
+iteration: 45
+iteration: 46
+iteration: 47
+iteration: 48
+iteration: 49
+iteration: 50
+Predicted id: 8358
+[0.6412458]
+iteration: 50
+8358
+8480-abanicar.png
+Predicted id: 8357
+[0.6326008]
+iteration: 50
+8357
+8484-agradable.png
+Predicted id: 8474
+[0.64122164]
+iteration: 50
+8474
+8376-luz de color.png
+Predicted id: 2660
+[0.67329746]
+iteration: 50
+2660
+8372-pecho.png
+Predicted id: 2660
+[0.63721347]
+iteration: 50
+2660
+8357-macarrón.png
+Predicted id: 8477
+[0.55882955]
+iteration: 50
+8477
+8483-frontera.png
+Predicted id: 8368
+[0.5990991]
+iteration: 50
+8368
+8368-sandalia.png
+1
+Predicted id: 8368
+[0.6316955]
+iteration: 50
+8368
+8358-media.png
+Predicted id: 8474
+[0.55918825]
+iteration: 50
+8474
+8375-gigante.png
+Predicted id: 2660
+[0.6612535]
+iteration: 50
+2660
+8477-los.png
+Predicted id: 8357
+[0.6252859]
+iteration: 50
+8357
+8367-sábana.png
+Predicted id: 8477
+[0.56961054]
+iteration: 50
+8477
+8482-adelantar.png
+Predicted id: 8474
+[0.6101463]
+iteration: 50
+8474
+8481-aceite.png
+Predicted id: 11393
+[0.55535764]
+iteration: 50
+11393
+8485-agua no potable.png
+Predicted id: 2644
+[0.5952523]
+iteration: 50
+2644
+8371-tarjeta roja.png
+Predicted id: 2660
+[0.68783474]
+iteration: 50
+2660
+8476-la.png
+Predicted id: 8370
+[0.51261824]
+iteration: 50
+8370
+8370-tarjeta amarilla.png
+2
+Predicted id: 2644
+[0.6244112]
+iteration: 50
+2644
+8369-sobao.png
+Predicted id: 2644
+[0.5736652]
+iteration: 50
+2644
+8355-guía de plantas.png
+Predicted id: 2650
+[0.5934424]
+iteration: 50
+2650
+8356-guía.png
+accuracy: 
+0.1
+loss: 
+[3.586204767227173]
+Current best: 0.1, previous best: -1
+iteration: 51
+iteration: 52
+iteration: 53
+iteration: 54
+iteration: 55
+iteration: 56
+iteration: 57
+iteration: 58
+iteration: 59
+iteration: 60
+iteration: 61
+iteration: 62
+iteration: 63
+iteration: 64
+iteration: 65
+iteration: 66
+iteration: 67
+iteration: 68
+iteration: 69
+iteration: 70
+iteration: 71
+iteration: 72
+iteration: 73
+iteration: 74
+iteration: 75
+iteration: 76
+iteration: 77
+iteration: 78
+iteration: 79
+iteration: 80
+iteration: 81
+iteration: 82
+iteration: 83
+iteration: 84
+iteration: 85
+iteration: 86
+iteration: 87
+iteration: 88
+iteration: 89
+iteration: 90
+iteration: 91
+iteration: 92
+iteration: 93
+iteration: 94
+iteration: 95
+iteration: 96
+iteration: 97
+iteration: 98
+iteration: 99
+iteration: 100
+Predicted id: 8475
+[0.75690186]
+iteration: 100
+8475
+8480-abanicar.png
+Predicted id: 8477
+[0.77729416]
+iteration: 100
+8477
+8484-agradable.png
+Predicted id: 11257
+[0.74652493]
+iteration: 100
+11257
+8376-luz de color.png
+Predicted id: 11393
+[0.789311]
+iteration: 100
+11393
+8372-pecho.png
+Predicted id: 8477
+[0.7732922]
+iteration: 100
+8477
+8357-macarrón.png
+Predicted id: 8481
+[0.67852545]
+iteration: 100
+8481
+8483-frontera.png
+Predicted id: 8368
+[0.7514038]
+iteration: 100
+8368
+8368-sandalia.png
+1
+Predicted id: 8477
+[0.73759204]
+iteration: 100
+8477
+8358-media.png
+Predicted id: 8376
+[0.7483382]
+iteration: 100
+8376
+8375-gigante.png
+Predicted id: 8477
+[0.8170314]
+iteration: 100
+8477
+8477-los.png
+2
+Predicted id: 8477
+[0.8282894]
+iteration: 100
+8477
+8367-sábana.png
+Predicted id: 2658
+[0.73734665]
+iteration: 100
+2658
+8482-adelantar.png
+Predicted id: 8474
+[0.8114723]
+iteration: 100
+8474
+8481-aceite.png
+Predicted id: 8485
+[0.6280188]
+iteration: 100
+8485
+8485-agua no potable.png
+3
+Predicted id: 2646
+[0.75803673]
+iteration: 100
+2646
+8371-tarjeta roja.png
+Predicted id: 8477
+[0.8003477]
+iteration: 100
+8477
+8476-la.png
+Predicted id: 8370
+[0.69362617]
+iteration: 100
+8370
+8370-tarjeta amarilla.png
+4
+Predicted id: 8376
+[0.6107657]
+iteration: 100
+8376
+8369-sobao.png
+Predicted id: 8371
+[0.63649774]
+iteration: 100
+8371
+8355-guía de plantas.png
+Predicted id: 2650
+[0.65506995]
+iteration: 100
+2650
+8356-guía.png
+accuracy: 
+0.2
+loss: 
+[2.9164609909057617]
+Current best: 0.2, previous best: 0.1
+iteration: 101
+iteration: 102
+iteration: 103
+iteration: 104
+iteration: 105
+iteration: 106
+iteration: 107
+iteration: 108
+iteration: 109
+iteration: 110
+iteration: 111
+iteration: 112
+iteration: 113
+iteration: 114
+iteration: 115
+iteration: 116
+iteration: 117
+iteration: 118
+iteration: 119
+iteration: 120
+iteration: 121
+iteration: 122
+iteration: 123
+iteration: 124
+iteration: 125
+iteration: 126
+iteration: 127
+iteration: 128
+iteration: 129
+iteration: 130
+iteration: 131
+iteration: 132
+iteration: 133
+iteration: 134
+iteration: 135
+iteration: 136
+iteration: 137
+iteration: 138
+iteration: 139
+iteration: 140
+iteration: 141
+iteration: 142
+iteration: 143
+iteration: 144
+iteration: 145
+iteration: 146
+iteration: 147
+iteration: 148
+iteration: 149
+iteration: 150
+Predicted id: 8480
+[0.6153384]
+iteration: 150
+8480
+8480-abanicar.png
+1
+Predicted id: 11261
+[0.56619596]
+iteration: 150
+11261
+8484-agradable.png
+Predicted id: 8474
+[0.6408777]
+iteration: 150
+8474
+8376-luz de color.png
+Predicted id: 8475
+[0.5980432]
+iteration: 150
+8475
+8372-pecho.png
+Predicted id: 2656
+[0.5632532]
+iteration: 150
+2656
+8357-macarrón.png
+Predicted id: 8483
+[0.44462147]
+iteration: 150
+8483
+8483-frontera.png
+2
+Predicted id: 8368
+[0.7673019]
+iteration: 150
+8368
+8368-sandalia.png
+3
+Predicted id: 8358
+[0.6541286]
+iteration: 150
+8358
+8358-media.png
+4
+Predicted id: 8375
+[0.6162]
+iteration: 150
+8375
+8375-gigante.png
+5
+Predicted id: 8477
+[0.74074256]
+iteration: 150
+8477
+8477-los.png
+6
+Predicted id: 8366
+[0.64111686]
+iteration: 150
+8366
+8367-sábana.png
+Predicted id: 8482
+[0.65922153]
+iteration: 150
+8482
+8482-adelantar.png
+7
+Predicted id: 11257
+[0.48730677]
+iteration: 150
+11257
+8481-aceite.png
+Predicted id: 8485
+[0.5391383]
+iteration: 150
+8485
+8485-agua no potable.png
+8
+Predicted id: 8376
+[0.45267797]
+iteration: 150
+8376
+8371-tarjeta roja.png
+Predicted id: 2656
+[0.67428595]
+iteration: 150
+2656
+8476-la.png
+Predicted id: 8370
+[0.53675944]
+iteration: 150
+8370
+8370-tarjeta amarilla.png
+9
+Predicted id: 8369
+[0.68022]
+iteration: 150
+8369
+8369-sobao.png
+10
+Predicted id: 8355
+[0.5111353]
+iteration: 150
+8355
+8355-guía de plantas.png
+11
+Predicted id: 8356
+[0.5037821]
+iteration: 150
+8356
+8356-guía.png
+12
+accuracy: 
+0.6
+loss: 
+[2.4544570446014404]
+Current best: 0.6, previous best: 0.2
+iteration: 151
+iteration: 152
+iteration: 153
+iteration: 154
+iteration: 155
+iteration: 156
+iteration: 157
+iteration: 158
+iteration: 159
+iteration: 160
+iteration: 161
+iteration: 162
+iteration: 163
+iteration: 164
+iteration: 165
+iteration: 166
+iteration: 167
+iteration: 168
+iteration: 169
+iteration: 170
+iteration: 171
+iteration: 172
+iteration: 173
+iteration: 174
+iteration: 175
+iteration: 176
+iteration: 177
+iteration: 178
+iteration: 179
+iteration: 180
+iteration: 181
+iteration: 182
+iteration: 183
+iteration: 184
+iteration: 185
+iteration: 186
+iteration: 187
+iteration: 188
+iteration: 189
+iteration: 190
+iteration: 191
+iteration: 192
+iteration: 193
+iteration: 194
+iteration: 195
+iteration: 196
+iteration: 197
+iteration: 198
+iteration: 199
+iteration: 200
+Predicted id: 8480
+[0.821527]
+iteration: 200
+8480
+8480-abanicar.png
+1
+Predicted id: 8366
+[0.64141864]
+iteration: 200
+8366
+8484-agradable.png
+Predicted id: 8474
+[0.7061796]
+iteration: 200
+8474
+8376-luz de color.png
+Predicted id: 8366
+[0.7274683]
+iteration: 200
+8366
+8372-pecho.png
+Predicted id: 8366
+[0.6366284]
+iteration: 200
+8366
+8357-macarrón.png
+Predicted id: 8483
+[0.42438337]
+iteration: 200
+8483
+8483-frontera.png
+2
+Predicted id: 8368
+[0.8096899]
+iteration: 200
+8368
+8368-sandalia.png
+3
+Predicted id: 8358
+[0.76626444]
+iteration: 200
+8358
+8358-media.png
+4
+Predicted id: 8376
+[0.7407523]
+iteration: 200
+8376
+8375-gigante.png
+Predicted id: 8366
+[0.79187125]
+iteration: 200
+8366
+8477-los.png
+Predicted id: 8366
+[0.8188675]
+iteration: 200
+8366
+8367-sábana.png
+Predicted id: 8482
+[0.78408563]
+iteration: 200
+8482
+8482-adelantar.png
+5
+Predicted id: 2650
+[0.7184026]
+iteration: 200
+2650
+8481-aceite.png
+Predicted id: 8481
+[0.559936]
+iteration: 200
+8481
+8485-agua no potable.png
+Predicted id: 8370
+[0.720659]
+iteration: 200
+8370
+8371-tarjeta roja.png
+Predicted id: 8486
+[0.82792723]
+iteration: 200
+8486
+8476-la.png
+Predicted id: 8352
+[0.6259935]
+iteration: 200
+8352
+8370-tarjeta amarilla.png
+Predicted id: 8369
+[0.7170075]
+iteration: 200
+8369
+8369-sobao.png
+6
+Predicted id: 8364
+[0.66167545]
+iteration: 200
+8364
+8355-guía de plantas.png
+Predicted id: 11272
+[0.5979828]
+iteration: 200
+11272
+8356-guía.png
+accuracy: 
+0.3
+loss: 
+[2.1164371967315674]
+iteration: 201
+iteration: 202
+iteration: 203
+iteration: 204
+iteration: 205
+iteration: 206
+iteration: 207
+iteration: 208
+iteration: 209
+iteration: 210
+iteration: 211
+iteration: 212
+iteration: 213
+iteration: 214
+iteration: 215
+iteration: 216
+iteration: 217
+iteration: 218
+iteration: 219
+iteration: 220
+iteration: 221
+iteration: 222
+iteration: 223
+iteration: 224
+iteration: 225
+iteration: 226
+iteration: 227
+iteration: 228
+iteration: 229
+iteration: 230
+iteration: 231
+iteration: 232
+iteration: 233
+iteration: 234
+iteration: 235
+iteration: 236
+iteration: 237
+iteration: 238
+iteration: 239
+iteration: 240
+iteration: 241
+iteration: 242
+iteration: 243
+iteration: 244
+iteration: 245
+iteration: 246
+iteration: 247
+iteration: 248
+iteration: 249
+iteration: 250
+Predicted id: 8480
+[0.8899113]
+iteration: 250
+8480
+8480-abanicar.png
+1
+Predicted id: 11463
+[0.81058323]
+iteration: 250
+11463
+8484-agradable.png
+Predicted id: 8474
+[0.9573827]
+iteration: 250
+8474
+8376-luz de color.png
+Predicted id: 8475
+[0.8471254]
+iteration: 250
+8475
+8372-pecho.png
+Predicted id: 11252
+[0.84656113]
+iteration: 250
+11252
+8357-macarrón.png
+Predicted id: 8481
+[0.7422787]
+iteration: 250
+8481
+8483-frontera.png
+Predicted id: 11257
+[0.902266]
+iteration: 250
+11257
+8368-sandalia.png
+Predicted id: 8358
+[0.7737311]
+iteration: 250
+8358
+8358-media.png
+2
+Predicted id: 2646
+[0.95216775]
+iteration: 250
+2646
+8375-gigante.png
+Predicted id: 8477
+[0.8365194]
+iteration: 250
+8477
+8477-los.png
+3
+Predicted id: 8366
+[0.83880675]
+iteration: 250
+8366
+8367-sábana.png
+Predicted id: 8480
+[0.87901586]
+iteration: 250
+8480
+8482-adelantar.png
+Predicted id: 2650
+[0.8416523]
+iteration: 250
+2650
+8481-aceite.png
+Predicted id: 8481
+[0.65964085]
+iteration: 250
+8481
+8485-agua no potable.png
+Predicted id: 8364
+[0.8896604]
+iteration: 250
+8364
+8371-tarjeta roja.png
+Predicted id: 8486
+[0.87360656]
+iteration: 250
+8486
+8476-la.png
+Predicted id: 8352
+[0.82480216]
+iteration: 250
+8352
+8370-tarjeta amarilla.png
+Predicted id: 8369
+[0.803685]
+iteration: 250
+8369
+8369-sobao.png
+4
+Predicted id: 8364
+[0.7183139]
+iteration: 250
+8364
+8355-guía de plantas.png
+Predicted id: 11272
+[0.8557079]
+iteration: 250
+11272
+8356-guía.png
+accuracy: 
+0.2
+loss: 
+[1.8513120412826538]
+iteration: 251
+iteration: 252
+iteration: 253
+iteration: 254
+iteration: 255
+iteration: 256
+iteration: 257
+iteration: 258
+iteration: 259
+iteration: 260
+iteration: 261
+iteration: 262
+iteration: 263
+iteration: 264
+iteration: 265
+iteration: 266
+iteration: 267
+iteration: 268
+iteration: 269
+iteration: 270
+iteration: 271
+iteration: 272
+iteration: 273
+iteration: 274
+iteration: 275
+iteration: 276
+iteration: 277
+iteration: 278
+iteration: 279
+iteration: 280
+iteration: 281
+iteration: 282
+iteration: 283
+iteration: 284
+iteration: 285
+iteration: 286
+iteration: 287
+iteration: 288
+iteration: 289
+iteration: 290
+iteration: 291
+iteration: 292
+iteration: 293
+iteration: 294
+iteration: 295
+iteration: 296
+iteration: 297
+iteration: 298
+iteration: 299
+iteration: 300
+Predicted id: 8480
+[0.80217934]
+iteration: 300
+8480
+8480-abanicar.png
+1
+Predicted id: 8366
+[0.70434964]
+iteration: 300
+8366
+8484-agradable.png
+Predicted id: 8474
+[0.7607914]
+iteration: 300
+8474
+8376-luz de color.png
+Predicted id: 11457
+[0.60671496]
+iteration: 300
+11457
+8372-pecho.png
+Predicted id: 8366
+[0.82473665]
+iteration: 300
+8366
+8357-macarrón.png
+Predicted id: 11398
+[0.67479444]
+iteration: 300
+11398
+8483-frontera.png
+Predicted id: 8368
+[0.8148265]
+iteration: 300
+8368
+8368-sandalia.png
+2
+Predicted id: 2647
+[0.73775995]
+iteration: 300
+2647
+8358-media.png
+Predicted id: 2646
+[0.7839831]
+iteration: 300
+2646
+8375-gigante.png
+Predicted id: 8477
+[0.8781705]
+iteration: 300
+8477
+8477-los.png
+3
+Predicted id: 8366
+[0.7355392]
+iteration: 300
+8366
+8367-sábana.png
+Predicted id: 8482
+[0.6935617]
+iteration: 300
+8482
+8482-adelantar.png
+4
+Predicted id: 11264
+[0.6966754]
+iteration: 300
+11264
+8481-aceite.png
+Predicted id: 11393
+[0.45002848]
+iteration: 300
+11393
+8485-agua no potable.png
+Predicted id: 8371
+[0.8071792]
+iteration: 300
+8371
+8371-tarjeta roja.png
+5
+Predicted id: 8486
+[0.9275644]
+iteration: 300
+8486
+8476-la.png
+Predicted id: 8364
+[0.7703149]
+iteration: 300
+8364
+8370-tarjeta amarilla.png
+Predicted id: 8369
+[0.7650918]
+iteration: 300
+8369
+8369-sobao.png
+6
+Predicted id: 4566
+[0.56435823]
+iteration: 300
+4566
+8355-guía de plantas.png
+Predicted id: 11272
+[0.5896608]
+iteration: 300
+11272
+8356-guía.png
+accuracy: 
+0.3
+loss: 
+[1.6279914379119873]
+iteration: 301
+iteration: 302
+iteration: 303
+iteration: 304
+iteration: 305
+iteration: 306
+iteration: 307
+iteration: 308
+iteration: 309
+iteration: 310
+iteration: 311
+iteration: 312
+iteration: 313
+iteration: 314
+iteration: 315
+iteration: 316
+iteration: 317
+iteration: 318
+iteration: 319
+iteration: 320
+iteration: 321
+iteration: 322
+iteration: 323
+iteration: 324
+iteration: 325
+iteration: 326
+iteration: 327
+iteration: 328
+iteration: 329
+iteration: 330
+iteration: 331
+iteration: 332
+iteration: 333
+iteration: 334
+iteration: 335
+iteration: 336
+iteration: 337
+iteration: 338
+iteration: 339
+iteration: 340
+iteration: 341
+iteration: 342
+iteration: 343
+iteration: 344
+iteration: 345
+iteration: 346
+iteration: 347
+iteration: 348
+iteration: 349
+iteration: 350
+Predicted id: 8480
+[0.96126306]
+iteration: 350
+8480
+8480-abanicar.png
+1
+Predicted id: 8366
+[0.97821236]
+iteration: 350
+8366
+8484-agradable.png
+Predicted id: 8474
+[0.9111963]
+iteration: 350
+8474
+8376-luz de color.png
+Predicted id: 8475
+[0.9182787]
+iteration: 350
+8475
+8372-pecho.png
+Predicted id: 8366
+[0.9569274]
+iteration: 350
+8366
+8357-macarrón.png
+Predicted id: 11396
+[0.8095968]
+iteration: 350
+11396
+8483-frontera.png
+Predicted id: 8368
+[0.9210204]
+iteration: 350
+8368
+8368-sandalia.png
+2
+Predicted id: 11393
+[0.9142311]
+iteration: 350
+11393
+8358-media.png
+Predicted id: 2644
+[0.83770525]
+iteration: 350
+2644
+8375-gigante.png
+Predicted id: 8477
+[0.95592403]
+iteration: 350
+8477
+8477-los.png
+3
+Predicted id: 8366
+[0.97002256]
+iteration: 350
+8366
+8367-sábana.png
+Predicted id: 2644
+[0.8850794]
+iteration: 350
+2644
+8482-adelantar.png
+Predicted id: 2658
+[0.8152951]
+iteration: 350
+2658
+8481-aceite.png
+Predicted id: 11393
+[0.7458465]
+iteration: 350
+11393
+8485-agua no potable.png
+Predicted id: 8370
+[0.80006814]
+iteration: 350
+8370
+8371-tarjeta roja.png
+Predicted id: 4566
+[0.95577586]
+iteration: 350
+4566
+8476-la.png
+Predicted id: 8352
+[0.7197466]
+iteration: 350
+8352
+8370-tarjeta amarilla.png
+Predicted id: 8369
+[0.79604757]
+iteration: 350
+8369
+8369-sobao.png
+4
+Predicted id: 8364
+[0.57083535]
+iteration: 350
+8364
+8355-guía de plantas.png
+Predicted id: 11272
+[0.7249922]
+iteration: 350
+11272
+8356-guía.png
+accuracy: 
+0.2
+loss: 
+[1.4850980043411255]
+iteration: 351
+iteration: 352
+iteration: 353
+iteration: 354
+iteration: 355
+iteration: 356
+iteration: 357
+iteration: 358
+iteration: 359
+iteration: 360
+iteration: 361
+iteration: 362
+iteration: 363
+iteration: 364
+iteration: 365
+iteration: 366
+iteration: 367
+iteration: 368
+iteration: 369
+iteration: 370
+iteration: 371
+iteration: 372
+iteration: 373
+iteration: 374
+iteration: 375
+iteration: 376
+iteration: 377
+iteration: 378
+iteration: 379
+iteration: 380
+iteration: 381
+iteration: 382
+iteration: 383
+iteration: 384
+iteration: 385
+iteration: 386
+iteration: 387
+iteration: 388
+iteration: 389
+iteration: 390
+iteration: 391
+iteration: 392
+iteration: 393
+iteration: 394
+iteration: 395
+iteration: 396
+iteration: 397
+iteration: 398
+iteration: 399
+iteration: 400
+Predicted id: 8480
+[0.76220065]
+iteration: 400
+8480
+8480-abanicar.png
+1
+Predicted id: 2649
+[0.744529]
+iteration: 400
+2649
+8484-agradable.png
+Predicted id: 2646
+[0.8246163]
+iteration: 400
+2646
+8376-luz de color.png
+Predicted id: 8475
+[0.66327214]
+iteration: 400
+8475
+8372-pecho.png
+Predicted id: 11270
+[0.5138049]
+iteration: 400
+11270
+8357-macarrón.png
+Predicted id: 11398
+[0.68752617]
+iteration: 400
+11398
+8483-frontera.png
+Predicted id: 8368
+[0.846249]
+iteration: 400
+8368
+8368-sandalia.png
+2
+Predicted id: 8389
+[0.7629764]
+iteration: 400
+8389
+8358-media.png
+Predicted id: 2646
+[0.6495266]
+iteration: 400
+2646
+8375-gigante.png
+Predicted id: 8477
+[0.5874053]
+iteration: 400
+8477
+8477-los.png
+3
+Predicted id: 8367
+[0.68522346]
+iteration: 400
+8367
+8367-sábana.png
+4
+Predicted id: 2644
+[0.7585472]
+iteration: 400
+2644
+8482-adelantar.png
+Predicted id: 2650
+[0.86296445]
+iteration: 400
+2650
+8481-aceite.png
+Predicted id: 11393
+[0.7206562]
+iteration: 400
+11393
+8485-agua no potable.png
+Predicted id: 8370
+[0.57958907]
+iteration: 400
+8370
+8371-tarjeta roja.png
+Predicted id: 4566
+[0.7621443]
+iteration: 400
+4566
+8476-la.png
+Predicted id: 8352
+[0.7880068]
+iteration: 400
+8352
+8370-tarjeta amarilla.png
+Predicted id: 8369
+[0.87638223]
+iteration: 400
+8369
+8369-sobao.png
+5
+Predicted id: 8364
+[0.67335415]
+iteration: 400
+8364
+8355-guía de plantas.png
+Predicted id: 8356
+[0.50960124]
+iteration: 400
+8356
+8356-guía.png
+6
+accuracy: 
+0.3
+loss: 
+[1.321710467338562]
+iteration: 401
+iteration: 402
+iteration: 403
+iteration: 404
+iteration: 405
+iteration: 406
+iteration: 407
+iteration: 408
+iteration: 409
+iteration: 410
+iteration: 411
+iteration: 412
+iteration: 413
+iteration: 414
+iteration: 415
+iteration: 416
+iteration: 417
+iteration: 418
+iteration: 419
+iteration: 420
+iteration: 421
+iteration: 422
+iteration: 423
+iteration: 424
+iteration: 425
+iteration: 426
+iteration: 427
+iteration: 428
+iteration: 429
+iteration: 430
+iteration: 431
+iteration: 432
+iteration: 433
+iteration: 434
+iteration: 435
+iteration: 436
+iteration: 437
+iteration: 438
+iteration: 439
+iteration: 440
+iteration: 441
+iteration: 442
+iteration: 443
+iteration: 444
+iteration: 445
+iteration: 446
+iteration: 447
+iteration: 448
+iteration: 449
+iteration: 450
+Predicted id: 8480
+[0.9160825]
+iteration: 450
+8480
+8480-abanicar.png
+1
+Predicted id: 2649
+[0.94811165]
+iteration: 450
+2649
+8484-agradable.png
+Predicted id: 2646
+[0.86865604]
+iteration: 450
+2646
+8376-luz de color.png
+Predicted id: 8475
+[0.8292158]
+iteration: 450
+8475
+8372-pecho.png
+Predicted id: 8366
+[0.8623183]
+iteration: 450
+8366
+8357-macarrón.png
+Predicted id: 11396
+[0.84786505]
+iteration: 450
+11396
+8483-frontera.png
+Predicted id: 8368
+[0.8652637]
+iteration: 450
+8368
+8368-sandalia.png
+2
+Predicted id: 2647
+[0.66115165]
+iteration: 450
+2647
+8358-media.png
+Predicted id: 2644
+[0.8572992]
+iteration: 450
+2644
+8375-gigante.png
+Predicted id: 8477
+[0.8540356]
+iteration: 450
+8477
+8477-los.png
+3
+Predicted id: 2652
+[0.87604386]
+iteration: 450
+2652
+8367-sábana.png
+Predicted id: 2644
+[0.81803954]
+iteration: 450
+2644
+8482-adelantar.png
+Predicted id: 2650
+[0.844859]
+iteration: 450
+2650
+8481-aceite.png
+Predicted id: 11393
+[0.7641956]
+iteration: 450
+11393
+8485-agua no potable.png
+Predicted id: 2660
+[0.9006187]
+iteration: 450
+2660
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.9211816]
+iteration: 450
+8476
+8476-la.png
+4
+Predicted id: 8352
+[0.9124683]
+iteration: 450
+8352
+8370-tarjeta amarilla.png
+Predicted id: 8369
+[0.8470649]
+iteration: 450
+8369
+8369-sobao.png
+5
+Predicted id: 8364
+[0.90031594]
+iteration: 450
+8364
+8355-guía de plantas.png
+Predicted id: 11272
+[0.5987978]
+iteration: 450
+11272
+8356-guía.png
+accuracy: 
+0.25
+loss: 
+[1.2188564538955688]
+iteration: 451
+iteration: 452
+iteration: 453
+iteration: 454
+iteration: 455
+iteration: 456
+iteration: 457
+iteration: 458
+iteration: 459
+iteration: 460
+iteration: 461
+iteration: 462
+iteration: 463
+iteration: 464
+iteration: 465
+iteration: 466
+iteration: 467
+iteration: 468
+iteration: 469
+iteration: 470
+iteration: 471
+iteration: 472
+iteration: 473
+iteration: 474
+iteration: 475
+iteration: 476
+iteration: 477
+iteration: 478
+iteration: 479
+iteration: 480
+iteration: 481
+iteration: 482
+iteration: 483
+iteration: 484
+iteration: 485
+iteration: 486
+iteration: 487
+iteration: 488
+iteration: 489
+iteration: 490
+iteration: 491
+iteration: 492
+iteration: 493
+iteration: 494
+iteration: 495
+iteration: 496
+iteration: 497
+iteration: 498
+iteration: 499
+iteration: 500
+Predicted id: 8480
+[0.92668164]
+iteration: 500
+8480
+8480-abanicar.png
+1
+Predicted id: 11461
+[0.8353783]
+iteration: 500
+11461
+8484-agradable.png
+Predicted id: 8353
+[0.79080415]
+iteration: 500
+8353
+8376-luz de color.png
+Predicted id: 8475
+[0.8480818]
+iteration: 500
+8475
+8372-pecho.png
+Predicted id: 8366
+[0.67480695]
+iteration: 500
+8366
+8357-macarrón.png
+Predicted id: 11396
+[0.77995205]
+iteration: 500
+11396
+8483-frontera.png
+Predicted id: 8368
+[0.8798343]
+iteration: 500
+8368
+8368-sandalia.png
+2
+Predicted id: 8358
+[0.8615604]
+iteration: 500
+8358
+8358-media.png
+3
+Predicted id: 2644
+[0.89628714]
+iteration: 500
+2644
+8375-gigante.png
+Predicted id: 8477
+[0.8201519]
+iteration: 500
+8477
+8477-los.png
+4
+Predicted id: 8367
+[0.8708013]
+iteration: 500
+8367
+8367-sábana.png
+5
+Predicted id: 2644
+[0.88340217]
+iteration: 500
+2644
+8482-adelantar.png
+Predicted id: 2650
+[0.6807828]
+iteration: 500
+2650
+8481-aceite.png
+Predicted id: 11401
+[0.7080964]
+iteration: 500
+11401
+8485-agua no potable.png
+Predicted id: 8370
+[0.848717]
+iteration: 500
+8370
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.8891315]
+iteration: 500
+8476
+8476-la.png
+6
+Predicted id: 8352
+[0.8823565]
+iteration: 500
+8352
+8370-tarjeta amarilla.png
+Predicted id: 8369
+[0.90620327]
+iteration: 500
+8369
+8369-sobao.png
+7
+Predicted id: 8364
+[0.6763308]
+iteration: 500
+8364
+8355-guía de plantas.png
+Predicted id: 8356
+[0.46802583]
+iteration: 500
+8356
+8356-guía.png
+8
+accuracy: 
+0.4
+loss: 
+[1.2385004758834839]
+iteration: 501
+iteration: 502
+iteration: 503
+iteration: 504
+iteration: 505
+iteration: 506
+iteration: 507
+iteration: 508
+iteration: 509
+iteration: 510
+iteration: 511
+iteration: 512
+iteration: 513
+iteration: 514
+iteration: 515
+iteration: 516
+iteration: 517
+iteration: 518
+iteration: 519
+iteration: 520
+iteration: 521
+iteration: 522
+iteration: 523
+iteration: 524
+iteration: 525
+iteration: 526
+iteration: 527
+iteration: 528
+iteration: 529
+iteration: 530
+iteration: 531
+iteration: 532
+iteration: 533
+iteration: 534
+iteration: 535
+iteration: 536
+iteration: 537
+iteration: 538
+iteration: 539
+iteration: 540
+iteration: 541
+iteration: 542
+iteration: 543
+iteration: 544
+iteration: 545
+iteration: 546
+iteration: 547
+iteration: 548
+iteration: 549
+iteration: 550
+Predicted id: 8480
+[0.94820035]
+iteration: 550
+8480
+8480-abanicar.png
+1
+Predicted id: 11461
+[0.9254737]
+iteration: 550
+11461
+8484-agradable.png
+Predicted id: 2646
+[0.88918984]
+iteration: 550
+2646
+8376-luz de color.png
+Predicted id: 8475
+[0.85396576]
+iteration: 550
+8475
+8372-pecho.png
+Predicted id: 8366
+[0.9383049]
+iteration: 550
+8366
+8357-macarrón.png
+Predicted id: 11396
+[0.86298823]
+iteration: 550
+11396
+8483-frontera.png
+Predicted id: 8368
+[0.9238136]
+iteration: 550
+8368
+8368-sandalia.png
+2
+Predicted id: 8358
+[0.84421253]
+iteration: 550
+8358
+8358-media.png
+3
+Predicted id: 2644
+[0.8563324]
+iteration: 550
+2644
+8375-gigante.png
+Predicted id: 8477
+[0.9185749]
+iteration: 550
+8477
+8477-los.png
+4
+Predicted id: 8367
+[0.9561687]
+iteration: 550
+8367
+8367-sábana.png
+5
+Predicted id: 2644
+[0.8956906]
+iteration: 550
+2644
+8482-adelantar.png
+Predicted id: 2650
+[0.7610611]
+iteration: 550
+2650
+8481-aceite.png
+Predicted id: 11396
+[0.7150742]
+iteration: 550
+11396
+8485-agua no potable.png
+Predicted id: 8370
+[0.9631102]
+iteration: 550
+8370
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.9634162]
+iteration: 550
+8476
+8476-la.png
+6
+Predicted id: 8364
+[0.9673754]
+iteration: 550
+8364
+8370-tarjeta amarilla.png
+Predicted id: 8369
+[0.9458357]
+iteration: 550
+8369
+8369-sobao.png
+7
+Predicted id: 8364
+[0.9757583]
+iteration: 550
+8364
+8355-guía de plantas.png
+Predicted id: 11274
+[0.7414732]
+iteration: 550
+11274
+8356-guía.png
+accuracy: 
+0.35
+loss: 
+[1.0789203643798828]
+iteration: 551
+iteration: 552
+iteration: 553
+iteration: 554
+iteration: 555
+iteration: 556
+iteration: 557
+iteration: 558
+iteration: 559
+iteration: 560
+iteration: 561
+iteration: 562
+iteration: 563
+iteration: 564
+iteration: 565
+iteration: 566
+iteration: 567
+iteration: 568
+iteration: 569
+iteration: 570
+iteration: 571
+iteration: 572
+iteration: 573
+iteration: 574
+iteration: 575
+iteration: 576
+iteration: 577
+iteration: 578
+iteration: 579
+iteration: 580
+iteration: 581
+iteration: 582
+iteration: 583
+iteration: 584
+iteration: 585
+iteration: 586
+iteration: 587
+iteration: 588
+iteration: 589
+iteration: 590
+iteration: 591
+iteration: 592
+iteration: 593
+iteration: 594
+iteration: 595
+iteration: 596
+iteration: 597
+iteration: 598
+iteration: 599
+iteration: 600
+Predicted id: 8480
+[0.9111242]
+iteration: 600
+8480
+8480-abanicar.png
+1
+Predicted id: 11461
+[0.66023713]
+iteration: 600
+11461
+8484-agradable.png
+Predicted id: 8376
+[0.52845603]
+iteration: 600
+8376
+8376-luz de color.png
+2
+Predicted id: 11453
+[0.6245686]
+iteration: 600
+11453
+8372-pecho.png
+Predicted id: 2662
+[0.19074315]
+iteration: 600
+2662
+8357-macarrón.png
+Predicted id: 11396
+[0.7319482]
+iteration: 600
+11396
+8483-frontera.png
+Predicted id: 8368
+[0.8781843]
+iteration: 600
+8368
+8368-sandalia.png
+3
+Predicted id: 8358
+[0.7067895]
+iteration: 600
+8358
+8358-media.png
+4
+Predicted id: 2644
+[0.87229824]
+iteration: 600
+2644
+8375-gigante.png
+Predicted id: 8477
+[0.7422113]
+iteration: 600
+8477
+8477-los.png
+5
+Predicted id: 8367
+[0.8739152]
+iteration: 600
+8367
+8367-sábana.png
+6
+Predicted id: 8482
+[0.72320056]
+iteration: 600
+8482
+8482-adelantar.png
+7
+Predicted id: 11267
+[0.68736625]
+iteration: 600
+11267
+8481-aceite.png
+Predicted id: 8485
+[0.7251202]
+iteration: 600
+8485
+8485-agua no potable.png
+8
+Predicted id: 8370
+[0.9238783]
+iteration: 600
+8370
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.86318123]
+iteration: 600
+8476
+8476-la.png
+9
+Predicted id: 8370
+[0.8332874]
+iteration: 600
+8370
+8370-tarjeta amarilla.png
+10
+Predicted id: 8369
+[0.8601831]
+iteration: 600
+8369
+8369-sobao.png
+11
+Predicted id: 8364
+[0.88599867]
+iteration: 600
+8364
+8355-guía de plantas.png
+Predicted id: 8356
+[0.49327368]
+iteration: 600
+8356
+8356-guía.png
+12
+accuracy: 
+0.6
+loss: 
+[0.9835664629936218]
+Current best: 0.6, previous best: 0.6
+iteration: 601
+iteration: 602
+iteration: 603
+iteration: 604
+iteration: 605
+iteration: 606
+iteration: 607
+iteration: 608
+iteration: 609
+iteration: 610
+iteration: 611
+iteration: 612
+iteration: 613
+iteration: 614
+iteration: 615
+iteration: 616
+iteration: 617
+iteration: 618
+iteration: 619
+iteration: 620
+iteration: 621
+iteration: 622
+iteration: 623
+iteration: 624
+iteration: 625
+iteration: 626
+iteration: 627
+iteration: 628
+iteration: 629
+iteration: 630
+iteration: 631
+iteration: 632
+iteration: 633
+iteration: 634
+iteration: 635
+iteration: 636
+iteration: 637
+iteration: 638
+iteration: 639
+iteration: 640
+iteration: 641
+iteration: 642
+iteration: 643
+iteration: 644
+iteration: 645
+iteration: 646
+iteration: 647
+iteration: 648
+iteration: 649
+iteration: 650
+Predicted id: 8480
+[0.7419186]
+iteration: 650
+8480
+8480-abanicar.png
+1
+Predicted id: 11461
+[0.83921546]
+iteration: 650
+11461
+8484-agradable.png
+Predicted id: 2646
+[0.6120779]
+iteration: 650
+2646
+8376-luz de color.png
+Predicted id: 8366
+[0.7314255]
+iteration: 650
+8366
+8372-pecho.png
+Predicted id: 8357
+[0.8505895]
+iteration: 650
+8357
+8357-macarrón.png
+2
+Predicted id: 11398
+[0.60131055]
+iteration: 650
+11398
+8483-frontera.png
+Predicted id: 8368
+[0.91197836]
+iteration: 650
+8368
+8368-sandalia.png
+3
+Predicted id: 8358
+[0.8047878]
+iteration: 650
+8358
+8358-media.png
+4
+Predicted id: 2644
+[0.7728629]
+iteration: 650
+2644
+8375-gigante.png
+Predicted id: 8477
+[0.606529]
+iteration: 650
+8477
+8477-los.png
+5
+Predicted id: 8367
+[0.85508645]
+iteration: 650
+8367
+8367-sábana.png
+6
+Predicted id: 11459
+[0.8249201]
+iteration: 650
+11459
+8482-adelantar.png
+Predicted id: 2650
+[0.6987842]
+iteration: 650
+2650
+8481-aceite.png
+Predicted id: 11396
+[0.70723647]
+iteration: 650
+11396
+8485-agua no potable.png
+Predicted id: 8370
+[0.6862885]
+iteration: 650
+8370
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.9300077]
+iteration: 650
+8476
+8476-la.png
+7
+Predicted id: 8370
+[0.79649776]
+iteration: 650
+8370
+8370-tarjeta amarilla.png
+8
+Predicted id: 8369
+[0.84291923]
+iteration: 650
+8369
+8369-sobao.png
+9
+Predicted id: 8364
+[0.7796347]
+iteration: 650
+8364
+8355-guía de plantas.png
+Predicted id: 8356
+[0.5353053]
+iteration: 650
+8356
+8356-guía.png
+10
+accuracy: 
+0.5
+loss: 
+[1.0228601694107056]
+iteration: 651
+iteration: 652
+iteration: 653
+iteration: 654
+iteration: 655
+iteration: 656
+iteration: 657
+iteration: 658
+iteration: 659
+iteration: 660
+iteration: 661
+iteration: 662
+iteration: 663
+iteration: 664
+iteration: 665
+iteration: 666
+iteration: 667
+iteration: 668
+iteration: 669
+iteration: 670
+iteration: 671
+iteration: 672
+iteration: 673
+iteration: 674
+iteration: 675
+iteration: 676
+iteration: 677
+iteration: 678
+iteration: 679
+iteration: 680
+iteration: 681
+iteration: 682
+iteration: 683
+iteration: 684
+iteration: 685
+iteration: 686
+iteration: 687
+iteration: 688
+iteration: 689
+iteration: 690
+iteration: 691
+iteration: 692
+iteration: 693
+iteration: 694
+iteration: 695
+iteration: 696
+iteration: 697
+iteration: 698
+iteration: 699
+iteration: 700
+Predicted id: 8480
+[0.8468013]
+iteration: 700
+8480
+8480-abanicar.png
+1
+Predicted id: 11461
+[0.7975257]
+iteration: 700
+11461
+8484-agradable.png
+Predicted id: 8376
+[0.49876115]
+iteration: 700
+8376
+8376-luz de color.png
+2
+Predicted id: 11453
+[0.78897]
+iteration: 700
+11453
+8372-pecho.png
+Predicted id: 8366
+[0.76642513]
+iteration: 700
+8366
+8357-macarrón.png
+Predicted id: 11398
+[0.7217842]
+iteration: 700
+11398
+8483-frontera.png
+Predicted id: 8368
+[0.9267636]
+iteration: 700
+8368
+8368-sandalia.png
+3
+Predicted id: 8358
+[0.5322293]
+iteration: 700
+8358
+8358-media.png
+4
+Predicted id: 11399
+[0.84849185]
+iteration: 700
+11399
+8375-gigante.png
+Predicted id: 8477
+[0.810109]
+iteration: 700
+8477
+8477-los.png
+5
+Predicted id: 8367
+[0.8663109]
+iteration: 700
+8367
+8367-sábana.png
+6
+Predicted id: 2644
+[0.7705318]
+iteration: 700
+2644
+8482-adelantar.png
+Predicted id: 2650
+[0.7450018]
+iteration: 700
+2650
+8481-aceite.png
+Predicted id: 11396
+[0.49617982]
+iteration: 700
+11396
+8485-agua no potable.png
+Predicted id: 8370
+[0.84847367]
+iteration: 700
+8370
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.93026996]
+iteration: 700
+8476
+8476-la.png
+7
+Predicted id: 8370
+[0.9158752]
+iteration: 700
+8370
+8370-tarjeta amarilla.png
+8
+Predicted id: 8369
+[0.84479356]
+iteration: 700
+8369
+8369-sobao.png
+9
+Predicted id: 2656
+[0.53015083]
+iteration: 700
+2656
+8355-guía de plantas.png
+Predicted id: 11254
+[0.4817541]
+iteration: 700
+11254
+8356-guía.png
+accuracy: 
+0.45
+loss: 
+[0.9768603444099426]
+iteration: 701
+iteration: 702
+iteration: 703
+iteration: 704
+iteration: 705
+iteration: 706
+iteration: 707
+iteration: 708
+iteration: 709
+iteration: 710
+iteration: 711
+iteration: 712
+iteration: 713
+iteration: 714
+iteration: 715
+iteration: 716
+iteration: 717
+iteration: 718
+iteration: 719
+iteration: 720
+iteration: 721
+iteration: 722
+iteration: 723
+iteration: 724
+iteration: 725
+iteration: 726
+iteration: 727
+iteration: 728
+iteration: 729
+iteration: 730
+iteration: 731
+iteration: 732
+iteration: 733
+iteration: 734
+iteration: 735
+iteration: 736
+iteration: 737
+iteration: 738
+iteration: 739
+iteration: 740
+iteration: 741
+iteration: 742
+iteration: 743
+iteration: 744
+iteration: 745
+iteration: 746
+iteration: 747
+iteration: 748
+iteration: 749
+iteration: 750
+Predicted id: 8480
+[0.8950249]
+iteration: 750
+8480
+8480-abanicar.png
+1
+Predicted id: 11461
+[0.74015427]
+iteration: 750
+11461
+8484-agradable.png
+Predicted id: 11394
+[0.8795539]
+iteration: 750
+11394
+8376-luz de color.png
+Predicted id: 11453
+[0.8875952]
+iteration: 750
+11453
+8372-pecho.png
+Predicted id: 8354
+[0.6557206]
+iteration: 750
+8354
+8357-macarrón.png
+Predicted id: 11398
+[0.7284164]
+iteration: 750
+11398
+8483-frontera.png
+Predicted id: 8368
+[0.91438603]
+iteration: 750
+8368
+8368-sandalia.png
+2
+Predicted id: 8358
+[0.834517]
+iteration: 750
+8358
+8358-media.png
+3
+Predicted id: 2644
+[0.88550967]
+iteration: 750
+2644
+8375-gigante.png
+Predicted id: 8477
+[0.90156245]
+iteration: 750
+8477
+8477-los.png
+4
+Predicted id: 8367
+[0.95248705]
+iteration: 750
+8367
+8367-sábana.png
+5
+Predicted id: 2644
+[0.8379483]
+iteration: 750
+2644
+8482-adelantar.png
+Predicted id: 2651
+[0.6534817]
+iteration: 750
+2651
+8481-aceite.png
+Predicted id: 2646
+[0.8067653]
+iteration: 750
+2646
+8485-agua no potable.png
+Predicted id: 8370
+[0.80140615]
+iteration: 750
+8370
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.9360523]
+iteration: 750
+8476
+8476-la.png
+6
+Predicted id: 8370
+[0.936061]
+iteration: 750
+8370
+8370-tarjeta amarilla.png
+7
+Predicted id: 8369
+[0.91846263]
+iteration: 750
+8369
+8369-sobao.png
+8
+Predicted id: 8364
+[0.8249825]
+iteration: 750
+8364
+8355-guía de plantas.png
+Predicted id: 11274
+[0.55401134]
+iteration: 750
+11274
+8356-guía.png
+accuracy: 
+0.4
+loss: 
+[0.8191514611244202]
+iteration: 751
+iteration: 752
+iteration: 753
+iteration: 754
+iteration: 755
+iteration: 756
+iteration: 757
+iteration: 758
+iteration: 759
+iteration: 760
+iteration: 761
+iteration: 762
+iteration: 763
+iteration: 764
+iteration: 765
+iteration: 766
+iteration: 767
+iteration: 768
+iteration: 769
+iteration: 770
+iteration: 771
+iteration: 772
+iteration: 773
+iteration: 774
+iteration: 775
+iteration: 776
+iteration: 777
+iteration: 778
+iteration: 779
+iteration: 780
+iteration: 781
+iteration: 782
+iteration: 783
+iteration: 784
+iteration: 785
+iteration: 786
+iteration: 787
+iteration: 788
+iteration: 789
+iteration: 790
+iteration: 791
+iteration: 792
+iteration: 793
+iteration: 794
+iteration: 795
+iteration: 796
+iteration: 797
+iteration: 798
+iteration: 799
+iteration: 800
+Predicted id: 8480
+[0.76358294]
+iteration: 800
+8480
+8480-abanicar.png
+1
+Predicted id: 11461
+[0.9119483]
+iteration: 800
+11461
+8484-agradable.png
+Predicted id: 2650
+[0.51947606]
+iteration: 800
+2650
+8376-luz de color.png
+Predicted id: 8372
+[0.8546088]
+iteration: 800
+8372
+8372-pecho.png
+2
+Predicted id: 8357
+[0.8522611]
+iteration: 800
+8357
+8357-macarrón.png
+3
+Predicted id: 11266
+[0.80849683]
+iteration: 800
+11266
+8483-frontera.png
+Predicted id: 8368
+[0.9400322]
+iteration: 800
+8368
+8368-sandalia.png
+4
+Predicted id: 8358
+[0.92952085]
+iteration: 800
+8358
+8358-media.png
+5
+Predicted id: 4563
+[0.9183227]
+iteration: 800
+4563
+8375-gigante.png
+Predicted id: 8477
+[0.92351234]
+iteration: 800
+8477
+8477-los.png
+6
+Predicted id: 8367
+[0.8793657]
+iteration: 800
+8367
+8367-sábana.png
+7
+Predicted id: 2644
+[0.76487356]
+iteration: 800
+2644
+8482-adelantar.png
+Predicted id: 11406
+[0.8543297]
+iteration: 800
+11406
+8481-aceite.png
+Predicted id: 11261
+[0.7034797]
+iteration: 800
+11261
+8485-agua no potable.png
+Predicted id: 8370
+[0.7641655]
+iteration: 800
+8370
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.9400646]
+iteration: 800
+8476
+8476-la.png
+8
+Predicted id: 8370
+[0.9101145]
+iteration: 800
+8370
+8370-tarjeta amarilla.png
+9
+Predicted id: 8369
+[0.86816734]
+iteration: 800
+8369
+8369-sobao.png
+10
+Predicted id: 2662
+[0.9763341]
+iteration: 800
+2662
+8355-guía de plantas.png
+Predicted id: 11274
+[0.53330344]
+iteration: 800
+11274
+8356-guía.png
+accuracy: 
+0.5
+loss: 
+[0.8440890312194824]
+iteration: 801
+iteration: 802
+iteration: 803
+iteration: 804
+iteration: 805
+iteration: 806
+iteration: 807
+iteration: 808
+iteration: 809
+iteration: 810
+iteration: 811
+iteration: 812
+iteration: 813
+iteration: 814
+iteration: 815
+iteration: 816
+iteration: 817
+iteration: 818
+iteration: 819
+iteration: 820
+iteration: 821
+iteration: 822
+iteration: 823
+iteration: 824
+iteration: 825
+iteration: 826
+iteration: 827
+iteration: 828
+iteration: 829
+iteration: 830
+iteration: 831
+iteration: 832
+iteration: 833
+iteration: 834
+iteration: 835
+iteration: 836
+iteration: 837
+iteration: 838
+iteration: 839
+iteration: 840
+iteration: 841
+iteration: 842
+iteration: 843
+iteration: 844
+iteration: 845
+iteration: 846
+iteration: 847
+iteration: 848
+iteration: 849
+iteration: 850
+Predicted id: 8480
+[0.9238788]
+iteration: 850
+8480
+8480-abanicar.png
+1
+Predicted id: 2649
+[0.9576746]
+iteration: 850
+2649
+8484-agradable.png
+Predicted id: 8376
+[0.8942449]
+iteration: 850
+8376
+8376-luz de color.png
+2
+Predicted id: 8372
+[0.77753544]
+iteration: 850
+8372
+8372-pecho.png
+3
+Predicted id: 8357
+[0.95399916]
+iteration: 850
+8357
+8357-macarrón.png
+4
+Predicted id: 11266
+[0.7028686]
+iteration: 850
+11266
+8483-frontera.png
+Predicted id: 8368
+[0.9033946]
+iteration: 850
+8368
+8368-sandalia.png
+5
+Predicted id: 8358
+[0.8631177]
+iteration: 850
+8358
+8358-media.png
+6
+Predicted id: 11399
+[0.9163939]
+iteration: 850
+11399
+8375-gigante.png
+Predicted id: 8477
+[0.9071891]
+iteration: 850
+8477
+8477-los.png
+7
+Predicted id: 8367
+[0.9237155]
+iteration: 850
+8367
+8367-sábana.png
+8
+Predicted id: 8482
+[0.78525984]
+iteration: 850
+8482
+8482-adelantar.png
+9
+Predicted id: 11264
+[0.71773785]
+iteration: 850
+11264
+8481-aceite.png
+Predicted id: 2646
+[0.6475456]
+iteration: 850
+2646
+8485-agua no potable.png
+Predicted id: 8370
+[0.8435561]
+iteration: 850
+8370
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.9397396]
+iteration: 850
+8476
+8476-la.png
+10
+Predicted id: 8370
+[0.88466823]
+iteration: 850
+8370
+8370-tarjeta amarilla.png
+11
+Predicted id: 8369
+[0.88615644]
+iteration: 850
+8369
+8369-sobao.png
+12
+Predicted id: 8364
+[0.88930273]
+iteration: 850
+8364
+8355-guía de plantas.png
+Predicted id: 8356
+[0.599498]
+iteration: 850
+8356
+8356-guía.png
+13
+accuracy: 
+0.65
+loss: 
+[0.7795023322105408]
+Current best: 0.65, previous best: 0.6
+iteration: 851
+iteration: 852
+iteration: 853
+iteration: 854
+iteration: 855
+iteration: 856
+iteration: 857
+iteration: 858
+iteration: 859
+iteration: 860
+iteration: 861
+iteration: 862
+iteration: 863
+iteration: 864
+iteration: 865
+iteration: 866
+iteration: 867
+iteration: 868
+iteration: 869
+iteration: 870
+iteration: 871
+iteration: 872
+iteration: 873
+iteration: 874
+iteration: 875
+iteration: 876
+iteration: 877
+iteration: 878
+iteration: 879
+iteration: 880
+iteration: 881
+iteration: 882
+iteration: 883
+iteration: 884
+iteration: 885
+iteration: 886
+iteration: 887
+iteration: 888
+iteration: 889
+iteration: 890
+iteration: 891
+iteration: 892
+iteration: 893
+iteration: 894
+iteration: 895
+iteration: 896
+iteration: 897
+iteration: 898
+iteration: 899
+iteration: 900
+Predicted id: 8480
+[0.94320107]
+iteration: 900
+8480
+8480-abanicar.png
+1
+Predicted id: 2649
+[0.97815526]
+iteration: 900
+2649
+8484-agradable.png
+Predicted id: 8376
+[0.88222957]
+iteration: 900
+8376
+8376-luz de color.png
+2
+Predicted id: 11453
+[0.73361707]
+iteration: 900
+11453
+8372-pecho.png
+Predicted id: 8357
+[0.8617023]
+iteration: 900
+8357
+8357-macarrón.png
+3
+Predicted id: 11396
+[0.7893757]
+iteration: 900
+11396
+8483-frontera.png
+Predicted id: 8368
+[0.9489405]
+iteration: 900
+8368
+8368-sandalia.png
+4
+Predicted id: 8358
+[0.8999778]
+iteration: 900
+8358
+8358-media.png
+5
+Predicted id: 4563
+[0.9030734]
+iteration: 900
+4563
+8375-gigante.png
+Predicted id: 8477
+[0.91668487]
+iteration: 900
+8477
+8477-los.png
+6
+Predicted id: 8367
+[0.96592176]
+iteration: 900
+8367
+8367-sábana.png
+7
+Predicted id: 8482
+[0.7787489]
+iteration: 900
+8482
+8482-adelantar.png
+8
+Predicted id: 11267
+[0.6389786]
+iteration: 900
+11267
+8481-aceite.png
+Predicted id: 2658
+[0.64598167]
+iteration: 900
+2658
+8485-agua no potable.png
+Predicted id: 8370
+[0.8088957]
+iteration: 900
+8370
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.9164876]
+iteration: 900
+8476
+8476-la.png
+9
+Predicted id: 8370
+[0.94629234]
+iteration: 900
+8370
+8370-tarjeta amarilla.png
+10
+Predicted id: 8369
+[0.92843616]
+iteration: 900
+8369
+8369-sobao.png
+11
+Predicted id: 8370
+[0.84747636]
+iteration: 900
+8370
+8355-guía de plantas.png
+Predicted id: 11274
+[0.79709744]
+iteration: 900
+11274
+8356-guía.png
+accuracy: 
+0.55
+loss: 
+[0.7832185626029968]
+iteration: 901
+iteration: 902
+iteration: 903
+iteration: 904
+iteration: 905
+iteration: 906
+iteration: 907
+iteration: 908
+iteration: 909
+iteration: 910
+iteration: 911
+iteration: 912
+iteration: 913
+iteration: 914
+iteration: 915
+iteration: 916
+iteration: 917
+iteration: 918
+iteration: 919
+iteration: 920
+iteration: 921
+iteration: 922
+iteration: 923
+iteration: 924
+iteration: 925
+iteration: 926
+iteration: 927
+iteration: 928
+iteration: 929
+iteration: 930
+iteration: 931
+iteration: 932
+iteration: 933
+iteration: 934
+iteration: 935
+iteration: 936
+iteration: 937
+iteration: 938
+iteration: 939
+iteration: 940
+iteration: 941
+iteration: 942
+iteration: 943
+iteration: 944
+iteration: 945
+iteration: 946
+iteration: 947
+iteration: 948
+iteration: 949
+iteration: 950
+Predicted id: 8480
+[0.91042304]
+iteration: 950
+8480
+8480-abanicar.png
+1
+Predicted id: 2649
+[0.90941554]
+iteration: 950
+2649
+8484-agradable.png
+Predicted id: 8376
+[0.7433883]
+iteration: 950
+8376
+8376-luz de color.png
+2
+Predicted id: 8372
+[0.85359347]
+iteration: 950
+8372
+8372-pecho.png
+3
+Predicted id: 8357
+[0.88721275]
+iteration: 950
+8357
+8357-macarrón.png
+4
+Predicted id: 11396
+[0.75361025]
+iteration: 950
+11396
+8483-frontera.png
+Predicted id: 8368
+[0.9437507]
+iteration: 950
+8368
+8368-sandalia.png
+5
+Predicted id: 8358
+[0.6641349]
+iteration: 950
+8358
+8358-media.png
+6
+Predicted id: 8375
+[0.8272921]
+iteration: 950
+8375
+8375-gigante.png
+7
+Predicted id: 8477
+[0.8092759]
+iteration: 950
+8477
+8477-los.png
+8
+Predicted id: 8367
+[0.94009423]
+iteration: 950
+8367
+8367-sábana.png
+9
+Predicted id: 8482
+[0.762458]
+iteration: 950
+8482
+8482-adelantar.png
+10
+Predicted id: 11267
+[0.7244618]
+iteration: 950
+11267
+8481-aceite.png
+Predicted id: 8485
+[0.6194617]
+iteration: 950
+8485
+8485-agua no potable.png
+11
+Predicted id: 11395
+[0.65222853]
+iteration: 950
+11395
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.84690857]
+iteration: 950
+8476
+8476-la.png
+12
+Predicted id: 8370
+[0.86914885]
+iteration: 950
+8370
+8370-tarjeta amarilla.png
+13
+Predicted id: 8369
+[0.94369316]
+iteration: 950
+8369
+8369-sobao.png
+14
+Predicted id: 8370
+[0.77711856]
+iteration: 950
+8370
+8355-guía de plantas.png
+Predicted id: 8356
+[0.6326806]
+iteration: 950
+8356
+8356-guía.png
+15
+accuracy: 
+0.75
+loss: 
+[0.7515802383422852]
+Current best: 0.75, previous best: 0.65
+iteration: 951
+iteration: 952
+iteration: 953
+iteration: 954
+iteration: 955
+iteration: 956
+iteration: 957
+iteration: 958
+iteration: 959
+iteration: 960
+iteration: 961
+iteration: 962
+iteration: 963
+iteration: 964
+iteration: 965
+iteration: 966
+iteration: 967
+iteration: 968
+iteration: 969
+iteration: 970
+iteration: 971
+iteration: 972
+iteration: 973
+iteration: 974
+iteration: 975
+iteration: 976
+iteration: 977
+iteration: 978
+iteration: 979
+iteration: 980
+iteration: 981
+iteration: 982
+iteration: 983
+iteration: 984
+iteration: 985
+iteration: 986
+iteration: 987
+iteration: 988
+iteration: 989
+iteration: 990
+iteration: 991
+iteration: 992
+iteration: 993
+iteration: 994
+iteration: 995
+iteration: 996
+iteration: 997
+iteration: 998
+iteration: 999
+iteration: 1000
+Predicted id: 8480
+[0.9129935]
+iteration: 1000
+8480
+8480-abanicar.png
+1
+Predicted id: 2649
+[0.9758887]
+iteration: 1000
+2649
+8484-agradable.png
+Predicted id: 8376
+[0.7749344]
+iteration: 1000
+8376
+8376-luz de color.png
+2
+Predicted id: 8372
+[0.8590807]
+iteration: 1000
+8372
+8372-pecho.png
+3
+Predicted id: 8357
+[0.9450753]
+iteration: 1000
+8357
+8357-macarrón.png
+4
+Predicted id: 11401
+[0.7744882]
+iteration: 1000
+11401
+8483-frontera.png
+Predicted id: 8368
+[0.9439411]
+iteration: 1000
+8368
+8368-sandalia.png
+5
+Predicted id: 8358
+[0.7837986]
+iteration: 1000
+8358
+8358-media.png
+6
+Predicted id: 8375
+[0.91073525]
+iteration: 1000
+8375
+8375-gigante.png
+7
+Predicted id: 8477
+[0.94578266]
+iteration: 1000
+8477
+8477-los.png
+8
+Predicted id: 8367
+[0.9697824]
+iteration: 1000
+8367
+8367-sábana.png
+9
+Predicted id: 8482
+[0.646559]
+iteration: 1000
+8482
+8482-adelantar.png
+10
+Predicted id: 11267
+[0.6377216]
+iteration: 1000
+11267
+8481-aceite.png
+Predicted id: 8485
+[0.6457797]
+iteration: 1000
+8485
+8485-agua no potable.png
+11
+Predicted id: 11395
+[0.5649561]
+iteration: 1000
+11395
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.9236901]
+iteration: 1000
+8476
+8476-la.png
+12
+Predicted id: 8370
+[0.8878505]
+iteration: 1000
+8370
+8370-tarjeta amarilla.png
+13
+Predicted id: 8369
+[0.9511117]
+iteration: 1000
+8369
+8369-sobao.png
+14
+Predicted id: 8370
+[0.75302076]
+iteration: 1000
+8370
+8355-guía de plantas.png
+Predicted id: 11274
+[0.6070904]
+iteration: 1000
+11274
+8356-guía.png
+accuracy: 
+0.7
+loss: 
+[0.6712782382965088]
+iteration: 1001
+iteration: 1002
+iteration: 1003
+iteration: 1004
+iteration: 1005
+iteration: 1006
+iteration: 1007
+iteration: 1008
+iteration: 1009
+iteration: 1010
+iteration: 1011
+iteration: 1012
+iteration: 1013
+iteration: 1014
+iteration: 1015
+iteration: 1016
+iteration: 1017
+iteration: 1018
+iteration: 1019
+iteration: 1020
+iteration: 1021
+iteration: 1022
+iteration: 1023
+iteration: 1024
+iteration: 1025
+iteration: 1026
+iteration: 1027
+iteration: 1028
+iteration: 1029
+iteration: 1030
+iteration: 1031
+iteration: 1032
+iteration: 1033
+iteration: 1034
+iteration: 1035
+iteration: 1036
+iteration: 1037
+iteration: 1038
+iteration: 1039
+iteration: 1040
+iteration: 1041
+iteration: 1042
+iteration: 1043
+iteration: 1044
+iteration: 1045
+iteration: 1046
+iteration: 1047
+iteration: 1048
+iteration: 1049
+iteration: 1050
+Predicted id: 8480
+[0.9398755]
+iteration: 1050
+8480
+8480-abanicar.png
+1
+Predicted id: 2649
+[0.9647339]
+iteration: 1050
+2649
+8484-agradable.png
+Predicted id: 8376
+[0.6767894]
+iteration: 1050
+8376
+8376-luz de color.png
+2
+Predicted id: 8372
+[0.6736811]
+iteration: 1050
+8372
+8372-pecho.png
+3
+Predicted id: 8357
+[0.93154836]
+iteration: 1050
+8357
+8357-macarrón.png
+4
+Predicted id: 11401
+[0.91519535]
+iteration: 1050
+11401
+8483-frontera.png
+Predicted id: 8368
+[0.95217174]
+iteration: 1050
+8368
+8368-sandalia.png
+5
+Predicted id: 8358
+[0.7304691]
+iteration: 1050
+8358
+8358-media.png
+6
+Predicted id: 11399
+[0.8773238]
+iteration: 1050
+11399
+8375-gigante.png
+Predicted id: 8477
+[0.9496623]
+iteration: 1050
+8477
+8477-los.png
+7
+Predicted id: 8367
+[0.9786316]
+iteration: 1050
+8367
+8367-sábana.png
+8
+Predicted id: 2644
+[0.6801721]
+iteration: 1050
+2644
+8482-adelantar.png
+Predicted id: 11264
+[0.35808128]
+iteration: 1050
+11264
+8481-aceite.png
+Predicted id: 8485
+[0.72011083]
+iteration: 1050
+8485
+8485-agua no potable.png
+9
+Predicted id: 8370
+[0.7599571]
+iteration: 1050
+8370
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.9519286]
+iteration: 1050
+8476
+8476-la.png
+10
+Predicted id: 8370
+[0.7802828]
+iteration: 1050
+8370
+8370-tarjeta amarilla.png
+11
+Predicted id: 8369
+[0.9219422]
+iteration: 1050
+8369
+8369-sobao.png
+12
+Predicted id: 8370
+[0.72667265]
+iteration: 1050
+8370
+8355-guía de plantas.png
+Predicted id: 8356
+[0.5800542]
+iteration: 1050
+8356
+8356-guía.png
+13
+accuracy: 
+0.65
+loss: 
+[0.7098924517631531]
+iteration: 1051
+iteration: 1052
+iteration: 1053
+iteration: 1054
+iteration: 1055
+iteration: 1056
+iteration: 1057
+iteration: 1058
+iteration: 1059
+iteration: 1060
+iteration: 1061
+iteration: 1062
+iteration: 1063
+iteration: 1064
+iteration: 1065
+iteration: 1066
+iteration: 1067
+iteration: 1068
+iteration: 1069
+iteration: 1070
+iteration: 1071
+iteration: 1072
+iteration: 1073
+iteration: 1074
+iteration: 1075
+iteration: 1076
+iteration: 1077
+iteration: 1078
+iteration: 1079
+iteration: 1080
+iteration: 1081
+iteration: 1082
+iteration: 1083
+iteration: 1084
+iteration: 1085
+iteration: 1086
+iteration: 1087
+iteration: 1088
+iteration: 1089
+iteration: 1090
+iteration: 1091
+iteration: 1092
+iteration: 1093
+iteration: 1094
+iteration: 1095
+iteration: 1096
+iteration: 1097
+iteration: 1098
+iteration: 1099
+iteration: 1100
+Predicted id: 8480
+[0.9697269]
+iteration: 1100
+8480
+8480-abanicar.png
+1
+Predicted id: 11461
+[0.93387675]
+iteration: 1100
+11461
+8484-agradable.png
+Predicted id: 8376
+[0.7513265]
+iteration: 1100
+8376
+8376-luz de color.png
+2
+Predicted id: 8372
+[0.63975877]
+iteration: 1100
+8372
+8372-pecho.png
+3
+Predicted id: 8357
+[0.8629514]
+iteration: 1100
+8357
+8357-macarrón.png
+4
+Predicted id: 11398
+[0.8188031]
+iteration: 1100
+11398
+8483-frontera.png
+Predicted id: 8368
+[0.92565095]
+iteration: 1100
+8368
+8368-sandalia.png
+5
+Predicted id: 8358
+[0.7519587]
+iteration: 1100
+8358
+8358-media.png
+6
+Predicted id: 2644
+[0.84087884]
+iteration: 1100
+2644
+8375-gigante.png
+Predicted id: 8477
+[0.90679514]
+iteration: 1100
+8477
+8477-los.png
+7
+Predicted id: 8367
+[0.8332248]
+iteration: 1100
+8367
+8367-sábana.png
+8
+Predicted id: 8482
+[0.757058]
+iteration: 1100
+8482
+8482-adelantar.png
+9
+Predicted id: 2650
+[0.73647404]
+iteration: 1100
+2650
+8481-aceite.png
+Predicted id: 8485
+[0.71017176]
+iteration: 1100
+8485
+8485-agua no potable.png
+10
+Predicted id: 8370
+[0.43834978]
+iteration: 1100
+8370
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.8598865]
+iteration: 1100
+8476
+8476-la.png
+11
+Predicted id: 8370
+[0.8720951]
+iteration: 1100
+8370
+8370-tarjeta amarilla.png
+12
+Predicted id: 8369
+[0.9492047]
+iteration: 1100
+8369
+8369-sobao.png
+13
+Predicted id: 2656
+[0.7934619]
+iteration: 1100
+2656
+8355-guía de plantas.png
+Predicted id: 8356
+[0.705127]
+iteration: 1100
+8356
+8356-guía.png
+14
+accuracy: 
+0.7
+loss: 
+[0.6543816328048706]
+iteration: 1101
+iteration: 1102
+iteration: 1103
+iteration: 1104
+iteration: 1105
+iteration: 1106
+iteration: 1107
+iteration: 1108
+iteration: 1109
+iteration: 1110
+iteration: 1111
+iteration: 1112
+iteration: 1113
+iteration: 1114
+iteration: 1115
+iteration: 1116
+iteration: 1117
+iteration: 1118
+iteration: 1119
+iteration: 1120
+iteration: 1121
+iteration: 1122
+iteration: 1123
+iteration: 1124
+iteration: 1125
+iteration: 1126
+iteration: 1127
+iteration: 1128
+iteration: 1129
+iteration: 1130
+iteration: 1131
+iteration: 1132
+iteration: 1133
+iteration: 1134
+iteration: 1135
+iteration: 1136
+iteration: 1137
+iteration: 1138
+iteration: 1139
+iteration: 1140
+iteration: 1141
+iteration: 1142
+iteration: 1143
+iteration: 1144
+iteration: 1145
+iteration: 1146
+iteration: 1147
+iteration: 1148
+iteration: 1149
+iteration: 1150
+Predicted id: 8480
+[0.87011397]
+iteration: 1150
+8480
+8480-abanicar.png
+1
+Predicted id: 2649
+[0.84841114]
+iteration: 1150
+2649
+8484-agradable.png
+Predicted id: 8376
+[0.8201512]
+iteration: 1150
+8376
+8376-luz de color.png
+2
+Predicted id: 8372
+[0.6786462]
+iteration: 1150
+8372
+8372-pecho.png
+3
+Predicted id: 8357
+[0.9293263]
+iteration: 1150
+8357
+8357-macarrón.png
+4
+Predicted id: 11401
+[0.85400987]
+iteration: 1150
+11401
+8483-frontera.png
+Predicted id: 8368
+[0.9296783]
+iteration: 1150
+8368
+8368-sandalia.png
+5
+Predicted id: 8358
+[0.58256024]
+iteration: 1150
+8358
+8358-media.png
+6
+Predicted id: 8375
+[0.7974228]
+iteration: 1150
+8375
+8375-gigante.png
+7
+Predicted id: 8477
+[0.91601056]
+iteration: 1150
+8477
+8477-los.png
+8
+Predicted id: 8367
+[0.9406808]
+iteration: 1150
+8367
+8367-sábana.png
+9
+Predicted id: 8482
+[0.6678108]
+iteration: 1150
+8482
+8482-adelantar.png
+10
+Predicted id: 2650
+[0.7936678]
+iteration: 1150
+2650
+8481-aceite.png
+Predicted id: 8485
+[0.6246567]
+iteration: 1150
+8485
+8485-agua no potable.png
+11
+Predicted id: 11395
+[0.58496726]
+iteration: 1150
+11395
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.8646462]
+iteration: 1150
+8476
+8476-la.png
+12
+Predicted id: 8370
+[0.83705527]
+iteration: 1150
+8370
+8370-tarjeta amarilla.png
+13
+Predicted id: 8369
+[0.90569675]
+iteration: 1150
+8369
+8369-sobao.png
+14
+Predicted id: 8370
+[0.61690795]
+iteration: 1150
+8370
+8355-guía de plantas.png
+Predicted id: 11274
+[0.7926986]
+iteration: 1150
+11274
+8356-guía.png
+accuracy: 
+0.7
+loss: 
+[0.6680803298950195]
+iteration: 1151
+iteration: 1152
+iteration: 1153
+iteration: 1154
+iteration: 1155
+iteration: 1156
+iteration: 1157
+iteration: 1158
+iteration: 1159
+iteration: 1160
+iteration: 1161
+iteration: 1162
+iteration: 1163
+iteration: 1164
+iteration: 1165
+iteration: 1166
+iteration: 1167
+iteration: 1168
+iteration: 1169
+iteration: 1170
+iteration: 1171
+iteration: 1172
+iteration: 1173
+iteration: 1174
+iteration: 1175
+iteration: 1176
+iteration: 1177
+iteration: 1178
+iteration: 1179
+iteration: 1180
+iteration: 1181
+iteration: 1182
+iteration: 1183
+iteration: 1184
+iteration: 1185
+iteration: 1186
+iteration: 1187
+iteration: 1188
+iteration: 1189
+iteration: 1190
+iteration: 1191
+iteration: 1192
+iteration: 1193
+iteration: 1194
+iteration: 1195
+iteration: 1196
+iteration: 1197
+iteration: 1198
+iteration: 1199
+iteration: 1200
+Predicted id: 8480
+[0.9096099]
+iteration: 1200
+8480
+8480-abanicar.png
+1
+Predicted id: 2649
+[0.66711056]
+iteration: 1200
+2649
+8484-agradable.png
+Predicted id: 8376
+[0.7461]
+iteration: 1200
+8376
+8376-luz de color.png
+2
+Predicted id: 8372
+[0.6234705]
+iteration: 1200
+8372
+8372-pecho.png
+3
+Predicted id: 8357
+[0.90184903]
+iteration: 1200
+8357
+8357-macarrón.png
+4
+Predicted id: 11401
+[0.61981237]
+iteration: 1200
+11401
+8483-frontera.png
+Predicted id: 8368
+[0.93797135]
+iteration: 1200
+8368
+8368-sandalia.png
+5
+Predicted id: 8358
+[0.7322885]
+iteration: 1200
+8358
+8358-media.png
+6
+Predicted id: 8375
+[0.80652916]
+iteration: 1200
+8375
+8375-gigante.png
+7
+Predicted id: 8477
+[0.8955069]
+iteration: 1200
+8477
+8477-los.png
+8
+Predicted id: 8367
+[0.88420063]
+iteration: 1200
+8367
+8367-sábana.png
+9
+Predicted id: 8482
+[0.78779674]
+iteration: 1200
+8482
+8482-adelantar.png
+10
+Predicted id: 11267
+[0.5961333]
+iteration: 1200
+11267
+8481-aceite.png
+Predicted id: 8485
+[0.48112902]
+iteration: 1200
+8485
+8485-agua no potable.png
+11
+Predicted id: 11395
+[0.64327216]
+iteration: 1200
+11395
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.83974695]
+iteration: 1200
+8476
+8476-la.png
+12
+Predicted id: 8370
+[0.77556634]
+iteration: 1200
+8370
+8370-tarjeta amarilla.png
+13
+Predicted id: 8369
+[0.94482136]
+iteration: 1200
+8369
+8369-sobao.png
+14
+Predicted id: 8370
+[0.84688365]
+iteration: 1200
+8370
+8355-guía de plantas.png
+Predicted id: 8356
+[0.5329621]
+iteration: 1200
+8356
+8356-guía.png
+15
+accuracy: 
+0.75
+loss: 
+[0.5825079679489136]
+Current best: 0.75, previous best: 0.75
+iteration: 1201
+iteration: 1202
+iteration: 1203
+iteration: 1204
+iteration: 1205
+iteration: 1206
+iteration: 1207
+iteration: 1208
+iteration: 1209
+iteration: 1210
+iteration: 1211
+iteration: 1212
+iteration: 1213
+iteration: 1214
+iteration: 1215
+iteration: 1216
+iteration: 1217
+iteration: 1218
+iteration: 1219
+iteration: 1220
+iteration: 1221
+iteration: 1222
+iteration: 1223
+iteration: 1224
+iteration: 1225
+iteration: 1226
+iteration: 1227
+iteration: 1228
+iteration: 1229
+iteration: 1230
+iteration: 1231
+iteration: 1232
+iteration: 1233
+iteration: 1234
+iteration: 1235
+iteration: 1236
+iteration: 1237
+iteration: 1238
+iteration: 1239
+iteration: 1240
+iteration: 1241
+iteration: 1242
+iteration: 1243
+iteration: 1244
+iteration: 1245
+iteration: 1246
+iteration: 1247
+iteration: 1248
+iteration: 1249
+iteration: 1250
+Predicted id: 8480
+[0.96145433]
+iteration: 1250
+8480
+8480-abanicar.png
+1
+Predicted id: 2649
+[0.941049]
+iteration: 1250
+2649
+8484-agradable.png
+Predicted id: 11394
+[0.6928284]
+iteration: 1250
+11394
+8376-luz de color.png
+Predicted id: 11453
+[0.6463314]
+iteration: 1250
+11453
+8372-pecho.png
+Predicted id: 8357
+[0.88380617]
+iteration: 1250
+8357
+8357-macarrón.png
+2
+Predicted id: 11401
+[0.8761637]
+iteration: 1250
+11401
+8483-frontera.png
+Predicted id: 8368
+[0.9052286]
+iteration: 1250
+8368
+8368-sandalia.png
+3
+Predicted id: 8358
+[0.7361507]
+iteration: 1250
+8358
+8358-media.png
+4
+Predicted id: 8375
+[0.843524]
+iteration: 1250
+8375
+8375-gigante.png
+5
+Predicted id: 8477
+[0.908913]
+iteration: 1250
+8477
+8477-los.png
+6
+Predicted id: 8367
+[0.89352846]
+iteration: 1250
+8367
+8367-sábana.png
+7
+Predicted id: 2644
+[0.5987684]
+iteration: 1250
+2644
+8482-adelantar.png
+Predicted id: 11267
+[0.6964057]
+iteration: 1250
+11267
+8481-aceite.png
+Predicted id: 8485
+[0.64133054]
+iteration: 1250
+8485
+8485-agua no potable.png
+8
+Predicted id: 2648
+[0.6501493]
+iteration: 1250
+2648
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.8677063]
+iteration: 1250
+8476
+8476-la.png
+9
+Predicted id: 8352
+[0.8442772]
+iteration: 1250
+8352
+8370-tarjeta amarilla.png
+Predicted id: 8369
+[0.9242699]
+iteration: 1250
+8369
+8369-sobao.png
+10
+Predicted id: 8370
+[0.93778944]
+iteration: 1250
+8370
+8355-guía de plantas.png
+Predicted id: 11274
+[0.7737804]
+iteration: 1250
+11274
+8356-guía.png
+accuracy: 
+0.5
+loss: 
+[0.6150170564651489]
+iteration: 1251
+iteration: 1252
+iteration: 1253
+iteration: 1254
+iteration: 1255
+iteration: 1256
+iteration: 1257
+iteration: 1258
+iteration: 1259
+iteration: 1260
+iteration: 1261
+iteration: 1262
+iteration: 1263
+iteration: 1264
+iteration: 1265
+iteration: 1266
+iteration: 1267
+iteration: 1268
+iteration: 1269
+iteration: 1270
+iteration: 1271
+iteration: 1272
+iteration: 1273
+iteration: 1274
+iteration: 1275
+iteration: 1276
+iteration: 1277
+iteration: 1278
+iteration: 1279
+iteration: 1280
+iteration: 1281
+iteration: 1282
+iteration: 1283
+iteration: 1284
+iteration: 1285
+iteration: 1286
+iteration: 1287
+iteration: 1288
+iteration: 1289
+iteration: 1290
+iteration: 1291
+iteration: 1292
+iteration: 1293
+iteration: 1294
+iteration: 1295
+iteration: 1296
+iteration: 1297
+iteration: 1298
+iteration: 1299
+iteration: 1300
+Predicted id: 8480
+[0.882002]
+iteration: 1300
+8480
+8480-abanicar.png
+1
+Predicted id: 2649
+[0.75115734]
+iteration: 1300
+2649
+8484-agradable.png
+Predicted id: 8376
+[0.8013185]
+iteration: 1300
+8376
+8376-luz de color.png
+2
+Predicted id: 8372
+[0.8165407]
+iteration: 1300
+8372
+8372-pecho.png
+3
+Predicted id: 8357
+[0.98087955]
+iteration: 1300
+8357
+8357-macarrón.png
+4
+Predicted id: 11401
+[0.82262355]
+iteration: 1300
+11401
+8483-frontera.png
+Predicted id: 8368
+[0.9616751]
+iteration: 1300
+8368
+8368-sandalia.png
+5
+Predicted id: 8358
+[0.90971494]
+iteration: 1300
+8358
+8358-media.png
+6
+Predicted id: 8375
+[0.87972003]
+iteration: 1300
+8375
+8375-gigante.png
+7
+Predicted id: 8477
+[0.9455353]
+iteration: 1300
+8477
+8477-los.png
+8
+Predicted id: 8367
+[0.891114]
+iteration: 1300
+8367
+8367-sábana.png
+9
+Predicted id: 8482
+[0.6740082]
+iteration: 1300
+8482
+8482-adelantar.png
+10
+Predicted id: 11267
+[0.77338445]
+iteration: 1300
+11267
+8481-aceite.png
+Predicted id: 8485
+[0.5276564]
+iteration: 1300
+8485
+8485-agua no potable.png
+11
+Predicted id: 11395
+[0.65206003]
+iteration: 1300
+11395
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.91534495]
+iteration: 1300
+8476
+8476-la.png
+12
+Predicted id: 8370
+[0.89515924]
+iteration: 1300
+8370
+8370-tarjeta amarilla.png
+13
+Predicted id: 8369
+[0.9608267]
+iteration: 1300
+8369
+8369-sobao.png
+14
+Predicted id: 8370
+[0.81003666]
+iteration: 1300
+8370
+8355-guía de plantas.png
+Predicted id: 11274
+[0.803214]
+iteration: 1300
+11274
+8356-guía.png
+accuracy: 
+0.7
+loss: 
+[0.584693193435669]
+iteration: 1301
+iteration: 1302
+iteration: 1303
+iteration: 1304
+iteration: 1305
+iteration: 1306
+iteration: 1307
+iteration: 1308
+iteration: 1309
+iteration: 1310
+iteration: 1311
+iteration: 1312
+iteration: 1313
+iteration: 1314
+iteration: 1315
+iteration: 1316
+iteration: 1317
+iteration: 1318
+iteration: 1319
+iteration: 1320
+iteration: 1321
+iteration: 1322
+iteration: 1323
+iteration: 1324
+iteration: 1325
+iteration: 1326
+iteration: 1327
+iteration: 1328
+iteration: 1329
+iteration: 1330
+iteration: 1331
+iteration: 1332
+iteration: 1333
+iteration: 1334
+iteration: 1335
+iteration: 1336
+iteration: 1337
+iteration: 1338
+iteration: 1339
+iteration: 1340
+iteration: 1341
+iteration: 1342
+iteration: 1343
+iteration: 1344
+iteration: 1345
+iteration: 1346
+iteration: 1347
+iteration: 1348
+iteration: 1349
+iteration: 1350
+Predicted id: 8480
+[0.9484124]
+iteration: 1350
+8480
+8480-abanicar.png
+1
+Predicted id: 11461
+[0.91086876]
+iteration: 1350
+11461
+8484-agradable.png
+Predicted id: 8376
+[0.6872412]
+iteration: 1350
+8376
+8376-luz de color.png
+2
+Predicted id: 11453
+[0.58463424]
+iteration: 1350
+11453
+8372-pecho.png
+Predicted id: 8357
+[0.9755236]
+iteration: 1350
+8357
+8357-macarrón.png
+3
+Predicted id: 11401
+[0.7587814]
+iteration: 1350
+11401
+8483-frontera.png
+Predicted id: 8368
+[0.9517943]
+iteration: 1350
+8368
+8368-sandalia.png
+4
+Predicted id: 8358
+[0.5306249]
+iteration: 1350
+8358
+8358-media.png
+5
+Predicted id: 11399
+[0.882066]
+iteration: 1350
+11399
+8375-gigante.png
+Predicted id: 8477
+[0.9441303]
+iteration: 1350
+8477
+8477-los.png
+6
+Predicted id: 8367
+[0.94150734]
+iteration: 1350
+8367
+8367-sábana.png
+7
+Predicted id: 2644
+[0.8548413]
+iteration: 1350
+2644
+8482-adelantar.png
+Predicted id: 11267
+[0.71640366]
+iteration: 1350
+11267
+8481-aceite.png
+Predicted id: 2658
+[0.6860614]
+iteration: 1350
+2658
+8485-agua no potable.png
+Predicted id: 11395
+[0.6624354]
+iteration: 1350
+11395
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.87308633]
+iteration: 1350
+8476
+8476-la.png
+8
+Predicted id: 8370
+[0.8897424]
+iteration: 1350
+8370
+8370-tarjeta amarilla.png
+9
+Predicted id: 8369
+[0.9150516]
+iteration: 1350
+8369
+8369-sobao.png
+10
+Predicted id: 8370
+[0.92432225]
+iteration: 1350
+8370
+8355-guía de plantas.png
+Predicted id: 8356
+[0.54700136]
+iteration: 1350
+8356
+8356-guía.png
+11
+accuracy: 
+0.55
+loss: 
+[0.5436364412307739]
+iteration: 1351
+iteration: 1352
+iteration: 1353
+iteration: 1354
+iteration: 1355
+iteration: 1356
+iteration: 1357
+iteration: 1358
+iteration: 1359
+iteration: 1360
+iteration: 1361
+iteration: 1362
+iteration: 1363
+iteration: 1364
+iteration: 1365
+iteration: 1366
+iteration: 1367
+iteration: 1368
+iteration: 1369
+iteration: 1370
+iteration: 1371
+iteration: 1372
+iteration: 1373
+iteration: 1374
+iteration: 1375
+iteration: 1376
+iteration: 1377
+iteration: 1378
+iteration: 1379
+iteration: 1380
+iteration: 1381
+iteration: 1382
+iteration: 1383
+iteration: 1384
+iteration: 1385
+iteration: 1386
+iteration: 1387
+iteration: 1388
+iteration: 1389
+iteration: 1390
+iteration: 1391
+iteration: 1392
+iteration: 1393
+iteration: 1394
+iteration: 1395
+iteration: 1396
+iteration: 1397
+iteration: 1398
+iteration: 1399
+iteration: 1400
+Predicted id: 8480
+[0.821681]
+iteration: 1400
+8480
+8480-abanicar.png
+1
+Predicted id: 11461
+[0.8717108]
+iteration: 1400
+11461
+8484-agradable.png
+Predicted id: 8376
+[0.843413]
+iteration: 1400
+8376
+8376-luz de color.png
+2
+Predicted id: 8372
+[0.5206403]
+iteration: 1400
+8372
+8372-pecho.png
+3
+Predicted id: 8366
+[0.670467]
+iteration: 1400
+8366
+8357-macarrón.png
+Predicted id: 11401
+[0.7223672]
+iteration: 1400
+11401
+8483-frontera.png
+Predicted id: 8368
+[0.77710676]
+iteration: 1400
+8368
+8368-sandalia.png
+4
+Predicted id: 8358
+[0.48490012]
+iteration: 1400
+8358
+8358-media.png
+5
+Predicted id: 11399
+[0.777444]
+iteration: 1400
+11399
+8375-gigante.png
+Predicted id: 8477
+[0.7807816]
+iteration: 1400
+8477
+8477-los.png
+6
+Predicted id: 8367
+[0.86782813]
+iteration: 1400
+8367
+8367-sábana.png
+7
+Predicted id: 2644
+[0.6588892]
+iteration: 1400
+2644
+8482-adelantar.png
+Predicted id: 11267
+[0.52287877]
+iteration: 1400
+11267
+8481-aceite.png
+Predicted id: 8485
+[0.5827619]
+iteration: 1400
+8485
+8485-agua no potable.png
+8
+Predicted id: 8370
+[0.6530702]
+iteration: 1400
+8370
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.7512543]
+iteration: 1400
+8476
+8476-la.png
+9
+Predicted id: 8370
+[0.88799924]
+iteration: 1400
+8370
+8370-tarjeta amarilla.png
+10
+Predicted id: 8369
+[0.8763943]
+iteration: 1400
+8369
+8369-sobao.png
+11
+Predicted id: 8370
+[0.85360456]
+iteration: 1400
+8370
+8355-guía de plantas.png
+Predicted id: 11274
+[0.837507]
+iteration: 1400
+11274
+8356-guía.png
+accuracy: 
+0.55
+loss: 
+[0.5350690484046936]
+iteration: 1401
+iteration: 1402
+iteration: 1403
+iteration: 1404
+iteration: 1405
+iteration: 1406
+iteration: 1407
+iteration: 1408
+iteration: 1409
+iteration: 1410
+iteration: 1411
+iteration: 1412
+iteration: 1413
+iteration: 1414
+iteration: 1415
+iteration: 1416
+iteration: 1417
+iteration: 1418
+iteration: 1419
+iteration: 1420
+iteration: 1421
+iteration: 1422
+iteration: 1423
+iteration: 1424
+iteration: 1425
+iteration: 1426
+iteration: 1427
+iteration: 1428
+iteration: 1429
+iteration: 1430
+iteration: 1431
+iteration: 1432
+iteration: 1433
+iteration: 1434
+iteration: 1435
+iteration: 1436
+iteration: 1437
+iteration: 1438
+iteration: 1439
+iteration: 1440
+iteration: 1441
+iteration: 1442
+iteration: 1443
+iteration: 1444
+iteration: 1445
+iteration: 1446
+iteration: 1447
+iteration: 1448
+iteration: 1449
+iteration: 1450
+Predicted id: 8480
+[0.71172905]
+iteration: 1450
+8480
+8480-abanicar.png
+1
+Predicted id: 8484
+[0.8771808]
+iteration: 1450
+8484
+8484-agradable.png
+2
+Predicted id: 11399
+[0.622427]
+iteration: 1450
+11399
+8376-luz de color.png
+Predicted id: 11453
+[0.77903366]
+iteration: 1450
+11453
+8372-pecho.png
+Predicted id: 8366
+[0.89431]
+iteration: 1450
+8366
+8357-macarrón.png
+Predicted id: 11401
+[0.7190257]
+iteration: 1450
+11401
+8483-frontera.png
+Predicted id: 8368
+[0.8891351]
+iteration: 1450
+8368
+8368-sandalia.png
+3
+Predicted id: 8358
+[0.6292996]
+iteration: 1450
+8358
+8358-media.png
+4
+Predicted id: 11399
+[0.7831361]
+iteration: 1450
+11399
+8375-gigante.png
+Predicted id: 8477
+[0.93181175]
+iteration: 1450
+8477
+8477-los.png
+5
+Predicted id: 8367
+[0.9498965]
+iteration: 1450
+8367
+8367-sábana.png
+6
+Predicted id: 2644
+[0.5324533]
+iteration: 1450
+2644
+8482-adelantar.png
+Predicted id: 11267
+[0.5778982]
+iteration: 1450
+11267
+8481-aceite.png
+Predicted id: 8485
+[0.43652573]
+iteration: 1450
+8485
+8485-agua no potable.png
+7
+Predicted id: 8470
+[0.69433826]
+iteration: 1450
+8470
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.85780036]
+iteration: 1450
+8476
+8476-la.png
+8
+Predicted id: 8352
+[0.7767391]
+iteration: 1450
+8352
+8370-tarjeta amarilla.png
+Predicted id: 8369
+[0.86394525]
+iteration: 1450
+8369
+8369-sobao.png
+9
+Predicted id: 8370
+[0.8435061]
+iteration: 1450
+8370
+8355-guía de plantas.png
+Predicted id: 11274
+[0.6657473]
+iteration: 1450
+11274
+8356-guía.png
+accuracy: 
+0.45
+loss: 
+[0.5195444226264954]
+iteration: 1451
+iteration: 1452
+iteration: 1453
+iteration: 1454
+iteration: 1455
+iteration: 1456
+iteration: 1457
+iteration: 1458
+iteration: 1459
+iteration: 1460
+iteration: 1461
+iteration: 1462
+iteration: 1463
+iteration: 1464
+iteration: 1465
+iteration: 1466
+iteration: 1467
+iteration: 1468
+iteration: 1469
+iteration: 1470
+iteration: 1471
+iteration: 1472
+iteration: 1473
+iteration: 1474
+iteration: 1475
+iteration: 1476
+iteration: 1477
+iteration: 1478
+iteration: 1479
+iteration: 1480
+iteration: 1481
+iteration: 1482
+iteration: 1483
+iteration: 1484
+iteration: 1485
+iteration: 1486
+iteration: 1487
+iteration: 1488
+iteration: 1489
+iteration: 1490
+iteration: 1491
+iteration: 1492
+iteration: 1493
+iteration: 1494
+iteration: 1495
+iteration: 1496
+iteration: 1497
+iteration: 1498
+iteration: 1499
+iteration: 1500
+Predicted id: 8480
+[0.9164834]
+iteration: 1500
+8480
+8480-abanicar.png
+1
+Predicted id: 2649
+[0.9337533]
+iteration: 1500
+2649
+8484-agradable.png
+Predicted id: 11399
+[0.6119635]
+iteration: 1500
+11399
+8376-luz de color.png
+Predicted id: 8372
+[0.6086148]
+iteration: 1500
+8372
+8372-pecho.png
+2
+Predicted id: 8357
+[0.8197869]
+iteration: 1500
+8357
+8357-macarrón.png
+3
+Predicted id: 11401
+[0.8105594]
+iteration: 1500
+11401
+8483-frontera.png
+Predicted id: 8368
+[0.9156649]
+iteration: 1500
+8368
+8368-sandalia.png
+4
+Predicted id: 8358
+[0.4094983]
+iteration: 1500
+8358
+8358-media.png
+5
+Predicted id: 2644
+[0.8613262]
+iteration: 1500
+2644
+8375-gigante.png
+Predicted id: 8477
+[0.89890474]
+iteration: 1500
+8477
+8477-los.png
+6
+Predicted id: 8367
+[0.90619004]
+iteration: 1500
+8367
+8367-sábana.png
+7
+Predicted id: 2644
+[0.63709795]
+iteration: 1500
+2644
+8482-adelantar.png
+Predicted id: 11267
+[0.7949176]
+iteration: 1500
+11267
+8481-aceite.png
+Predicted id: 11261
+[0.7015939]
+iteration: 1500
+11261
+8485-agua no potable.png
+Predicted id: 11395
+[0.7132145]
+iteration: 1500
+11395
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.8713145]
+iteration: 1500
+8476
+8476-la.png
+8
+Predicted id: 8370
+[0.9459746]
+iteration: 1500
+8370
+8370-tarjeta amarilla.png
+9
+Predicted id: 8369
+[0.65204376]
+iteration: 1500
+8369
+8369-sobao.png
+10
+Predicted id: 2656
+[0.6257625]
+iteration: 1500
+2656
+8355-guía de plantas.png
+Predicted id: 11274
+[0.739442]
+iteration: 1500
+11274
+8356-guía.png
+accuracy: 
+0.5
+loss: 
+[0.5178881883621216]
+iteration: 1501
+iteration: 1502
+iteration: 1503
+iteration: 1504
+iteration: 1505
+iteration: 1506
+iteration: 1507
+iteration: 1508
+iteration: 1509
+iteration: 1510
+iteration: 1511
+iteration: 1512
+iteration: 1513
+iteration: 1514
+iteration: 1515
+iteration: 1516
+iteration: 1517
+iteration: 1518
+iteration: 1519
+iteration: 1520
+iteration: 1521
+iteration: 1522
+iteration: 1523
+iteration: 1524
+iteration: 1525
+iteration: 1526
+iteration: 1527
+iteration: 1528
+iteration: 1529
+iteration: 1530
+iteration: 1531
+iteration: 1532
+iteration: 1533
+iteration: 1534
+iteration: 1535
+iteration: 1536
+iteration: 1537
+iteration: 1538
+iteration: 1539
+iteration: 1540
+iteration: 1541
+iteration: 1542
+iteration: 1543
+iteration: 1544
+iteration: 1545
+iteration: 1546
+iteration: 1547
+iteration: 1548
+iteration: 1549
+iteration: 1550
+Predicted id: 8480
+[0.93619907]
+iteration: 1550
+8480
+8480-abanicar.png
+1
+Predicted id: 11461
+[0.82678646]
+iteration: 1550
+11461
+8484-agradable.png
+Predicted id: 8376
+[0.8217876]
+iteration: 1550
+8376
+8376-luz de color.png
+2
+Predicted id: 8372
+[0.87642944]
+iteration: 1550
+8372
+8372-pecho.png
+3
+Predicted id: 8357
+[0.8627765]
+iteration: 1550
+8357
+8357-macarrón.png
+4
+Predicted id: 11401
+[0.761763]
+iteration: 1550
+11401
+8483-frontera.png
+Predicted id: 8368
+[0.9177871]
+iteration: 1550
+8368
+8368-sandalia.png
+5
+Predicted id: 8358
+[0.5754902]
+iteration: 1550
+8358
+8358-media.png
+6
+Predicted id: 11399
+[0.89757013]
+iteration: 1550
+11399
+8375-gigante.png
+Predicted id: 8477
+[0.9281199]
+iteration: 1550
+8477
+8477-los.png
+7
+Predicted id: 8367
+[0.8441537]
+iteration: 1550
+8367
+8367-sábana.png
+8
+Predicted id: 2644
+[0.6096457]
+iteration: 1550
+2644
+8482-adelantar.png
+Predicted id: 2650
+[0.7366976]
+iteration: 1550
+2650
+8481-aceite.png
+Predicted id: 8485
+[0.5032348]
+iteration: 1550
+8485
+8485-agua no potable.png
+9
+Predicted id: 8370
+[0.6908746]
+iteration: 1550
+8370
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.75227225]
+iteration: 1550
+8476
+8476-la.png
+10
+Predicted id: 8370
+[0.9356859]
+iteration: 1550
+8370
+8370-tarjeta amarilla.png
+11
+Predicted id: 8369
+[0.929478]
+iteration: 1550
+8369
+8369-sobao.png
+12
+Predicted id: 2656
+[0.56251633]
+iteration: 1550
+2656
+8355-guía de plantas.png
+Predicted id: 8356
+[0.5995411]
+iteration: 1550
+8356
+8356-guía.png
+13
+accuracy: 
+0.65
+loss: 
+[0.5171054005622864]
+iteration: 1551
+iteration: 1552
+iteration: 1553
+iteration: 1554
+iteration: 1555
+iteration: 1556
+iteration: 1557
+iteration: 1558
+iteration: 1559
+iteration: 1560
+iteration: 1561
+iteration: 1562
+iteration: 1563
+iteration: 1564
+iteration: 1565
+iteration: 1566
+iteration: 1567
+iteration: 1568
+iteration: 1569
+iteration: 1570
+iteration: 1571
+iteration: 1572
+iteration: 1573
+iteration: 1574
+iteration: 1575
+iteration: 1576
+iteration: 1577
+iteration: 1578
+iteration: 1579
+iteration: 1580
+iteration: 1581
+iteration: 1582
+iteration: 1583
+iteration: 1584
+iteration: 1585
+iteration: 1586
+iteration: 1587
+iteration: 1588
+iteration: 1589
+iteration: 1590
+iteration: 1591
+iteration: 1592
+iteration: 1593
+iteration: 1594
+iteration: 1595
+iteration: 1596
+iteration: 1597
+iteration: 1598
+iteration: 1599
+iteration: 1600
+Predicted id: 8480
+[0.5155998]
+iteration: 1600
+8480
+8480-abanicar.png
+1
+Predicted id: 2649
+[0.72342813]
+iteration: 1600
+2649
+8484-agradable.png
+Predicted id: 8376
+[0.7463263]
+iteration: 1600
+8376
+8376-luz de color.png
+2
+Predicted id: 8372
+[0.75849426]
+iteration: 1600
+8372
+8372-pecho.png
+3
+Predicted id: 8357
+[0.8844402]
+iteration: 1600
+8357
+8357-macarrón.png
+4
+Predicted id: 11401
+[0.8302529]
+iteration: 1600
+11401
+8483-frontera.png
+Predicted id: 8368
+[0.897383]
+iteration: 1600
+8368
+8368-sandalia.png
+5
+Predicted id: 8358
+[0.5394209]
+iteration: 1600
+8358
+8358-media.png
+6
+Predicted id: 8375
+[0.82984066]
+iteration: 1600
+8375
+8375-gigante.png
+7
+Predicted id: 8477
+[0.7467427]
+iteration: 1600
+8477
+8477-los.png
+8
+Predicted id: 8367
+[0.7877797]
+iteration: 1600
+8367
+8367-sábana.png
+9
+Predicted id: 8482
+[0.4229397]
+iteration: 1600
+8482
+8482-adelantar.png
+10
+Predicted id: 11267
+[0.66878855]
+iteration: 1600
+11267
+8481-aceite.png
+Predicted id: 8485
+[0.3795158]
+iteration: 1600
+8485
+8485-agua no potable.png
+11
+Predicted id: 8370
+[0.63104206]
+iteration: 1600
+8370
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.780794]
+iteration: 1600
+8476
+8476-la.png
+12
+Predicted id: 8370
+[0.8765874]
+iteration: 1600
+8370
+8370-tarjeta amarilla.png
+13
+Predicted id: 8369
+[0.89349115]
+iteration: 1600
+8369
+8369-sobao.png
+14
+Predicted id: 8372
+[0.4236287]
+iteration: 1600
+8372
+8355-guía de plantas.png
+Predicted id: 11274
+[0.66486615]
+iteration: 1600
+11274
+8356-guía.png
+accuracy: 
+0.7
+loss: 
+[0.4690968990325928]
+iteration: 1601
+iteration: 1602
+iteration: 1603
+iteration: 1604
+iteration: 1605
+iteration: 1606
+iteration: 1607
+iteration: 1608
+iteration: 1609
+iteration: 1610
+iteration: 1611
+iteration: 1612
+iteration: 1613
+iteration: 1614
+iteration: 1615
+iteration: 1616
+iteration: 1617
+iteration: 1618
+iteration: 1619
+iteration: 1620
+iteration: 1621
+iteration: 1622
+iteration: 1623
+iteration: 1624
+iteration: 1625
+iteration: 1626
+iteration: 1627
+iteration: 1628
+iteration: 1629
+iteration: 1630
+iteration: 1631
+iteration: 1632
+iteration: 1633
+iteration: 1634
+iteration: 1635
+iteration: 1636
+iteration: 1637
+iteration: 1638
+iteration: 1639
+iteration: 1640
+iteration: 1641
+iteration: 1642
+iteration: 1643
+iteration: 1644
+iteration: 1645
+iteration: 1646
+iteration: 1647
+iteration: 1648
+iteration: 1649
+iteration: 1650
+Predicted id: 8480
+[0.8961264]
+iteration: 1650
+8480
+8480-abanicar.png
+1
+Predicted id: 2649
+[0.8318277]
+iteration: 1650
+2649
+8484-agradable.png
+Predicted id: 8376
+[0.91526943]
+iteration: 1650
+8376
+8376-luz de color.png
+2
+Predicted id: 8372
+[0.90206504]
+iteration: 1650
+8372
+8372-pecho.png
+3
+Predicted id: 8366
+[0.9563299]
+iteration: 1650
+8366
+8357-macarrón.png
+Predicted id: 11401
+[0.8289486]
+iteration: 1650
+11401
+8483-frontera.png
+Predicted id: 8368
+[0.9533788]
+iteration: 1650
+8368
+8368-sandalia.png
+4
+Predicted id: 8358
+[0.82978165]
+iteration: 1650
+8358
+8358-media.png
+5
+Predicted id: 2644
+[0.8895556]
+iteration: 1650
+2644
+8375-gigante.png
+Predicted id: 8477
+[0.9458506]
+iteration: 1650
+8477
+8477-los.png
+6
+Predicted id: 8367
+[0.90785253]
+iteration: 1650
+8367
+8367-sábana.png
+7
+Predicted id: 2644
+[0.77997386]
+iteration: 1650
+2644
+8482-adelantar.png
+Predicted id: 11267
+[0.59437805]
+iteration: 1650
+11267
+8481-aceite.png
+Predicted id: 8485
+[0.64778006]
+iteration: 1650
+8485
+8485-agua no potable.png
+8
+Predicted id: 8370
+[0.9305955]
+iteration: 1650
+8370
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.81109023]
+iteration: 1650
+8476
+8476-la.png
+9
+Predicted id: 8370
+[0.94043946]
+iteration: 1650
+8370
+8370-tarjeta amarilla.png
+10
+Predicted id: 8369
+[0.96556956]
+iteration: 1650
+8369
+8369-sobao.png
+11
+Predicted id: 2662
+[0.8945933]
+iteration: 1650
+2662
+8355-guía de plantas.png
+Predicted id: 8356
+[0.7399744]
+iteration: 1650
+8356
+8356-guía.png
+12
+accuracy: 
+0.6
+loss: 
+[0.4757523238658905]
+iteration: 1651
+iteration: 1652
+iteration: 1653
+iteration: 1654
+iteration: 1655
+iteration: 1656
+iteration: 1657
+iteration: 1658
+iteration: 1659
+iteration: 1660
+iteration: 1661
+iteration: 1662
+iteration: 1663
+iteration: 1664
+iteration: 1665
+iteration: 1666
+iteration: 1667
+iteration: 1668
+iteration: 1669
+iteration: 1670
+iteration: 1671
+iteration: 1672
+iteration: 1673
+iteration: 1674
+iteration: 1675
+iteration: 1676
+iteration: 1677
+iteration: 1678
+iteration: 1679
+iteration: 1680
+iteration: 1681
+iteration: 1682
+iteration: 1683
+iteration: 1684
+iteration: 1685
+iteration: 1686
+iteration: 1687
+iteration: 1688
+iteration: 1689
+iteration: 1690
+iteration: 1691
+iteration: 1692
+iteration: 1693
+iteration: 1694
+iteration: 1695
+iteration: 1696
+iteration: 1697
+iteration: 1698
+iteration: 1699
+iteration: 1700
+Predicted id: 8480
+[0.74045914]
+iteration: 1700
+8480
+8480-abanicar.png
+1
+Predicted id: 11461
+[0.7766212]
+iteration: 1700
+11461
+8484-agradable.png
+Predicted id: 8376
+[0.75373495]
+iteration: 1700
+8376
+8376-luz de color.png
+2
+Predicted id: 8372
+[0.66755843]
+iteration: 1700
+8372
+8372-pecho.png
+3
+Predicted id: 8366
+[0.92396003]
+iteration: 1700
+8366
+8357-macarrón.png
+Predicted id: 11401
+[0.66113806]
+iteration: 1700
+11401
+8483-frontera.png
+Predicted id: 8368
+[0.92228204]
+iteration: 1700
+8368
+8368-sandalia.png
+4
+Predicted id: 8358
+[0.81784976]
+iteration: 1700
+8358
+8358-media.png
+5
+Predicted id: 2644
+[0.8370222]
+iteration: 1700
+2644
+8375-gigante.png
+Predicted id: 8477
+[0.8539982]
+iteration: 1700
+8477
+8477-los.png
+6
+Predicted id: 8367
+[0.90642357]
+iteration: 1700
+8367
+8367-sábana.png
+7
+Predicted id: 2644
+[0.6310833]
+iteration: 1700
+2644
+8482-adelantar.png
+Predicted id: 2651
+[0.7344283]
+iteration: 1700
+2651
+8481-aceite.png
+Predicted id: 11261
+[0.37026018]
+iteration: 1700
+11261
+8485-agua no potable.png
+Predicted id: 8476
+[0.5967358]
+iteration: 1700
+8476
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.5689256]
+iteration: 1700
+8476
+8476-la.png
+8
+Predicted id: 8370
+[0.9051919]
+iteration: 1700
+8370
+8370-tarjeta amarilla.png
+9
+Predicted id: 8369
+[0.87778]
+iteration: 1700
+8369
+8369-sobao.png
+10
+Predicted id: 8372
+[0.52642137]
+iteration: 1700
+8372
+8355-guía de plantas.png
+Predicted id: 8356
+[0.6378427]
+iteration: 1700
+8356
+8356-guía.png
+11
+accuracy: 
+0.55
+loss: 
+[0.48637819290161133]
+iteration: 1701
+iteration: 1702
+iteration: 1703
+iteration: 1704
+iteration: 1705
+iteration: 1706
+iteration: 1707
+iteration: 1708
+iteration: 1709
+iteration: 1710
+iteration: 1711
+iteration: 1712
+iteration: 1713
+iteration: 1714
+iteration: 1715
+iteration: 1716
+iteration: 1717
+iteration: 1718
+iteration: 1719
+iteration: 1720
+iteration: 1721
+iteration: 1722
+iteration: 1723
+iteration: 1724
+iteration: 1725
+iteration: 1726
+iteration: 1727
+iteration: 1728
+iteration: 1729
+iteration: 1730
+iteration: 1731
+iteration: 1732
+iteration: 1733
+iteration: 1734
+iteration: 1735
+iteration: 1736
+iteration: 1737
+iteration: 1738
+iteration: 1739
+iteration: 1740
+iteration: 1741
+iteration: 1742
+iteration: 1743
+iteration: 1744
+iteration: 1745
+iteration: 1746
+iteration: 1747
+iteration: 1748
+iteration: 1749
+iteration: 1750
+Predicted id: 8480
+[0.8239651]
+iteration: 1750
+8480
+8480-abanicar.png
+1
+Predicted id: 11461
+[0.9033665]
+iteration: 1750
+11461
+8484-agradable.png
+Predicted id: 8376
+[0.88688207]
+iteration: 1750
+8376
+8376-luz de color.png
+2
+Predicted id: 8372
+[0.7829579]
+iteration: 1750
+8372
+8372-pecho.png
+3
+Predicted id: 8357
+[0.94892126]
+iteration: 1750
+8357
+8357-macarrón.png
+4
+Predicted id: 11401
+[0.69567025]
+iteration: 1750
+11401
+8483-frontera.png
+Predicted id: 8368
+[0.91888374]
+iteration: 1750
+8368
+8368-sandalia.png
+5
+Predicted id: 8358
+[0.8431524]
+iteration: 1750
+8358
+8358-media.png
+6
+Predicted id: 8375
+[0.845213]
+iteration: 1750
+8375
+8375-gigante.png
+7
+Predicted id: 8477
+[0.9216207]
+iteration: 1750
+8477
+8477-los.png
+8
+Predicted id: 8367
+[0.96832216]
+iteration: 1750
+8367
+8367-sábana.png
+9
+Predicted id: 2644
+[0.60558313]
+iteration: 1750
+2644
+8482-adelantar.png
+Predicted id: 2651
+[0.44104877]
+iteration: 1750
+2651
+8481-aceite.png
+Predicted id: 8485
+[0.33750668]
+iteration: 1750
+8485
+8485-agua no potable.png
+10
+Predicted id: 8476
+[0.5193263]
+iteration: 1750
+8476
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.77304363]
+iteration: 1750
+8476
+8476-la.png
+11
+Predicted id: 8370
+[0.8562621]
+iteration: 1750
+8370
+8370-tarjeta amarilla.png
+12
+Predicted id: 8369
+[0.9767856]
+iteration: 1750
+8369
+8369-sobao.png
+13
+Predicted id: 2662
+[0.61239105]
+iteration: 1750
+2662
+8355-guía de plantas.png
+Predicted id: 8369
+[0.6624584]
+iteration: 1750
+8369
+8356-guía.png
+accuracy: 
+0.65
+loss: 
+[0.4339202344417572]
+iteration: 1751
+iteration: 1752
+iteration: 1753
+iteration: 1754
+iteration: 1755
+iteration: 1756
+iteration: 1757
+iteration: 1758
+iteration: 1759
+iteration: 1760
+iteration: 1761
+iteration: 1762
+iteration: 1763
+iteration: 1764
+iteration: 1765
+iteration: 1766
+iteration: 1767
+iteration: 1768
+iteration: 1769
+iteration: 1770
+iteration: 1771
+iteration: 1772
+iteration: 1773
+iteration: 1774
+iteration: 1775
+iteration: 1776
+iteration: 1777
+iteration: 1778
+iteration: 1779
+iteration: 1780
+iteration: 1781
+iteration: 1782
+iteration: 1783
+iteration: 1784
+iteration: 1785
+iteration: 1786
+iteration: 1787
+iteration: 1788
+iteration: 1789
+iteration: 1790
+iteration: 1791
+iteration: 1792
+iteration: 1793
+iteration: 1794
+iteration: 1795
+iteration: 1796
+iteration: 1797
+iteration: 1798
+iteration: 1799
+iteration: 1800
+Predicted id: 8480
+[0.88866043]
+iteration: 1800
+8480
+8480-abanicar.png
+1
+Predicted id: 2649
+[0.9261936]
+iteration: 1800
+2649
+8484-agradable.png
+Predicted id: 8376
+[0.72709864]
+iteration: 1800
+8376
+8376-luz de color.png
+2
+Predicted id: 8372
+[0.90408534]
+iteration: 1800
+8372
+8372-pecho.png
+3
+Predicted id: 8357
+[0.971676]
+iteration: 1800
+8357
+8357-macarrón.png
+4
+Predicted id: 11401
+[0.7191704]
+iteration: 1800
+11401
+8483-frontera.png
+Predicted id: 8368
+[0.88750327]
+iteration: 1800
+8368
+8368-sandalia.png
+5
+Predicted id: 8358
+[0.71285415]
+iteration: 1800
+8358
+8358-media.png
+6
+Predicted id: 2644
+[0.81733745]
+iteration: 1800
+2644
+8375-gigante.png
+Predicted id: 8477
+[0.9571035]
+iteration: 1800
+8477
+8477-los.png
+7
+Predicted id: 8367
+[0.9065309]
+iteration: 1800
+8367
+8367-sábana.png
+8
+Predicted id: 2644
+[0.4939903]
+iteration: 1800
+2644
+8482-adelantar.png
+Predicted id: 11267
+[0.41330785]
+iteration: 1800
+11267
+8481-aceite.png
+Predicted id: 11402
+[0.41971254]
+iteration: 1800
+11402
+8485-agua no potable.png
+Predicted id: 8470
+[0.7987076]
+iteration: 1800
+8470
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.767959]
+iteration: 1800
+8476
+8476-la.png
+9
+Predicted id: 8370
+[0.85919666]
+iteration: 1800
+8370
+8370-tarjeta amarilla.png
+10
+Predicted id: 8369
+[0.8409889]
+iteration: 1800
+8369
+8369-sobao.png
+11
+Predicted id: 2662
+[0.93293643]
+iteration: 1800
+2662
+8355-guía de plantas.png
+Predicted id: 11274
+[0.6689156]
+iteration: 1800
+11274
+8356-guía.png
+accuracy: 
+0.55
+loss: 
+[0.4557017683982849]
+iteration: 1801
+iteration: 1802
+iteration: 1803
+iteration: 1804
+iteration: 1805
+iteration: 1806
+iteration: 1807
+iteration: 1808
+iteration: 1809
+iteration: 1810
+iteration: 1811
+iteration: 1812
+iteration: 1813
+iteration: 1814
+iteration: 1815
+iteration: 1816
+iteration: 1817
+iteration: 1818
+iteration: 1819
+iteration: 1820
+iteration: 1821
+iteration: 1822
+iteration: 1823
+iteration: 1824
+iteration: 1825
+iteration: 1826
+iteration: 1827
+iteration: 1828
+iteration: 1829
+iteration: 1830
+iteration: 1831
+iteration: 1832
+iteration: 1833
+iteration: 1834
+iteration: 1835
+iteration: 1836
+iteration: 1837
+iteration: 1838
+iteration: 1839
+iteration: 1840
+iteration: 1841
+iteration: 1842
+iteration: 1843
+iteration: 1844
+iteration: 1845
+iteration: 1846
+iteration: 1847
+iteration: 1848
+iteration: 1849
+iteration: 1850
+Predicted id: 8480
+[0.7890351]
+iteration: 1850
+8480
+8480-abanicar.png
+1
+Predicted id: 11461
+[0.94400907]
+iteration: 1850
+11461
+8484-agradable.png
+Predicted id: 8376
+[0.64311534]
+iteration: 1850
+8376
+8376-luz de color.png
+2
+Predicted id: 8372
+[0.7156284]
+iteration: 1850
+8372
+8372-pecho.png
+3
+Predicted id: 8357
+[0.95577407]
+iteration: 1850
+8357
+8357-macarrón.png
+4
+Predicted id: 11398
+[0.80924106]
+iteration: 1850
+11398
+8483-frontera.png
+Predicted id: 8368
+[0.91027963]
+iteration: 1850
+8368
+8368-sandalia.png
+5
+Predicted id: 8358
+[0.87221104]
+iteration: 1850
+8358
+8358-media.png
+6
+Predicted id: 11399
+[0.8421141]
+iteration: 1850
+11399
+8375-gigante.png
+Predicted id: 8477
+[0.89411]
+iteration: 1850
+8477
+8477-los.png
+7
+Predicted id: 8367
+[0.89892733]
+iteration: 1850
+8367
+8367-sábana.png
+8
+Predicted id: 8482
+[0.5798386]
+iteration: 1850
+8482
+8482-adelantar.png
+9
+Predicted id: 2650
+[0.5576601]
+iteration: 1850
+2650
+8481-aceite.png
+Predicted id: 8485
+[0.29806268]
+iteration: 1850
+8485
+8485-agua no potable.png
+10
+Predicted id: 11395
+[0.57401]
+iteration: 1850
+11395
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.71580565]
+iteration: 1850
+8476
+8476-la.png
+11
+Predicted id: 8370
+[0.8892381]
+iteration: 1850
+8370
+8370-tarjeta amarilla.png
+12
+Predicted id: 8369
+[0.8814552]
+iteration: 1850
+8369
+8369-sobao.png
+13
+Predicted id: 2662
+[0.7129917]
+iteration: 1850
+2662
+8355-guía de plantas.png
+Predicted id: 11274
+[0.54242384]
+iteration: 1850
+11274
+8356-guía.png
+accuracy: 
+0.65
+loss: 
+[0.45566532015800476]
+iteration: 1851
+iteration: 1852
+iteration: 1853
+iteration: 1854
+iteration: 1855
+iteration: 1856
+iteration: 1857
+iteration: 1858
+iteration: 1859
+iteration: 1860
+iteration: 1861
+iteration: 1862
+iteration: 1863
+iteration: 1864
+iteration: 1865
+iteration: 1866
+iteration: 1867
+iteration: 1868
+iteration: 1869
+iteration: 1870
+iteration: 1871
+iteration: 1872
+iteration: 1873
+iteration: 1874
+iteration: 1875
+iteration: 1876
+iteration: 1877
+iteration: 1878
+iteration: 1879
+iteration: 1880
+iteration: 1881
+iteration: 1882
+iteration: 1883
+iteration: 1884
+iteration: 1885
+iteration: 1886
+iteration: 1887
+iteration: 1888
+iteration: 1889
+iteration: 1890
+iteration: 1891
+iteration: 1892
+iteration: 1893
+iteration: 1894
+iteration: 1895
+iteration: 1896
+iteration: 1897
+iteration: 1898
+iteration: 1899
+iteration: 1900
+Predicted id: 8480
+[0.8919145]
+iteration: 1900
+8480
+8480-abanicar.png
+1
+Predicted id: 11461
+[0.95424354]
+iteration: 1900
+11461
+8484-agradable.png
+Predicted id: 8376
+[0.94301355]
+iteration: 1900
+8376
+8376-luz de color.png
+2
+Predicted id: 8372
+[0.87511635]
+iteration: 1900
+8372
+8372-pecho.png
+3
+Predicted id: 8357
+[0.9878462]
+iteration: 1900
+8357
+8357-macarrón.png
+4
+Predicted id: 11401
+[0.88666743]
+iteration: 1900
+11401
+8483-frontera.png
+Predicted id: 8368
+[0.9517673]
+iteration: 1900
+8368
+8368-sandalia.png
+5
+Predicted id: 8358
+[0.9116299]
+iteration: 1900
+8358
+8358-media.png
+6
+Predicted id: 8375
+[0.8463676]
+iteration: 1900
+8375
+8375-gigante.png
+7
+Predicted id: 8477
+[0.90157104]
+iteration: 1900
+8477
+8477-los.png
+8
+Predicted id: 8367
+[0.943447]
+iteration: 1900
+8367
+8367-sábana.png
+9
+Predicted id: 8482
+[0.6194356]
+iteration: 1900
+8482
+8482-adelantar.png
+10
+Predicted id: 11267
+[0.5133129]
+iteration: 1900
+11267
+8481-aceite.png
+Predicted id: 11261
+[0.2973666]
+iteration: 1900
+11261
+8485-agua no potable.png
+Predicted id: 11395
+[0.92900383]
+iteration: 1900
+11395
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.8215331]
+iteration: 1900
+8476
+8476-la.png
+11
+Predicted id: 8370
+[0.9164349]
+iteration: 1900
+8370
+8370-tarjeta amarilla.png
+12
+Predicted id: 8369
+[0.8578601]
+iteration: 1900
+8369
+8369-sobao.png
+13
+Predicted id: 2662
+[0.9089433]
+iteration: 1900
+2662
+8355-guía de plantas.png
+Predicted id: 8356
+[0.55738175]
+iteration: 1900
+8356
+8356-guía.png
+14
+accuracy: 
+0.7
+loss: 
+[0.4273701012134552]
+iteration: 1901
+iteration: 1902
+iteration: 1903
+iteration: 1904
+iteration: 1905
+iteration: 1906
+iteration: 1907
+iteration: 1908
+iteration: 1909
+iteration: 1910
+iteration: 1911
+iteration: 1912
+iteration: 1913
+iteration: 1914
+iteration: 1915
+iteration: 1916
+iteration: 1917
+iteration: 1918
+iteration: 1919
+iteration: 1920
+iteration: 1921
+iteration: 1922
+iteration: 1923
+iteration: 1924
+iteration: 1925
+iteration: 1926
+iteration: 1927
+iteration: 1928
+iteration: 1929
+iteration: 1930
+iteration: 1931
+iteration: 1932
+iteration: 1933
+iteration: 1934
+iteration: 1935
+iteration: 1936
+iteration: 1937
+iteration: 1938
+iteration: 1939
+iteration: 1940
+iteration: 1941
+iteration: 1942
+iteration: 1943
+iteration: 1944
+iteration: 1945
+iteration: 1946
+iteration: 1947
+iteration: 1948
+iteration: 1949
+iteration: 1950
+Predicted id: 8480
+[0.5958984]
+iteration: 1950
+8480
+8480-abanicar.png
+1
+Predicted id: 11461
+[0.8919748]
+iteration: 1950
+11461
+8484-agradable.png
+Predicted id: 8376
+[0.9061494]
+iteration: 1950
+8376
+8376-luz de color.png
+2
+Predicted id: 8372
+[0.8521503]
+iteration: 1950
+8372
+8372-pecho.png
+3
+Predicted id: 8357
+[0.97453886]
+iteration: 1950
+8357
+8357-macarrón.png
+4
+Predicted id: 11401
+[0.90998447]
+iteration: 1950
+11401
+8483-frontera.png
+Predicted id: 8368
+[0.95798635]
+iteration: 1950
+8368
+8368-sandalia.png
+5
+Predicted id: 8358
+[0.92235243]
+iteration: 1950
+8358
+8358-media.png
+6
+Predicted id: 8375
+[0.93649614]
+iteration: 1950
+8375
+8375-gigante.png
+7
+Predicted id: 8477
+[0.9141966]
+iteration: 1950
+8477
+8477-los.png
+8
+Predicted id: 8367
+[0.90826213]
+iteration: 1950
+8367
+8367-sábana.png
+9
+Predicted id: 11258
+[0.73760676]
+iteration: 1950
+11258
+8482-adelantar.png
+Predicted id: 2651
+[0.6897668]
+iteration: 1950
+2651
+8481-aceite.png
+Predicted id: 8485
+[0.19352648]
+iteration: 1950
+8485
+8485-agua no potable.png
+10
+Predicted id: 8476
+[0.6937781]
+iteration: 1950
+8476
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.84494436]
+iteration: 1950
+8476
+8476-la.png
+11
+Predicted id: 8370
+[0.9454285]
+iteration: 1950
+8370
+8370-tarjeta amarilla.png
+12
+Predicted id: 8369
+[0.928357]
+iteration: 1950
+8369
+8369-sobao.png
+13
+Predicted id: 2662
+[0.86606395]
+iteration: 1950
+2662
+8355-guía de plantas.png
+Predicted id: 11274
+[0.85056436]
+iteration: 1950
+11274
+8356-guía.png
+accuracy: 
+0.65
+loss: 
+[0.4060630798339844]
+iteration: 1951
+iteration: 1952
+iteration: 1953
+iteration: 1954
+iteration: 1955
+iteration: 1956
+iteration: 1957
+iteration: 1958
+iteration: 1959
+iteration: 1960
+iteration: 1961
+iteration: 1962
+iteration: 1963
+iteration: 1964
+iteration: 1965
+iteration: 1966
+iteration: 1967
+iteration: 1968
+iteration: 1969
+iteration: 1970
+iteration: 1971
+iteration: 1972
+iteration: 1973
+iteration: 1974
+iteration: 1975
+iteration: 1976
+iteration: 1977
+iteration: 1978
+iteration: 1979
+iteration: 1980
+iteration: 1981
+iteration: 1982
+iteration: 1983
+iteration: 1984
+iteration: 1985
+iteration: 1986
+iteration: 1987
+iteration: 1988
+iteration: 1989
+iteration: 1990
+iteration: 1991
+iteration: 1992
+iteration: 1993
+iteration: 1994
+iteration: 1995
+iteration: 1996
+iteration: 1997
+iteration: 1998
+iteration: 1999
+iteration: 2000
+Predicted id: 8480
+[0.49157462]
+iteration: 2000
+8480
+8480-abanicar.png
+1
+Predicted id: 2649
+[0.8422699]
+iteration: 2000
+2649
+8484-agradable.png
+Predicted id: 8376
+[0.8446784]
+iteration: 2000
+8376
+8376-luz de color.png
+2
+Predicted id: 8372
+[0.6792694]
+iteration: 2000
+8372
+8372-pecho.png
+3
+Predicted id: 8357
+[0.9812026]
+iteration: 2000
+8357
+8357-macarrón.png
+4
+Predicted id: 11401
+[0.9223071]
+iteration: 2000
+11401
+8483-frontera.png
+Predicted id: 8368
+[0.9439484]
+iteration: 2000
+8368
+8368-sandalia.png
+5
+Predicted id: 8358
+[0.8941501]
+iteration: 2000
+8358
+8358-media.png
+6
+Predicted id: 8474
+[0.9189977]
+iteration: 2000
+8474
+8375-gigante.png
+Predicted id: 8477
+[0.89801717]
+iteration: 2000
+8477
+8477-los.png
+7
+Predicted id: 8367
+[0.8041577]
+iteration: 2000
+8367
+8367-sábana.png
+8
+Predicted id: 8482
+[0.5432395]
+iteration: 2000
+8482
+8482-adelantar.png
+9
+Predicted id: 2650
+[0.6434512]
+iteration: 2000
+2650
+8481-aceite.png
+Predicted id: 8485
+[0.33899564]
+iteration: 2000
+8485
+8485-agua no potable.png
+10
+Predicted id: 11395
+[0.6664682]
+iteration: 2000
+11395
+8371-tarjeta roja.png
+Predicted id: 8476
+[0.7537741]
+iteration: 2000
+8476
+8476-la.png
+11
+Predicted id: 8370
+[0.8246934]
+iteration: 2000
+8370
+8370-tarjeta amarilla.png
+12
+Predicted id: 8369
+[0.8879576]
+iteration: 2000
+8369
+8369-sobao.png
+13
+Predicted id: 2662
+[0.7423617]
+iteration: 2000
+2662
+8355-guía de plantas.png
+Predicted id: 11274
+[0.6785473]
+iteration: 2000
+11274
+8356-guía.png
+accuracy: 
+0.65
+loss: 
+[0.40231218934059143]
+Model: "model_1"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_3 (InputLayer)            [(None, 105, 105, 4) 0                                            
+__________________________________________________________________________________________________
+input_4 (InputLayer)            [(None, 105, 105, 4) 0                                            
+__________________________________________________________________________________________________
+sequential_model (Sequential)   (None, 4096)         38966848    input_3[0][0]                    
+                                                                 input_4[0][0]                    
+__________________________________________________________________________________________________
+lambda_1 (Lambda)               (None, 4096)         0           sequential_model[0][0]           
+                                                                 sequential_model[1][0]           
+__________________________________________________________________________________________________
+final_dense (Dense)             (None, 1)            4097        lambda_1[0][0]                   
+==================================================================================================
+Total params: 38,970,945
+Trainable params: 38,970,945
+Non-trainable params: 0
+__________________________________________________________________________________________________

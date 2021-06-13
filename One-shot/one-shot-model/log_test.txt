@@ -1,0 +1,3562 @@
+Found 7806 images belonging to 200 classes.
+Found 0 images belonging to 0 classes.
+Found 0 images belonging to 0 classes.
+Found 44 images belonging to 44 classes.
+Found 100 images belonging to 1 classes.
+Model: "model"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_1 (InputLayer)            [(None, 105, 105, 4) 0                                            
+__________________________________________________________________________________________________
+input_2 (InputLayer)            [(None, 105, 105, 4) 0                                            
+__________________________________________________________________________________________________
+sequential_model (Sequential)   (None, 4096)         38966848    input_1[0][0]                    
+                                                                 input_2[0][0]                    
+__________________________________________________________________________________________________
+lambda (Lambda)                 (None, 4096)         0           sequential_model[0][0]           
+                                                                 sequential_model[1][0]           
+__________________________________________________________________________________________________
+final_dense (Dense)             (None, 1)            4097        lambda[0][0]                     
+==================================================================================================
+Total params: 38,970,945
+Trainable params: 38,970,945
+Non-trainable params: 0
+__________________________________________________________________________________________________
+weigth: 150
+Predicted id: 9806
+[0.73375523]
+weights: 150
+9806
+8204-pulverizador.png
+Predicted id: 2266
+[0.7516484]
+weights: 150
+2266
+8456-conocer.png
+Predicted id: 8455
+[0.46384278]
+weights: 150
+8455
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.6881968]
+weights: 150
+8591
+8197-pozo.png
+Predicted id: 2242
+[0.5035858]
+weights: 150
+2242
+8196-Portugal.png
+Predicted id: 9809
+[0.5865067]
+weights: 150
+9809
+8201-proyección.png
+Predicted id: 2264
+[0.61471766]
+weights: 150
+2264
+8202-proyector.png
+Predicted id: 8205
+[0.7564897]
+weights: 150
+8205
+8205-reciclaje.png
+1
+Predicted id: 8455
+[0.46002287]
+weights: 150
+8455
+8191-piscina de bolas.png
+Predicted id: 9800
+[0.6971943]
+weights: 150
+9800
+8466-pinza.png
+Predicted id: 9800
+[0.6888823]
+weights: 150
+9800
+8389-burbuja.png
+Predicted id: 8206
+[0.6814395]
+weights: 150
+8206
+8206-Reino Unido.png
+2
+Predicted id: 8192
+[0.58974993]
+weights: 150
+8192
+8192-planchar.png
+3
+Predicted id: 8194
+[0.71724886]
+weights: 150
+8194
+8194-por favor.png
+4
+Predicted id: 2278
+[0.65298367]
+weights: 150
+2278
+8195-por favor.png
+Predicted id: 9806
+[0.6524297]
+weights: 150
+9806
+8198-prismáticos.png
+Predicted id: 8455
+[0.6409128]
+weights: 150
+8455
+8455-churro.png
+5
+Predicted id: 8200
+[0.58062094]
+weights: 150
+8200
+8200-programa de cocina.png
+6
+Predicted id: 8193
+[0.7389578]
+weights: 150
+8193
+8193-polvorón.png
+7
+Predicted id: 8203
+[0.6199994]
+weights: 150
+8203
+8203-pulsera.png
+8
+accuracy: 
+0.4
+weigth: 500
+Predicted id: 2244
+[0.92081565]
+weights: 500
+2244
+8204-pulverizador.png
+Predicted id: 30614
+[0.83866274]
+weights: 500
+30614
+8456-conocer.png
+Predicted id: 2269
+[0.7812176]
+weights: 500
+2269
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.9376714]
+weights: 500
+8591
+8197-pozo.png
+Predicted id: 2242
+[0.7170128]
+weights: 500
+2242
+8196-Portugal.png
+Predicted id: 2268
+[0.5170318]
+weights: 500
+2268
+8201-proyección.png
+Predicted id: 2264
+[0.9080485]
+weights: 500
+2264
+8202-proyector.png
+Predicted id: 8205
+[0.92352283]
+weights: 500
+8205
+8205-reciclaje.png
+1
+Predicted id: 9809
+[0.5863711]
+weights: 500
+9809
+8191-piscina de bolas.png
+Predicted id: 8466
+[0.84820104]
+weights: 500
+8466
+8466-pinza.png
+2
+Predicted id: 8389
+[0.9089469]
+weights: 500
+8389
+8389-burbuja.png
+3
+Predicted id: 2277
+[0.70157576]
+weights: 500
+2277
+8206-Reino Unido.png
+Predicted id: 8192
+[0.7763301]
+weights: 500
+8192
+8192-planchar.png
+4
+Predicted id: 8194
+[0.9137392]
+weights: 500
+8194
+8194-por favor.png
+5
+Predicted id: 8195
+[0.74631107]
+weights: 500
+8195
+8195-por favor.png
+6
+Predicted id: 2261
+[0.9016672]
+weights: 500
+2261
+8198-prismáticos.png
+Predicted id: 2269
+[0.94499695]
+weights: 500
+2269
+8455-churro.png
+Predicted id: 8195
+[0.71588963]
+weights: 500
+8195
+8200-programa de cocina.png
+Predicted id: 2244
+[0.89587426]
+weights: 500
+2244
+8193-polvorón.png
+Predicted id: 8203
+[0.9341556]
+weights: 500
+8203
+8203-pulsera.png
+7
+accuracy: 
+0.35
+weigth: 600
+Predicted id: 2279
+[0.95997655]
+weights: 600
+2279
+8204-pulverizador.png
+Predicted id: 30614
+[0.7786132]
+weights: 600
+30614
+8456-conocer.png
+Predicted id: 2244
+[0.5745343]
+weights: 600
+2244
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.9217514]
+weights: 600
+8591
+8197-pozo.png
+Predicted id: 2242
+[0.87422967]
+weights: 600
+2242
+8196-Portugal.png
+Predicted id: 2244
+[0.31228337]
+weights: 600
+2244
+8201-proyección.png
+Predicted id: 2254
+[0.6683395]
+weights: 600
+2254
+8202-proyector.png
+Predicted id: 8205
+[0.9050517]
+weights: 600
+8205
+8205-reciclaje.png
+1
+Predicted id: 9809
+[0.5470177]
+weights: 600
+9809
+8191-piscina de bolas.png
+Predicted id: 2274
+[0.7028713]
+weights: 600
+2274
+8466-pinza.png
+Predicted id: 8389
+[0.84970546]
+weights: 600
+8389
+8389-burbuja.png
+2
+Predicted id: 2277
+[0.44516292]
+weights: 600
+2277
+8206-Reino Unido.png
+Predicted id: 8192
+[0.90582407]
+weights: 600
+8192
+8192-planchar.png
+3
+Predicted id: 8215
+[0.95729244]
+weights: 600
+8215
+8194-por favor.png
+Predicted id: 8195
+[0.7941969]
+weights: 600
+8195
+8195-por favor.png
+4
+Predicted id: 2261
+[0.8514755]
+weights: 600
+2261
+8198-prismáticos.png
+Predicted id: 8455
+[0.91875094]
+weights: 600
+8455
+8455-churro.png
+5
+Predicted id: 2261
+[0.8189163]
+weights: 600
+2261
+8200-programa de cocina.png
+Predicted id: 8193
+[0.9346162]
+weights: 600
+8193
+8193-polvorón.png
+6
+Predicted id: 8203
+[0.8709851]
+weights: 600
+8203
+8203-pulsera.png
+7
+accuracy: 
+0.35
+weigth: 650
+Predicted id: 2279
+[0.826726]
+weights: 650
+2279
+8204-pulverizador.png
+Predicted id: 30614
+[0.7224722]
+weights: 650
+30614
+8456-conocer.png
+Predicted id: 2244
+[0.6370272]
+weights: 650
+2244
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.8000333]
+weights: 650
+8591
+8197-pozo.png
+Predicted id: 8196
+[0.744094]
+weights: 650
+8196
+8196-Portugal.png
+1
+Predicted id: 2268
+[0.5511894]
+weights: 650
+2268
+8201-proyección.png
+Predicted id: 8194
+[0.55212986]
+weights: 650
+8194
+8202-proyector.png
+Predicted id: 8205
+[0.9454709]
+weights: 650
+8205
+8205-reciclaje.png
+2
+Predicted id: 2244
+[0.67209005]
+weights: 650
+2244
+8191-piscina de bolas.png
+Predicted id: 8466
+[0.67790514]
+weights: 650
+8466
+8466-pinza.png
+3
+Predicted id: 8389
+[0.91503876]
+weights: 650
+8389
+8389-burbuja.png
+4
+Predicted id: 2277
+[0.3945077]
+weights: 650
+2277
+8206-Reino Unido.png
+Predicted id: 8192
+[0.89763916]
+weights: 650
+8192
+8192-planchar.png
+5
+Predicted id: 8215
+[0.90787476]
+weights: 650
+8215
+8194-por favor.png
+Predicted id: 8195
+[0.7898898]
+weights: 650
+8195
+8195-por favor.png
+6
+Predicted id: 2261
+[0.8961021]
+weights: 650
+2261
+8198-prismáticos.png
+Predicted id: 8455
+[0.8717858]
+weights: 650
+8455
+8455-churro.png
+7
+Predicted id: 2261
+[0.7012008]
+weights: 650
+2261
+8200-programa de cocina.png
+Predicted id: 8193
+[0.9415182]
+weights: 650
+8193
+8193-polvorón.png
+8
+Predicted id: 2269
+[0.7885807]
+weights: 650
+2269
+8203-pulsera.png
+accuracy: 
+0.4
+weigth: 700
+Predicted id: 9800
+[0.8365388]
+weights: 700
+9800
+8204-pulverizador.png
+Predicted id: 30614
+[0.89342856]
+weights: 700
+30614
+8456-conocer.png
+Predicted id: 9806
+[0.5181572]
+weights: 700
+9806
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.91557324]
+weights: 700
+8591
+8197-pozo.png
+Predicted id: 8588
+[0.8269172]
+weights: 700
+8588
+8196-Portugal.png
+Predicted id: 8198
+[0.50907093]
+weights: 700
+8198
+8201-proyección.png
+Predicted id: 8202
+[0.6575967]
+weights: 700
+8202
+8202-proyector.png
+1
+Predicted id: 8205
+[0.9236257]
+weights: 700
+8205
+8205-reciclaje.png
+2
+Predicted id: 2266
+[0.40464708]
+weights: 700
+2266
+8191-piscina de bolas.png
+Predicted id: 8466
+[0.735644]
+weights: 700
+8466
+8466-pinza.png
+3
+Predicted id: 8389
+[0.89283216]
+weights: 700
+8389
+8389-burbuja.png
+4
+Predicted id: 8206
+[0.39104885]
+weights: 700
+8206
+8206-Reino Unido.png
+5
+Predicted id: 8192
+[0.93759906]
+weights: 700
+8192
+8192-planchar.png
+6
+Predicted id: 8194
+[0.868385]
+weights: 700
+8194
+8194-por favor.png
+7
+Predicted id: 8195
+[0.79154706]
+weights: 700
+8195
+8195-por favor.png
+8
+Predicted id: 8198
+[0.76725376]
+weights: 700
+8198
+8198-prismáticos.png
+9
+Predicted id: 8455
+[0.8736633]
+weights: 700
+8455
+8455-churro.png
+10
+Predicted id: 8595
+[0.68185246]
+weights: 700
+8595
+8200-programa de cocina.png
+Predicted id: 8193
+[0.88122183]
+weights: 700
+8193
+8193-polvorón.png
+11
+Predicted id: 8203
+[0.84855103]
+weights: 700
+8203
+8203-pulsera.png
+12
+accuracy: 
+0.6
+weigth: 750
+Predicted id: 9800
+[0.9119605]
+weights: 750
+9800
+8204-pulverizador.png
+Predicted id: 30614
+[0.7486887]
+weights: 750
+30614
+8456-conocer.png
+Predicted id: 2244
+[0.63310266]
+weights: 750
+2244
+8199-programa de bricolaje.png
+Predicted id: 2254
+[0.91513515]
+weights: 750
+2254
+8197-pozo.png
+Predicted id: 8196
+[0.778858]
+weights: 750
+8196
+8196-Portugal.png
+1
+Predicted id: 8198
+[0.78396356]
+weights: 750
+8198
+8201-proyección.png
+Predicted id: 2254
+[0.8939475]
+weights: 750
+2254
+8202-proyector.png
+Predicted id: 2249
+[0.98985696]
+weights: 750
+2249
+8205-reciclaje.png
+Predicted id: 9809
+[0.4347811]
+weights: 750
+9809
+8191-piscina de bolas.png
+Predicted id: 8466
+[0.7563592]
+weights: 750
+8466
+8466-pinza.png
+2
+Predicted id: 8389
+[0.92579925]
+weights: 750
+8389
+8389-burbuja.png
+3
+Predicted id: 8206
+[0.61607724]
+weights: 750
+8206
+8206-Reino Unido.png
+4
+Predicted id: 8192
+[0.941275]
+weights: 750
+8192
+8192-planchar.png
+5
+Predicted id: 8194
+[0.9079013]
+weights: 750
+8194
+8194-por favor.png
+6
+Predicted id: 8195
+[0.84933805]
+weights: 750
+8195
+8195-por favor.png
+7
+Predicted id: 2261
+[0.9330486]
+weights: 750
+2261
+8198-prismáticos.png
+Predicted id: 8455
+[0.92963374]
+weights: 750
+8455
+8455-churro.png
+8
+Predicted id: 2258
+[0.7567495]
+weights: 750
+2258
+8200-programa de cocina.png
+Predicted id: 8193
+[0.9320656]
+weights: 750
+8193
+8193-polvorón.png
+9
+Predicted id: 8203
+[0.9594459]
+weights: 750
+8203
+8203-pulsera.png
+10
+accuracy: 
+0.5
+weigth: 800
+Predicted id: 2279
+[0.9564589]
+weights: 800
+2279
+8204-pulverizador.png
+Predicted id: 30614
+[0.7104547]
+weights: 800
+30614
+8456-conocer.png
+Predicted id: 2261
+[0.83733314]
+weights: 800
+2261
+8199-programa de bricolaje.png
+Predicted id: 2254
+[0.95107687]
+weights: 800
+2254
+8197-pozo.png
+Predicted id: 2242
+[0.8058548]
+weights: 800
+2242
+8196-Portugal.png
+Predicted id: 2279
+[0.6806705]
+weights: 800
+2279
+8201-proyección.png
+Predicted id: 2254
+[0.81847805]
+weights: 800
+2254
+8202-proyector.png
+Predicted id: 8205
+[0.97970676]
+weights: 800
+8205
+8205-reciclaje.png
+1
+Predicted id: 2266
+[0.69710135]
+weights: 800
+2266
+8191-piscina de bolas.png
+Predicted id: 2274
+[0.63697755]
+weights: 800
+2274
+8466-pinza.png
+Predicted id: 8389
+[0.94023484]
+weights: 800
+8389
+8389-burbuja.png
+2
+Predicted id: 2277
+[0.49638945]
+weights: 800
+2277
+8206-Reino Unido.png
+Predicted id: 8192
+[0.95752394]
+weights: 800
+8192
+8192-planchar.png
+3
+Predicted id: 8194
+[0.8676789]
+weights: 800
+8194
+8194-por favor.png
+4
+Predicted id: 8195
+[0.7250742]
+weights: 800
+8195
+8195-por favor.png
+5
+Predicted id: 2250
+[0.89546955]
+weights: 800
+2250
+8198-prismáticos.png
+Predicted id: 8455
+[0.90928566]
+weights: 800
+8455
+8455-churro.png
+6
+Predicted id: 8597
+[0.73547715]
+weights: 800
+8597
+8200-programa de cocina.png
+Predicted id: 8193
+[0.95031285]
+weights: 800
+8193
+8193-polvorón.png
+7
+Predicted id: 8203
+[0.96990204]
+weights: 800
+8203
+8203-pulsera.png
+8
+accuracy: 
+0.4
+weigth: 850
+Predicted id: 2279
+[0.88811433]
+weights: 850
+2279
+8204-pulverizador.png
+Predicted id: 8456
+[0.7220015]
+weights: 850
+8456
+8456-conocer.png
+1
+Predicted id: 2244
+[0.6715268]
+weights: 850
+2244
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.90132874]
+weights: 850
+8591
+8197-pozo.png
+Predicted id: 8196
+[0.87244195]
+weights: 850
+8196
+8196-Portugal.png
+2
+Predicted id: 8198
+[0.71163976]
+weights: 850
+8198
+8201-proyección.png
+Predicted id: 2245
+[0.69663054]
+weights: 850
+2245
+8202-proyector.png
+Predicted id: 8205
+[0.97977495]
+weights: 850
+8205
+8205-reciclaje.png
+3
+Predicted id: 2266
+[0.73992544]
+weights: 850
+2266
+8191-piscina de bolas.png
+Predicted id: 2274
+[0.80050635]
+weights: 850
+2274
+8466-pinza.png
+Predicted id: 8389
+[0.9440665]
+weights: 850
+8389
+8389-burbuja.png
+4
+Predicted id: 2277
+[0.531754]
+weights: 850
+2277
+8206-Reino Unido.png
+Predicted id: 2266
+[0.9415292]
+weights: 850
+2266
+8192-planchar.png
+Predicted id: 8194
+[0.9240955]
+weights: 850
+8194
+8194-por favor.png
+5
+Predicted id: 8195
+[0.8125885]
+weights: 850
+8195
+8195-por favor.png
+6
+Predicted id: 2261
+[0.9103631]
+weights: 850
+2261
+8198-prismáticos.png
+Predicted id: 8455
+[0.9098079]
+weights: 850
+8455
+8455-churro.png
+7
+Predicted id: 2261
+[0.85484004]
+weights: 850
+2261
+8200-programa de cocina.png
+Predicted id: 8193
+[0.91149306]
+weights: 850
+8193
+8193-polvorón.png
+8
+Predicted id: 8203
+[0.8955562]
+weights: 850
+8203
+8203-pulsera.png
+9
+accuracy: 
+0.45
+weigth: 900
+Predicted id: 2279
+[0.8348279]
+weights: 900
+2279
+8204-pulverizador.png
+Predicted id: 8456
+[0.6602533]
+weights: 900
+8456
+8456-conocer.png
+1
+Predicted id: 2244
+[0.7294438]
+weights: 900
+2244
+8199-programa de bricolaje.png
+Predicted id: 8593
+[0.94861656]
+weights: 900
+8593
+8197-pozo.png
+Predicted id: 8196
+[0.8343337]
+weights: 900
+8196
+8196-Portugal.png
+2
+Predicted id: 9810
+[0.6692942]
+weights: 900
+9810
+8201-proyección.png
+Predicted id: 2254
+[0.7930186]
+weights: 900
+2254
+8202-proyector.png
+Predicted id: 8205
+[0.94834375]
+weights: 900
+8205
+8205-reciclaje.png
+3
+Predicted id: 2266
+[0.8703605]
+weights: 900
+2266
+8191-piscina de bolas.png
+Predicted id: 2274
+[0.8092383]
+weights: 900
+2274
+8466-pinza.png
+Predicted id: 8389
+[0.978042]
+weights: 900
+8389
+8389-burbuja.png
+4
+Predicted id: 2277
+[0.74768597]
+weights: 900
+2277
+8206-Reino Unido.png
+Predicted id: 8192
+[0.9399427]
+weights: 900
+8192
+8192-planchar.png
+5
+Predicted id: 8194
+[0.90902835]
+weights: 900
+8194
+8194-por favor.png
+6
+Predicted id: 9699
+[0.6481519]
+weights: 900
+9699
+8195-por favor.png
+Predicted id: 2261
+[0.8388071]
+weights: 900
+2261
+8198-prismáticos.png
+Predicted id: 8455
+[0.9253833]
+weights: 900
+8455
+8455-churro.png
+7
+Predicted id: 2261
+[0.75869817]
+weights: 900
+2261
+8200-programa de cocina.png
+Predicted id: 8193
+[0.9393417]
+weights: 900
+8193
+8193-polvorón.png
+8
+Predicted id: 8203
+[0.9512924]
+weights: 900
+8203
+8203-pulsera.png
+9
+accuracy: 
+0.45
+weigth: 950
+Predicted id: 2279
+[0.7168756]
+weights: 950
+2279
+8204-pulverizador.png
+Predicted id: 30614
+[0.41789675]
+weights: 950
+30614
+8456-conocer.png
+Predicted id: 2244
+[0.7566149]
+weights: 950
+2244
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.9202838]
+weights: 950
+8591
+8197-pozo.png
+Predicted id: 8196
+[0.8679652]
+weights: 950
+8196
+8196-Portugal.png
+1
+Predicted id: 2279
+[0.59997]
+weights: 950
+2279
+8201-proyección.png
+Predicted id: 8202
+[0.66309714]
+weights: 950
+8202
+8202-proyector.png
+2
+Predicted id: 8205
+[0.9687493]
+weights: 950
+8205
+8205-reciclaje.png
+3
+Predicted id: 2266
+[0.89558315]
+weights: 950
+2266
+8191-piscina de bolas.png
+Predicted id: 2274
+[0.65259457]
+weights: 950
+2274
+8466-pinza.png
+Predicted id: 8389
+[0.9571099]
+weights: 950
+8389
+8389-burbuja.png
+4
+Predicted id: 8206
+[0.7059505]
+weights: 950
+8206
+8206-Reino Unido.png
+5
+Predicted id: 8192
+[0.92749715]
+weights: 950
+8192
+8192-planchar.png
+6
+Predicted id: 8194
+[0.9146676]
+weights: 950
+8194
+8194-por favor.png
+7
+Predicted id: 8195
+[0.85693455]
+weights: 950
+8195
+8195-por favor.png
+8
+Predicted id: 8198
+[0.7702987]
+weights: 950
+8198
+8198-prismáticos.png
+9
+Predicted id: 8455
+[0.8535393]
+weights: 950
+8455
+8455-churro.png
+10
+Predicted id: 8595
+[0.7163218]
+weights: 950
+8595
+8200-programa de cocina.png
+Predicted id: 8193
+[0.95186865]
+weights: 950
+8193
+8193-polvorón.png
+11
+Predicted id: 8203
+[0.9108881]
+weights: 950
+8203
+8203-pulsera.png
+12
+accuracy: 
+0.6
+weigth: 1000
+Predicted id: 2279
+[0.9070337]
+weights: 1000
+2279
+8204-pulverizador.png
+Predicted id: 30614
+[0.75576705]
+weights: 1000
+30614
+8456-conocer.png
+Predicted id: 2269
+[0.5162505]
+weights: 1000
+2269
+8199-programa de bricolaje.png
+Predicted id: 8593
+[0.95273936]
+weights: 1000
+8593
+8197-pozo.png
+Predicted id: 8196
+[0.820395]
+weights: 1000
+8196
+8196-Portugal.png
+1
+Predicted id: 9810
+[0.8372245]
+weights: 1000
+9810
+8201-proyección.png
+Predicted id: 2254
+[0.8223511]
+weights: 1000
+2254
+8202-proyector.png
+Predicted id: 8205
+[0.97679377]
+weights: 1000
+8205
+8205-reciclaje.png
+2
+Predicted id: 2266
+[0.7873202]
+weights: 1000
+2266
+8191-piscina de bolas.png
+Predicted id: 8466
+[0.74117243]
+weights: 1000
+8466
+8466-pinza.png
+3
+Predicted id: 8389
+[0.95289516]
+weights: 1000
+8389
+8389-burbuja.png
+4
+Predicted id: 2277
+[0.62442094]
+weights: 1000
+2277
+8206-Reino Unido.png
+Predicted id: 8192
+[0.9259784]
+weights: 1000
+8192
+8192-planchar.png
+5
+Predicted id: 8194
+[0.89756346]
+weights: 1000
+8194
+8194-por favor.png
+6
+Predicted id: 8195
+[0.86620307]
+weights: 1000
+8195
+8195-por favor.png
+7
+Predicted id: 8198
+[0.97331667]
+weights: 1000
+8198
+8198-prismáticos.png
+8
+Predicted id: 8455
+[0.9599279]
+weights: 1000
+8455
+8455-churro.png
+9
+Predicted id: 8595
+[0.77536464]
+weights: 1000
+8595
+8200-programa de cocina.png
+Predicted id: 8193
+[0.91306305]
+weights: 1000
+8193
+8193-polvorón.png
+10
+Predicted id: 8203
+[0.9741287]
+weights: 1000
+8203
+8203-pulsera.png
+11
+accuracy: 
+0.55
+weigth: 1050
+Predicted id: 9800
+[0.8620153]
+weights: 1050
+9800
+8204-pulverizador.png
+Predicted id: 2261
+[0.8169161]
+weights: 1050
+2261
+8456-conocer.png
+Predicted id: 2251
+[0.48422605]
+weights: 1050
+2251
+8199-programa de bricolaje.png
+Predicted id: 8593
+[0.95905334]
+weights: 1050
+8593
+8197-pozo.png
+Predicted id: 8196
+[0.83845127]
+weights: 1050
+8196
+8196-Portugal.png
+1
+Predicted id: 9810
+[0.9236067]
+weights: 1050
+9810
+8201-proyección.png
+Predicted id: 8202
+[0.88069344]
+weights: 1050
+8202
+8202-proyector.png
+2
+Predicted id: 8205
+[0.9441637]
+weights: 1050
+8205
+8205-reciclaje.png
+3
+Predicted id: 2244
+[0.5535093]
+weights: 1050
+2244
+8191-piscina de bolas.png
+Predicted id: 8466
+[0.74996185]
+weights: 1050
+8466
+8466-pinza.png
+4
+Predicted id: 8389
+[0.9658394]
+weights: 1050
+8389
+8389-burbuja.png
+5
+Predicted id: 8206
+[0.70879996]
+weights: 1050
+8206
+8206-Reino Unido.png
+6
+Predicted id: 8192
+[0.91695374]
+weights: 1050
+8192
+8192-planchar.png
+7
+Predicted id: 8194
+[0.89707935]
+weights: 1050
+8194
+8194-por favor.png
+8
+Predicted id: 8195
+[0.87474525]
+weights: 1050
+8195
+8195-por favor.png
+9
+Predicted id: 9810
+[0.9559028]
+weights: 1050
+9810
+8198-prismáticos.png
+Predicted id: 8455
+[0.9588107]
+weights: 1050
+8455
+8455-churro.png
+10
+Predicted id: 8595
+[0.88184553]
+weights: 1050
+8595
+8200-programa de cocina.png
+Predicted id: 8193
+[0.9250803]
+weights: 1050
+8193
+8193-polvorón.png
+11
+Predicted id: 8203
+[0.9317478]
+weights: 1050
+8203
+8203-pulsera.png
+12
+accuracy: 
+0.6
+weigth: 1100
+Predicted id: 2279
+[0.871359]
+weights: 1100
+2279
+8204-pulverizador.png
+Predicted id: 30614
+[0.6734258]
+weights: 1100
+30614
+8456-conocer.png
+Predicted id: 2244
+[0.8529104]
+weights: 1100
+2244
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.963672]
+weights: 1100
+8591
+8197-pozo.png
+Predicted id: 8196
+[0.85766625]
+weights: 1100
+8196
+8196-Portugal.png
+1
+Predicted id: 2279
+[0.662491]
+weights: 1100
+2279
+8201-proyección.png
+Predicted id: 2254
+[0.8693302]
+weights: 1100
+2254
+8202-proyector.png
+Predicted id: 8205
+[0.87719166]
+weights: 1100
+8205
+8205-reciclaje.png
+2
+Predicted id: 2266
+[0.86176056]
+weights: 1100
+2266
+8191-piscina de bolas.png
+Predicted id: 8466
+[0.80443144]
+weights: 1100
+8466
+8466-pinza.png
+3
+Predicted id: 8389
+[0.93186724]
+weights: 1100
+8389
+8389-burbuja.png
+4
+Predicted id: 8220
+[0.5271719]
+weights: 1100
+8220
+8206-Reino Unido.png
+Predicted id: 8192
+[0.9217944]
+weights: 1100
+8192
+8192-planchar.png
+5
+Predicted id: 8215
+[0.9411875]
+weights: 1100
+8215
+8194-por favor.png
+Predicted id: 8195
+[0.85987675]
+weights: 1100
+8195
+8195-por favor.png
+6
+Predicted id: 8198
+[0.8794034]
+weights: 1100
+8198
+8198-prismáticos.png
+7
+Predicted id: 8455
+[0.8906587]
+weights: 1100
+8455
+8455-churro.png
+8
+Predicted id: 8597
+[0.9101794]
+weights: 1100
+8597
+8200-programa de cocina.png
+Predicted id: 8193
+[0.921462]
+weights: 1100
+8193
+8193-polvorón.png
+9
+Predicted id: 8203
+[0.9573064]
+weights: 1100
+8203
+8203-pulsera.png
+10
+accuracy: 
+0.5
+weigth: 1150
+Predicted id: 9800
+[0.74880004]
+weights: 1150
+9800
+8204-pulverizador.png
+Predicted id: 30614
+[0.5496332]
+weights: 1150
+30614
+8456-conocer.png
+Predicted id: 2269
+[0.5558269]
+weights: 1150
+2269
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.96327865]
+weights: 1150
+8591
+8197-pozo.png
+Predicted id: 8595
+[0.8662559]
+weights: 1150
+8595
+8196-Portugal.png
+Predicted id: 9810
+[0.5749678]
+weights: 1150
+9810
+8201-proyección.png
+Predicted id: 8202
+[0.83759975]
+weights: 1150
+8202
+8202-proyector.png
+1
+Predicted id: 8205
+[0.8731363]
+weights: 1150
+8205
+8205-reciclaje.png
+2
+Predicted id: 2266
+[0.88074845]
+weights: 1150
+2266
+8191-piscina de bolas.png
+Predicted id: 2274
+[0.8615457]
+weights: 1150
+2274
+8466-pinza.png
+Predicted id: 8389
+[0.95815736]
+weights: 1150
+8389
+8389-burbuja.png
+3
+Predicted id: 8220
+[0.64447296]
+weights: 1150
+8220
+8206-Reino Unido.png
+Predicted id: 8192
+[0.87080157]
+weights: 1150
+8192
+8192-planchar.png
+4
+Predicted id: 8194
+[0.8937695]
+weights: 1150
+8194
+8194-por favor.png
+5
+Predicted id: 8195
+[0.8486879]
+weights: 1150
+8195
+8195-por favor.png
+6
+Predicted id: 8198
+[0.87198734]
+weights: 1150
+8198
+8198-prismáticos.png
+7
+Predicted id: 8455
+[0.9295057]
+weights: 1150
+8455
+8455-churro.png
+8
+Predicted id: 2261
+[0.9007715]
+weights: 1150
+2261
+8200-programa de cocina.png
+Predicted id: 8193
+[0.9206259]
+weights: 1150
+8193
+8193-polvorón.png
+9
+Predicted id: 8203
+[0.9746726]
+weights: 1150
+8203
+8203-pulsera.png
+10
+accuracy: 
+0.5
+weigth: 1200
+Predicted id: 9800
+[0.6903042]
+weights: 1200
+9800
+8204-pulverizador.png
+Predicted id: 8456
+[0.45900813]
+weights: 1200
+8456
+8456-conocer.png
+1
+Predicted id: 2251
+[0.5809052]
+weights: 1200
+2251
+8199-programa de bricolaje.png
+Predicted id: 8593
+[0.87481046]
+weights: 1200
+8593
+8197-pozo.png
+Predicted id: 8196
+[0.86814743]
+weights: 1200
+8196
+8196-Portugal.png
+2
+Predicted id: 8198
+[0.52029425]
+weights: 1200
+8198
+8201-proyección.png
+Predicted id: 2254
+[0.5820421]
+weights: 1200
+2254
+8202-proyector.png
+Predicted id: 8205
+[0.88432413]
+weights: 1200
+8205
+8205-reciclaje.png
+3
+Predicted id: 2244
+[0.73135245]
+weights: 1200
+2244
+8191-piscina de bolas.png
+Predicted id: 2274
+[0.8097835]
+weights: 1200
+2274
+8466-pinza.png
+Predicted id: 8389
+[0.90869427]
+weights: 1200
+8389
+8389-burbuja.png
+4
+Predicted id: 8220
+[0.32833773]
+weights: 1200
+8220
+8206-Reino Unido.png
+Predicted id: 8192
+[0.822698]
+weights: 1200
+8192
+8192-planchar.png
+5
+Predicted id: 8194
+[0.9146619]
+weights: 1200
+8194
+8194-por favor.png
+6
+Predicted id: 8195
+[0.8361974]
+weights: 1200
+8195
+8195-por favor.png
+7
+Predicted id: 8198
+[0.8431718]
+weights: 1200
+8198
+8198-prismáticos.png
+8
+Predicted id: 8455
+[0.9297864]
+weights: 1200
+8455
+8455-churro.png
+9
+Predicted id: 8595
+[0.8377222]
+weights: 1200
+8595
+8200-programa de cocina.png
+Predicted id: 8193
+[0.9090649]
+weights: 1200
+8193
+8193-polvorón.png
+10
+Predicted id: 8203
+[0.9643496]
+weights: 1200
+8203
+8203-pulsera.png
+11
+accuracy: 
+0.55
+weigth: 1250
+Predicted id: 9800
+[0.8293296]
+weights: 1250
+9800
+8204-pulverizador.png
+Predicted id: 2261
+[0.6684805]
+weights: 1250
+2261
+8456-conocer.png
+Predicted id: 2269
+[0.49153456]
+weights: 1250
+2269
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.9342729]
+weights: 1250
+8591
+8197-pozo.png
+Predicted id: 8196
+[0.926963]
+weights: 1250
+8196
+8196-Portugal.png
+1
+Predicted id: 9810
+[0.80122364]
+weights: 1250
+9810
+8201-proyección.png
+Predicted id: 2254
+[0.726662]
+weights: 1250
+2254
+8202-proyector.png
+Predicted id: 8205
+[0.9046525]
+weights: 1250
+8205
+8205-reciclaje.png
+2
+Predicted id: 2244
+[0.95194924]
+weights: 1250
+2244
+8191-piscina de bolas.png
+Predicted id: 8466
+[0.5939317]
+weights: 1250
+8466
+8466-pinza.png
+3
+Predicted id: 8389
+[0.92456394]
+weights: 1250
+8389
+8389-burbuja.png
+4
+Predicted id: 8220
+[0.6635925]
+weights: 1250
+8220
+8206-Reino Unido.png
+Predicted id: 8192
+[0.78828037]
+weights: 1250
+8192
+8192-planchar.png
+5
+Predicted id: 8194
+[0.9180311]
+weights: 1250
+8194
+8194-por favor.png
+6
+Predicted id: 8195
+[0.7634863]
+weights: 1250
+8195
+8195-por favor.png
+7
+Predicted id: 8198
+[0.9300138]
+weights: 1250
+8198
+8198-prismáticos.png
+8
+Predicted id: 8455
+[0.9234769]
+weights: 1250
+8455
+8455-churro.png
+9
+Predicted id: 8595
+[0.89834094]
+weights: 1250
+8595
+8200-programa de cocina.png
+Predicted id: 8193
+[0.922912]
+weights: 1250
+8193
+8193-polvorón.png
+10
+Predicted id: 8203
+[0.91350675]
+weights: 1250
+8203
+8203-pulsera.png
+11
+accuracy: 
+0.55
+weigth: 1300
+Predicted id: 9800
+[0.8253107]
+weights: 1300
+9800
+8204-pulverizador.png
+Predicted id: 30614
+[0.5497597]
+weights: 1300
+30614
+8456-conocer.png
+Predicted id: 2245
+[0.7900295]
+weights: 1300
+2245
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.9653398]
+weights: 1300
+8591
+8197-pozo.png
+Predicted id: 2242
+[0.91176605]
+weights: 1300
+2242
+8196-Portugal.png
+Predicted id: 2279
+[0.6240759]
+weights: 1300
+2279
+8201-proyección.png
+Predicted id: 8202
+[0.78897005]
+weights: 1300
+8202
+8202-proyector.png
+1
+Predicted id: 8205
+[0.95615613]
+weights: 1300
+8205
+8205-reciclaje.png
+2
+Predicted id: 9814
+[0.78891516]
+weights: 1300
+9814
+8191-piscina de bolas.png
+Predicted id: 8466
+[0.72810006]
+weights: 1300
+8466
+8466-pinza.png
+3
+Predicted id: 8389
+[0.9697151]
+weights: 1300
+8389
+8389-burbuja.png
+4
+Predicted id: 8220
+[0.6768748]
+weights: 1300
+8220
+8206-Reino Unido.png
+Predicted id: 8192
+[0.9202463]
+weights: 1300
+8192
+8192-planchar.png
+5
+Predicted id: 8194
+[0.9828689]
+weights: 1300
+8194
+8194-por favor.png
+6
+Predicted id: 8195
+[0.87199855]
+weights: 1300
+8195
+8195-por favor.png
+7
+Predicted id: 8198
+[0.8987571]
+weights: 1300
+8198
+8198-prismáticos.png
+8
+Predicted id: 8455
+[0.930393]
+weights: 1300
+8455
+8455-churro.png
+9
+Predicted id: 8595
+[0.83015037]
+weights: 1300
+8595
+8200-programa de cocina.png
+Predicted id: 8193
+[0.9500176]
+weights: 1300
+8193
+8193-polvorón.png
+10
+Predicted id: 8203
+[0.9514915]
+weights: 1300
+8203
+8203-pulsera.png
+11
+accuracy: 
+0.55
+weigth: 1350
+Predicted id: 9800
+[0.8834125]
+weights: 1350
+9800
+8204-pulverizador.png
+Predicted id: 2261
+[0.6141599]
+weights: 1350
+2261
+8456-conocer.png
+Predicted id: 2251
+[0.7927788]
+weights: 1350
+2251
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.9647232]
+weights: 1350
+8591
+8197-pozo.png
+Predicted id: 8196
+[0.8223408]
+weights: 1350
+8196
+8196-Portugal.png
+1
+Predicted id: 9810
+[0.8770485]
+weights: 1350
+9810
+8201-proyección.png
+Predicted id: 2239
+[0.6292628]
+weights: 1350
+2239
+8202-proyector.png
+Predicted id: 8205
+[0.9482372]
+weights: 1350
+8205
+8205-reciclaje.png
+2
+Predicted id: 2244
+[0.92592454]
+weights: 1350
+2244
+8191-piscina de bolas.png
+Predicted id: 2274
+[0.7971333]
+weights: 1350
+2274
+8466-pinza.png
+Predicted id: 8389
+[0.9070331]
+weights: 1350
+8389
+8389-burbuja.png
+3
+Predicted id: 8206
+[0.5083762]
+weights: 1350
+8206
+8206-Reino Unido.png
+4
+Predicted id: 8192
+[0.7865278]
+weights: 1350
+8192
+8192-planchar.png
+5
+Predicted id: 8194
+[0.9074277]
+weights: 1350
+8194
+8194-por favor.png
+6
+Predicted id: 8195
+[0.784685]
+weights: 1350
+8195
+8195-por favor.png
+7
+Predicted id: 8198
+[0.93427753]
+weights: 1350
+8198
+8198-prismáticos.png
+8
+Predicted id: 8455
+[0.954146]
+weights: 1350
+8455
+8455-churro.png
+9
+Predicted id: 2244
+[0.67622006]
+weights: 1350
+2244
+8200-programa de cocina.png
+Predicted id: 8193
+[0.86830056]
+weights: 1350
+8193
+8193-polvorón.png
+10
+Predicted id: 8203
+[0.8656336]
+weights: 1350
+8203
+8203-pulsera.png
+11
+accuracy: 
+0.55
+weigth: 1400
+Predicted id: 9800
+[0.54603064]
+weights: 1400
+9800
+8204-pulverizador.png
+Predicted id: 2261
+[0.6054763]
+weights: 1400
+2261
+8456-conocer.png
+Predicted id: 2251
+[0.53309476]
+weights: 1400
+2251
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.9578084]
+weights: 1400
+8591
+8197-pozo.png
+Predicted id: 8196
+[0.79725194]
+weights: 1400
+8196
+8196-Portugal.png
+1
+Predicted id: 9810
+[0.882006]
+weights: 1400
+9810
+8201-proyección.png
+Predicted id: 8202
+[0.6564516]
+weights: 1400
+8202
+8202-proyector.png
+2
+Predicted id: 8205
+[0.8792188]
+weights: 1400
+8205
+8205-reciclaje.png
+3
+Predicted id: 2244
+[0.8899281]
+weights: 1400
+2244
+8191-piscina de bolas.png
+Predicted id: 2274
+[0.68057734]
+weights: 1400
+2274
+8466-pinza.png
+Predicted id: 8389
+[0.7502481]
+weights: 1400
+8389
+8389-burbuja.png
+4
+Predicted id: 8206
+[0.6594904]
+weights: 1400
+8206
+8206-Reino Unido.png
+5
+Predicted id: 8192
+[0.8546294]
+weights: 1400
+8192
+8192-planchar.png
+6
+Predicted id: 8215
+[0.9268435]
+weights: 1400
+8215
+8194-por favor.png
+Predicted id: 8195
+[0.69369936]
+weights: 1400
+8195
+8195-por favor.png
+7
+Predicted id: 9810
+[0.6855034]
+weights: 1400
+9810
+8198-prismáticos.png
+Predicted id: 8455
+[0.9135485]
+weights: 1400
+8455
+8455-churro.png
+8
+Predicted id: 2244
+[0.56982946]
+weights: 1400
+2244
+8200-programa de cocina.png
+Predicted id: 8193
+[0.8126121]
+weights: 1400
+8193
+8193-polvorón.png
+9
+Predicted id: 8203
+[0.7475459]
+weights: 1400
+8203
+8203-pulsera.png
+10
+accuracy: 
+0.5
+weigth: 1450
+Predicted id: 9800
+[0.6358218]
+weights: 1450
+9800
+8204-pulverizador.png
+Predicted id: 2250
+[0.60752153]
+weights: 1450
+2250
+8456-conocer.png
+Predicted id: 2251
+[0.5692041]
+weights: 1450
+2251
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.92704546]
+weights: 1450
+8591
+8197-pozo.png
+Predicted id: 8196
+[0.8384511]
+weights: 1450
+8196
+8196-Portugal.png
+1
+Predicted id: 9810
+[0.66449153]
+weights: 1450
+9810
+8201-proyección.png
+Predicted id: 8202
+[0.8595072]
+weights: 1450
+8202
+8202-proyector.png
+2
+Predicted id: 8205
+[0.94062924]
+weights: 1450
+8205
+8205-reciclaje.png
+3
+Predicted id: 2244
+[0.92966247]
+weights: 1450
+2244
+8191-piscina de bolas.png
+Predicted id: 8389
+[0.71066266]
+weights: 1450
+8389
+8466-pinza.png
+Predicted id: 8389
+[0.92747045]
+weights: 1450
+8389
+8389-burbuja.png
+4
+Predicted id: 8206
+[0.56732774]
+weights: 1450
+8206
+8206-Reino Unido.png
+5
+Predicted id: 8192
+[0.89611125]
+weights: 1450
+8192
+8192-planchar.png
+6
+Predicted id: 8194
+[0.93820584]
+weights: 1450
+8194
+8194-por favor.png
+7
+Predicted id: 8195
+[0.90833604]
+weights: 1450
+8195
+8195-por favor.png
+8
+Predicted id: 8198
+[0.896767]
+weights: 1450
+8198
+8198-prismáticos.png
+9
+Predicted id: 8455
+[0.86988866]
+weights: 1450
+8455
+8455-churro.png
+10
+Predicted id: 2244
+[0.6477871]
+weights: 1450
+2244
+8200-programa de cocina.png
+Predicted id: 8193
+[0.8702439]
+weights: 1450
+8193
+8193-polvorón.png
+11
+Predicted id: 8203
+[0.9061152]
+weights: 1450
+8203
+8203-pulsera.png
+12
+accuracy: 
+0.6
+weigth: 1500
+Predicted id: 2279
+[0.88788795]
+weights: 1500
+2279
+8204-pulverizador.png
+Predicted id: 8590
+[0.5074166]
+weights: 1500
+8590
+8456-conocer.png
+Predicted id: 2251
+[0.516103]
+weights: 1500
+2251
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.9119369]
+weights: 1500
+8591
+8197-pozo.png
+Predicted id: 8196
+[0.8147024]
+weights: 1500
+8196
+8196-Portugal.png
+1
+Predicted id: 9813
+[0.7954638]
+weights: 1500
+9813
+8201-proyección.png
+Predicted id: 8202
+[0.72889555]
+weights: 1500
+8202
+8202-proyector.png
+2
+Predicted id: 2250
+[0.85252184]
+weights: 1500
+2250
+8205-reciclaje.png
+Predicted id: 2266
+[0.89343214]
+weights: 1500
+2266
+8191-piscina de bolas.png
+Predicted id: 2274
+[0.7264255]
+weights: 1500
+2274
+8466-pinza.png
+Predicted id: 8389
+[0.905903]
+weights: 1500
+8389
+8389-burbuja.png
+3
+Predicted id: 2277
+[0.64119524]
+weights: 1500
+2277
+8206-Reino Unido.png
+Predicted id: 8192
+[0.7753227]
+weights: 1500
+8192
+8192-planchar.png
+4
+Predicted id: 8194
+[0.94633937]
+weights: 1500
+8194
+8194-por favor.png
+5
+Predicted id: 8195
+[0.832616]
+weights: 1500
+8195
+8195-por favor.png
+6
+Predicted id: 8198
+[0.7935315]
+weights: 1500
+8198
+8198-prismáticos.png
+7
+Predicted id: 8455
+[0.89300895]
+weights: 1500
+8455
+8455-churro.png
+8
+Predicted id: 8597
+[0.61632395]
+weights: 1500
+8597
+8200-programa de cocina.png
+Predicted id: 8193
+[0.678339]
+weights: 1500
+8193
+8193-polvorón.png
+9
+Predicted id: 8203
+[0.88504815]
+weights: 1500
+8203
+8203-pulsera.png
+10
+accuracy: 
+0.5
+weigth: 1550
+Predicted id: 8204
+[0.7034708]
+weights: 1550
+8204
+8204-pulverizador.png
+1
+Predicted id: 8590
+[0.48207876]
+weights: 1550
+8590
+8456-conocer.png
+Predicted id: 2245
+[0.6692877]
+weights: 1550
+2245
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.9119339]
+weights: 1550
+8591
+8197-pozo.png
+Predicted id: 8196
+[0.8782352]
+weights: 1550
+8196
+8196-Portugal.png
+2
+Predicted id: 9810
+[0.5525987]
+weights: 1550
+9810
+8201-proyección.png
+Predicted id: 8202
+[0.7480108]
+weights: 1550
+8202
+8202-proyector.png
+3
+Predicted id: 8205
+[0.86028886]
+weights: 1550
+8205
+8205-reciclaje.png
+4
+Predicted id: 2266
+[0.78657335]
+weights: 1550
+2266
+8191-piscina de bolas.png
+Predicted id: 8466
+[0.66304415]
+weights: 1550
+8466
+8466-pinza.png
+5
+Predicted id: 8389
+[0.888348]
+weights: 1550
+8389
+8389-burbuja.png
+6
+Predicted id: 8220
+[0.5182341]
+weights: 1550
+8220
+8206-Reino Unido.png
+Predicted id: 8192
+[0.77859634]
+weights: 1550
+8192
+8192-planchar.png
+7
+Predicted id: 8194
+[0.94256866]
+weights: 1550
+8194
+8194-por favor.png
+8
+Predicted id: 8195
+[0.71976936]
+weights: 1550
+8195
+8195-por favor.png
+9
+Predicted id: 8198
+[0.6818269]
+weights: 1550
+8198
+8198-prismáticos.png
+10
+Predicted id: 8455
+[0.8431549]
+weights: 1550
+8455
+8455-churro.png
+11
+Predicted id: 8595
+[0.3674936]
+weights: 1550
+8595
+8200-programa de cocina.png
+Predicted id: 8193
+[0.81544745]
+weights: 1550
+8193
+8193-polvorón.png
+12
+Predicted id: 8203
+[0.9078479]
+weights: 1550
+8203
+8203-pulsera.png
+13
+accuracy: 
+0.65
+weigth: 1600
+Predicted id: 30560
+[0.56517506]
+weights: 1600
+30560
+8204-pulverizador.png
+Predicted id: 8590
+[0.33438277]
+weights: 1600
+8590
+8456-conocer.png
+Predicted id: 2245
+[0.16828126]
+weights: 1600
+2245
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.8482064]
+weights: 1600
+8591
+8197-pozo.png
+Predicted id: 8196
+[0.81255144]
+weights: 1600
+8196
+8196-Portugal.png
+1
+Predicted id: 9810
+[0.35111514]
+weights: 1600
+9810
+8201-proyección.png
+Predicted id: 8202
+[0.7407877]
+weights: 1600
+8202
+8202-proyector.png
+2
+Predicted id: 8205
+[0.9219179]
+weights: 1600
+8205
+8205-reciclaje.png
+3
+Predicted id: 2266
+[0.560127]
+weights: 1600
+2266
+8191-piscina de bolas.png
+Predicted id: 8466
+[0.59003437]
+weights: 1600
+8466
+8466-pinza.png
+4
+Predicted id: 8389
+[0.88831127]
+weights: 1600
+8389
+8389-burbuja.png
+5
+Predicted id: 8220
+[0.4914097]
+weights: 1600
+8220
+8206-Reino Unido.png
+Predicted id: 8192
+[0.8921362]
+weights: 1600
+8192
+8192-planchar.png
+6
+Predicted id: 8194
+[0.91424465]
+weights: 1600
+8194
+8194-por favor.png
+7
+Predicted id: 8195
+[0.82149446]
+weights: 1600
+8195
+8195-por favor.png
+8
+Predicted id: 9810
+[0.505641]
+weights: 1600
+9810
+8198-prismáticos.png
+Predicted id: 8455
+[0.76887727]
+weights: 1600
+8455
+8455-churro.png
+9
+Predicted id: 2244
+[0.4535543]
+weights: 1600
+2244
+8200-programa de cocina.png
+Predicted id: 8193
+[0.8575176]
+weights: 1600
+8193
+8193-polvorón.png
+10
+Predicted id: 8203
+[0.7588543]
+weights: 1600
+8203
+8203-pulsera.png
+11
+accuracy: 
+0.55
+weigth: 1650
+Predicted id: 8204
+[0.77634203]
+weights: 1650
+8204
+8204-pulverizador.png
+1
+Predicted id: 8456
+[0.5289526]
+weights: 1650
+8456
+8456-conocer.png
+2
+Predicted id: 2244
+[0.8377156]
+weights: 1650
+2244
+8199-programa de bricolaje.png
+Predicted id: 8593
+[0.9363081]
+weights: 1650
+8593
+8197-pozo.png
+Predicted id: 8588
+[0.8724576]
+weights: 1650
+8588
+8196-Portugal.png
+Predicted id: 9813
+[0.53656346]
+weights: 1650
+9813
+8201-proyección.png
+Predicted id: 8202
+[0.71926767]
+weights: 1650
+8202
+8202-proyector.png
+3
+Predicted id: 8205
+[0.93250805]
+weights: 1650
+8205
+8205-reciclaje.png
+4
+Predicted id: 2266
+[0.96687734]
+weights: 1650
+2266
+8191-piscina de bolas.png
+Predicted id: 8389
+[0.5267488]
+weights: 1650
+8389
+8466-pinza.png
+Predicted id: 8389
+[0.92311203]
+weights: 1650
+8389
+8389-burbuja.png
+5
+Predicted id: 8220
+[0.74913883]
+weights: 1650
+8220
+8206-Reino Unido.png
+Predicted id: 8192
+[0.95204556]
+weights: 1650
+8192
+8192-planchar.png
+6
+Predicted id: 8194
+[0.9641924]
+weights: 1650
+8194
+8194-por favor.png
+7
+Predicted id: 8195
+[0.859653]
+weights: 1650
+8195
+8195-por favor.png
+8
+Predicted id: 9810
+[0.7683672]
+weights: 1650
+9810
+8198-prismáticos.png
+Predicted id: 8455
+[0.8148285]
+weights: 1650
+8455
+8455-churro.png
+9
+Predicted id: 2244
+[0.8580591]
+weights: 1650
+2244
+8200-programa de cocina.png
+Predicted id: 8193
+[0.89084876]
+weights: 1650
+8193
+8193-polvorón.png
+10
+Predicted id: 8203
+[0.9248788]
+weights: 1650
+8203
+8203-pulsera.png
+11
+accuracy: 
+0.55
+weigth: 1700
+Predicted id: 9800
+[0.77960855]
+weights: 1700
+9800
+8204-pulverizador.png
+Predicted id: 8456
+[0.33549103]
+weights: 1700
+8456
+8456-conocer.png
+1
+Predicted id: 8204
+[0.2723145]
+weights: 1700
+8204
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.9357413]
+weights: 1700
+8591
+8197-pozo.png
+Predicted id: 8196
+[0.7467484]
+weights: 1700
+8196
+8196-Portugal.png
+2
+Predicted id: 9810
+[0.38558406]
+weights: 1700
+9810
+8201-proyección.png
+Predicted id: 8202
+[0.7787746]
+weights: 1700
+8202
+8202-proyector.png
+3
+Predicted id: 8205
+[0.7852475]
+weights: 1700
+8205
+8205-reciclaje.png
+4
+Predicted id: 2266
+[0.88320094]
+weights: 1700
+2266
+8191-piscina de bolas.png
+Predicted id: 8466
+[0.53312695]
+weights: 1700
+8466
+8466-pinza.png
+5
+Predicted id: 8389
+[0.74031997]
+weights: 1700
+8389
+8389-burbuja.png
+6
+Predicted id: 8220
+[0.60228246]
+weights: 1700
+8220
+8206-Reino Unido.png
+Predicted id: 8192
+[0.91395164]
+weights: 1700
+8192
+8192-planchar.png
+7
+Predicted id: 8194
+[0.9550855]
+weights: 1700
+8194
+8194-por favor.png
+8
+Predicted id: 8195
+[0.8341174]
+weights: 1700
+8195
+8195-por favor.png
+9
+Predicted id: 9810
+[0.7049555]
+weights: 1700
+9810
+8198-prismáticos.png
+Predicted id: 8455
+[0.7864853]
+weights: 1700
+8455
+8455-churro.png
+10
+Predicted id: 8597
+[0.6539584]
+weights: 1700
+8597
+8200-programa de cocina.png
+Predicted id: 8193
+[0.766029]
+weights: 1700
+8193
+8193-polvorón.png
+11
+Predicted id: 8203
+[0.9418048]
+weights: 1700
+8203
+8203-pulsera.png
+12
+accuracy: 
+0.6
+weigth: 1750
+Predicted id: 9800
+[0.840663]
+weights: 1750
+9800
+8204-pulverizador.png
+Predicted id: 8590
+[0.45499432]
+weights: 1750
+8590
+8456-conocer.png
+Predicted id: 9814
+[0.50624454]
+weights: 1750
+9814
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.93255335]
+weights: 1750
+8591
+8197-pozo.png
+Predicted id: 8196
+[0.7309795]
+weights: 1750
+8196
+8196-Portugal.png
+1
+Predicted id: 9810
+[0.5290113]
+weights: 1750
+9810
+8201-proyección.png
+Predicted id: 8202
+[0.8931141]
+weights: 1750
+8202
+8202-proyector.png
+2
+Predicted id: 8205
+[0.9139001]
+weights: 1750
+8205
+8205-reciclaje.png
+3
+Predicted id: 2266
+[0.9533098]
+weights: 1750
+2266
+8191-piscina de bolas.png
+Predicted id: 2274
+[0.37493765]
+weights: 1750
+2274
+8466-pinza.png
+Predicted id: 8389
+[0.74970037]
+weights: 1750
+8389
+8389-burbuja.png
+4
+Predicted id: 8220
+[0.6768483]
+weights: 1750
+8220
+8206-Reino Unido.png
+Predicted id: 8192
+[0.9525478]
+weights: 1750
+8192
+8192-planchar.png
+5
+Predicted id: 8194
+[0.93725204]
+weights: 1750
+8194
+8194-por favor.png
+6
+Predicted id: 8195
+[0.7577803]
+weights: 1750
+8195
+8195-por favor.png
+7
+Predicted id: 8198
+[0.83023494]
+weights: 1750
+8198
+8198-prismáticos.png
+8
+Predicted id: 8455
+[0.89096284]
+weights: 1750
+8455
+8455-churro.png
+9
+Predicted id: 8595
+[0.49325168]
+weights: 1750
+8595
+8200-programa de cocina.png
+Predicted id: 8193
+[0.86183476]
+weights: 1750
+8193
+8193-polvorón.png
+10
+Predicted id: 8203
+[0.9157448]
+weights: 1750
+8203
+8203-pulsera.png
+11
+accuracy: 
+0.55
+weigth: 1800
+Predicted id: 9800
+[0.8696004]
+weights: 1800
+9800
+8204-pulverizador.png
+Predicted id: 8456
+[0.5333852]
+weights: 1800
+8456
+8456-conocer.png
+1
+Predicted id: 2245
+[0.9285624]
+weights: 1800
+2245
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.8615863]
+weights: 1800
+8591
+8197-pozo.png
+Predicted id: 8196
+[0.68807065]
+weights: 1800
+8196
+8196-Portugal.png
+2
+Predicted id: 9810
+[0.6294146]
+weights: 1800
+9810
+8201-proyección.png
+Predicted id: 2245
+[0.7633759]
+weights: 1800
+2245
+8202-proyector.png
+Predicted id: 8205
+[0.7819454]
+weights: 1800
+8205
+8205-reciclaje.png
+3
+Predicted id: 2260
+[0.9390258]
+weights: 1800
+2260
+8191-piscina de bolas.png
+Predicted id: 2274
+[0.71232796]
+weights: 1800
+2274
+8466-pinza.png
+Predicted id: 8389
+[0.8544116]
+weights: 1800
+8389
+8389-burbuja.png
+4
+Predicted id: 8220
+[0.44882375]
+weights: 1800
+8220
+8206-Reino Unido.png
+Predicted id: 8192
+[0.891894]
+weights: 1800
+8192
+8192-planchar.png
+5
+Predicted id: 8194
+[0.93957865]
+weights: 1800
+8194
+8194-por favor.png
+6
+Predicted id: 8195
+[0.82873476]
+weights: 1800
+8195
+8195-por favor.png
+7
+Predicted id: 9810
+[0.8176952]
+weights: 1800
+9810
+8198-prismáticos.png
+Predicted id: 8455
+[0.8824469]
+weights: 1800
+8455
+8455-churro.png
+8
+Predicted id: 8597
+[0.5178058]
+weights: 1800
+8597
+8200-programa de cocina.png
+Predicted id: 8193
+[0.80787295]
+weights: 1800
+8193
+8193-polvorón.png
+9
+Predicted id: 8203
+[0.9578844]
+weights: 1800
+8203
+8203-pulsera.png
+10
+accuracy: 
+0.5
+weigth: 1850
+Predicted id: 8204
+[0.823914]
+weights: 1850
+8204
+8204-pulverizador.png
+1
+Predicted id: 8456
+[0.35155255]
+weights: 1850
+8456
+8456-conocer.png
+2
+Predicted id: 2245
+[0.48883265]
+weights: 1850
+2245
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.9452605]
+weights: 1850
+8591
+8197-pozo.png
+Predicted id: 8196
+[0.80007195]
+weights: 1850
+8196
+8196-Portugal.png
+3
+Predicted id: 9810
+[0.8126986]
+weights: 1850
+9810
+8201-proyección.png
+Predicted id: 8202
+[0.8062415]
+weights: 1850
+8202
+8202-proyector.png
+4
+Predicted id: 8205
+[0.73207164]
+weights: 1850
+8205
+8205-reciclaje.png
+5
+Predicted id: 2266
+[0.974136]
+weights: 1850
+2266
+8191-piscina de bolas.png
+Predicted id: 8466
+[0.72501624]
+weights: 1850
+8466
+8466-pinza.png
+6
+Predicted id: 8389
+[0.86031485]
+weights: 1850
+8389
+8389-burbuja.png
+7
+Predicted id: 8220
+[0.5894674]
+weights: 1850
+8220
+8206-Reino Unido.png
+Predicted id: 8192
+[0.91966474]
+weights: 1850
+8192
+8192-planchar.png
+8
+Predicted id: 8194
+[0.954788]
+weights: 1850
+8194
+8194-por favor.png
+9
+Predicted id: 8195
+[0.7937249]
+weights: 1850
+8195
+8195-por favor.png
+10
+Predicted id: 8198
+[0.840752]
+weights: 1850
+8198
+8198-prismáticos.png
+11
+Predicted id: 8455
+[0.84409124]
+weights: 1850
+8455
+8455-churro.png
+12
+Predicted id: 8200
+[0.4967195]
+weights: 1850
+8200
+8200-programa de cocina.png
+13
+Predicted id: 8193
+[0.79345405]
+weights: 1850
+8193
+8193-polvorón.png
+14
+Predicted id: 8203
+[0.8842834]
+weights: 1850
+8203
+8203-pulsera.png
+15
+accuracy: 
+0.75
+weigth: 1900
+Predicted id: 9800
+[0.86792743]
+weights: 1900
+9800
+8204-pulverizador.png
+Predicted id: 8590
+[0.41293854]
+weights: 1900
+8590
+8456-conocer.png
+Predicted id: 2245
+[0.72438425]
+weights: 1900
+2245
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.9573011]
+weights: 1900
+8591
+8197-pozo.png
+Predicted id: 8196
+[0.8938949]
+weights: 1900
+8196
+8196-Portugal.png
+1
+Predicted id: 2253
+[0.7902185]
+weights: 1900
+2253
+8201-proyección.png
+Predicted id: 2254
+[0.69698876]
+weights: 1900
+2254
+8202-proyector.png
+Predicted id: 8205
+[0.8294661]
+weights: 1900
+8205
+8205-reciclaje.png
+2
+Predicted id: 2266
+[0.9618193]
+weights: 1900
+2266
+8191-piscina de bolas.png
+Predicted id: 2274
+[0.64323926]
+weights: 1900
+2274
+8466-pinza.png
+Predicted id: 8389
+[0.9013401]
+weights: 1900
+8389
+8389-burbuja.png
+3
+Predicted id: 8220
+[0.62766564]
+weights: 1900
+8220
+8206-Reino Unido.png
+Predicted id: 8192
+[0.92188364]
+weights: 1900
+8192
+8192-planchar.png
+4
+Predicted id: 8194
+[0.9423629]
+weights: 1900
+8194
+8194-por favor.png
+5
+Predicted id: 8195
+[0.8689989]
+weights: 1900
+8195
+8195-por favor.png
+6
+Predicted id: 8198
+[0.8990401]
+weights: 1900
+8198
+8198-prismáticos.png
+7
+Predicted id: 8455
+[0.88988674]
+weights: 1900
+8455
+8455-churro.png
+8
+Predicted id: 2244
+[0.57657576]
+weights: 1900
+2244
+8200-programa de cocina.png
+Predicted id: 8193
+[0.7113205]
+weights: 1900
+8193
+8193-polvorón.png
+9
+Predicted id: 8203
+[0.9362024]
+weights: 1900
+8203
+8203-pulsera.png
+10
+accuracy: 
+0.5
+weigth: 1950
+Predicted id: 8204
+[0.9184324]
+weights: 1950
+8204
+8204-pulverizador.png
+1
+Predicted id: 8456
+[0.44452387]
+weights: 1950
+8456
+8456-conocer.png
+2
+Predicted id: 2245
+[0.8046334]
+weights: 1950
+2245
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.97441876]
+weights: 1950
+8591
+8197-pozo.png
+Predicted id: 8196
+[0.87700427]
+weights: 1950
+8196
+8196-Portugal.png
+3
+Predicted id: 9810
+[0.61030006]
+weights: 1950
+9810
+8201-proyección.png
+Predicted id: 8202
+[0.60828716]
+weights: 1950
+8202
+8202-proyector.png
+4
+Predicted id: 8205
+[0.8598839]
+weights: 1950
+8205
+8205-reciclaje.png
+5
+Predicted id: 2266
+[0.87065476]
+weights: 1950
+2266
+8191-piscina de bolas.png
+Predicted id: 2274
+[0.67633104]
+weights: 1950
+2274
+8466-pinza.png
+Predicted id: 8389
+[0.77128327]
+weights: 1950
+8389
+8389-burbuja.png
+6
+Predicted id: 8220
+[0.55746543]
+weights: 1950
+8220
+8206-Reino Unido.png
+Predicted id: 8192
+[0.97238666]
+weights: 1950
+8192
+8192-planchar.png
+7
+Predicted id: 8194
+[0.9600892]
+weights: 1950
+8194
+8194-por favor.png
+8
+Predicted id: 8195
+[0.72245]
+weights: 1950
+8195
+8195-por favor.png
+9
+Predicted id: 9810
+[0.847811]
+weights: 1950
+9810
+8198-prismáticos.png
+Predicted id: 8455
+[0.933469]
+weights: 1950
+8455
+8455-churro.png
+10
+Predicted id: 8595
+[0.5975871]
+weights: 1950
+8595
+8200-programa de cocina.png
+Predicted id: 8193
+[0.77026445]
+weights: 1950
+8193
+8193-polvorón.png
+11
+Predicted id: 8203
+[0.90324426]
+weights: 1950
+8203
+8203-pulsera.png
+12
+accuracy: 
+0.6
+weigth: 2000
+Predicted id: 9800
+[0.92282534]
+weights: 2000
+9800
+8204-pulverizador.png
+Predicted id: 8456
+[0.22343144]
+weights: 2000
+8456
+8456-conocer.png
+1
+Predicted id: 2277
+[0.4017223]
+weights: 2000
+2277
+8199-programa de bricolaje.png
+Predicted id: 8591
+[0.94710577]
+weights: 2000
+8591
+8197-pozo.png
+Predicted id: 8196
+[0.85826206]
+weights: 2000
+8196
+8196-Portugal.png
+2
+Predicted id: 9810
+[0.762337]
+weights: 2000
+9810
+8201-proyección.png
+Predicted id: 2254
+[0.5313152]
+weights: 2000
+2254
+8202-proyector.png
+Predicted id: 8205
+[0.8987018]
+weights: 2000
+8205
+8205-reciclaje.png
+3
+Predicted id: 2260
+[0.75404316]
+weights: 2000
+2260
+8191-piscina de bolas.png
+Predicted id: 2274
+[0.5390202]
+weights: 2000
+2274
+8466-pinza.png
+Predicted id: 8389
+[0.82401705]
+weights: 2000
+8389
+8389-burbuja.png
+4
+Predicted id: 8220
+[0.5413891]
+weights: 2000
+8220
+8206-Reino Unido.png
+Predicted id: 8192
+[0.88874143]
+weights: 2000
+8192
+8192-planchar.png
+5
+Predicted id: 8194
+[0.9509133]
+weights: 2000
+8194
+8194-por favor.png
+6
+Predicted id: 8195
+[0.79398096]
+weights: 2000
+8195
+8195-por favor.png
+7
+Predicted id: 9810
+[0.56961936]
+weights: 2000
+9810
+8198-prismáticos.png
+Predicted id: 8455
+[0.9399079]
+weights: 2000
+8455
+8455-churro.png
+8
+Predicted id: 2244
+[0.5166868]
+weights: 2000
+2244
+8200-programa de cocina.png
+Predicted id: 8193
+[0.88061416]
+weights: 2000
+8193
+8193-polvorón.png
+9
+Predicted id: 8203
+[0.86733484]
+weights: 2000
+8203
+8203-pulsera.png
+10
+accuracy: 
+0.5
+Model: "model_1"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_3 (InputLayer)            [(None, 105, 105, 4) 0                                            
+__________________________________________________________________________________________________
+input_4 (InputLayer)            [(None, 105, 105, 4) 0                                            
+__________________________________________________________________________________________________
+sequential_model (Sequential)   (None, 4096)         38966848    input_3[0][0]                    
+                                                                 input_4[0][0]                    
+__________________________________________________________________________________________________
+lambda_1 (Lambda)               (None, 4096)         0           sequential_model[0][0]           
+                                                                 sequential_model[1][0]           
+__________________________________________________________________________________________________
+final_dense (Dense)             (None, 1)            4097        lambda_1[0][0]                   
+==================================================================================================
+Total params: 38,970,945
+Trainable params: 38,970,945
+Non-trainable params: 0
+__________________________________________________________________________________________________

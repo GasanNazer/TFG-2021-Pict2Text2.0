@@ -1,0 +1,15 @@
+ GPU isn't used 
+ Used AVX 
+ Used FMA & AVX2 
+mini_batch = 1, batch = 1, time_steps = 1, train = 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+
+ seen 64, trained: 30 K-images (0 Kilo-batches_64) 
+ Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+/home/gasan/TFG/TFG-2021-Pict2Text2.0/API/YOLO/t/2e72a132e5f06088914f4340a8a0d25f.jpg: Predicted in 1452.048000 milli-seconds.
+pictogram: 82%	(left_x:  954   top_y:  804   width:  974   height: 1262)
+pictogram: 27%	(left_x: 2220   top_y:  515   width:  806   height: 1866)
