@@ -29,15 +29,11 @@ API
   - app.py --> the main file from where the API starts, with the two endpoints for pictograms detection, yolo execution and the mapped two endpoints for classification
   - crop_bounding_boxes.py --> a python script to crop the pictograms using theirbounding boxes from the predicted image from the YOLO model
   - Utils.py --> the function used to create file names in md5 hashing. Used for unique identification when saving uploaded files.
-
-#### Transforming images from ***jpg*** to ***png*** 
-To transform the images from ***jpg*** to ***png*** use the script ***convert_to_png.py*** from the directory ***convert_jpg_to_png***. Executing the command:
-
-```
-python convert_to_png.py
-```
-
-The script will transform in ***png*** all images from the directory ***jpg_images*** and save them in ***png_images***. 
-
-## Service
+## Services
+The following four services are provided by the API:
+- /detect_pictograms - save a provided image in a generated directory, execute Yolo on the image, and returns an image with the predicted bounding boxes
+ > example:  
+-
+-
+-
 ## How to execute?
