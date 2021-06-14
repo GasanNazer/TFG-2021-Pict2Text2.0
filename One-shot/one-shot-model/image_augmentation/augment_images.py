@@ -40,4 +40,4 @@ def augment_images_from_folder(folder = "../pictograms", file_suffix = ""):
 
     print("Augmentation finished!")
 
-augment_images_from_folder("/media/roni/External_PRO/TFG/pictograms/project/model/load_images/convert_jpg_to_png", "photo")
+augment_images_from_folder("./pictograms", "photo")
