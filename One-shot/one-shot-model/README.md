@@ -8,8 +8,7 @@ Execute the following commands:
 1. virtualenv venv
 2. source venv/bin/activate
 3. pip install -r requirements
-4. python ./model.py
-- If Illegal instruction (core dumped) appears after running the previous instruction, run the following command 
+- If Illegal instruction (core dumped) appears when executing the model, run the following command 
    ```
    pip install --upgrade --no-cache-dir tensorflow 
    ```
