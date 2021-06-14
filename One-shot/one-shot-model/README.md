@@ -61,7 +61,7 @@ python create_directrory_for_every_file_in_directory.py
 ```
 All of the above is aplicable to the test set.
 
-## Training a nd validating the One-shot model
+## Training and validating the One-shot model
  In the scri- ***main.py*** the follwing attributes should be taken into consideration:
  - **n_iter** - the number of iterations the model is going to execute to train itself 
  - **evaluate_every** - interval for evaluating on one-shot tasks with the validation set, calculates accuracy and saves the weights in the folder ***weights***
@@ -74,3 +74,12 @@ All of the above is aplicable to the test set.
  ```
 
 ## Testing the One-shot model
+As we have mentioned previously, the weights obtained from training the algorithm are being stored in folder ***weights***, named as the number of iterations the model was executed with to obtain them. In order to test the algorithm with specific weights, the number indicated in the name of the file should be provided in the list (***weights***) in the script **model.py**.
+ 
+To test the model execute the command:
+```
+python model.py 
+```
+ 
+If it is not required to have the accuracy of the testing set but only the prediction part, the script ***execute_one_shot.py*** could be used.
+ 
