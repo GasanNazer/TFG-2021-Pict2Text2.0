@@ -5,7 +5,7 @@ import numpy as np
 
 from load_images import load_images, show_image_from_array, load_test_images
 
-X, Y, folders = load_images("pictograms")
+X, Y, folders = load_images("pictograms_train")
 Xtrain = X
 train_classes = Y
 #Xval, Y_val, folders_val = load_images("pictograms_val", classes_loaded= len(folders))

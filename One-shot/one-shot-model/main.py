@@ -7,16 +7,16 @@ from keras_preprocessing.image import ImageDataGenerator, array_to_img, load_img
 import os
 
 TARGET_SIZE = (105, 105)
-batchX_val, batchY_val, folders = load_images("pictograms_val_small")
+batchX_val, batchY_val, folders = load_images("pictograms_val_digital")
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     model = get_siamese_model((105, 105, 4))
     optimizer = Adam(lr=0.00006)
     model.compile(loss="binary_crossentropy", optimizer=optimizer)
-    evaluate_every = 50  # interval for evaluating on one-shot tasks
-    batch_size = 111
-    n_iter = 2000 # No. of training iterations
+    evaluate_every = 1 #50  # interval for evaluating on one-shot tasks
+    batch_size = 2 #111
+    n_iter = 1 #2000 # No. of training iterations
     N_way = 20  # how many classes for testing one-shot tasks
     n_val = 5  # how many one-shot tasks to validate on
     best = -1

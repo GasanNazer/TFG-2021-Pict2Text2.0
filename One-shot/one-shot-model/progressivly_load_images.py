@@ -32,6 +32,7 @@ NUM_IMAGES_PER_CLASS = 40 # used when constructing batches with pairs
 BATCH_SIZE = CLASSES * NUM_IMAGES_PER_CLASS
 TARGET_SIZE = (105, 105)
 
+'''
 # load and iterate training dataset
 train_it = datagen.flow_from_directory('/media/roni/External_PRO/TFG/pictograms/png_new_pictograms/0', target_size= TARGET_SIZE, color_mode="rgba", class_mode='categorical', batch_size=BATCH_SIZE, shuffle= False)
 # load and iterate validation dataset
@@ -53,7 +54,7 @@ n_iter = 10 # No. of training iterations
 N_way = 5  # how many classes for testing one-shot tasks
 best = -1
 model_path = './weights/old_model'
-
+'''
 
 def get_batch(batch_size, Xtrain, train_classes, s="train"):
     """
@@ -278,6 +279,5 @@ def test_set_pictograms():
 #folders = {v: k for k, v in test_small_it.class_indices.items()}
 
 #test_single_pictogram()
-#batchX, batchy = train_it.next()
 #show_batch_images(batchX)
-model.summary()
+#model.summary()

@@ -1,6 +1,6 @@
 from siamese_network import get_siamese_model
 from keras.optimizers import Adam
-from progressivly_load_images import test_pictogram_against_all, test_small_it
+from progressivly_load_images import test_pictogram_against_all
 from load_images import load_images
 import os
 
@@ -22,8 +22,8 @@ if __name__ == '__main__':
 
     TARGET_SIZE = (105, 105)
     #photo = "test25.png"
-    batchX_test, batchY_test, folders = load_images("pictograms_test_small")
-    weights = [950, 1550, 1850]
+    batchX_test, batchY_test, folders = load_images("pictograms_test")
+    weights = [1850]
     for i in weights:
         print("weigth: " + str(i))
         model.load_weights(os.path.join('./weights', 'weights.' + str(i) + '.h5'))
