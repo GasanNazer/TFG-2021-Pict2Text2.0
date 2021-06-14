@@ -1,3 +1,5 @@
+# Fetching pictograms script
+
 The fetching pictograms script fetches all pictograms in Spanish from ARASSAC.
 Having the ARASSAC pictograms in a prerequisite for training One-Shot and YOLO models.
 
