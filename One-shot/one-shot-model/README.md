@@ -85,6 +85,6 @@ If it is not required to have the accuracy of the testing set but only the predi
  
  
 
-The file ***weights.1850.h5*** in the directory **weights** contains the best weights for our YOLO model obtained in the version 4 of our training.
+The file ***weights.1850.h5*** in the directory **weights** contains the best weights for our One-shot model obtained in the version 4 of our training.
 
  
