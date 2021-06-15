@@ -36,3 +36,7 @@ where:
 - ***{path_config}*** - the path of where the custom configuration is located.
 - ***{filename}*** - a picture to test against
   > example: ../test/single_pictogram_zoom_out_small_size.jpg
+
+
+
+The file ***yolov4-obj_best.weights*** contains the best weights for our YOLO model obtained in the version 2 of our training.
