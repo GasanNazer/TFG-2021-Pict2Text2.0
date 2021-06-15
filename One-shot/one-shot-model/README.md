@@ -83,3 +83,8 @@ python model.py
  
 If it is not required to have the accuracy of the testing set but only the prediction part, the script ***execute_one_shot.py*** could be used.
  
+ 
+
+The file ***weights.1850.h5*** in the directory **weights** contains the best weights for our One-shot model obtained in the version 4 of our training.
+
+ 
