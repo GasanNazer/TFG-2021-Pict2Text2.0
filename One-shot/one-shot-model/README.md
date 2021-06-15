@@ -60,6 +60,9 @@ Make sure the provided path in the script coresponds to the location of the dire
 python create_directrory_for_every_file_in_directory.py
 ```
 All of the above is aplicable to the test set.
+ 
+
+Complete datasets could be seen in the compressed file [datasets.zip](https://github.com/NILGroup/TFG-2021-Pict2Text2.0/blob/master/One-shot/datasets.zip).
 
 ## Training and validating the One-shot model
  In the scri- ***main.py*** the follwing attributes should be taken into consideration:
