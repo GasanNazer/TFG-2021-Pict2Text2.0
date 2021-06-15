@@ -1,0 +1,43 @@
+{% extends "baseTemplate.html" %}
+
+{% block title %}Pict2Text 2.0 - Upload picture{% endblock %}
+
+{% block content %}
+<div class="page-header text-center">
+    <h1 class="mt-2" style="font-family: 'PT Serif', serif; font-size: 350%;">Pict2Text 2.0</h1>      
+</div>
+
+ <div class="mt-2 mx-auto shadow p-3 mb-5 bg-white rounded w-50">
+    <form id="myForm" method="post" enctype="multipart/form-data">
+        <div class="form-group mb-3">
+            <label class="form-label" for="customFile">Upload an image of a sentence written with pictograms:</label>
+            <input id="customFile" type="file" name="file1" class="form-control"/>
+        </div>
+
+        <div class="form-group mb-3">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+              Check to use demo images of sentences written with pictograms
+        </label>
+    </div>
+    <div id="optional" class="d-none">
+    <p>Select the demo image you want to test the models with:</p>
+        <div class="form-group mb-3 d-flex">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="/static/girl_read_hair.jpg">
+            <label class="form-check-label" for="inlineRadio1"><img style="min-width: 5em;" src="./{{ url_for('static',filename='girl_read_hair.jpg') }}" class="rounded w-100 mx-1 mt-2"></label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="/static/two_pictograms_test_close.jpg">
+            <label class="form-check-label" for="inlineRadio2"><img src="./{{ url_for('static',filename='two_pictograms_test_close.jpg') }}" class="rounded w-100 mx-1 mt-2"></label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="/static/tree_pictograms_test_close.jpg">
+            <label class="form-check-label" for="inlineRadio3"><img src="./{{ url_for('static',filename='tree_pictograms_test_close.jpg') }}" class="rounded w-100 mx-1 mt-2"></label>
+        </div>
+        </div>
+    </div>
+        <button type="submit" class="btn btn-primary">Analize picture</button>
+      </form>
+ </div>
+{% endblock %}

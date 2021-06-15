@@ -44,7 +44,7 @@ def make_prediction_one_shot(pictograms_folder = './convert_jpg_to_png/png_image
                                                                           folders)
         print(f"Tested image with name {photo}. Predicted as: {id} with similarity {probability}")
 
-        classifications.append({"id": id, "similarity": probability[0]})
+        classifications.append({"id": id, "similarity": probability[0], "photo": photo})
 
 
     return classifications

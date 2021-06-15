@@ -1,0 +1,58 @@
+{% extends "baseTemplate.html" %}
+
+{% block title %}Pict2Text 2.0 - YOLO and One-shot learning algorithm results{% endblock %}
+
+{% block content %}
+<div class="card text-center shadow p-3 mb-5 bg-white rounded">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <a id="link1" class="nav-link active" href="#">YOLO bounding box</a>
+        </li>
+        <li class="nav-item">
+            <a id="link2" class="nav-link" href="#">YOLO separation</a>
+        </li>
+        <li class="nav-item">
+          <a id="link3" class="nav-link" href="#">One-shot prediction</a>
+        </li>
+          <li class="nav-item">
+          <a id="link4" class="nav-link" href="/">Try the model again</a>
+        </li>
+      </ul>
+    </div>
+    <!--card 1: image with the bounding boxes-->
+    <div id="card1" class="card-body">
+        <div class="text-center">
+            <img style="max-height: 40em; max-width: 100%;" src="data:image/jpeg;base64,{{ original }}" class="rounded" alt="Image with yolo boundary box">
+        </div>
+    </div>
+
+    
+    <div id="card2" class="card-body d-none">
+        <div class="mb-2">
+            {%for i in range(0, num)%}
+            <img src="data:image/jpeg;base64,{{ cropped[i] }}" class='rounded w-25 mx-1 mt-2'>
+            {%endfor%}
+        </div>
+    </div>
+
+      
+
+      <div id="card3" class="card-body d-none d-flex">
+        {%for i in range(0, num)%}
+        <div class="card rounded w-25 mx-1 mt-2">
+            <img
+              src="data:image/jpeg;base64,{{ cropped[i] }}"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{predictions[i]["word"]}}</h5>
+              <p>id: {{predictions[i]["id"]}}</p>
+              <p>similarity: {{predictions[i]["similarity"]}}</p>
+            </div>
+        </div>
+        {%endfor%}
+      </div>
+
+  </div>
+{% endblock %}
