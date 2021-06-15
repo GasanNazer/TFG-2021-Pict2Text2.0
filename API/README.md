@@ -1,4 +1,4 @@
-# API
+# API and Web application
 
 The Pict2Text2 API is a Flask API, used to connect the two model (YOLO and One-shot) so that that they could be used as independent services and from the website.
 
