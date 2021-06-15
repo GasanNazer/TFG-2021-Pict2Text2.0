@@ -31,9 +31,17 @@ API
   - Utils.py --> the function used to create file names in md5 hashing. Used for unique identification when saving uploaded files.
 ## Services
 The following four services are provided by the API:
-- /detect_pictograms - save a provided image in a generated directory, execute Yolo on the image, and returns an image with the predicted bounding boxes
- > example:  
--
--
--
+- /detect_pictograms - save a provided image in a generated directory, execute Yolo on the image, and returns the image with the predicted bounding boxes
+ > example:  curl -F "file=@./YOLO/test/two_pictograms_test_close.jpg" 'http://localhost:1080/detect_pictograms'
+- /uploadImage - used to upload, save, run both YOLO and One-shot models on the provided image selected from the Web UI
+- /show_results - used to return the results and populate the templates in the Web page
+- /classify_pictograms - executes the One-shot model on a given image
+ > example:  curl -F "file=@./YOLO/test/two_pictograms_test_close.jpg" 'http://localhost:1080/classify_pictograms'
+- /classify_pictograms_web - executes the One-shot model for every image in a given directory used in the execution flow from the Web page
 ## How to execute?
+
+```
+gunicorn -w 1 --threads 3 --bind 127.0.0.1:1080 app:app
+```
+Other available execution way is the regular one given in the Flask documentation.
+
