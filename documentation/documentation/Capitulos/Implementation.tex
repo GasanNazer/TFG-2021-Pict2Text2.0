@@ -1,0 +1,809 @@
+% !TeX encoding = ISO-8859-1
+\chapter{Pict2Text 2.0}
+\label{Pict2Text 2.0}
+
+As we have already explained in section \ref{Goals}, one of the goals of our project is recognizing pictograms from an uploaded picture. To achieve this, we have to identify the different pictograms in an image, and then classify each one of them. For that, we need two Machine Learning algorithms: one to detect the pictograms that appear in an image (section \ref{YOLOimplementation}), and another to identify the word associated with each of the pictograms detected by the previous algorithm (section \ref{One-shot learning algorithm}). To connect the two models, we implemented an API, presented in section \ref{API}. A web application was also implemented (section \ref{Web Application}), which serves as a visual representation of the obtained results.
+
+\section{Pictograms detection using YOLO Algorithm}
+\label{YOLOimplementation}
+
+Detecting how many pictograms are in a picture and their location is the first issue we have to solve if we want to determine which pictograms compose the message in the image. Therefore we have to separate the individual pictograms in the mage.
+
+To solve this problem, we need to have a machine learning model able to locate where are these pictograms in the image and separate them using a bounding box. In Figure \ref{fig:example-boundingbox-separation} is shown an image of a sentence written with pictograms meaning "The boy takes out a toothbrush and a toothpaste". In it, each pictogram is separated using a bounding box. The given image is an example of the expected output of our machine learning model. The model selected for this purpose is YOLO (described in section \ref{yolo}).
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/example-boundingbox-separation}
+\caption{The sentence "The boy takes out a toothbrush and a toothpaste", written with pictograms. The pictograms are separated using a bounding box.}
+\label{fig:example-boundingbox-separation}
+\end{center}
+\end{figure}
+
+To understand how to configure the algorithm and to create the required dataset, we have followed two tutorials \footnote{\href{https://youtu.be/hTCmL3S4Obw}{https://youtu.be/hTCmL3S4Obw}}\textsuperscript{,}\footnote{\href{https://youtu.be/mmj3nxGT2YQ}{https://youtu.be/mmj3nxGT2YQ}\label{second-tutorial}}. In them, the authors describe step by step how to use the Google Colaboratory\footnote{\href{https://colab.research.google.com/notebooks/intro.ipynb}{https://colab.research.google.com/notebooks/intro.ipynb}} to execute machine learning models in Google Cloud Platform (GCP)\footnote{\href{https://cloud.google.com/}{https://cloud.google.com/}} using the provided GPUs. They show which are the required configuration files, how to modify them correctly, and how the model should be trained and tested, providing all relevant code. Additionally, in the first tutorial, the author covers how to label the data correctly to the required format for both versions 3 and 4 of YOLO.
+
+YOLO, similarly to other machine learning models, requires its data to be labeled in a specific format (YOLO labeling format\footnote{\href{https://towardsdatascience.com/image-data-labelling-and-annotation-everything-you-need-to-know-86ede6c684b1}{https://towardsdatascience.com/image-data-labelling-and-annotation-everything-you-need-to-know-86ede6c684b1}}). To prepare the dataset in this format, a .txt file with the same name is created for each image file in the same directory. Each .txt file contains the annotations for the corresponding image file, that is object class, object coordinates, width, and height as follows: \textit{<object-class> <x> <y> <width> <height>}:
+
+\begin{itemize}
+\item <object-class> - integer number of object from 0 to number of classes - 1
+\item <x> <y> - represent the center of the bounding box.
+\item <width> <height> - float values relative to width and height of image, in the range (0.0 to 1.0]
+\end{itemize}
+
+In the .txt file corresponding to a certain image an annotation line is created for each object tagged on that image. An example for two objects from two different classes will be as follows:
+\begin{itemize}
+\item 0 0.45 0.55 0.29 0.67
+\item 1 0.99 0.83 0.28 0.44
+\end{itemize}
+
+In the given example, the first value represents the object class to which the object belongs. Where 0 are the labeled objects from the first class, and 1 those from the second. The second value represents the center of the label bounding box relative to the x-axis, the third, the center of the bounding box relative to the y-axis, and the last two values represent the width and height of the image relative to the total width and height.
+
+Our training set consists of pictures of a single pictogram, with a variation of the scale and viewpoint. To label the data, we have used the graphical image annotation tool "LabelImg"\footnote{\href{https://github.com/tzutalin/labelImg}{https://github.com/tzutalin/labelImg}}. For the manual preparation of our dataset to the required format, we have followed the steps from the tutorial\footnote{\href{https://colab.research.google.com/drive/1_GdoqCJWXsChrOiY8sZMr_zbr_fH-0Fg?usp=sharing#scrollTo=8dfPY2h39m-T}{https://colab.research.google.com/drive/1\_GdoqCJWXsChrOiY8sZMr\_zbr\_fH-0Fg?usp=sharing#scrollTo=8dfPY2h39m-T}} shown in Figure \ref{fig:label_image}. The first steps are to choose the directory where the images we want to label are located and to point to the folder where the labels are going to be saved. Next, we have to pick the YOLO annotation format, fourth to select an image to annotate, fifth to draw a bounding box around the object we want to label. Finally, we have to indicate the name of the object class.
+
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.8\textwidth]%
+{Imagenes/Pict2Text2.0/label_image}
+\caption{Annotation process using the LabelImg tool.}
+\label{fig:label_image}
+\end{center}
+\end{figure}
+
+An example for labeling an image from our dataset using the LabelImg tool could be seen in Figure \ref{fig:LabelImg_our_dataset}. After the labeling, the .txt file with the annotations in the YOLO format contains \textit{0 0.499319 0.498152 0.955041 0.977088}, representing the object-class, the coordinates relative to the x-axis and y-axis, and the width and height of the bounding box respectively.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/LabelImg_our_dataset}
+\caption{Labeling using LabelImg for an image of our dataset.}
+\label{fig:LabelImg_our_dataset}
+\end{center}
+\end{figure}
+
+The training set consists of pictures of pictograms, which require manual tagging, locating, and creating bounding boxes around the pictograms in the image. Our dataset consists of thousands of different classes (the pictograms) and only one example per class. For that reason, we are not going to use the classification part of YOLO, instead, we will detect where are the pictograms in the image but not which pictograms they are. For that reason, after we label our training examples, we will always have 0 as a first value - the object class (for example \textit{0 0.499319 0.498152 0.955041 0.977088}).
+
+In the following subsections, we will explain different versions of YOLO we have made to solve our problem. The way we will evaluate the performance of those versions will be by focusing on the bounding boxes the algorithm predicts given an image with pictograms, as well as the probability percentage (in the upper left corner of the bounding box).
+
+\subsection{First Version}
+\label{First Iteration of YOLO}
+
+The main goal of this version was to configure and run the YOLO model with 150 pictures of pictograms labeled in the YOLO format. We cloned the Google Colaboratory Notebook\footnote{\href{https://colab.research.google.com/drive/1_GdoqCJWXsChrOiY8sZMr_zbr_fH-0Fg?usp=sharing#scrollTo=8dfPY2h39m-T}{https://colab.research.google.com/drive/1\_GdoqCJWXsChrOiY8sZMr\_zbr\_fH-0Fg?usp=sharing#scrollTo=8dfPY2h39m-T}} from the tutorial\textsuperscript{\ref{second-tutorial}}, connected it to our Google Drive, and started modifying it so that we could train the YOLO v4 with our custom data.
+
+\subsubsection{Configuration}
+
+To configure the model, we followed the steps from the notebook, cloning the darknet repository\footnote{\href{https://github.com/AlexeyAB/darknet}{https://github.com/AlexeyAB/darknet}} and changing the Makefile of the same repository. We used Google Colaboratory to train our model on GPU instead of CPU, to reduce the time to train the model. After that, we built the darknet so we could use the darknet executable file to run or train object detectors.
+
+Next, we compressed the directory, containing the pictures of pictograms, their labels, a text file with information regarding the name of the class used by YOLO to classify the object as pictograms, and two Python scripts, and we uploaded it to Google Drive. One of the uploaded scripts creates the "train.txt" and "test.txt" files which contain the training and testing examples separated in the proportion 85\% for training and 15\% for testing. The other one contains the number of classes the model will use, the location of the training and validation sets, the names of the classes taken from the .txt file, and the backup directory where the model will save the weights of every 1.000 iterations.
+
+After decompressing the directory in Google Drive and executing the two scripts, we modified the YOLO layers configuration file to adapt it to our needs. We changed the "batch" size from 64 to 2 (as we do not have thousands of examples to train with), we set "max\_batches" to 6.000, and "steps" to "4.800, 5.400". Finally, we changed the filters to 18 in the three convolutional layers and the number of classes to 1 in the three YOLO layers. The parameters were configured, using the following formulas:\hfill \break
+
+max\_batches = (\# of classes) * 2.000 (but no less than 6000 so if training for 1, 2, or 3 classes it will be 6.000, however detector for five classes would have max\_batches=10.000)
+
+steps = (80\% of max\_batches), (90\% of max\_batches) (so if max\_batches = 10.000, then steps = 8.000, 9.000)
+
+filters = (\# of classes + 5) * 3 (so if training for one class then the filters = 18, but if you are training for 4 classes then the filters = 27)\hfill \break
+
+Next, we downloaded pre-trained weights, located in the darknet repository\footnote{\href{https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137}{https://github.com/AlexeyAB/darknet/releases/download/darknet\_yolo\_v3\_optimal/yolov4.conv.137}},  directly to the virtual machine where we have placed the darknet cloned project and all of the configuration we made. Although transfer learning and using pre-trained model weights is not mandatory, it reduces training time, increases accuracy, and makes the model converge faster to a good solution.
+
+Although the model was using an external GPU (Tesla P100-PCIe-16GB), provided by Google Colaboratory, as this is a deep multi-layers CNN doing a lot of iterations, it required several hours to train. After 2.000 iterations, the model already has achieved a map of 100, and we have stopped its execution to test whether or not it was able to detect the pictograms in a picture of pictograms.
+
+To test the model, we needed to create a new YOLO layers configuration file, get the weights from the backup folder, provide the model with the image we want to detect pictograms from, and specify the bounding box threshold (used to discard all detections under a certain value). For threshold we used 0.2, meaning that only detections higher than 20\% will be shown in the output. The results from the tests will be presented in the following subsection.
+
+
+\subsubsection{Results}
+
+To test the YOLO model we have previously trained, we created three test groups. The examples in them were not used in the training set.
+
+\begin{itemize}
+\item The first one consisted of 3 examples of a single pictogram in an image. In Figure \ref{fig:yolosinglepicto} can be seen that the YOLO model correctly detected the pictogram with 90\% accuracy.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.4\textwidth]%
+{Imagenes/Pict2Text2.0/yolosinglepicto}
+\caption{The YOLO model implemented by us detecting a single pictogram from an image of pictogram with an accuracy of 90\%.}
+\label{fig:yolosinglepicto}
+\end{center}
+\end{figure}
+
+The following two examples we tested (see Figure \ref{fig:yolotwopictos}) contained pictures of pictograms zoomed out. For these examples, the model again correctly localized the pictograms in the images, but its probability has dropped to 66\%. The dropped accuracy from zoomed-in and zoomed-out images of pictograms is an indicator that maybe the model was not trained with enough zoom-out examples, so at the moment, it does not know how to detect zoomed-out images, as well as zoomed in.
+
+\begin{figure}[!ht]
+\begin{center}
+\fcolorbox{black}{white}{\includegraphics[width=50mm,scale=0.50]%
+{Imagenes/Pict2Text2.0/yolotwopictos1}}
+\fcolorbox{black}{white}{\includegraphics[width=50mm,scale=0.50]%
+{Imagenes/Pict2Text2.0/yolotwopictos2}}
+\caption{Two zoom-out images of pictograms detected with an accuracy of 66\% from YOLO.}
+\label{fig:yolotwopictos}
+\end{center}
+\end{figure}
+
+\item The second testing group consists of 2 examples of images with two pictograms on them. In Figure \ref{fig:yolotwotogether} is shown the output of the YOLO model tested with two pictograms. YOLO managed to detect the left pictogram (the girl with red hair) as a pictogram with 14\% and both pictograms combined as another pictogram with 90\%.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.6\textwidth]%
+{Imagenes/Pict2Text2.0/yolotwotogether}
+\caption{Testing YOLO with an image with two pictograms. Correctly detecting one of the pictograms but incorrect result in general.}
+\label{fig:yolotwotogether}
+\end{center}
+\end{figure}
+
+In this example, the model incorrectly detected both pictograms as a single pictogram, although it managed to localize one of the pictograms separately, even with a small percentage.
+
+With the picture in Figure \ref{fig:yolotwozoomed} the result given by YOLO is better: it detected the left pictogram (the girl with red hair) as a pictogram with 66\% and again both of the pictograms as a single pictogram with 32\%.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.6\textwidth]%
+{Imagenes/Pict2Text2.0/yolotwozoomed}
+\caption{Testing YOLO with an image with two pictograms zoomed in. Correctly detecting one of the pictograms but incorrect result in general.}
+\label{fig:yolotwozoomed}
+\end{center}
+\end{figure}
+
+From the examples of this group, once again, the results indicate that there could be a potential problem with the detection related to viewpoint and scale variation. Also, from these tests, it is clear that the model is not working as expected when there are multiple pictograms in the same image.
+
+\item The third test group contains two examples of images with three pictograms on them. In the example of Figure \ref{fig:threepictos} the model detected the three pictograms as a single one with 92\%, which is incorrect.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.6\textwidth]%
+{Imagenes/Pict2Text2.0/threepictos}
+\caption{Testing YOLO with an image with three pictograms. Incorrectly detecting all of them as a single pictogram.}
+\label{fig:threepictos}
+\end{center}
+\end{figure}
+
+Figure \ref{fig:threepictoszoomed} shows the result from the YOLO model tested with the zoomed-in version of the image with three pictograms. It managed to detect the left pictogram (the girl with red hair) as a single pictogram with 94\%, but the following detection contains all of them as a single pictogram which is incorrect.
+
+\end{itemize}
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.8\textwidth]%
+{Imagenes/Pict2Text2.0/threepictoszoomed}
+\caption{Testing YOLO with an image with three pictograms zoomed-in. Incorrectly detecting all of them as a single pictogram but correctly localizing the left pictogram (the girl with red hair).}
+\label{fig:threepictoszoomed}
+\end{center}
+\end{figure}
+
+As can be seen in Table \ref{table:trainingv1yolo}, from the tested examples, we can conclude that the first version of the YOLO model shows good results with a single pictogram in an image when the image is zoomed in and worse results in zoomed-out. When testing with two and three pictograms, the model incorrectly groups all of the images, and detects them as a single pictogram in all of the cases. Also, in the tests with multiple pictograms in an image, the accuracy problem when the image is zoomed-out exists, too. Better results are obtained when the image is zoomed in.
+
+\begin{table}[!ht]
+\begin{center}
+\resizebox{\textwidth}{!}{\begin{tabular}{ |c|c|c|c| } 
+\hline
+\#pictograms in the picture & Accuracy & Prediction\\
+\hline
+Single pictogram (zoomed-in) & 90\% & Correct \\
+Single pictogram (zoomed-out) & 66\% & Correct \\
+Two pictograms (zoomed-in) & 66\%\textbackslash 32\% & One of the pictograms\textbackslash Both as one pictogram. Incorrect \\
+Two pictograms (zoomed-out) & 14\%\textbackslash 90\% & One of the pictograms\textbackslash Both as one pictogram. Incorrect \\
+Three pictograms (zoomed-in) & 94\% & All as a single pictogram. Incorrect \\
+Three pictograms (zoomed-out) & 92\% & All as a single pictogram. Incorrect \\
+\hline 
+\end{tabular}}
+\end{center}
+\caption{Results from version one of our YOLO model.}
+\label{table:trainingv1yolo}
+\end{table}
+
+To solve the above-described problems, in the following versions of the algorithm, it should be trained with a dataset with more augmented pictograms.
+
+\subsection{Second Version}
+\label{Second Iteration of YOLO}
+
+
+In our first version of the YOLO model, the following problems were detected:
+
+\begin{itemize}
+\item The model incorrectly groups multiple pictograms and outputs a bounding box for all the pictograms in the picture instead of one for each pictogram.
+\item The scale variation of the image affects the model accuracy.
+\end{itemize}
+
+To solve the above-described problems, we augmented our training dataset.
+
+\subsubsection{Augmentation of the training dataset}
+
+For the augmentation of the images, we decided to start with a simple 45-degree rotation to the left, since that doesn't imply taking new pictures of pictograms, as it would if we have tried to directly solve our scale variation problem. For that, we create a python script using the PIL library. In Figure \ref{fig:45-degree-rotation-picto} is shown a picture of a pictogram rotated 45-degree to the left using our python script. The script goes through the images of the picture of pictograms from a given directory, rotates them, and saves them in the same folder. That way, we double the original set to 300 images.  Later we labeled the augmented pictures using LabelImg. Next, we retrained the model with the new dataset.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.6\textwidth]%
+{Imagenes/Pict2Text2.0/45-degree-rotation-picto}
+\caption{45-degree rotation to the left of a picture of a pictogram using our python script.}
+\label{fig:45-degree-rotation-picto}
+\end{center}
+\end{figure}
+
+\subsubsection{Results}
+
+Testing the model using the same three testing groups as in the first version of our model, we obtained the following results: 
+
+\begin{itemize}
+\item First group (3 examples of a single pictogram in an image). As can be seen in Figure \ref{fig:predictions-single_pictogram}, the model correctly detected the pictogram with 99\% accuracy. For this image compared against the output of the previous version, the accuracy is increased by 9\%.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.6\textwidth]%
+{Imagenes/Pict2Text2.0/predictions-single_pictogram}
+\caption{The second version of the model detecting a single pictogram from an image of a pictogram with an accuracy of 99\%.}
+\label{fig:predictions-single_pictogram}
+\end{center}
+\end{figure}
+
+For the next two examples, which contained pictures of pictograms zoomed out (see in Figure \ref{fig:predictions-single_pictogram_zoom_out}), the model correctly localized the pictograms in the images, the accuracy also is high above 90\%. There are multiple bounding boxes returned by the model, but the ones with the lower accuracy should not appear. Comparing the output from the previous model and taking into consideration only the bounding box with the highest accuracy from the current output, the accuracy has increased from 66\% to 90-97\%.
+
+\begin{figure}[!ht]
+\begin{center}
+\fcolorbox{black}{white}{\includegraphics[width=50mm,scale=0.50]%
+{Imagenes/Pict2Text2.0/predictions-single_pictogram_zoom_out}}
+\fcolorbox{black}{white}{\includegraphics[width=50mm,scale=0.50]%
+{Imagenes/Pict2Text2.0/prediction-single pictogram zoom out2}}
+\caption{Two zoom-out images of pictograms detected with accuracy over 90\% from the second version of our model.}
+\label{fig:predictions-single_pictogram_zoom_out}
+\end{center}
+\end{figure}
+
+\item Second testing group (2 examples of images with two pictograms on them). In this case (Figure \ref{fig:predictions-two_pictograms}), the model incorrectly detected both pictograms as a single pictogram. Although with high accuracy of 99\%, the model was not able to separate the pictograms. Comparing the output from the previous version, for the concrete example, the previous version was returning better results. In the previous version, the model was able to detect the pictogram of the girl, and in this version, it is not.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.8\textwidth]%
+{Imagenes/Pict2Text2.0/predictions-two_pictograms}
+\caption{Testing the second version of the model with an image with two pictograms. Incorrectly detecting both pictograms as a single one.}
+\label{fig:predictions-two_pictograms}
+\end{center}
+\end{figure}
+
+Testing the new version of the model with the zoomed-in image of two pictograms, the model correctly detected both of the pictograms. In Figure \ref{fig:predictions-two_pictograms_test_close} can be seen that the pictogram with the girl with red hair was detected as a pictogram with 97\% and the other pictogram with 98\%. Those results are significantly better than the results for the previous version of the model.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.8\textwidth]%
+{Imagenes/Pict2Text2.0/predictions-two_pictograms_test_close}
+\caption{Testing the second version of the model with an image with two pictograms zoomed in.}
+\label{fig:predictions-two_pictograms_test_close}
+\end{center}
+\end{figure}
+
+In the last example of this group for the first time, the model correctly localized multiple pictograms in a given image. This is a good indication that even though the model is making mistakes, the second version of the model increases the model capabilities.
+
+\item Third test group (two examples of images with three pictograms on them). In the example of Figure \ref{fig:predictions-tree_pictograms}, the model detected the three pictograms as a single one with 100\%, which is incorrect. In comparison with the previous version of the model, the accuracy is increased.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.8\textwidth]%
+{Imagenes/Pict2Text2.0/predictions-tree_pictograms}
+\caption{Testing the second version of the YOLO model with an image with three pictograms. Incorrectly detecting all of them as a single pictogram.}
+\label{fig:predictions-tree_pictograms}
+\end{center}
+\end{figure}
+
+In Figure \ref{fig:predictions-tree_pictograms_test_close} is shown the result from the new model tested with the zoomed-in version of the image with three pictograms. The model returned four bounding boxes, correctly detecting the girl with the red hair with 59\% and the backpack with 10\%. The other two bounding boxes group multiple pictograms, and they are incorrect. Comparing the current results with those for the previous version, the localization of a second pictogram from the images is a sign of permanence progression of the model.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.8\textwidth]%
+{Imagenes/Pict2Text2.0/predictions-tree_pictograms_test_close}
+\caption{Testing the second version of the YOLO model with an image with three pictograms zoomed-in. Detecting the two pictograms from the extremums.}
+\label{fig:predictions-tree_pictograms_test_close}
+\end{center}
+\end{figure}
+
+\end{itemize}
+
+\subsubsection{Conclusions}
+
+In the second version of our model, as can be observed in Table \ref{table:trainingv2yolo} we managed to increase the model performance by augmenting the dataset. For the examples with multiple pictograms in an image, the model was able to correctly detect more than one pictogram. The problems with the grouping of multiple pictograms and detecting it as a single one, and the other related to the scale variation of the image persists. The decision to increase the dataset was a correct one, even though the model still makes a lot of mistakes.
+
+\begin{table}[!ht]
+\begin{center}
+\resizebox{\textwidth}{!}{\begin{tabular}{ |c|c|c|c| } 
+\hline
+\#pictograms in the picture & Accuracy & Prediction\\
+\hline
+Single pictogram (zoomed-in) & 99\% & Correct \\
+Single pictogram (zoomed-out) & 90\% & Correct \\
+Two pictograms (zoomed-in) & 97\% and 98\% & Detected pictogram one and pictogram two. Correct \\
+Two pictograms (zoomed-out) & 99\% & All as a single pictogram. Incorrect \\
+Three pictograms (zoomed-in) & 59\% and 10\% & Detected pictogram one and pictogram three. Incorrect \\
+Three pictograms (zoomed-out) & 100\% & All as a single pictogram. Incorrect \\
+\hline 
+\end{tabular}}
+\end{center}
+\caption{Results from version two of our YOLO model.}
+\label{table:trainingv2yolo}
+\end{table}
+
+Having the above-described problems, the next versions of the model should be trained with a dataset containing images with scale variation, different rotations, and other augmentations, taken in multiple backgrounds.
+
+\section{Pictogram identification using One-shot learning algorithm}
+\label{One-shot learning algorithm}
+
+Once the pictograms from a picture are detected, we have to identify the word associated with each one of those pictograms. Considering the particularity of the dataset, having more than 12.000 classes (the pictograms) and only one example of each, we decided to use the One-shot learning algorithm (explained in section \ref{One-shot learning algorithm state of the art}).
+
+For the implementation of the algorithm, we have taken an already implemented one from \citep{oneShot} (presented in section \ref{One-shot learning algorithm state of the art}). The original algorithm worked with a dataset consisting of images of letters of different alphabets. Those letters were in grayscale, and our pictograms are in PNG format. As shown in Figure \ref{fig:grayscale}, in machine learning, a picture in grayscale is represented by a two-dimensional matrix, with dimensions the width and the height of the picture. Each cell corresponds to 1 pixel and contains a number between 0 and 255, representing the shade of grey where 0 is black, and 255 is white. On the other hand, as you can see in Figure \ref{fig:rgb}, the colorful images need three matrices for the channels red, green, and blue. In our case, we have a fourth matrix representing the alpha channel (the opacity of the picture), as it is included in the PNG images we use. For that reason, we also have a fourth matrix, which is included in the PNG images to represent the opacity of the pictures (alpha channel).
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=75mm,scale=0.5]%
+{Imagenes/Pict2Text2.0/grayscale}
+\caption{Image represented in grayscale image and the corresponding matrix.}
+\label{fig:grayscale}
+\end{center}
+\end{figure}
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=75mm,scale=0.75]%
+{Imagenes/Pict2Text2.0/reign_pic_breakdown}
+\includegraphics[width=50mm,scale=0.25]%
+{Imagenes/Pict2Text2.0/three_d_array}
+\caption{Colourful RGB image with its RGB three matrices.}
+\label{fig:rgb}
+\end{center}
+\end{figure}
+
+To train and test the model, we have used three data sets:
+\begin{itemize}
+\item \textbf{Training set.} Used to train the model and achieve the weights we will need to recognize given pictograms, later when we ask the model to predict. 
+\item \textbf{Validation set.} Used to compare the accuracy of the algorithm on different data in order to tune the hyperparameters, like the number of iterations.
+\item \textbf{Test set.} Used to provide an unbiased evaluation of the model, simulating a near-real situation where the model would face pictograms never seen by it before. We use it to compute how similar a given pictogram is to all other pictograms forming the set.
+\end{itemize}
+
+The objective is to have all pictograms of the ARASAAC dataset in the test set so that we could compare a given pictogram against all others.
+
+In the following sections we will explain the preparation of the training set, and the versions in the development and testing we have done. 
+
+\subsection{Preparing the dataset}
+\label{Preparing the dataset}
+
+To prepare the training, validation, and test sets we have used, as well as to fetch the ARASAAC pictograms, we have implemented a few scripts presented in the following subsections.
+
+\subsubsection{Loading ARASAAC pictograms}
+\label{Loading ARASAAC pictograms}
+
+First of all, we needed to obtain the ARASAAC pictograms dataset in Spanish to be able to train our model. We created a Python script that uses a REST client to call the ARASAAC API\textsuperscript{\ref{arasaacapi}}. The script makes a request to the ARASAAC API\footnote{\href{https://api.arasaac.org/api/pictograms/all/es}{https://api.arasaac.org/api/pictograms/all/es}}, which returns the information of all ARASAAC pictograms in Spanish. Later it downloads every ARASAAC pictogram calling the ARASAAC service\textsuperscript{\ref{arasaacid}} that given a pictogram id returns a JSON with the information regarding it. 
+
+The fetched pictograms are stored locally in separate folders numbered from 0 to n, with a maximum size of 4.000 images. We have chosen this number of elements because in a Unix (Linux) based system some commands like rm, cp, move, etcetera place the files as parameters of the functions, and the maximum number of parameters given to a function is limited to 4.096. Restricting the number of images to 4.000 ensures that all common commands will work correctly. 
+
+As the process of downloading the pictograms required more than 3 hours for the complete fetching of over 11.000 images, we included concurrency and reduced the execution time to under an hour.
+
+Having the dataset fetched, we had to load it in memory in a way that the model could use it. We have implemented another Python script to achieve that. In it, we have used the image preprocessing module of Keras (explained in section \ref{Keras}) to read the pictograms from a directory and store them in memory. All ARASAAC pictograms are in the image format png, and during loading, we had to configure the module of Keras to load them as four-color channels (RGBA\footnote{\href{https://en.wikipedia.org/wiki/RGBA_color_model}{https://en.wikipedia.org/wiki/RGBA\_color\_model}}) and resize them to 105 height by 105 width.
+
+\subsubsection{Processing ARASAAC pictograms}
+\label{Processing ARASAAC pictograms}
+
+When the user uploads a picture of a pictogram, likely, it will not be the same as the original online version. It could be rotated, the colours may not be the same, it could be blurred, etcetera. For this reason, the dataset obtained in the previous step must be processed to augment the dataset generating different representatives of each one of the pictograms. To achieve that, we had created three processing scripts. All of them use Keras preprocessing module, but they differ in the way they manipulate the pictograms. Keras's module includes the class ImageDataGenerator (explained in section \ref{Keras}), which comes with different image manipulation options and augmentation capabilities like changing the brightness of an image, rotating it, zooming it, and so on. In the following sections, we will explain the manipulation scripts we have developed.
+
+\bigskip
+ 
+\textbf{Changing brightness}
+\bigskip
+
+The first script changes the brightness of each pictogram. We provided a range between 0.2 and 1.0 to the ImageDataGenerator, specifying that the augmented image brightness should take a random value in that range. The two extremes represent a very dark and very bright image. Figure \ref{fig:bee} shows the original pictogram of a bee (`abeja`) and Figure \ref{fig:beeShade} shows processed images of the pictogram bee (`abeja`) using our brightness changing script.
+
+\begin{figure}[!ht]
+\begin{center}
+\fcolorbox{black}{white}{\includegraphics[width=50mm,scale=0.5]%
+{Imagenes/Pict2Text2.0/bee}}
+\caption{The original image of the pictogram bee(`abeja`) from the ARASAAC.}
+\label{fig:bee}
+\end{center}
+\end{figure}
+
+\begin{figure}[!ht]
+\begin{center}
+\fcolorbox{black}{white}{\includegraphics[width=25mm,scale=0.25]%
+{Imagenes/Pict2Text2.0/beeShade}}
+\fcolorbox{black}{white}{\includegraphics[width=25mm,scale=0.25]%
+{Imagenes/Pict2Text2.0/beeShade2}}
+\fcolorbox{black}{white}{\includegraphics[width=25mm,scale=0.25]%
+{Imagenes/Pict2Text2.0/beeShade3}}
+\fcolorbox{black}{white}{\includegraphics[width=25mm,scale=0.25]%
+{Imagenes/Pict2Text2.0/beeShade4}}
+\caption{Augmented images of the pictogram bee (`abeja`) using the brightness changing script.}
+\label{fig:beeShade}
+\end{center}
+\end{figure}
+
+This type of augmentation will help the model to detect the concept represented in the pictogram independently of the light or brightness conditions from the provided image.
+
+\bigskip
+ 
+\textbf{Rotating images}
+\bigskip
+
+The second script rotates the pictogram randomly. Similar to the brightness augmentation script, it used the ImageDataGenerator class, specifying the rotation\_range attribute to 90 degrees. This specification will augment the provided pictogram generating random 90 degrees rotations. In Figure \ref{fig:beeUpDown} are shown two images of the bee pictogram generated by the rotating script.
+
+\begin{figure}[!ht]
+\begin{center}
+\fcolorbox{black}{white}{\includegraphics[width=30mm,scale=0.5]%
+{Imagenes/Pict2Text2.0/beeUp}}
+\fcolorbox{black}{white}{\includegraphics[width=30mm,scale=0.5]%
+{Imagenes/Pict2Text2.0/beeDown}}
+\caption{Two 90 degree rotations of the pictogram bee (`abeja`) generated by the augmentation script.}
+\label{fig:beeUpDown}
+\end{center}
+\end{figure}
+
+This type of augmentation will help the model to recognize the pictogram even if the provided image of it is rotated or tilted aside.
+
+\bigskip
+ 
+\textbf{Changing colours}
+\bigskip
+
+The third augmentation script changes the color of the pictogram. The script iterates through the width and height of the given pictogram and changes randomly the RGB channels of it. The script does not change the alpha channel of the image as we would like to keep the original background. In Figure \ref{fig:beeColour} are shown four augmentations of the pictogram bee (`abeja`) using the color augmentation script.
+
+\begin{figure}[!ht]
+\begin{center}
+\fcolorbox{black}{white}{\includegraphics[width=25mm,scale=0.25]%
+{Imagenes/Pict2Text2.0/beeColour}}
+\fcolorbox{black}{white}{\includegraphics[width=25mm,scale=0.25]%
+{Imagenes/Pict2Text2.0/beeColour2}}
+\fcolorbox{black}{white}{\includegraphics[width=25mm,scale=0.25]%
+{Imagenes/Pict2Text2.0/beeColour3}}
+\fcolorbox{black}{white}{\includegraphics[width=25mm,scale=0.25]%
+{Imagenes/Pict2Text2.0/beeColour4}}
+\caption{Four color augmented images of the pictogram bee (`abeja`) generated using the color augmentation script.}
+\label{fig:beeColour}
+\end{center}
+\end{figure}
+
+This type of augmentation will help the model to find the pictogram even if the provided image has different colors.
+
+\subsection{First Version}
+\label{First Iteration of the One-shot model}
+
+In the first version of the model we used the following datasets:
+\begin{itemize}
+\item \textbf{Training set.} We used 22 pictograms that we augmented by using the scripts described in section \ref{Preparing the dataset}. After augmentation, our training set contained 440 images, 20 images for each of the original pictograms.
+\item \textbf{Validation set.} We used ten different pictograms that we augmented, as we did with the training set. After the augmentation, the validation set was composed of 200 images (20 images for each of the original pictograms).
+\item \textbf{Test set.} Composed of 100 digital pictograms.
+\end{itemize}
+
+Due to the little amount of data, the best performance was reached at ten iterations with 100\% accuracy on the validation and test set. After that point, the model started overfitting the training data, and the accuracy of the validation set for 100 iterations dropped to 60\% for the validation set and 17\% for the test set.
+
+In the first version of the One-shot model we constructed, we detected several problems:
+
+\begin{itemize}
+  \item We were able to train it only with a small number of pictograms (22 original pictograms, which turned into 440 after the augmentation process) because we faced a problem loading more pictograms as we were not batching them during loading. As the model was trained with this small number of pictograms it was overfitting. Although the non-realistic tests were showing good results, the realistic testing was affected by the overfitting problem, and its results were bad.
+  \item Consumption of system memory: As we were not batching our dataset, we were loading a lot of images simultaneously, which reflected in high usage of memory, to the extent of which the machine we were using to train the model was not operational.
+  \item Prediction time and pairing before the predictions step: to test the model we take a random image from the testing set and search for the most similar to it from the same data set. Although we tried a small testing set of 100 pictograms, the construction of the pairs was taking a lot of time. Also, as it was not compared against all other pictograms from the whole dataset, it was not a realistic representation of the actual requirement of the algorithm (the objective of the model is to detect a pictogram from a given image of a pictogram). The results obtained during this version you can see in Table \ref{table:trainingv1}.
+\end{itemize}
+
+\begin{table}[!ht]
+\begin{center}
+\resizebox{\textwidth}{!}{\begin{tabular}{ |c|c|c|c|c|c|c|c|c| } 
+\hline
+ & \multicolumn{2}{|c|}{Training set} & \multicolumn{3}{|c|}{Validation set} & \multicolumn{3}{|c|}{Test set}\\
+\hline
+\#iterations & \#examples & Type of data& \#examples & Type of data & Accuracy & \#examples & Type of data & Accuracy\\
+\hline
+10 & 440 & Augmented pictograms & 200 & Augmented pictograms & 100\% & 100 & Original pictograms & 100\%\\
+100 & 440 & Augmented pictograms & 200 & Augmented pictograms & 60\% & 100 & Original pictograms & 17\%\\
+\hline 
+\end{tabular}}
+\end{center}
+\caption{Results from version one of the pictogram identification algorithm.}
+\label{table:trainingv1}
+\end{table}
+
+\subsection{Second Version}
+\label{Second Iteration of the One-shot model}
+
+In the second version of the algorithm, we aimed to fix the problems from its previous implementation. One of the biggest issues we faced in the first version was related to the way we were loading the pictograms which cause memory capacity problems. We were not able to train the model enough so it was overfitting and it returned bad results. As a result that, the first thing we did in the second version was loading the images in batches.
+
+To load the images in batches we used the method flow\_from\_directory from the ImageDataGenerator class of Keras. The method takes as an input the directory name (where the augmented pictograms are situated), the size of the pictograms (we specified size of 105 widths by 105 height), the color channels (in our case RGBA), the batch size (we selected to have batches of 3 pictograms which augmented turns on 60 images) and returns a DirectoryIterator which contains the loaded images separated in batches and other relevant information. The above-described way of creating a DirectoryIterator with the batches of images was used to load the train, validation, and testing sets.
+
+By loading the images in batches we needed to adapt our previous implementation of the algorithm. We changed the function that creates positive (the two examples in the pair are from the same class) and negative pairs (the examples belong to two different classes), which is used in the training of the algorithm. Also, we needed to modify the function for mapping a pictogram to all other pictograms used in the prediction of the model.
+
+Additionally, we added a new function to display all pictograms of a currently loaded batch to visually verify the loaded images.
+In the training of the model, the only change we made in the new version is calling next of the DirectoryIterator, on every training iteration, getting the next batch of pictograms of the training set.
+
+In this version of the model, we continue using the previous testing mechanism. This test was showing 100\% accuracy, correctly predicting all pictograms of the test set in the first version of the model. The summary of this version you can find in Table \ref{table:trainingv2}. 
+
+\begin{table}[!ht]
+\begin{center}
+\resizebox{\textwidth}{!}{\begin{tabular}{ |c|c|c|c|c|c| } 
+\hline
+ & \multicolumn{2}{|c|}{Training set} & \multicolumn{3}{|c|}{Test set}\\
+\hline
+\#iterations & \#elements & Type of data & \#elements & Type of data & Accuracy\\
+\hline
+100 & 440 & Augmented pictograms & 100 & Original pictograms & 100\%\\
+\hline 
+\end{tabular}}
+\end{center}
+\caption{Results from the second version of the pictogram identification algorithm.}
+\label{table:trainingv2}
+\end{table}
+
+This test is not enough to verify the accuracy of our model, mainly for the following reasons:
+
+\begin{itemize}
+\item The test set consisted of a sample of the original pictograms from ARASAAC. These pictograms had the same high quality, format, and characteristics as the training set used to train the model (the pictograms in the test and train sets were different but their domain distribution was the same) and they were not representing the real use case. The users of the application are going to import an image or a photo of a message written with pictograms to the system. If the user uploads a photo, it will never have the quality or the characteristics of the original pictograms used during the training. Therefore, the model will never predict correctly.
+
+\item The testing function we were using was randomly choosing a pictogram from the test set and it was comparing it against all other pictograms from the same set. In the real use case, the model should detect the ARASAAC pictogram from a photo of it. The model should be able to predict how similar a specific pictogram is to all others, not randomly taken from the test set. 
+\end{itemize}
+
+\subsection{Third Version}
+\label{Third Iteration of the One-shot model}
+
+This version of the algorithm was centered around testing the algorithm with pictures of pictograms, not only with the original digital ones since the functionality we aim to give to the user is to upload a picture of pictograms to be translated.
+
+Initially, we took ten pictures of pictograms and added them to the test set. Then, we retrained the model with 100 iterations and batches of 2 augmented pictograms (40 images), and the model managed to detect all pictograms from the original dataset, but from our pictures of the pictograms, it managed to correctly predict similarity of 10\%. After examination of the wrongly predicted examples, we concluded that the similarity between the picture and the predicted pictogram was minimal. For that reason, next, we focused on increasing the accuracy of the second group. To do so, we decided to extend the number of pictures in the training set. We took 54 new pictures of randomly chosen pictograms (44 pictures of pictograms for the training set and 10 for the test set). Thus, in our new training set, we had 44 classes, each containing the original digital pictogram, 19 augmented digital pictograms, and the picture of it (924 in total).
+
+First, we tried the algorithm with 15 pairs, and we obtained the best results with 30 iterations - the percentage of correctly predicted pictures of pictograms got up to 30\%.
+
+After that, we increased the number of pairs per iteration to 44, where we reached 40\% accuracy for the images of pictograms with the same test set as before, both with 30 and 50 iterations. When we examined the results we noticed that when the algorithm wasn't predicting the right pictogram id, it was predicting pictograms either with a similar shape or a similar colour. For example, in Figure \ref{fig:predictedPicto} can be observed the picture of a pictogram we are trying to predict on the left and the predicted one on the right. As you can see, the shape of the two pictograms is the same, since both of them mean "robar". In our case, this prediction is considered right, since our goal is to predict the word corresponding to a picture of a pictogram. 
+
+With the obtained results (Table \ref{table:trainingv3}), we concluded that the model is overfitting the training set.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=50mm,scale=0.75]%
+{Imagenes/Pict2Text2.0/originalPicture}
+\fcolorbox{black}{white}{\includegraphics[width=50mm,scale=0.25]%
+{Imagenes/Pict2Text2.0/predictedPictogram}}
+\caption{A picture given to the algorithm of a pictogram with id 8210, and the pictogram predicted by it (with id 8209).}
+\label{fig:predictedPicto}
+\end{center}
+\end{figure}
+
+\begin{table}[!ht]
+\begin{center}
+\resizebox{\textwidth}{!}{\begin{tabular}{ |c|c|c|c|c|c|c| } 
+\hline
+ & & \multicolumn{2}{|c|}{Training set} & \multicolumn{3}{|c|}{Test set}\\
+\hline
+\#iterations & Batch size & \#examples & Type of data & \#examples & Type of data & Accuracy\\
+\hline
+30 & 15 & 924 & Augmented pictures and pictograms & 100 & Original pictograms\textbackslash Pictures of pictograms & 100\textbackslash 30\%\\
+50 & 15 & 924 & Augmented pictures and pictograms & 100 & Original pictograms\textbackslash Pictures of pictograms & 100\textbackslash 30\%\\
+30 & 44 & 924 & Augmented pictures and pictograms & 100 & Original pictograms\textbackslash Pictures of pictograms & 100\textbackslash 40\%\\
+50 & 44 & 924 & Augmented pictures and pictograms & 100 & Original pictograms\textbackslash Pictures of pictograms & 100\textbackslash 40\%\\
+\hline 
+\end{tabular}}
+\end{center}
+\caption{Results from the third version of the pictogram identification algorithm.}
+\label{table:trainingv3}
+\end{table}
+
+\subsection{Fourth Vesion}
+\label{Fourth Iteration of the One-shot model}
+
+This version of the algorithm aimed to increase the accuracy obtained with pictures of pictograms. Our solution was to take more pictures of pictograms, in order to expand the number of pictures of pictograms in all three sets we have.
+
+When we finished taking, cropping, and changing the names of the pictures into the format "<id>-<meaning>.png" (a format we use to know which pictograms have the same id or name for the training and accuracy calculation respectively), we decided to change the three datasets. We increased the number of different pictograms in the training set from 44 to 111. We augmented the pictures of the pictograms (rotate them, and change their colour and brightness). In the end, for each pictogram in the training set, we had 21 examples: the original pictogram, the picture of the pictogram, and 19 examples of the picture augmented. In total, the number of training examples was 2.331.
+
+As we had 151 images of pictograms in total, and we left 111 for the training set, for the validation and test sets, we had 20 pictures of pictograms in each. To check the accuracy of the validation and test set we compare each of the 20 images with a hundred digital pictograms, including the 20 we want to recognize. 
+
+We removed the digital pictograms and the augmented digital pictograms from all sets because we wanted to focus on receiving good results on the pictures of pictograms (since this is the bigger challenge regarding this new functionality we want to add to Pict2Text 1.0).
+
+Each time we trained the algorithm we mainly concentrated on three things: loss (a function showing if predictions derivate too much from the actual results), the accuracy achieved from the validation set, and the accuracy on the test set. For each of the following model training, we increment the number of iterations to 2.000. As we were training the algorithm, we were validating and saving the weights for every 50 iterations.
+
+First, we trained the algorithm with the new training set, without changing any parameters, except the number of iterations, as mentioned before. Even though we had more data, the algorithm performed similarly as before: we achieved a maximum of 30\% accuracy on the validation set and 35\% on the test set with different weights. We got the best performance from 600 iterations, where we had 30\% accuracy both on the validation and the test sets. The loss on that iteration was 1.124. In Table \ref{table:trainingone} you can observe the data we obtained from the training for the weights with which we got more than 20\% accuracy on the validation set.
+
+\begin{table}[!ht]
+\begin{center}
+\resizebox{\textwidth}{!}{\begin{tabular}{ |c|c|c|c|c|c|c| } 
+\hline
+\#iterations & Learning rate & Batch size & Accuracy validation set & Accuracy test set & Loss\\
+\hline
+50 & 0.00006 & 44 & 25\% & 20\% & 3.625\\
+150 & 0.00006 & 44 & 20\% & 35\% & 2.625\\
+400 & 0.00006 & 44 & 25\% & 20\% & 1.459\\
+450 & 0.00006 & 44 & 25\% & 30\% & 1.417\\
+600 & 0.00006 & 44 & 30\% & 30\% & 1.124\\
+850 & 0.00006 & 44 & 20\% & 20\% & 0.850\\
+900 & 0.00006 & 44 & 30\% & 25\% & 0.911\\
+950 & 0.00006 & 44 & 25\% & 25\% & 0.862\\
+1.000 & 0.00006 & 44 & 25\% & 20\% & 0.774\\
+1.050 & 0.00006 & 44 & 20\% & 35\% & 0.651\\
+1.100 & 0.00006 & 44 & 30\% & 15\% & 0.681\\
+1.350 & 0.00006 & 44 & 20\% & 15\% & 0.596\\
+1.400 & 0.00006 & 44 & 25\% & 25\% & 0.593\\
+1.750 & 0.00006 & 44 & 30\% & 25\% & 0.5699\\
+1.800 & 0.00006 & 44 & 25\% & 20\% & 0.545\\
+1.900 & 0.00006 & 44 & 20\% & 20\% & 0.40037\\
+1.950 & 0.00006 & 44 & 25\% & 25\% & 0.479\\
+\hline 
+\end{tabular}}
+\end{center}
+\caption{Results from the first training in version four of the pictogram identification algorithm.}
+\label{table:trainingone}
+\end{table}
+
+The second time we trained the algorithm, we changed the learning rate from 0.00006 to 0.0006. The performance of the algorithm decreased drastically. The highest accuracy it hit was 5\% on the validation set. For that reason, we decided to not even try it on the test set. Table \ref{table:trainingtwo} represents the data obtained where the validation set accuracy was higher than 0\%. We didn't try the obtained weights on the test set because we expected similar results.
+
+\begin{table}[!ht]
+\begin{center}
+\resizebox{\textwidth}{!}{\begin{tabular}{ |c|c|c|c|c|c| } 
+\hline
+\#iterations & Learning rate & Batch size & Accuracy validation set & Loss\\
+\hline
+700 & 0.0006 & 44 & 5\% & 3.625\\
+750 & 0.0006 & 44 & 5\% & 2.625\\
+1.500 & 0.0006 & 44 & 5\% & 1.459\\
+1.550 & 0.0006 & 44 & 5\% & 1.417\\
+1.900 & 0.0006 & 44 & 5\% & 1.124\\
+1.950 & 0.0006 & 44 & 5\% & 0.850\\
+\hline 
+\end{tabular}}
+\end{center}
+\caption{Results from the second training in version four of the pictogram identification algorithm.}
+\label{table:trainingtwo}
+\end{table}
+
+For the next training, we went back to a 0.00006 learning rate, and we increased the number of examples it takes for each iteration (batch size) of the training from 40 to 80. With this change, we achieved a minimum of 40\% on each iteration over the 950th iteration. The validation set accuracy increased up to 60\% various times with 850, 1.100, 1.200, and 1.750. The best performance we got with 1.750 iterations where the test set accuracy was also 60\%, and the loss dropped to 0.4892. At this training, the algorithm performed better. In Table \ref{table:trainingthree} we show the data for the weights performing more than 40\% accuracy on the validation set.
+
+\begin{table}[!ht]
+\begin{center}
+\resizebox{\textwidth}{!}{\begin{tabular}{ |c|c|c|c|c|c|c| } 
+\hline
+\#iterations & Learning rate & Batch size & Accuracy validation set & Accuracy test set & Loss\\
+\hline
+650 & 0.00006 & 80 & 45\% & 35\% & 1.124\\
+750 & 0.00006 & 80 & 40\% & 30\% & 0.850\\
+850 & 0.00006 & 80 & 60\% & 50\% & 0.850\\
+950 & 0.00006 & 80 & 55\% & 45\% & 0.862\\
+1.000 & 0.00006 & 80 & 55\% & 35\% & 0.774\\
+1.050 & 0.00006 & 80 & 40\% & 25\% & 0.651\\
+1.100 & 0.00006 & 80 & 60\% & 45\% & 0.681\\
+1.150 & 0.00006 & 80 & 55\% & 50\% & 0.651\\
+1.200 & 0.00006 & 80 & 60\% & 45\% & 0.681\\
+1.250 & 0.00006 & 80 & 50\% & 45\% & 0.596\\
+1.300 & 0.00006 & 80 & 45\% & 50\% & 0.681\\
+1.350 & 0.00006 & 80 & 55\% & 55\% & 0.596\\
+1.400 & 0.00006 & 80 & 50\% & 40\% & 0.593\\
+1.450 & 0.00006 & 80 & 40\% & 40\% & 0.651\\
+1.500 & 0.00006 & 80 & 50\% & 40\% & 0.681\\
+1.550 & 0.00006 & 80 & 45\% & 50\% & 0.596\\
+1.600 & 0.00006 & 80 & 50\% & 55\% & 0.681\\
+1.650 & 0.00006 & 80 & 45\% & 50\% & 0.596\\
+1.700 & 0.00006 & 80 & 50\% & 55\% & 0.681\\
+1.750 & 0.00006 & 80 & 45\% & 50\% & 0.5699\\
+1.800 & 0.00006 & 80 & 45\% & 45\% & 0.545\\
+1.850 & 0.00006 & 80 & 60\% & 60\% & 0.479\\
+1.900 & 0.00006 & 80 & 55\% & 60\% & 0.40037\\
+1.950 & 0.00006 & 80 & 55\% & 50\% & 0.479\\
+2.000 & 0.00006 & 80 & 55\% & 60\% & 0.40037\\
+\hline 
+\end{tabular}}
+\end{center}
+\caption{Results from the third training in version four of the pictogram identification algorithm.}
+\label{table:trainingthree}
+\end{table}
+
+For the fourth and last test, we increased the number of examples for each iteration from 80 to 111 (all the classes we have in the training set). As expected, based on the previous training, the accuracy increased up to 75\% on the validation set. To check the accuracy of the test set, we took the weights that achieved over 40\% on the validation set, as can be seen in Table \ref{table:trainingfour}. The best performance until now we achieved from 1.850 iterations, where we got 65\% accuracy on the validation set and 75\% on the test set.  
+
+\begin{table}[!ht]
+\begin{center}
+\resizebox{\textwidth}{!}{\begin{tabular}{ |c|c|c|c|c|c|c| } 
+\hline
+\#iterations & Learning rate & Batch size & Accuracy validation set & Accuracy test set & Loss\\
+\hline
+150 & 0.00006 & 111 & 60\% & 40\% & 2.4545\\
+500 & 0.00006 & 111 & 40\% & 35\% & 1.2385\\
+600 & 0.00006 & 111 & 60\% & 35\% & 0.9836\\
+650 & 0.00006 & 111 & 50\% & 40\% & 1.0229\\
+700 & 0.00006 & 111 & 45\% & 60\% & 0.9769\\
+750 & 0.00006 & 111 & 40\% & 50\% & 0.8192\\
+800 & 0.00006 & 111 & 50\% & 40\% & 0.8441\\
+850 & 0.00006 & 111 & 65\% & 45\% & 0.7795\\
+900 & 0.00006 & 111 & 55\% & 45\% & 0.7832\\
+950 & 0.00006 & 111 & 75\% & 60\% & 0.7516\\
+1.000 & 0.00006 & 111 & 70\% & 55\% & 0.6713\\
+1.050 & 0.00006 & 111 & 65\% & 60\% & 0.70989\\
+1.100 & 0.00006 & 111 & 70\% & 50\% & 0.6544\\
+1.150 & 0.00006 & 111 & 70\% & 50\% & 0.6544\\
+1.200 & 0.00006 & 111 & 75\% & 55\% & 0.5825\\
+1.250 & 0.00006 & 111 & 50\% & 55\% & 0.6150\\
+1.300 & 0.00006 & 111 & 70\% & 55\% & 0.5847\\
+1.350 & 0.00006 & 111 & 55\% & 55\% & 0.5436\\
+1.400 & 0.00006 & 111 & 55\% & 50\% & 0.5351\\
+1.450 & 0.00006 & 111 & 45\% & 60\% & 0.5195\\
+1.500 & 0.00006 & 111 & 50\% & 50\% & 0.517888\\
+1.550 & 0.00006 & 111 & 65\% & 65\% & 0.5171\\
+1.600 & 0.00006 & 111 & 70\% & 55\% & 0.4691\\
+1.650 & 0.00006 & 111 & 60\% & 55\% & 0.4758\\
+1.700 & 0.00006 & 111 & 55\% & 60\% & 0.4864\\
+1.750 & 0.00006 & 111 & 65\% & 55\% & 0.5699\\
+1.800 & 0.00006 & 111 & 55\% & 50\% & 0.4557\\
+1.850 & 0.00006 & 111 & 65\% & 75\% & 0.4557\\
+1.900 & 0.00006 & 111 & 70\% & 50\% & 0.42737\\
+1.950 & 0.00006 & 111 & 65\% & 60\% & 0.40606\\
+2.000 & 0.00006 & 111 & 65\% & 50\% & 0.40231\\
+\hline 
+\end{tabular}}
+\end{center}
+\caption{Results from the fourth training in version four of the pictogram identification algorithm.}
+\label{table:trainingfour}
+\end{table}
+
+From the results we have obtained (Table \ref{table:trainingv4}), it's clear that the algorithm performs better with a bigger training set, more examples per iteration, and more iterations. We haven't train it with more iterations, because due to the lack of computational power and the number of training examples, each training took us around 10 hours. What we tested was to run the same testing set against 1.000 pictograms instead of 100. The weights we used for this test are the ones we obtained from 1.850 iterations during the fourth training of this version, and the accuracy we achieved was 55\%. Having more examples to test against, the algorithm has more probability to make mistakes, therefore the drop in the accuracy was expected. As mentioned before, this can be avoided by training the algorithm with a bigger training set.
+
+\begin{table}[!ht]
+\begin{center}
+\resizebox{\textwidth}{!}{\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c| } 
+\hline
+ & & \multicolumn{2}{|c|}{Training set} & \multicolumn{3}{|c|}{Validation set} & \multicolumn{3}{|c|}{Test set}\\
+\hline
+\#iterations & Batch size & #exampes & Type of data& # exampes & Type of data & Accuracy & #exampes & Type of data & Accuracy\\
+\hline
+600 & 44 & 2.331 & Picture and augmented picture & 20 & Pictures of pictograms & 30\% & 20 & Pictures of pictograms & 30\%\\
+1850 & 80 & 2.331 & Picture and augmented picture & 20 & Pictures of pictograms & 60\% & 20 & Pictures of pictograms & 60\%\\
+1850 & 111 & 2.331 & Picture and augmented picture & 20 & Pictures of pictograms & 65\% & 20 & Pictures of pictograms & 75\%\\
+\hline 
+\end{tabular}}
+\end{center}
+\caption{Best results obtained during the first, third and forth training in version four of the pictogram identification algorithm respectively.}
+\label{table:trainingv4}
+\end{table}
+
+\section{API}
+\label{API}
+
+As we have two machine learning models, to integrate and use them in Pict2Text 1.0 or any other application, we needed to create an API, providing separate services to execute each of the two algorithms. We aimed to provide services that developers could easily use, connect to, and integrate into other applications.
+
+We have the following endpoints:
+\begin{itemize}
+\item /detect\_pictograms: Provided a picture of a sentence written with pictograms, this service executes the algorithm implemented to detect pictograms included in an image (see section \ref{YOLOimplementation}) and returns the output image of it. It contains the coordinates of the detected pictograms, the bounding boxes around them as well as the probability of each one of them.
+
+\item /classify\_pictograms: This service receives a picture of a single pictogram. If it is in .jpg format, the service converts it to png, and then it executes our algorithm that identifies the word associated with a pictogram in the image (see section \ref{One-shot learning algorithm}). The result is the id of the predicted pictogram and the similarity score.
+\end{itemize}
+
+To connect the first and the second services, we implemented an additional internal functionality that crops the image of a sentence written with pictograms according to the bounding boxes provided by our YOLO algorithm and sends them to the second service.
+
+\section{Web Application}
+\label{Web Application}
+
+To present our models and give our users the option to test our models, we implemented a web application on Flask. The application supports the following URLs:
+
+\begin{itemize}
+\item uploadImage: As shown in Figute \ref{fig:firstViewApp} this endpoint provides two options to the user. The first one (shown on the top) is to upload an image of a sentence written with pictograms, which should be in .jpg formal. The other option (the bottom one) is to choose one of our testing examples - a picture of one, two, or three pictograms. Once selected an option and a picture, both algorithms are executed and the user is redirected to the next endpoint.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=80mm,scale=0.100]%
+{Imagenes/Pict2Text2.0/first_left_web}
+\includegraphics[width=80mm,scale=0.100]%
+{Imagenes/Pict2Text2.0/first_right_web}
+\caption{The options to upload a jpg picture (top), and to select a demo picture of pictograms (bottom), provided by our application.}
+\label{fig:firstViewApp}
+\end{center}
+\end{figure}
+
+\item show\_results: An endpoint which shows the results obtained by our models. In Figure \ref{fig:bbox} can be seen the result returned from the YOLO algorithm, consisting of the bounding boxes where the algorithm detected pictograms. Then we have a view showing the cropped images (Figure \ref{fig:cropped_web}), which were crop according to the bounding boxes. Last, as can be seen in Figure \ref{fig:one_shot_web}, we present the result of executing our image recognition model. Under each of the cropped images appears the id, and the similarity score returned by the model. As the model predicts an id of a pictogram, and we need the corresponding word for that id, we call the ARASAAC API\footnote{\href{https://api.arasaac.org/api/pictograms/id_pictogram/languages/es}{https://api.arasaac.org/api/pictograms/id\_pictogram/languages/es}} to obtain each word. In the end, we have a link that takes the user back to the previous endpoint where they can try with a different image.
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.8\textwidth]%
+{Imagenes/Pict2Text2.0/bbox}
+\caption{The bounding boxes predicted by the YOLO algorithm for a given image.}
+\label{fig:bbox}
+\end{center}
+\end{figure}
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.8\textwidth]%
+{Imagenes/Pict2Text2.0/cropped_web}
+\caption{The cropped images according to the predicted bounding boxes.}
+\label{fig:cropped_web}
+\end{center}
+\end{figure}
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.8\textwidth]%
+{Imagenes/Pict2Text2.0/one_shot_web}
+\caption{The predictions made by our image identification algorithm for each of the cropped images, including information about the corresponding word, id, and similarity score.}
+\label{fig:one_shot_web}
+\end{center}
+\end{figure}
+\end{itemize}
+

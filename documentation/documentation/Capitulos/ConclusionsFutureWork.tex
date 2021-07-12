@@ -1,0 +1,48 @@
+% !TeX encoding = ISO-8859-1
+
+\chapter{Conclusions and Future Work}
+\label{cap:conclusions}
+
+In this chapter, we will present the conclusions of this project (section \ref{Conclusions}) and the future work that could be done to continue it (section \ref{Future Work}).
+
+\section{Conclusions}
+\label{Conclusions}
+
+Communication plays a vital role in our lives. It allows us to share information with others and build connections with them. That's why it's essential to make communication easier for people who, due to disability, cannot use the traditional ways of communication. In this final project, we have focused our efforts on helping people whose interactions with others consist mainly or exclusively of pictograms. 
+
+The main objective we had was to improve Pict2Text 1.0, a tool that translates pictograms into written text. One of the main things we needed to improve was the way users introduce the message with pictograms that they wanted to translate into natural language. In version 1.0 of the tool, users had to create the message manually by searching each of the pictograms that compose the sentence in the pictogram search engine, integrated into the tool. To improve that, we have established as our first goal to provide users with the option to upload a picture with the input sentence, written with pictograms. To achieve this goal, we have implemented two Machine Learning models: one to detect all the pictograms that appear in the uploaded image, and another one to determine which ARASAAC pictogram corresponds to each detected pictogram. 
+
+We have implemented two versions for the detection model (based on the YOLO algorithm). In the first version, explained in section \ref{First Iteration of YOLO}, we managed to configure the model, train it, and test it with our custom dataset. Although the model managed to localize pictograms when there was a single one in an image, it was not able to do so when there were multiple ones. This first version also showed a drop in the accuracy when the images had different scale variations. Those problems were not solved by the second version of our model, but in it, we managed to augment the training dataset and increase its performance. In this second version (section \ref{Second Iteration of YOLO}), the model successfully localized multiple pictograms for some examples. Although the performance of the model is far from perfect, it is performing better just by providing more training examples. Thus being said, we concluded that increasing the dataset increases the performance as well. This conclusion is essential, given the fact that we were able to prove that the algorithm is working, and its incorrect predictions are related to the small dataset we have trained it with and not due to a mistake in the implementation.
+
+To identify the word associated with a pictogram, we have created a model based on the One-shot learning algorithm. We have implemented four versions of it, each solving problems the previous one has detected. In the first version, which we dedicated to making the model work with our data, we noticed that the algorithm was taking a significantly large amount of time not only to train the model but also to test it. In the second version, we solved that problem by loading the data set in batches. As the data we will obtain will be pictures of pictograms, the third and fourth versions were dedicated to increasing the accuracy of the algorithm, when given an image of a pictogram. To do that, we took pictures of various pictograms and trained and tested the model with them. The best result we obtained was 65\% on the validation set and 75\% on the training set, comparing 20 pictures of pictograms against 100 digital ones for each dataset, and 55\% testing against 1.000 pictograms. Those results can be improved by expanding the training set with more examples of pictures of pictograms, a conclusion based on the results of the two final versions, as it is clear that the algorithm performs better and better with the expansion of the dataset.
+
+Given those results, the first goal we have established, to change the form uses introduce a message written with pictograms by giving them the option to upload a picture, was partially met. We didn't extend the functionality of Pict2Text 1.0, since both algorithms need training with bigger training datasets, but we managed to locate more than one pictogram on an image and to predict which word corresponds to those pictograms. 
+
+We implemented an API, in order to integrate the models with Pict2Text 1.0 or any other application that would need it. We also implemented a web application, to validate the execution flow between the models. Unfortunately, we couldn't execute that application in the container given to us, due to various problems related to the integration of our models in the given environment. Nevertheless, the application works correctly executed locally.
+
+The full source code of the models, the API, and the application, as well as descriptions of how to execute them and the documentation, can be found in our GitHub repository\footnote{\href{https://github.com/NILGroup/TFG-2021-Pict2Text2.0}{https://github.com/NILGroup/TFG-2021-Pict2Text2.0}}.
+
+The second goal, improving the translation provided by Pict2Text 1.0, was not met, because the difficulty of the first goal surpassed our initial expectations.
+
+One of the goals we had for this project was to use the knowledge obtained at the university, as well as to expand it and obtain new. Some of the subjects we have studied that helped us were
+
+\begin{itemize}
+\item \textbf{Fundamentos de Programaci\'{o}n (Fundamentals of Programming) and Tecnolog\'{i}a de la Programaci\'{o}n (Programming Technology).} Those subjects gave us basic programming knowledge. Even though we didn't use the programming languages seen in those subjects (C++ and Java), thanks to what we have learned in those subjects, we can adapt faster to using new programming languages (for example Python and JavaScript, used in this project).
+\item \textbf{Ingenier\'{i}a del Software (Software Engineering), Modelado de Software (Software Modelling), and Gesti\'{o}n de Proyectos Software y Metodologías de Desarrollo (Software Project Management and Development Methodologies).} Those subjects taught us about traditional and agile software development methodologies and the importance of using them in a project. In them, we have also learned how to build software products with good and solid architecture. Those subjects also gave us the initial knowledge to implement our continuous deployment.
+\item \textbf{Aprendizaje autom\'{a}tico y Big Data (Machine Learning and Big Data) and Ingenier\'{i}a del Conocimiento (Knowledge Engineering).} From those two subjects, we have obtained a basic idea of what Machine Learning is, as well as some initial idea of what Deep Learning is. We have also learned how to use the programming language Python, the main one used in this project, to construct machine learning models.
+\item \textbf{Aplicaciones Web (Web Aplications).} In this subject, we have learned HTML, CSS, and JavaScript, all used for the front-end of the application created to try our algorithms. 
+\end{itemize}
+
+To implement this project, we also needed to acquire additional knowledge (reading papers, and other sources), which, as mentioned, was also an objective we had completed. Some of that knowledge includes the use of Latex, continuous deployment, the creation of APIs, and computer vision and the two models used.
+
+\section{Future Work}
+\label{Future Work}
+
+Even though we have advanced significantly in the improvement of Pict2Text 1.0, to reach the maximum potential of the tool, some things have to be improved. As future work for this project, we can establish the following:
+
+\begin{itemize}
+\item \textbf{Training the models with more data.} To increase the accuracy and achieve better results, the models need to be trained with more data. For this, more pictures of pictograms have to be taken and labeled. Then they should be given to the models to train on.
+\item \textbf{Extending the set of digital pictograms used for prediction.} At this current state, after the pictograms are localized, they are compared against 100 digital pictograms. That limits the pictograms that can be predicted. In a future version, the detected and cropped image of a pictogram should be compared against all ARASAAC pictograms.
+\item \textbf{Adding this new functionality to Pict2Text 1.0.} To complete the first goal we have established, the functionality of uploading a picture in order to translate it to a written text has to be added to the previous version of the Pict2Text tool. A field to upload pictured should be added to it, and the tool should be connected to our services.
+\item \textbf{Improving the translation of pictograms to text.} Improve the NLP model in order to translate more complicated sentences, as it currently translates simple phrases containing only one subject, one object, and one verb. Some of the things that have to be included in the translation are reflective sentences, sentences containing more than one verb, with several nouns in the subject, crossed-out pictograms indicating a negative statement, placing prepositions in the right place, extend the coverage of the sentence tense detection, pictograms representing expressions.
+\end{itemize}

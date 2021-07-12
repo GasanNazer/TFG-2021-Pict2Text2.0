@@ -1,0 +1,146 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Lamba(2019)}]{oneShot}
+{\sc Lamba, H.}
+\newblock One shot learning with siamese networks using keras.
+\newblock {\em towards data science\/}, 2019.
+
+\bibitem[{Gonz\'alez \'Alvarez and L\'opez Pulido(2019)}]{pictText}
+{\sc Gonz\'alez \'Alvarez, S. and L\'opez Pulido, J. M.}
+\newblock Traductor de Pictogramas a Texto.
+\newblock {\em UCM\/}, 2019.
+
+\bibitem[{O'Shea and Ryan Nash(2015)}]{cnn}
+{\sc O'Shea, K. and Nash, R.}
+\newblock An Introduction to Convolutional Neural Networks.
+\newblock {\em arxiv\/}, 2015.
+
+\bibitem[{Brownlee(2019)}]{convolutionalLayers}
+{\sc Brownlee, J.}
+\newblock How Do Convolutional Layers Work in Deep Learning Neural Networks?
+\newblock {\em Deep Learning for Computer Vision\/}, 2019.
+
+\bibitem[{Javanmard and Alian(2015)}]{agileAndTraditional}
+{\sc Javanmard, M. and Alian, M.}
+\newblock Comparison between Agile and Traditional software development methodologies.
+\newblock {\em ResearchGate\/}, 2015.
+
+\bibitem[{Kingma and Lei Ba(2015)}]{adam}
+{\sc Kingma, D. P. and Lei Ba, J.}
+\newblock Adam: A method for stochastic optimization.
+\newblock 2015.
+
+\bibitem[{Beukelman and Light(2013)}]{aacChildrenAdults}
+{\sc Beukelman, D. R. and Light, J. C.}
+\newblock Augmentative & Alternative Communication Supporting Children and Adults with Complex Communication Needs
+\newblock 2013.
+
+\bibitem[{Brownlee(2019)}]{objectRecognition}
+{\sc Brownlee, J.}
+\newblock A Gentle Introduction to Object Recognition With Deep Learning
+\newblock 2019.
+
+\bibitem[{Redmon, Divvala, Girshick and Farhadi(2016)}]{yolo}
+{\sc Redmon, J., Divvala, S., Girshick, R., and Farhadi, A.}
+\newblock You Only Look Once: Unified, Real-Time Object Detection
+\newblock 2016.
+
+\bibitem[{Redmon and Farhadi(2016)}]{yolo2}
+{\sc Redmon, J. and Farhadi, A.}
+\newblock YOLO9000: Better, Faster, Stronger
+\newblock 2016.
+
+\bibitem[{Redmon and Farhadi(2018)}]{yolo3}
+{\sc Redmon, J. and Farhadi, A.}
+\newblock YOLOv3: An Incremental Improvement
+\newblock 2018.
+
+\bibitem[{Bochkovskiy, Wang and Liao(2020)}]{yolo4}
+{\sc Bochkovskiy, A. and Wang, C. and Liao, H. M.}
+\newblock YOLOv4: Optimal Speed and Accuracy of Object Detection
+\newblock 2020.
+
+\bibitem[{Booch(1991)}]{continuousIntegration}
+{\sc Booch, G.}
+\newblock Object Oriented Design with Applications
+\newblock 1991.
+
+\bibitem[{Fielding(2000)}]{rest}
+{\sc Fielding, R. T.}
+\newblock Architectural Styles and the Design of Network-based Software Architectures
+\newblock 2000.
+
+\bibitem[{Richardson and Ruby(2007)}]{restful}
+{\sc Richardson, L. and Ruby, S.}
+\newblock RESTful Web Services
+\newblock 2007.
+
+\bibitem[{Girshick, Donahue, Darrell, Malik and Berkeley(2014)}]{rcnn}
+{\sc Girshick, R. and Donahue, J. and Darrell, T. and Malik, J and Berkeley, UC}
+\newblock Rich feature hierarchies for accurate object detection and semantic segmentation
+\newblock 2014.
+
+\bibitem[{Girshick(2015)}]{fast_rcnn}
+{\sc Girshick, R.}
+\newblock Fast R-CNN
+\newblock 2015.
+
+\bibitem[{Ren, He, Girshick and Sun(2016)}]{faster_rcnn}
+{\sc Ren, S. and He, K. and Girshick, R and Sun, J.}
+\newblock Faster R-CNN: Towards Real-Time ObjectDetection with Region Proposal Networks
+\newblock 2016.
+
+\bibitem[{Cai and Vasconcelos(2017)}]{cascade_rcnn}
+{\sc Cai, Z. and Vasconcelos, N.}
+\newblock Cascade R-CNN: Delving into High Quality Object Detection
+\newblock 2017.
+
+\bibitem[{Liu, Anguelov, Erhan, Szegedy, Reed, Fu and Berg(2016)}]{ssd}
+{\sc Liu, W and Anguelov, D. and Erhan, D. and Szegedy C. and Reed, S. and Fu, C. and Berg, A. C.}
+\newblock SSD: Single Shot MultiBox Detector
+\newblock 2016.
+
+\bibitem[{Zhang, Wen, Bian, Lei and Li(2018)}]{RefineDet}
+{\sc Zhang, S. and Wen, L. and Bian, X. and Lei, Z and Li, S. Z.}
+\newblock Single-Shot Refinement Neural Network for Object Detection
+\newblock 2018
+
+\bibitem[{Dai, Qi, Xiong, Li, Zhang, Hu and Wei(2017)}]{dcnn}
+{\sc Dai, J. and Qi, H. and Xiong, Y. and Li, Y. and Zhang, G. and Hu, H. and Wei, Y.}
+\newblock Deformable Convolutional Networks
+\newblock 2017
+
+\bibitem[{Viola and Jones(2001A)}]{Viola01robustreal-time}
+{\sc Viola, P. and Jones, M.}
+\newblock Robust Real-time Object Detection
+\newblock 2001
+
+\bibitem[{Viola and Jones(2001B)}]{Viola01rapidobject}
+{\sc Viola, P. and Jones, M.}
+\newblock Rapid object detection using a boosted cascade of simple features
+\newblock 2001
+
+\bibitem[{Lowe(1999)}]{local_scale-invariant}
+{\sc Lowe, D. G.}
+\newblock Object Recognition from Local Scale-Invariant Features
+\newblock 1999
+
+\bibitem[{Cortes and Vapnik(1995)}]{svm}
+{\sc Cortes, C. and Vapnik, V.}
+\newblock Support-Vector Networks
+\newblock 1995
+
+\bibitem[{Mitchell(1997)}]{machineLearning}
+{\sc Mitchell, T.}
+\newblock Machine Learning
+\newblock 1997
+
+\bibitem[{Bhadeshia (1999)}]{neuralnet}
+{\sc Bhadeshia, H. K. D. H.}
+\newblock Neural Networks in Materials Science
+\newblock 1999
+
+\end{thebibliography}
+
+

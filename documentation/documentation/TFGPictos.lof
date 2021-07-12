@@ -1,0 +1,60 @@
+\babel@toc {english}{}
+\babel@toc {spanish}{}
+\babel@toc {english}{}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Pictogram representing an icecream.\relax }}{6}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of Blissymbolics\relax }}{7}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of Communication System Using Pictograms (CSUP)\relax }}{8}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Construction of symbologic in Minspeak.\relax }}{8}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Example for ARASAAC differentiation for the word `teacher`.\relax }}{9}{figure.caption.29}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Pictograms associated with the word `teacher` in ARASAAC.\relax }}{9}{figure.caption.30}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces ARASAAC API response for `Spiderman`.\relax }}{10}{figure.caption.34}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Example of ARASAAC API response when called for pictogram id 8224.\relax }}{11}{figure.caption.36}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Example of ACC communication book.\relax }}{11}{figure.caption.38}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Searching for the word "Hombre" in PICT2Text 1.0.\relax }}{12}{figure.caption.41}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Adding the pictogram "Hombre" to the pictogram sentence panel.\relax }}{13}{figure.caption.42}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Translating the sentence "El hombre come una pizza."\relax }}{13}{figure.caption.43}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces A simple neural network architecture.\relax }}{16}{figure.caption.56}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Filtering over the input image and constructing the feature map.\relax }}{18}{figure.caption.61}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Filtering over an input image, representing the convolution operation in CNN.\relax }}{18}{figure.caption.62}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces A convolutional neural network formed by several features layers followed by classifications.\relax }}{19}{figure.caption.63}%
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Difference between image classification, object localization, object detection and instance segmentation.\relax }}{20}{figure.caption.65}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Summary of Predictions made by YOLO Model \citep {yolo}.\relax }}{22}{figure.caption.74}%
+\contentsline {figure}{\numberline {2.19}{\ignorespaces The speed and accuracy of YOLO v4\textsuperscript {\ref {map-mean-average-precision-for-object-detection}}.\relax }}{24}{figure.caption.77}%
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Architecture of the Siamese Neural Network.\relax }}{25}{figure.caption.83}%
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Labeling an object from class "person" from an image of a football game using the LabelImg tool.\relax }}{28}{figure.caption.99}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Kanban board used for the Pict2Text 2.0 project.\relax }}{33}{figure.caption.108}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces System service configuration file for Pict2Text 2.0 API.\relax }}{34}{figure.caption.117}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The sentence "The boy takes out a toothbrush and a toothpaste", written with pictograms. The pictograms are separated using a bounding box.\relax }}{36}{figure.caption.120}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Annotation process using the LabelImg tool.\relax }}{37}{figure.caption.128}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Labeling using LabelImg for an image of our dataset.\relax }}{38}{figure.caption.129}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The YOLO model implemented by us detecting a single pictogram from an image of pictogram with an accuracy of 90\%.\relax }}{40}{figure.caption.136}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Two zoom-out images of pictograms detected with an accuracy of 66\% from YOLO.\relax }}{41}{figure.caption.137}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Testing YOLO with an image with two pictograms. Correctly detecting one of the pictograms but incorrect result in general.\relax }}{41}{figure.caption.138}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Testing YOLO with an image with two pictograms zoomed in. Correctly detecting one of the pictograms but incorrect result in general.\relax }}{42}{figure.caption.139}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Testing YOLO with an image with three pictograms. Incorrectly detecting all of them as a single pictogram.\relax }}{42}{figure.caption.140}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Testing YOLO with an image with three pictograms zoomed-in. Incorrectly detecting all of them as a single pictogram but correctly localizing the left pictogram (the girl with red hair).\relax }}{43}{figure.caption.141}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces 45-degree rotation to the left of a picture of a pictogram using our python script.\relax }}{44}{figure.caption.145}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces The second version of the model detecting a single pictogram from an image of a pictogram with an accuracy of 99\%.\relax }}{45}{figure.caption.147}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Two zoom-out images of pictograms detected with accuracy over 90\% from the second version of our model.\relax }}{45}{figure.caption.148}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Testing the second version of the model with an image with two pictograms. Incorrectly detecting both pictograms as a single one.\relax }}{46}{figure.caption.149}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Testing the second version of the model with an image with two pictograms zoomed in.\relax }}{47}{figure.caption.150}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Testing the second version of the YOLO model with an image with three pictograms. Incorrectly detecting all of them as a single pictogram.\relax }}{47}{figure.caption.151}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Testing the second version of the YOLO model with an image with three pictograms zoomed-in. Detecting the two pictograms from the extremums.\relax }}{48}{figure.caption.152}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Image represented in grayscale image and the corresponding matrix.\relax }}{49}{figure.caption.156}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Colourful RGB image with its RGB three matrices.\relax }}{49}{figure.caption.157}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces The original image of the pictogram bee(`abeja`) from the ARASAAC.\relax }}{52}{figure.caption.163}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Augmented images of the pictogram bee (`abeja`) using the brightness changing script.\relax }}{52}{figure.caption.164}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Two 90 degree rotations of the pictogram bee (`abeja`) generated by the augmentation script.\relax }}{52}{figure.caption.165}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Four color augmented images of the pictogram bee (`abeja`) generated using the color augmentation script.\relax }}{53}{figure.caption.166}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces A picture given to the algorithm of a pictogram with id 8210, and the pictogram predicted by it (with id 8209).\relax }}{57}{figure.caption.172}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces The options to upload a jpg picture (top), and to select a demo picture of pictograms (bottom), provided by our application.\relax }}{62}{figure.caption.182}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces The bounding boxes predicted by the YOLO algorithm for a given image.\relax }}{63}{figure.caption.184}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces The cropped images according to the predicted bounding boxes.\relax }}{63}{figure.caption.185}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces The predictions made by our image identification algorithm for each of the cropped images, including information about the corresponding word, id, and similarity score.\relax }}{64}{figure.caption.186}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

@@ -1,0 +1,1655 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.19)  15 JUN 2021 23:31
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**TFGPictos
+(./TFGPictos.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk11.clo
+File: bk11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+\@input{config.aux}
+\openout2 = `config.aux'.
+
+(./config.tex) (./TeXiS/TeXiS.sty
+Package: TeXiS/TeXiS 
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks14
+\verbatim@line=\toks15
+\verbatim@in@stream=\read2
+)
+\example@out=\write3
+
+\@input{TeXiS/TeXiS_pream.aux}
+\openout2 = `TeXiS/TeXiS_pream.aux'.
+
+(./TeXiS/TeXiS_pream.tex
+(/usr/share/texlive/texmf-dist/tex/latex/base/shortvrb.sty
+Package: shortvrb 2019/12/16 v2.1l Standard LaTeX documentation package (FMi)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ansinew.def
+File: ansinew.def 2018/08/11 v1.3c Input encoding file
+))
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip49
+\bibsep=\skip50
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count176
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/02/14 3.40 The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/02/14 3.40 Babel switching mechanism
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/02/14 3.40 Babel common definitions
+\babel@savecnt=\count177
+\U@D=\dimen135
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read3
+\bbl@dirlevel=\count178
+)
+Package babel Info: \l@british = using hyphenrules for english
+(babel)             (\language0) on input line 82.
+Package babel Info: \l@UKenglish = using hyphenrules for english
+(babel)             (\language0) on input line 83.
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for english
+(babel)             (\language0) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for english
+(babel)             (\language0) on input line 108.
+)
+
+! Package babel Error: Unknown option `spanish'. Either you misspelled it
+(babel)                or the language definition file spanish.ldf was not foun
+d.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.542 \ProcessOptions*
+                      
+? spanish
+OK, entering \scrollmode...
+) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+(/usr/share/texlive/texmf-dist/tex/latex/fncychap/fncychap.sty
+Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
+\RW=\skip51
+\mylen=\skip52
+\myhi=\skip53
+\px=\skip54
+\py=\skip55
+\pyy=\skip56
+\pxx=\skip57
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen136
+\Hy@linkcounter=\count179
+\Hy@pagecounter=\count180
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count181
+\pdfmajorversion=\count182
+
+
+Package hyperref Warning: Invalid value `0'
+(hyperref)                for option `pdfborder'.
+(hyperref)                Option setting is ignored on input line 4421.
+
+Package hyperref Info: Option `hyperindex' set `true' on input line 4421.
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4421.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 4421.
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count183
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen137
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count184
+\Field@Width=\dimen138
+\Fld@charsize=\dimen139
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+
+(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count185
+\c@Item=\count186
+\c@Hfootnote=\count187
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+\Fld@listcount=\count188
+\c@bookmark@seq@number=\count189
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip58
+)
+Package hyperref Info: Option `colorlinks' set `false' on input line 290.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+\@indexfile=\write4
+\openout4 = `TFGPictos.idx'.
+
+
+Writing index file TFGPictos.idx
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count190
+\mult@box=\box45
+\multicol@leftmargin=\dimen140
+\c@unbalance=\count191
+\c@collectmore=\count192
+\doublecol@number=\count193
+\multicoltolerance=\count194
+\multicolpretolerance=\count195
+\full@width=\dimen141
+\page@free=\dimen142
+\premulticols=\dimen143
+\postmulticols=\dimen144
+\multicolsep=\skip59
+\multicolbaselineskip=\skip60
+\partial@page=\box46
+\last@line=\box47
+\maxbalancingoverflow=\dimen145
+\mult@rightbox=\box48
+\mult@grightbox=\box49
+\mult@gfirstbox=\box50
+\mult@firstbox=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\c@minrows=\count196
+\c@columnbadness=\count197
+\c@finalcolumnbadness=\count198
+\last@try=\dimen146
+\multicolovershoot=\dimen147
+\multicolundershoot=\dimen148
+\mult@nat@firstbox=\box89
+\colbreak@box=\box90
+\mc@col@check@num=\count199
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen149
+\captionmargin@=\dimen150
+\captionwidth=\dimen151
+\caption@tempdima=\dimen152
+\caption@indent=\dimen153
+\caption@parindent=\dimen154
+\caption@hangindent=\dimen155
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count266
+\c@continuedfloat=\count267
+Package caption Info: hyperref package is loaded.
+)
+\c@KVtest=\count268
+\sf@farskip=\skip61
+\sf@captopadj=\dimen156
+\sf@capskip=\skip62
+\sf@nearskip=\skip63
+\c@subfigure=\count269
+\c@subfigure@save=\count270
+\c@lofdepth=\count271
+\c@subtable=\count272
+\c@subtable@save=\count273
+\c@lotdepth=\count274
+\sf@top=\skip64
+\sf@bottom=\skip65
+)
+\sf@box=\box91
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count275
+\lst@gtempboxa=\box92
+\lst@token=\toks19
+\lst@length=\count276
+\lst@currlwidth=\dimen157
+\lst@column=\count277
+\lst@pos=\count278
+\lst@lostspace=\dimen158
+\lst@width=\dimen159
+\lst@newlines=\count279
+\lst@lineno=\count280
+\lst@maxwidth=\dimen160
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count281
+\lst@skipnumbers=\count282
+\lst@framebox=\box93
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen161
+\ar@mcellbox=\box94
+\extrarowheight=\dimen162
+\NC@list=\toks20
+\extratabsurround=\skip66
+\backup@length=\skip67
+\ar@cellbox=\box95
+)
+\TX@col@width=\dimen163
+\TX@old@table=\dimen164
+\TX@old@col=\dimen165
+\TX@target=\dimen166
+\TX@delta=\dimen167
+\TX@cols=\count283
+\TX@ftn=\toks21
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen168
+\Gin@req@width=\dimen169
+)
+\epsfxsize=\dimen170
+\epsfysize=\dimen171
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count284
+\calc@Bcount=\count285
+\calc@Adimen=\dimen172
+\calc@Bdimen=\dimen173
+\calc@Askip=\skip68
+\calc@Bskip=\skip69
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count286
+\calc@Cskip=\skip70
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box96
+\beforetitleunit=\skip71
+\aftertitleunit=\skip72
+\ttl@plus=\dimen174
+\ttl@minus=\dimen175
+\ttl@toksa=\toks22
+\titlewidth=\dimen176
+\titlewidthlast=\dimen177
+\titlewidthfirst=\dimen178
+)
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count287
+)
+\csq@reset=\count288
+\csq@gtype=\count289
+\csq@glevel=\count290
+\csq@qlevel=\count291
+\csq@maxlvl=\count292
+\csq@tshold=\count293
+\csq@ltx@everypar=\toks23
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+))
+\AM@pagewidth=\dimen179
+\AM@pageheight=\dimen180
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box97
+\AM@global@opts=\toks24
+\AM@pagecnt=\count294
+\AM@toc@title=\toks25
+\c@AM@survey=\count295
+\AM@templatesizebox=\box98
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-14 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count296
+\l__pdf_internal_box=\box99
+))
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2020-02-14 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count297
+\g__xparse_grabber_int=\count298
+\l__xparse_m_args_int=\count299
+\l__xparse_v_nesting_int=\count300
+)
+Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
+
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
+File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
+)))
+\@input{TeXiS/TeXiS_cab.aux}
+\openout2 = `TeXiS/TeXiS_cab.aux'.
+
+(./TeXiS/TeXiS_cab.tex
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip73
+\f@nch@O@elh=\skip74
+\f@nch@O@erh=\skip75
+\f@nch@O@olh=\skip76
+\f@nch@O@orh=\skip77
+\f@nch@O@elf=\skip78
+\f@nch@O@erf=\skip79
+\f@nch@O@olf=\skip80
+\f@nch@O@orf=\skip81
+))
+\@input{TeXiS/TeXiS_cover.aux}
+\openout2 = `TeXiS/TeXiS_cover.aux'.
+
+(./TeXiS/TeXiS_cover.tex)
+\@input{TeXiS/TeXiS_dedic.aux}
+\openout2 = `TeXiS/TeXiS_dedic.aux'.
+
+(./TeXiS/TeXiS_dedic.tex)
+\@input{TeXiS/TeXiS_bib.aux}
+\openout2 = `TeXiS/TeXiS_bib.aux'.
+
+(./TeXiS/TeXiS_bib.tex))
+\@input{constantes.aux}
+\openout2 = `constantes.aux'.
+
+(./constantes.tex)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'english'.
+ (./TFGPictos.aux (./Cascaras/cover.aux)
+(./Cascaras/abstract.aux) (./Cascaras/resumen.aux)
+
+Package babel Warning: Unknown language `spanish'. Very likely you
+(babel)                requested it in a previous run. Expect some
+(babel)                wrong results in this run, which should vanish
+(babel)                in the next one. Reported on input line 24.
+
+(./TeXiS/TeXiS_toc.aux) (./Capitulos/Introduccion.aux)
+(./Capitulos/EstadoDeLaCuestion.aux)
+(./Capitulos/SoftwareDevelopmentMethodology.aux)
+(./Capitulos/Implementation.aux) (./Capitulos/IndividualWork.aux)
+(./Capitulos/ConclusionsFutureWork.aux) (./Apendices/appendix.aux)
+(./Cascaras/bibliografia.aux) (./Cascaras/fin.aux))
+\openout1 = `TFGPictos.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+\AtBeginShipoutBox=\box100
+Package hyperref Info: Link coloring OFF on input line 104.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count301
+)
+LaTeX Info: Redefining \ref on input line 104.
+LaTeX Info: Redefining \pageref on input line 104.
+LaTeX Info: Redefining \nameref on input line 104.
+
+(./TFGPictos.out) (./TFGPictos.out)
+\@outlinefile=\write5
+\openout5 = `TFGPictos.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count302
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count303
+\scratchdimen=\dimen181
+\scratchbox=\box101
+\nofMPsegments=\count304
+\nofMParguments=\count305
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count306
+\MPscratchDim=\dimen182
+\MPnumerator=\count307
+\makeMPintoPDFobject=\count308
+\everyMPtoPDFconversion=\toks27
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+) (./guionado.tex)
+\openout2 = `Cascaras/cover.aux'.
+
+(./Cascaras/cover.tex
+\cambioIzquierdo=\skip82
+\cambioDerecho=\skip83
+\margenPortada=\skip84
+\evensidemarginOriginal=\skip85
+\oddsidemarginOriginal=\skip86
+\longTitulo=\skip87
+
+Overfull \hbox (11.14914pt too wide) in paragraph at lines 160--160
+ [] 
+ []
+
+
+Overfull \hbox (11.14914pt too wide) in paragraph at lines 160--160
+ [][] 
+ []
+
+<Imagenes/Bitmap/escudo.jpg, id=217, 210.7875pt x 240.9pt>
+File: Imagenes/Bitmap/escudo.jpg Graphic file (type jpg)
+<use Imagenes/Bitmap/escudo.jpg>
+Package pdftex.def Info: Imagenes/Bitmap/escudo.jpg  used on input line 160.
+(pdftex.def)             Requested size: 84.3135pt x 96.35828pt.
+\c@lastyear=\count309
+\c@nextyear=\count310
+[1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Imagenes/Bitmap/escudo.j
+pg>] [2] [3])
+\openout2 = `Cascaras/abstract.aux'.
+
+ (./Cascaras/abstract.tex [4
+
+
+
+] [5]) [6
+
+]
+Package babel Info: \l@spanish = using hyphenrules for english
+(babel)             (\language0) on input line 121.
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
+Package babel Info: Importing basic data for spanish
+(babel)             from babel-es.ini. Reported on input line 11.
+)
+\openout2 = `Cascaras/resumen.aux'.
+
+
+(./Cascaras/resumen.tex [7
+
+
+
+]) [8
+
+]
+\openout2 = `TeXiS/TeXiS_toc.aux'.
+
+ (./TeXiS/TeXiS_toc.tex (./TFGPictos.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 5.
+
+[9
+
+
+
+])
+\tf@toc=\write6
+\openout6 = `TFGPictos.toc'.
+
+ [10] (./TFGPictos.lof
+Underfull \vbox (badness 1215) has occurred while \output is active []
+
+ [11
+
+]
+Underfull \vbox (badness 3895) has occurred while \output is active []
+
+ [12])
+\tf@lof=\write7
+\openout7 = `TFGPictos.lof'.
+
+
+[13] [14
+
+] (./TFGPictos.lot)
+\tf@lot=\write8
+\openout8 = `TFGPictos.lot'.
+
+ [15]) [16
+
+
+]
+\openout2 = `Capitulos/Introduccion.aux'.
+
+ (./Capitulos/Introduccion.tex
+Chapter 1.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 3
+.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+) [1
+
+
+] [2]) [3]
+\openout2 = `Capitulos/EstadoDeLaCuestion.aux'.
+
+
+(./Capitulos/EstadoDeLaCuestion.tex [4
+
+
+
+]
+Chapter 2.
+
+Underfull \hbox (badness 2941) in paragraph at lines 8--8
+|[]\T1/cmr/bx/n/14.4 Augmentative and Al-ter-na-tive Sys-tems of
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 10.
+[5]
+<Imagenes/Pict2Text2.0/icecream.png, id=573, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/icecream.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/icecream.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/icecream.png  used on input line
+ 26.
+(pdftex.def)             Requested size: 250.93687pt x 250.93687pt.
+ [6 <./Imagenes/Pict2Text2.0/icecream.png>]
+<Imagenes/Pict2Text2.0/Basicsymbols.jpeg, id=584, 354.57469pt x 130.23656pt>
+File: Imagenes/Pict2Text2.0/Basicsymbols.jpeg Graphic file (type jpg)
+<use Imagenes/Pict2Text2.0/Basicsymbols.jpeg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/Basicsymbols.jpeg  used on input
+ line 43.
+(pdftex.def)             Requested size: 180.0pt x 66.1157pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+[][][][]\T1/cmr/m/n/9 http://masquemayores.com/magazine/tipos-de-sistemas-alter
+nativos-y-
+ []
+
+<Imagenes/Pict2Text2.0/csup.jpg, id=588, 513.92pt x 352.31625pt>
+File: Imagenes/Pict2Text2.0/csup.jpg Graphic file (type jpg)
+<use Imagenes/Pict2Text2.0/csup.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/csup.jpg  used on input line 56.
+
+(pdftex.def)             Requested size: 360.0pt x 246.80246pt.
+<Imagenes/Pict2Text2.0/Minspeak.jpg, id=592, 155.1396pt x 74.679pt>
+File: Imagenes/Pict2Text2.0/Minspeak.jpg Graphic file (type jpg)
+<use Imagenes/Pict2Text2.0/Minspeak.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/Minspeak.jpg  used on input line
+ 69.
+(pdftex.def)             Requested size: 360.0pt x 173.30664pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 69--70
+ [][][] 
+ []
+
+[7 <./Imagenes/Pict2Text2.0/Basicsymbols.jpeg>]
+<Imagenes/Pict2Text2.0/profesor.png, id=607, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/profesor.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/profesor.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/profesor.png  used on input line
+ 82.
+(pdftex.def)             Requested size: 108.0011pt x 108.00056pt.
+<Imagenes/Pict2Text2.0/profesora.png, id=608, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/profesora.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/profesora.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/profesora.png  used on input lin
+e 84.
+(pdftex.def)             Requested size: 108.0011pt x 108.00056pt.
+
+Underfull \vbox (badness 3343) has occurred while \output is active []
+
+ [8 <./Imagenes/Pict2Text2.0/csup.jpg> <./Imagenes/Pict2Text2.0/Minspeak.jpg>]
+File: Imagenes/Pict2Text2.0/profesor.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/profesor.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/profesor.png  used on input line
+ 95.
+(pdftex.def)             Requested size: 71.9989pt x 71.99272pt.
+<Imagenes/Pict2Text2.0/profesor1.png, id=615, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/profesor1.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/profesor1.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/profesor1.png  used on input lin
+e 97.
+(pdftex.def)             Requested size: 71.9989pt x 71.99272pt.
+<Imagenes/Pict2Text2.0/profesor2.png, id=616, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/profesor2.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/profesor2.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/profesor2.png  used on input lin
+e 99.
+(pdftex.def)             Requested size: 71.9989pt x 71.99272pt.
+
+Underfull \hbox (badness 1852) in paragraph at lines 107--108
+[]\T1/cmr/m/n/10.95 ARASAAC is free to use un-der the Cre-ative Com-mons li-cen
+se.
+ []
+
+<Imagenes/Pict2Text2.0/jsonPictoName.png, id=624, 260.47313pt x 296.60812pt>
+File: Imagenes/Pict2Text2.0/jsonPictoName.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/jsonPictoName.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/jsonPictoName.png  used on input
+ line 114.
+(pdftex.def)             Requested size: 233.9978pt x 266.46057pt.
+<Imagenes/Pict2Text2.0/jsonPictoId.png, id=629, 241.40187pt x 306.14375pt>
+File: Imagenes/Pict2Text2.0/jsonPictoId.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/jsonPictoId.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/jsonPictoId.png  used on input l
+ine 125.
+(pdftex.def)             Requested size: 216.0022pt x 273.94322pt.
+[9 <./Imagenes/Pict2Text2.0/profesor.png> <./Imagenes/Pict2Text2.0/profesora.pn
+g> <./Imagenes/Pict2Text2.0/profesor1.png> <./Imagenes/Pict2Text2.0/profesor2.p
+ng>]
+<Imagenes/Pict2Text2.0/board.png, id=644, 352.31625pt x 359.09157pt>
+File: Imagenes/Pict2Text2.0/board.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/board.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/board.png  used on input line 13
+9.
+(pdftex.def)             Requested size: 176.15768pt x 179.54533pt.
+ [10 <./Imagenes/Pict2Text2.0/jsonPictoName.png>] [11 <./Imagenes/Pict2Text2.0/
+jsonPictoId.png> <./Imagenes/Pict2Text2.0/board.png>]
+<Imagenes/Pict2Text2.0/pict2text_v1_2.png, id=659, 933.98938pt x 458.71375pt>
+File: Imagenes/Pict2Text2.0/pict2text_v1_2.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/pict2text_v1_2.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/pict2text_v1_2.png  used on inpu
+t line 159.
+(pdftex.def)             Requested size: 360.0pt x 176.80482pt.
+<Imagenes/Pict2Text2.0/pict2text_v1_3.png, id=661, 932.48375pt x 460.21938pt>
+File: Imagenes/Pict2Text2.0/pict2text_v1_3.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/pict2text_v1_3.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/pict2text_v1_3.png  used on inpu
+t line 170.
+(pdftex.def)             Requested size: 360.0pt x 177.67305pt.
+<Imagenes/Pict2Text2.0/pict2text_v1_4.png, id=663, 915.92188pt x 462.72874pt>
+File: Imagenes/Pict2Text2.0/pict2text_v1_4.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/pict2text_v1_4.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/pict2text_v1_4.png  used on inpu
+t line 181.
+(pdftex.def)             Requested size: 360.0pt x 181.87561pt.
+ [12 <./Imagenes/Pict2Text2.0/pict2text_v1_2.png>] [13 <./Imagenes/Pict2Text2.0
+/pict2text_v1_3.png> <./Imagenes/Pict2Text2.0/pict2text_v1_4.png>] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+[][][][]\T1/cmr/m/n/9 https://docs.microsoft.com/en-us/windows/ai/windows-ml/wh
+at-is-a-machine-
+ []
+
+<Imagenes/Pict2Text2.0/NN.png, id=701, 803.0pt x 1071.00125pt>
+File: Imagenes/Pict2Text2.0/NN.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/NN.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/NN.png  used on input line 238.
+(pdftex.def)             Requested size: 401.49902pt x 535.49931pt.
+[15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16 <./Imagenes/Pict2Text2.0/NN.png>]
+<Imagenes/Pict2Text2.0/convolution.png, id=731, 450.68375pt x 450.68375pt>
+File: Imagenes/Pict2Text2.0/convolution.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/convolution.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/convolution.png  used on input l
+ine 271.
+(pdftex.def)             Requested size: 180.0pt x 180.00209pt.
+ [17]
+<Imagenes/Pict2Text2.0/convolution_operation.png, id=740, 733.74126pt x 308.151
+25pt>
+File: Imagenes/Pict2Text2.0/convolution_operation.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/convolution_operation.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/convolution_operation.png  used 
+on input line 286.
+(pdftex.def)             Requested size: 360.0pt x 151.1929pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18 <./Imagenes/Pict2Text2.0/convolution.png> <./Imagenes/Pict2Text2.0/convolu
+tion_operation.png>]
+<Imagenes/Pict2Text2.0/CNN-architecture.jpg, id=749, 1259.70625pt x 425.59pt>
+File: Imagenes/Pict2Text2.0/CNN-architecture.jpg Graphic file (type jpg)
+<use Imagenes/Pict2Text2.0/CNN-architecture.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/CNN-architecture.jpg  used on in
+put line 302.
+(pdftex.def)             Requested size: 360.0pt x 121.6256pt.
+ [19 <./Imagenes/Pict2Text2.0/CNN-architecture.jpg>]
+<Imagenes/Pict2Text2.0/algorithms.png, id=755, 513.92pt x 216.81pt>
+File: Imagenes/Pict2Text2.0/algorithms.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/algorithms.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/algorithms.png  used on input li
+ne 321.
+(pdftex.def)             Requested size: 360.0pt x 151.87843pt.
+ [20 <./Imagenes/Pict2Text2.0/algorithms.png>] [21]
+<Imagenes/Pict2Text2.0/yolo.jpg, id=824, 513.92pt x 326.21875pt>
+File: Imagenes/Pict2Text2.0/yolo.jpg Graphic file (type jpg)
+<use Imagenes/Pict2Text2.0/yolo.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/yolo.jpg  used on input line 359
+.
+(pdftex.def)             Requested size: 360.0pt x 228.5208pt.
+ [22 <./Imagenes/Pict2Text2.0/yolo.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 383--383
+[][][][]\T1/cmr/m/n/9 https://jonathan-hui.medium.com/map-mean-average-precisio
+n-for-object-detection-
+ []
+
+<Imagenes/Pict2Text2.0/yolo3vsyolo4.png, id=846, 540.0175pt x 423.5825pt>
+File: Imagenes/Pict2Text2.0/yolo3vsyolo4.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/yolo3vsyolo4.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/yolo3vsyolo4.png  used on input 
+line 390.
+(pdftex.def)             Requested size: 360.0pt x 282.38333pt.
+[23] [24 <./Imagenes/Pict2Text2.0/yolo3vsyolo4.png>]
+<Imagenes/Pict2Text2.0/SNN-architecture.png, id=873, 1637.11626pt x 332.24126pt
+>
+File: Imagenes/Pict2Text2.0/SNN-architecture.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/SNN-architecture.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/SNN-architecture.png  used on in
+put line 410.
+(pdftex.def)             Requested size: 360.0pt x 73.0578pt.
+ [25 <./Imagenes/Pict2Text2.0/SNN-architecture.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 433--433
+[][][][]\T1/cmr/m/n/9 https://towardsdatascience.com/understanding-binary-cross
+-entropy-log-loss-a-
+ []
+
+[26] [27]
+<Imagenes/Pict2Text2.0/labelimg.jpg, id=931, 801.99625pt x 402.50375pt>
+File: Imagenes/Pict2Text2.0/labelimg.jpg Graphic file (type jpg)
+<use Imagenes/Pict2Text2.0/labelimg.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/labelimg.jpg  used on input line
+ 471.
+(pdftex.def)             Requested size: 251.9989pt x 126.46997pt.
+) [28 <./Imagenes/Pict2Text2.0/labelimg.jpg>] [29]
+\openout2 = `Capitulos/SoftwareDevelopmentMethodology.aux'.
+
+
+(./Capitulos/SoftwareDevelopmentMethodology.tex [30
+
+
+
+]
+Chapter 3.
+
+Underfull \vbox (badness 8151) has occurred while \output is active []
+
+ [31]
+<Imagenes/Pict2Text2.0/kanban-board.png, id=971, 1139.25626pt x 672.5125pt>
+File: Imagenes/Pict2Text2.0/kanban-board.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/kanban-board.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/kanban-board.png  used on input 
+line 30.
+(pdftex.def)             Requested size: 216.0022pt x 127.50163pt.
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+[][][][]\T1/cmr/m/n/9 https://www.atlassian.com/continuous-delivery/principles/
+continuous-integration-
+ []
+
+[33 <./Imagenes/Pict2Text2.0/kanban-board.png>]
+<Imagenes/Pict2Text2.0/systemserviceconfig.png, id=1005, 574.145pt x 219.82124p
+t>
+File: Imagenes/Pict2Text2.0/systemserviceconfig.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/systemserviceconfig.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/systemserviceconfig.png  used on
+ input line 70.
+(pdftex.def)             Requested size: 180.0pt x 68.91533pt.
+) [34 <./Imagenes/Pict2Text2.0/systemserviceconfig.png>]
+\openout2 = `Capitulos/Implementation.aux'.
+
+ (./Capitulos/Implementation.tex
+Chapter 4.
+<Imagenes/Pict2Text2.0/example-boundingbox-separation.jpeg, id=1019, 1606.0pt x
+ 723.70375pt>
+File: Imagenes/Pict2Text2.0/example-boundingbox-separation.jpeg Graphic file (t
+ype jpg)
+<use Imagenes/Pict2Text2.0/example-boundingbox-separation.jpeg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/example-boundingbox-separation.j
+peg  used on input line 17.
+(pdftex.def)             Requested size: 360.0pt x 162.21896pt.
+
+Underfull \vbox (badness 1014) has occurred while \output is active []
+
+ [35
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[][][][]\T1/cmr/m/n/9 https://towardsdatascience.com/image-data-labelling-and-a
+nnotation-everything-
+ []
+
+[36 <./Imagenes/Pict2Text2.0/example-boundingbox-separation.jpeg>]
+! Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   s
+l.41 ...fH-0Fg?usp=sharing#scrollTo=8dfPY2h39m-T}}
+                                                   shown in Figure \ref{fig:...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   s
+l.41 ...fH-0Fg?usp=sharing#scrollTo=8dfPY2h39m-T}}
+                                                   shown in Figure \ref{fig:...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   s
+l.41 ...fH-0Fg?usp=sharing#scrollTo=8dfPY2h39m-T}}
+                                                   shown in Figure \ref{fig:...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ...rOiY8sZMr\_zbr\_fH-0Fg?usp=sharing##
+                                                  scrollTo=8dfPY2h39m-T
+l.41 ...fH-0Fg?usp=sharing#scrollTo=8dfPY2h39m-T}}
+                                                   shown in Figure \ref{fig:...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[][][][]\T1/cmr/m/n/9 https://colab.research.google.com/drive/1_GdoqCJWXsChrOiY
+8sZMr_zbr_fH-
+ []
+
+<Imagenes/Pict2Text2.0/label_image.png, id=1050, 899.36pt x 737.75626pt>
+File: Imagenes/Pict2Text2.0/label_image.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/label_image.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/label_image.png  used on input l
+ine 47.
+(pdftex.def)             Requested size: 288.0011pt x 236.24443pt.
+[37 <./Imagenes/Pict2Text2.0/label_image.png>]
+<Imagenes/Pict2Text2.0/LabelImg_our_dataset.png, id=1060, 1606.0pt x 851.18pt>
+File: Imagenes/Pict2Text2.0/LabelImg_our_dataset.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/LabelImg_our_dataset.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/LabelImg_our_dataset.png  used o
+n input line 58.
+(pdftex.def)             Requested size: 360.0pt x 190.7929pt.
+
+! Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   s
+l.71 ...fH-0Fg?usp=sharing#scrollTo=8dfPY2h39m-T}}
+                                                   from the tutorial\textsup...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   s
+l.71 ...fH-0Fg?usp=sharing#scrollTo=8dfPY2h39m-T}}
+                                                   from the tutorial\textsup...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   s
+l.71 ...fH-0Fg?usp=sharing#scrollTo=8dfPY2h39m-T}}
+                                                   from the tutorial\textsup...
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ...rOiY8sZMr\_zbr\_fH-0Fg?usp=sharing##
+                                                  scrollTo=8dfPY2h39m-T
+l.71 ...fH-0Fg?usp=sharing#scrollTo=8dfPY2h39m-T}}
+                                                   from the tutorial\textsup...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+[][][][]\T1/cmr/m/n/9 https://colab.research.google.com/drive/1_GdoqCJWXsChrOiY
+8sZMr_zbr_fH-
+ []
+
+[38 <./Imagenes/Pict2Text2.0/LabelImg_our_dataset.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+
+Underfull \hbox (badness 3240) in paragraph at lines 83--84
+[]\T1/cmr/m/n/10.95 steps = (80% of max_batches), (90% of max_batches) (so if
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+
+Overfull \hbox (75.47183pt too wide) in paragraph at lines 87--87
+[][][][]\T1/cmr/m/n/9 https://github.com/AlexeyAB/darknet/releases/download/dar
+knet_yolo_v3_optimal/yolov4.conv.137[]| 
+ []
+
+[39]
+<Imagenes/Pict2Text2.0/yolosinglepicto.jpg, id=1084, 513.92pt x 479.7925pt>
+File: Imagenes/Pict2Text2.0/yolosinglepicto.jpg Graphic file (type jpg)
+<use Imagenes/Pict2Text2.0/yolosinglepicto.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/yolosinglepicto.jpg  used on inp
+ut line 104.
+(pdftex.def)             Requested size: 143.9978pt x 134.43614pt.
+<Imagenes/Pict2Text2.0/yolotwopictos1.jpg, id=1086, 513.92pt x 513.92pt>
+File: Imagenes/Pict2Text2.0/yolotwopictos1.jpg Graphic file (type jpg)
+<use Imagenes/Pict2Text2.0/yolotwopictos1.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/yolotwopictos1.jpg  used on inpu
+t line 115.
+(pdftex.def)             Requested size: 256.95937pt x 256.95937pt.
+<Imagenes/Pict2Text2.0/yolotwopictos2.jpg, id=1087, 513.92pt x 513.92pt>
+File: Imagenes/Pict2Text2.0/yolotwopictos2.jpg Graphic file (type jpg)
+<use Imagenes/Pict2Text2.0/yolotwopictos2.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/yolotwopictos2.jpg  used on inpu
+t line 117.
+(pdftex.def)             Requested size: 256.95937pt x 256.95937pt.
+ [40 <./Imagenes/Pict2Text2.0/yolosinglepicto.jpg>]
+<Imagenes/Pict2Text2.0/yolotwotogether.jpg, id=1094, 1606.0pt x 1204.5pt>
+File: Imagenes/Pict2Text2.0/yolotwotogether.jpg Graphic file (type jpg)
+<use Imagenes/Pict2Text2.0/yolotwotogether.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/yolotwotogether.jpg  used on inp
+ut line 128.
+(pdftex.def)             Requested size: 216.0022pt x 161.99397pt.
+ [41 <./Imagenes/Pict2Text2.0/yolotwopictos1.jpg> <./Imagenes/Pict2Text2.0/yolo
+twopictos2.jpg> <./Imagenes/Pict2Text2.0/yolotwotogether.jpg>]
+<Imagenes/Pict2Text2.0/yolotwozoomed.jpg, id=1100, 513.92pt x 206.7725pt>
+File: Imagenes/Pict2Text2.0/yolotwozoomed.jpg Graphic file (type jpg)
+<use Imagenes/Pict2Text2.0/yolotwozoomed.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/yolotwozoomed.jpg  used on input
+ line 141.
+(pdftex.def)             Requested size: 216.0022pt x 86.90695pt.
+<Imagenes/Pict2Text2.0/threepictos.jpg, id=1102, 1606.0pt x 1204.5pt>
+File: Imagenes/Pict2Text2.0/threepictos.jpg Graphic file (type jpg)
+<use Imagenes/Pict2Text2.0/threepictos.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/threepictos.jpg  used on input l
+ine 154.
+(pdftex.def)             Requested size: 216.0022pt x 161.99397pt.
+ [42 <./Imagenes/Pict2Text2.0/yolotwozoomed.jpg> <./Imagenes/Pict2Text2.0/three
+pictos.jpg>]
+<Imagenes/Pict2Text2.0/threepictoszoomed.jpg, id=1108, 1606.0pt x 336.25626pt>
+File: Imagenes/Pict2Text2.0/threepictoszoomed.jpg Graphic file (type jpg)
+<use Imagenes/Pict2Text2.0/threepictoszoomed.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/threepictoszoomed.jpg  used on i
+nput line 167.
+(pdftex.def)             Requested size: 288.0011pt x 60.29774pt.
+ [43 <./Imagenes/Pict2Text2.0/threepictoszoomed.jpg>]
+<Imagenes/Pict2Text2.0/45-degree-rotation-picto.jpg, id=1115, 513.92pt x 473.77
+pt>
+File: Imagenes/Pict2Text2.0/45-degree-rotation-picto.jpg Graphic file (type jpg
+)
+<use Imagenes/Pict2Text2.0/45-degree-rotation-picto.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/45-degree-rotation-picto.jpg  us
+ed on input line 216.
+(pdftex.def)             Requested size: 216.0022pt x 199.12662pt.
+<Imagenes/Pict2Text2.0/predictions-single_pictogram.jpg, id=1117, 1517.67pt x 1
+418.29875pt>
+File: Imagenes/Pict2Text2.0/predictions-single_pictogram.jpg Graphic file (type
+ jpg)
+<use Imagenes/Pict2Text2.0/predictions-single_pictogram.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/predictions-single_pictogram.jpg
+  used on input line 232.
+(pdftex.def)             Requested size: 216.0022pt x 201.84998pt.
+ [44 <./Imagenes/Pict2Text2.0/45-degree-rotation-picto.jpg>]
+<Imagenes/Pict2Text2.0/predictions-single_pictogram_zoom_out.jpg, id=1125, 1606
+.0pt x 1606.0pt>
+File: Imagenes/Pict2Text2.0/predictions-single_pictogram_zoom_out.jpg Graphic f
+ile (type jpg)
+<use Imagenes/Pict2Text2.0/predictions-single_pictogram_zoom_out.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/predictions-single_pictogram_zoo
+m_out.jpg  used on input line 243.
+(pdftex.def)             Requested size: 802.99805pt x 802.99805pt.
+<Imagenes/Pict2Text2.0/prediction-single pictogram zoom out2.jpg, id=1126, 1606
+.0pt x 1606.0pt>
+File: Imagenes/Pict2Text2.0/prediction-single pictogram zoom out2.jpg Graphic f
+ile (type jpg)
+<use Imagenes/Pict2Text2.0/prediction-single pictogram zoom out2.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/prediction-single pictogram zoom
+ out2.jpg  used on input line 245.
+(pdftex.def)             Requested size: 802.99805pt x 802.99805pt.
+ [45 <./Imagenes/Pict2Text2.0/predictions-single_pictogram.jpg> <./Imagenes/Pic
+t2Text2.0/predictions-single_pictogram_zoom_out.jpg> <./Imagenes/Pict2Text2.0/p
+rediction-single pictogram zoom out2.jpg>]
+<Imagenes/Pict2Text2.0/predictions-two_pictograms.jpg, id=1133, 1606.0pt x 1204
+.5pt>
+File: Imagenes/Pict2Text2.0/predictions-two_pictograms.jpg Graphic file (type j
+pg)
+<use Imagenes/Pict2Text2.0/predictions-two_pictograms.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/predictions-two_pictograms.jpg  
+used on input line 256.
+(pdftex.def)             Requested size: 288.0011pt x 215.99196pt.
+<Imagenes/Pict2Text2.0/predictions-two_pictograms_test_close.jpg, id=1135, 1606
+.0pt x 645.41125pt>
+File: Imagenes/Pict2Text2.0/predictions-two_pictograms_test_close.jpg Graphic f
+ile (type jpg)
+<use Imagenes/Pict2Text2.0/predictions-two_pictograms_test_close.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/predictions-two_pictograms_test_
+close.jpg  used on input line 267.
+(pdftex.def)             Requested size: 288.0011pt x 115.73569pt.
+<Imagenes/Pict2Text2.0/predictions-tree_pictograms.jpg, id=1137, 1606.0pt x 120
+4.5pt>
+File: Imagenes/Pict2Text2.0/predictions-tree_pictograms.jpg Graphic file (type 
+jpg)
+<use Imagenes/Pict2Text2.0/predictions-tree_pictograms.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/predictions-tree_pictograms.jpg 
+ used on input line 280.
+(pdftex.def)             Requested size: 288.0011pt x 215.99196pt.
+ [46 <./Imagenes/Pict2Text2.0/predictions-two_pictograms.jpg>]
+<Imagenes/Pict2Text2.0/predictions-tree_pictograms_test_close.jpg, id=1143, 160
+6.0pt x 336.25626pt>
+File: Imagenes/Pict2Text2.0/predictions-tree_pictograms_test_close.jpg Graphic 
+file (type jpg)
+<use Imagenes/Pict2Text2.0/predictions-tree_pictograms_test_close.jpg>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/predictions-tree_pictograms_test
+_close.jpg  used on input line 291.
+(pdftex.def)             Requested size: 288.0011pt x 60.29774pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47 <./Imagenes/Pict2Text2.0/predictions-two_pictograms_test_close.jpg> <./Ima
+genes/Pict2Text2.0/predictions-tree_pictograms.jpg>] [48 <./Imagenes/Pict2Text2
+.0/predictions-tree_pictograms_test_close.jpg>]
+<Imagenes/Pict2Text2.0/grayscale.png, id=1160, 335.2525pt x 251.94125pt>
+File: Imagenes/Pict2Text2.0/grayscale.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/grayscale.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/grayscale.png  used on input lin
+e 334.
+(pdftex.def)             Requested size: 167.62584pt x 125.9703pt.
+<Imagenes/Pict2Text2.0/reign_pic_breakdown.png, id=1161, 973.7178pt x 608.9952p
+t>
+File: Imagenes/Pict2Text2.0/reign_pic_breakdown.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/reign_pic_breakdown.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/reign_pic_breakdown.png  used on
+ input line 343.
+(pdftex.def)             Requested size: 730.28658pt x 456.74529pt.
+<Imagenes/Pict2Text2.0/three_d_array.png, id=1162, 369.0588pt x 354.123pt>
+File: Imagenes/Pict2Text2.0/three_d_array.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/three_d_array.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/three_d_array.png  used on input
+ line 345.
+(pdftex.def)             Requested size: 92.26447pt x 88.53052pt.
+ [49 <./Imagenes/Pict2Text2.0/grayscale.png> <./Imagenes/Pict2Text2.0/reign_pic
+_breakdown.png> <./Imagenes/Pict2Text2.0/three_d_array.png>] [50]
+<Imagenes/Pict2Text2.0/bee.png, id=1186, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/bee.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/bee.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/bee.png  used on input line 393.
+
+(pdftex.def)             Requested size: 250.93687pt x 250.93687pt.
+<Imagenes/Pict2Text2.0/beeShade.png, id=1187, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeShade.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeShade.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeShade.png  used on input line
+ 402.
+(pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
+<Imagenes/Pict2Text2.0/beeShade2.png, id=1188, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeShade2.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeShade2.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeShade2.png  used on input lin
+e 404.
+(pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
+<Imagenes/Pict2Text2.0/beeShade3.png, id=1189, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeShade3.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeShade3.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeShade3.png  used on input lin
+e 406.
+(pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
+<Imagenes/Pict2Text2.0/beeShade4.png, id=1190, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeShade4.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeShade4.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeShade4.png  used on input lin
+e 408.
+(pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
+<Imagenes/Pict2Text2.0/beeUp.png, id=1192, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeUp.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeUp.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeUp.png  used on input line 42
+6.
+(pdftex.def)             Requested size: 250.93687pt x 250.93687pt.
+<Imagenes/Pict2Text2.0/beeDown.png, id=1193, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeDown.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeDown.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeDown.png  used on input line 
+428.
+(pdftex.def)             Requested size: 250.93687pt x 250.93687pt.
+ [51] [52 <./Imagenes/Pict2Text2.0/bee.png> <./Imagenes/Pict2Text2.0/beeShade.p
+ng> <./Imagenes/Pict2Text2.0/beeShade2.png> <./Imagenes/Pict2Text2.0/beeShade3.
+png> <./Imagenes/Pict2Text2.0/beeShade4.png> <./Imagenes/Pict2Text2.0/beeUp.png
+> <./Imagenes/Pict2Text2.0/beeDown.png>]
+<Imagenes/Pict2Text2.0/beeColour.png, id=1214, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeColour.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeColour.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeColour.png  used on input lin
+e 446.
+(pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
+<Imagenes/Pict2Text2.0/beeColour2.png, id=1215, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeColour2.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeColour2.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeColour2.png  used on input li
+ne 448.
+(pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
+<Imagenes/Pict2Text2.0/beeColour3.png, id=1216, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeColour3.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeColour3.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeColour3.png  used on input li
+ne 450.
+(pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
+<Imagenes/Pict2Text2.0/beeColour4.png, id=1217, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/beeColour4.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/beeColour4.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/beeColour4.png  used on input li
+ne 452.
+(pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
+ [53 <./Imagenes/Pict2Text2.0/beeColour.png> <./Imagenes/Pict2Text2.0/beeColour
+2.png> <./Imagenes/Pict2Text2.0/beeColour3.png> <./Imagenes/Pict2Text2.0/beeCol
+our4.png>]
+[54] [55]
+<Imagenes/Pict2Text2.0/originalPicture.png, id=1239, 401.5pt x 401.5pt>
+File: Imagenes/Pict2Text2.0/originalPicture.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/originalPicture.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/originalPicture.png  used on inp
+ut line 551.
+(pdftex.def)             Requested size: 301.12425pt x 301.12425pt.
+<Imagenes/Pict2Text2.0/predictedPictogram.png, id=1240, 501.875pt x 501.875pt>
+File: Imagenes/Pict2Text2.0/predictedPictogram.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/predictedPictogram.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/predictedPictogram.png  used on 
+input line 553.
+(pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
+
+Underfull \vbox (badness 7326) has occurred while \output is active []
+
+ [56]
+[57 <./Imagenes/Pict2Text2.0/originalPicture.png> <./Imagenes/Pict2Text2.0/pred
+ictedPictogram.png>] [58] [59] [60]
+! You can't use `macro parameter character #' in restricted horizontal mode.
+<recently read> ##
+                  
+l.744 \end{tabular}}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in restricted horizontal mode.
+<recently read> ##
+                  
+l.744 \end{tabular}}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in restricted horizontal mode.
+<recently read> ##
+                  
+l.744 \end{tabular}}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[61]
+<Imagenes/Pict2Text2.0/first_left_web.png, id=1275, 1606.0pt x 887.315pt>
+File: Imagenes/Pict2Text2.0/first_left_web.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/first_left_web.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/first_left_web.png  used on inpu
+t line 775.
+(pdftex.def)             Requested size: 160.6094pt x 88.7367pt.
+<Imagenes/Pict2Text2.0/first_right_web.png, id=1276, 1606.0pt x 885.3075pt>
+File: Imagenes/Pict2Text2.0/first_right_web.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/first_right_web.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/first_right_web.png  used on inp
+ut line 777.
+(pdftex.def)             Requested size: 160.6094pt x 88.53593pt.
+<Imagenes/Pict2Text2.0/bbox.png, id=1282, 1606.0pt x 885.3075pt>
+File: Imagenes/Pict2Text2.0/bbox.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/bbox.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/bbox.png  used on input line 787
+.
+(pdftex.def)             Requested size: 288.0011pt x 158.75409pt.
+<Imagenes/Pict2Text2.0/cropped_web.png, id=1283, 1606.0pt x 885.3075pt>
+File: Imagenes/Pict2Text2.0/cropped_web.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/cropped_web.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/cropped_web.png  used on input l
+ine 795.
+(pdftex.def)             Requested size: 288.0011pt x 158.75409pt.
+<Imagenes/Pict2Text2.0/one_shot_web.png, id=1284, 1606.0pt x 880.28876pt>
+File: Imagenes/Pict2Text2.0/one_shot_web.png Graphic file (type png)
+<use Imagenes/Pict2Text2.0/one_shot_web.png>
+Package pdftex.def Info: Imagenes/Pict2Text2.0/one_shot_web.png  used on input 
+line 803.
+(pdftex.def)             Requested size: 288.0011pt x 157.85413pt.
+ [62 <./Imagenes/Pict2Text2.0/first_left_web.png> <./Imagenes/Pict2Text2.0/firs
+t_right_web.png>]) [63 <./Imagenes/Pict2Text2.0/bbox.png> <./Imagenes/Pict2Text
+2.0/cropped_web.png>] [64 <./Imagenes/Pict2Text2.0/one_shot_web.png>]
+\openout2 = `Capitulos/IndividualWork.aux'.
+
+
+(./Capitulos/IndividualWork.tex
+Chapter 5.
+[65
+
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [66]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [67])
+[68]
+\openout2 = `Capitulos/ConclusionsFutureWork.aux'.
+
+ (./Capitulos/ConclusionsFutureWork.tex
+Chapter 6.
+[69
+
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [70]
+[71]) [72]
+\openout2 = `Apendices/appendix.aux'.
+
+ (./Apendices/appendix.tex
+Appendix A.
+<Imagenes/Apendix/cd.png, id=1367, 1114.1625pt x 741.77126pt>
+File: Imagenes/Apendix/cd.png Graphic file (type png)
+<use Imagenes/Apendix/cd.png>
+Package pdftex.def Info: Imagenes/Apendix/cd.png  used on input line 8.
+(pdftex.def)             Requested size: 512.1496pt x 340.98123pt.
+
+Overfull \hbox (152.1496pt too wide) in paragraph at lines 8--9
+ [][] 
+ []
+
+) [73
+
+
+
+ <./Imagenes/Apendix/cd.png>] [74
+
+
+]
+\openout2 = `Cascaras/bibliografia.aux'.
+
+ (./Cascaras/bibliografia.tex
+! Undefined control sequence.
+\makeBib ...r \par \begingroup \spanishdeactivate 
+                                                  {~} \par \bibliographystyl...
+l.75 \makeBib
+             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(./TFGPictos.bbl [75
+
+] [76
+
+]
+! Misplaced alignment tab character &.
+l.36 \newblock Augmentative &
+                              Alternative Communication Supporting Children ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[77])) [78]
+\openout2 = `Cascaras/fin.aux'.
+
+ (./Cascaras/fin.tex [79
+
+
+] [80])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 227.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 227.
+ (./TFGPictos.aux
+(./Cascaras/cover.aux) (./Cascaras/abstract.aux) (./Cascaras/resumen.aux)
+(./TeXiS/TeXiS_toc.aux) (./Capitulos/Introduccion.aux)
+(./Capitulos/EstadoDeLaCuestion.aux)
+(./Capitulos/SoftwareDevelopmentMethodology.aux)
+(./Capitulos/Implementation.aux) (./Capitulos/IndividualWork.aux)
+(./Capitulos/ConclusionsFutureWork.aux) (./Apendices/appendix.aux)
+(./Cascaras/bibliografia.aux) (./Cascaras/fin.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 227.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 227.
+Package rerunfilecheck Info: File `TFGPictos.out' has not changed.
+(rerunfilecheck)             Checksum: 46C82D847B35FA7F9470530CF2F19731;3404.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 227.
+ ) 
+Here is how much of TeX's memory you used:
+ 14267 strings out of 483107
+ 235000 string characters out of 5964630
+ 681060 words of memory out of 5000000
+ 28276 multiletter control sequences out of 15000+600000
+ 552091 words of font info for 58 fonts, out of 8000000 for 9000
+ 297 hyphenation exceptions out of 8191
+ 63i,12n,56p,1600b,517s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/roni/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600p
+k> </home/roni/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600p
+k> </home/roni/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600p
+k> </home/roni/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1095.600p
+k>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/roni/.texl
+ive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/roni/.texl
+ive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/roni/.texl
+ive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk> </home/roni/.texl
+ive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/roni/.texl
+ive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/roni/.texl
+ive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.600pk> </home/roni/.texl
+ive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/roni/.texl
+ive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/roni/.texl
+ive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk></usr/share/texliv
+e/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/times/utmr8a.pfb>
+Output written on TFGPictos.pdf (96 pages, 13111418 bytes).
+PDF statistics:
+ 2068 PDF objects out of 2073 (max. 8388607)
+ 1314 compressed objects within 14 object streams
+ 327 named destinations out of 1000 (max. 500000)
+ 755 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: TFGPictos.aux
+Reallocating 'name_of_file' (item size: 1) to 19 items.
+A level-1 auxiliary file: Cascaras/cover.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: TeXiS/TeXiS_toc.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: Capitulos/Introduccion.aux
+Reallocating 'name_of_file' (item size: 1) to 33 items.
+A level-1 auxiliary file: Capitulos/EstadoDeLaCuestion.aux
+Reallocating 'name_of_file' (item size: 1) to 45 items.
+A level-1 auxiliary file: Capitulos/SoftwareDevelopmentMethodology.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
+A level-1 auxiliary file: Capitulos/Implementation.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: Cascaras/bibliografia.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+The style file: TeXiS/TeXiS.bst
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+A level-1 auxiliary file: Cascaras/fin.aux
+Database file #1: citas.bib
+You've used 1 entry,
+            2962 wiz_defined-function locations,
+            1088 strings with 12569 characters,
+and the built_in function-call counts, 438 in all, are:
+= -- 32
+> -- 10
+< -- 1
++ -- 4
+- -- 3
+* -- 22
+:= -- 76
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 6
+chr.to.int$ -- 1
+cite$ -- 1
+duplicate$ -- 39
+empty$ -- 36
+format.name$ -- 4
+if$ -- 82
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 8
+newline$ -- 9
+num.names$ -- 4
+pop$ -- 19
+preamble$ -- 1
+purify$ -- 5
+quote$ -- 0
+skip$ -- 17
+stack$ -- 0
+substring$ -- 11
+swap$ -- 13
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 10
+warning$ -- 0
+while$ -- 3
+width$ -- 0
+write$ -- 15

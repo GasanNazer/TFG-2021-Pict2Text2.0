@@ -1,0 +1,66 @@
+\babel@toc {english}{}
+\babel@toc {spanish}{}
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.6}%
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.7}%
+\contentsline {section}{\numberline {1.2}Goals}{2}{section.8}%
+\contentsline {section}{\numberline {1.3}Document structure}{2}{section.11}%
+\contentsline {chapter}{\numberline {2}State of the Art}{5}{chapter.12}%
+\contentsline {section}{\numberline {2.1}Augmentative and Alternative Systems of Communication (AASC)}{5}{section.13}%
+\contentsline {section}{\numberline {2.2}Pictograms}{6}{section.15}%
+\contentsline {subsection}{\numberline {2.2.1}Pictogram systems}{6}{subsection.17}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}Blissymbolics}{6}{subsubsection.18}%
+\contentsline {subsubsection}{\numberline {2.2.1.2}CSUP}{7}{subsubsection.21}%
+\contentsline {subsubsection}{\numberline {2.2.1.3}Minspeak}{7}{subsubsection.24}%
+\contentsline {subsubsection}{\numberline {2.2.1.4}ARASAAC}{7}{subsubsection.27}%
+\contentsline {subsection}{\numberline {2.2.2}Communication based on pictograms}{10}{subsection.37}%
+\contentsline {section}{\numberline {2.3}Pict2Text 1.0}{10}{section.39}%
+\contentsline {subsection}{\numberline {2.3.1}Implementation}{12}{subsection.44}%
+\contentsline {subsection}{\numberline {2.3.2}Conclusions}{14}{subsection.49}%
+\contentsline {section}{\numberline {2.4}Machine Learning for image processing}{14}{section.50}%
+\contentsline {subsection}{\numberline {2.4.1}Machine Learning}{15}{subsection.53}%
+\contentsline {subsubsection}{\numberline {2.4.1.1}Neural Network}{15}{subsubsection.55}%
+\contentsline {subsubsection}{\numberline {2.4.1.2}Convolutional Neural Network}{17}{subsubsection.59}%
+\contentsline {subsection}{\numberline {2.4.2}Image processing}{19}{subsection.64}%
+\contentsline {subsection}{\numberline {2.4.3}Object detection algorithm}{20}{subsection.69}%
+\contentsline {subsubsection}{\numberline {2.4.3.1}YOLO algorithm}{21}{subsubsection.73}%
+\contentsline {subsection}{\numberline {2.4.4}Image classification algorithm}{23}{subsection.78}%
+\contentsline {subsubsection}{\numberline {2.4.4.1}Siamese Neural Network}{24}{subsubsection.80}%
+\contentsline {subsubsection}{\numberline {2.4.4.2}One-shot learning algorithm}{25}{subsubsection.84}%
+\contentsline {section}{\numberline {2.5}Tools}{26}{section.89}%
+\contentsline {subsection}{\numberline {2.5.1}TensorFlow}{26}{subsection.90}%
+\contentsline {subsection}{\numberline {2.5.2}Keras}{27}{subsection.92}%
+\contentsline {subsection}{\numberline {2.5.3}LabelImg}{27}{subsection.95}%
+\contentsline {subsection}{\numberline {2.5.4}Flask}{28}{subsection.100}%
+\contentsline {subsection}{\numberline {2.5.5}GitHub Actions}{28}{subsection.103}%
+\contentsline {chapter}{\numberline {3}Software development methodology}{31}{chapter.105}%
+\contentsline {section}{\numberline {3.1}Kanban}{31}{section.106}%
+\contentsline {section}{\numberline {3.2}Testing}{32}{section.109}%
+\contentsline {section}{\numberline {3.3}Continuous Deployment}{33}{section.110}%
+\contentsline {chapter}{\numberline {4}Pict2Text 2.0}{35}{chapter.118}%
+\contentsline {section}{\numberline {4.1}Pictograms detection using YOLO Algorithm}{35}{section.119}%
+\contentsline {subsection}{\numberline {4.1.1}First Version}{38}{subsection.130}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}Configuration}{39}{subsubsection.132}%
+\contentsline {subsubsection}{\numberline {4.1.1.2}Results}{40}{subsubsection.135}%
+\contentsline {subsection}{\numberline {4.1.2}Second Version}{43}{subsection.143}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}Augmentation of the training dataset}{44}{subsubsection.144}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}Results}{44}{subsubsection.146}%
+\contentsline {subsubsection}{\numberline {4.1.2.3}Conclusions}{48}{subsubsection.153}%
+\contentsline {section}{\numberline {4.2}Pictogram identification using One-shot learning algorithm}{48}{section.155}%
+\contentsline {subsection}{\numberline {4.2.1}Preparing the dataset}{50}{subsection.158}%
+\contentsline {subsubsection}{\numberline {4.2.1.1}Loading ARASAAC pictograms}{50}{subsubsection.159}%
+\contentsline {subsubsection}{\numberline {4.2.1.2}Processing ARASAAC pictograms}{51}{subsubsection.162}%
+\contentsline {subsection}{\numberline {4.2.2}First Version}{53}{subsection.167}%
+\contentsline {subsection}{\numberline {4.2.3}Second Version}{54}{subsection.169}%
+\contentsline {subsection}{\numberline {4.2.4}Third Version}{56}{subsection.171}%
+\contentsline {subsection}{\numberline {4.2.5}Fourth Vesion}{57}{subsection.174}%
+\contentsline {section}{\numberline {4.3}API}{61}{section.180}%
+\contentsline {section}{\numberline {4.4}Web Application}{61}{section.181}%
+\contentsline {chapter}{\numberline {5}Individual work}{65}{chapter.187}%
+\contentsline {section}{\numberline {5.1}Gasan Mohamad Nazer}{65}{section.188}%
+\contentsline {section}{\numberline {5.2}Veronika Borislavova Yankova}{67}{section.189}%
+\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{69}{chapter.190}%
+\contentsline {section}{\numberline {6.1}Conclusions}{69}{section.191}%
+\contentsline {section}{\numberline {6.2}Future Work}{72}{section.193}%
+\contentsline {chapter}{\numberline {A}Continuous deployment configuration}{73}{appendix.194}%
+\contentsline {chapter}{Bibliography}{77}{appendix*.196}%

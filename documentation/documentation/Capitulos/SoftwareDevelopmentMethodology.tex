@@ -1,0 +1,74 @@
+% !TeX encoding = ISO-8859-1
+\chapter{Software development methodology}
+\label{Software development methodology}
+
+Software development methodologies \citep{agileAndTraditional} are used to provide better team performance and to get better results. The two main types of software development methodologies are traditional and agile. Traditional methodologies, also known as heavyweight methodologies, are predictive and used to follow a linear approach. They require defining and documenting all the requirements at the beginning of the process. Agile methodologies are adaptive and open to change, which makes them more flexible. Some of the most popular agile methodologies are Scrum, Kanban, and Extreme Programming (XP). For this project, we have decided to use the agile framework Kanban. In the following sections, we will explain it, why we have selected it, how we have applied it, and what tests we have made.
+
+\section{Kanban}
+\label{Kanban}
+Kanban is an agile methodology oriented towards visualizing the work, making it flow, reducing waste, and maximizing the product value. The main rules that Kanban follows are visualization, usually via dashboards, limit the work in progress (WIP), which reduces the number of open tasks, and pull value through the system - a task is started only when it's needed.
+
+We chose Kanban as the methodology for our project because the product is delivered continuously, and changes are allowed during the whole process, and no estimation of the tasks is needed. That will increase our flexibility and productivity.
+
+Every few weeks, we have meetings with the tutors. During every meeting, the tutors will give us the tasks - code and memory- that we have to finish until the next meeting, including their priority. The date for the next meeting also will be decided during the current one.
+
+We created a dashboard\footnote{\href{https://pic2text2.atlassian.net/jira/software/projects/PICT2TEXT/boards/1}{https://pic2text2.atlassian.net/jira/software/projects/PICT2TEXT/boards/1}} to visualize the tasks we have. Tasks can be of two types: coding tasks or report tasks. We decided to have the following columns on our board:
+\begin{itemize}
+\item \textbf{To do.} Tasks given to us by the tutors are ordered according to the priority given by the tutors to each task (from higher to lower priority).
+\item \textbf{In progress.} Tasks we are currently working on. All tasks in that column will have a particular person assigned. As we are using Kanban, we have limited the WIP (Work In Progress) of the column to 4 to avoid doing more tasks than we can reasonably manage. The completed tasks will be moved to `Testing`.
+\item \textbf{On hold.} Activities that we can't continue at the moment. The reason behind this is that they are waiting for another task to finish. When the task could be continued, it is returned to the column `In progress`.
+\item \textbf{Testing.} In the case of a coding task, the testing will include code review and automated and/or manual testing (this will be explained in the following section). In the case of a report task, the person who didn't write the particular part will read and correct it. If a problem is spotted, the task will be moved to the column `In progress`. If not, it will go to the column `Ready for review`.
+\item \textbf{Ready for review.}  Tasks we have finished but are not yet reviewed by our tutors. The tasks in that column will be reviewed during the next meeting and the tutors will decide which of them will be moved to the column "Done" and which ones are not finished and must be taken up again.
+\item \textbf{Done.} Tasks that are finished, tested, reviewed, and approved by the tutors.
+\end{itemize}
+
+If the WIP of any of the columns does not allow more tasks, any additional ones will be moved to the column "Hold on". In Figure \ref{fig:kanban-board} you can see an example of our board with the columns created and some tasks assigned.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.6\textwidth]%
+{Imagenes/Pict2Text2.0/kanban-board}
+\caption{Kanban board used for the Pict2Text 2.0 project.}
+\label{fig:kanban-board}
+\end{center}
+\end{figure}
+ 
+\section{Testing}
+
+To test Pict2Text 2.0 we have two main groups of tests: machine learning tests and the API tests.
+
+The machine learning tests verify the correctness of the two machine learning models we have implemented: pictogram detection and pictogram recognition. To validate the algorithms, we created some ad-hoc tests. Mainly we compared the expected results from the algorithms with the returned outputs.
+
+For our project, we decided to implement continuous deployment using GitHub Actions, as will be explained in continuation.
+
+\section{Continuous Deployment}
+\label{Continous Deployment for Pict2Text 2.0}
+
+Continuous Integration, Continuous Deployment, and Continuous Delivery are commonly used terms in modern development practices and DevOps\footnote{\href{https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment}{https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment}}. 
+
+Continuous Integration (CI)\footnote{\href{https://martinfowler.com/articles/continuousIntegration.html}{https://martinfowler.com/articles/continuousIntegration.html}} \citep{continuousIntegration} is a practice in software engineering where members of a team integrate their work to a shared mainline (the base of a project) frequently. The term was first proposed by Grady Booch in 1991, later the idea was adopted by Extreme programming (XP). CI is supposed to work with various automated tests, as those are run before committing to the mainline. Apart from the tests, organizations usually use a build server to apply quality control in general. The build server compiles the code periodically or with every commit and sends a report to the developers.
+
+Continuous Delivery (CD)\footnote{\href{https://www.atlassian.com/continuous-delivery}{https://www.atlassian.com/continuous-delivery}} is an extension of continuous integration with automatic deployment of the changes to a wanted environment. On top of the automated testing, there is an automated release process from the source code repository to the test or/and production environment by clicking one button.
+
+Continuous Deployment (CD)\footnote{\href{https://www.atlassian.com/continuous-delivery/continuous-deployment}{https://www.atlassian.com/continuous-delivery/continuous-deployment}} is a software release process where every change is validated by automated testing and, if it passes all stages of your production pipeline, is released to the customers. The whole deployment method is automated, so only failed tests can prevent a new change to be deployed to a production environment.
+
+To integrate and deploy as fast as possible all changes we make to the API, we create a Continuous Deployment pipeline.
+
+Initially, we wanted to use a configuration like Jenkins-Nomad-Docker for the CI/CD, but as the provided environment from the university was a Linux container, we were not able to install and use Docker. Despite this, we created a CD pipeline using GitHub Actions, execution scripts, and system service.
+
+When exiting the running virtual container, it closes the current terminal session and stops the execution of our application. As we needed the API running continuously without interruption, we had to run it either as a job in the background, a separate session using tmux\footnote{\href{https://github.com/tmux/tmux/wiki}{https://github.com/tmux/tmux/wiki}} (an open-source terminal multiplexer for Unix-like operating systems), or screen\footnote{\href{https://www.gnu.org/software/screen/}{https://www.gnu.org/software/screen/}} (a full-screen window manager that multiplexes a physical terminal between several processes), or as a system service. Initially, we started with a tmux session but as it was giving problems using it in the Github Actions, we changed to a system service.
+
+In Appendix \ref{Appendix:Key1} you can observe the Continuous Deployment configuration we are using to deploy our API. In it, we had specified the name of the workflow, when it will be executed (when a push event on the master branch is realized), and the jobs and steps the pipeline will do: connect to the virtual container, pull the latest changes of the repository, and restart the "pict2text2" system service.
+
+To define our "pict2text2" service, we create the configuration file pict2text2.service in the directory /etc/systemd/system in the container located in holstein.fdi.ucm.es server.
+
+In the service section, we have defined the execution of the script "run.sh", which starts the API from the directory of the project. In Figure \ref{fig:systemserviceconfig} is shown the system service configuration file for Pict2Text 2.0 API.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.5\textwidth]%
+{Imagenes/Pict2Text2.0/systemserviceconfig}
+\caption{System service configuration file for Pict2Text 2.0 API.}
+\label{fig:systemserviceconfig}
+\end{center}
+\end{figure}

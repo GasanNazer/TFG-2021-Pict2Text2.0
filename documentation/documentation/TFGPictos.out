@@ -1,0 +1,53 @@
+\BOOKMARK [0][-]{titulo.0}{Title page}{}% 1
+\BOOKMARK [0][-]{indices.0}{Indices}{}% 2
+\BOOKMARK [1][-]{tabla de contenidos.1}{Table of contents}{indices.0}% 3
+\BOOKMARK [1][-]{indice de figuras.1}{List of figures}{indices.0}% 4
+\BOOKMARK [1][-]{indice de tablas.1}{List of tables}{indices.0}% 5
+\BOOKMARK [0][-]{chapter.6}{Introduction}{}% 6
+\BOOKMARK [1][-]{section.7}{Motivation}{chapter.6}% 7
+\BOOKMARK [1][-]{section.8}{Goals}{chapter.6}% 8
+\BOOKMARK [1][-]{section.11}{Document structure}{chapter.6}% 9
+\BOOKMARK [0][-]{chapter.12}{State of the Art}{}% 10
+\BOOKMARK [1][-]{section.13}{Augmentative and Alternative Systems of Communication \(AASC\)}{chapter.12}% 11
+\BOOKMARK [1][-]{section.15}{Pictograms}{chapter.12}% 12
+\BOOKMARK [2][-]{subsection.17}{Pictogram systems}{section.15}% 13
+\BOOKMARK [2][-]{subsection.37}{Communication based on pictograms}{section.15}% 14
+\BOOKMARK [1][-]{section.39}{Pict2Text 1.0}{chapter.12}% 15
+\BOOKMARK [2][-]{subsection.44}{Implementation}{section.39}% 16
+\BOOKMARK [2][-]{subsection.49}{Conclusions}{section.39}% 17
+\BOOKMARK [1][-]{section.50}{Machine Learning for image processing}{chapter.12}% 18
+\BOOKMARK [2][-]{subsection.53}{Machine Learning}{section.50}% 19
+\BOOKMARK [2][-]{subsection.64}{Image processing}{section.50}% 20
+\BOOKMARK [2][-]{subsection.69}{Object detection algorithm}{section.50}% 21
+\BOOKMARK [2][-]{subsection.78}{Image classification algorithm}{section.50}% 22
+\BOOKMARK [1][-]{section.89}{Tools}{chapter.12}% 23
+\BOOKMARK [2][-]{subsection.90}{TensorFlow}{section.89}% 24
+\BOOKMARK [2][-]{subsection.92}{Keras}{section.89}% 25
+\BOOKMARK [2][-]{subsection.95}{LabelImg}{section.89}% 26
+\BOOKMARK [2][-]{subsection.100}{Flask}{section.89}% 27
+\BOOKMARK [2][-]{subsection.103}{GitHub Actions}{section.89}% 28
+\BOOKMARK [0][-]{chapter.105}{Software development methodology}{}% 29
+\BOOKMARK [1][-]{section.106}{Kanban}{chapter.105}% 30
+\BOOKMARK [1][-]{section.109}{Testing}{chapter.105}% 31
+\BOOKMARK [1][-]{section.110}{Continuous Deployment}{chapter.105}% 32
+\BOOKMARK [0][-]{chapter.118}{Pict2Text 2.0}{}% 33
+\BOOKMARK [1][-]{section.119}{Pictograms detection using YOLO Algorithm}{chapter.118}% 34
+\BOOKMARK [2][-]{subsection.130}{First Version}{section.119}% 35
+\BOOKMARK [2][-]{subsection.143}{Second Version}{section.119}% 36
+\BOOKMARK [1][-]{section.155}{Pictogram identification using One-shot learning algorithm}{chapter.118}% 37
+\BOOKMARK [2][-]{subsection.158}{Preparing the dataset}{section.155}% 38
+\BOOKMARK [2][-]{subsection.167}{First Version}{section.155}% 39
+\BOOKMARK [2][-]{subsection.169}{Second Version}{section.155}% 40
+\BOOKMARK [2][-]{subsection.171}{Third Version}{section.155}% 41
+\BOOKMARK [2][-]{subsection.174}{Fourth Vesion}{section.155}% 42
+\BOOKMARK [1][-]{section.180}{API}{chapter.118}% 43
+\BOOKMARK [1][-]{section.181}{Web Application}{chapter.118}% 44
+\BOOKMARK [0][-]{chapter.187}{Individual work}{}% 45
+\BOOKMARK [1][-]{section.188}{Gasan Mohamad Nazer}{chapter.187}% 46
+\BOOKMARK [1][-]{section.189}{Veronika Borislavova Yankova}{chapter.187}% 47
+\BOOKMARK [0][-]{chapter.190}{Conclusions and Future Work}{}% 48
+\BOOKMARK [1][-]{section.191}{Conclusions}{chapter.190}% 49
+\BOOKMARK [1][-]{section.193}{Future Work}{chapter.190}% 50
+\BOOKMARK [0][-]{appendix.194}{Continuous deployment configuration}{}% 51
+\BOOKMARK [0][-]{appendix*.196}{Bibliography}{}% 52
+\BOOKMARK [0][-]{fin.0}{Fin}{}% 53

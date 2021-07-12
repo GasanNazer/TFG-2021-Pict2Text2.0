@@ -1,0 +1,42 @@
+% !TeX encoding = ISO-8859-1
+
+\chapter{Introduction}
+\label{cap:introduction}
+
+This chapter will display the motivation behind this project and its objectives. At the end of the chapter, we present the document structure with the different chapters and a brief description of them.
+
+\section{Motivation}
+\label{Motivation}
+
+Communication is one of the pillars of interpersonal relationships, a fundamental need in our society. However, for some people, communication requires a lot of effort. Their differences are an uncrossable barrier, and it is almost impossible to have a human connection using the traditional way of communication. To remove this barrier, an alternative approach should be used, for example, the use of alternative ways of communication as pictograms. These graphic images, representing an object or a concept, have helped people with special needs to communicate. However, the majority of the population does not understand pictograms.
+
+To include pictograms into the communication between people with disabilities and those without, we can use modern technology and create software to be a mediator between the two sides.
+
+Currently, multiple tools allow transforming natural language into pictograms, but there is only one tool that converts a message written with pictograms into text: Pict2Text 1.0 \citep{pictText}. It translates pictograms into natural language, but to provide an input message, it must be created by searching for every single pictogram that compounds the message in the search engine of the application. This is not good enough for people who want to communicate with people with special needs, as people with disabilities who need pictograms cannot think about the words that compose the sentence and search for them in the search engine. This problem can be solved by giving those people the option to upload a file with the message written with pictograms or take a picture of the sentence. We aim to build a new version of Pict2Text that allows uploading messages written with pictograms more efficiently and improves the translator coverage.
+
+The beneficiaries of this software are people who don't understand pictograms but want to interact with people who need them to communicate. This project will help people understand each other better, creating a more equal society.
+
+\section{Goals}
+\label{Goals}
+
+The main goal of our project is to improve Pict2Text. To do that, we have two main objectives:
+\begin{enumerate}
+\item To change the form in which Pict2Text 1.0 receives the text written with pictograms. The application should allow the user to upload a picture with the message written with pictograms instead of searching for each pictogram in the integrated search engine.
+\item To improve the translations provided by Pict2Text 1.0. At the moment, Pict2Text 1.0 can translate only simple phrases containing one subject, one object, and one verb. We aim to provide the opportunity to translate more complex sentences.
+\end{enumerate}
+
+During the implementation, we will follow a Services-Oriented Architecture (SOA), constructing web services that implement each of the functionalities added. This will increase the maintainability of the application and will allow all our functionalities to be integrated into other developments.
+
+In addition, we would like this work to allow us to consolidate and expand the knowledge acquired during the Software Engineering Degree.
+
+\section{Document structure}
+\label{Document structure}
+
+The document is structured as follows. Chapter \ref{State of the Art} (\nameref{State of the Art}) covers the Augmentative and Alternative Systems of Communication, the state of Pict2Text 1.0, the general idea of the machine learning algorithms and models we have used as well as the main tools we needed for the implementation. Chapter \ref{Software development methodology} (\nameref{Software development methodology}) describes the methodology we have chosen to develop our application, the type of tests we have done to ensure the correct performance of our application and the continuous deployment we have implemented. Chapter \ref{Pict2Text 2.0} (\nameref{Pict2Text 2.0}) provides detailed information on everything we have developed ourselves. The next chapter (\nameref{Individual work}) describes the work each of us has done for the project. In the final chapter (\nameref{cap:conclusions}), we will present the conclusions we have obtained from our project, as well as the future work that has to be done to complete it.
+
+
+
+
+
+
+

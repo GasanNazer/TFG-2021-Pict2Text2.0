@@ -1,0 +1,487 @@
+% !TeX encoding = ISO-8859-1
+
+\chapter{State of the Art}
+\label{State of the Art}
+
+In this chapter, we briefly define Augmentative and Alternative Systems of Communication (section \ref{AASC}) and pictograms (section \ref{pictograms}). Also, in section \ref{pict2test1}, we review Pict2Text 1.0, which is the tool that serves as the basis for our work. In section \ref{Image processing} we analyze how machine learning can be used for image processing. Last, in section \ref{Tools} we present the tools we have used in the implementation of our project.
+
+\section{Augmentative and Alternative Systems of Communication (AASC)}
+\label{AASC}
+The Augmentative and Alternative Systems of Communication (AASC)\footnote{\href{https://arasaac.org/aac}{https://arasaac.org/aac}} \citep{aacChildrenAdults} are communication systems, alternative to the natural language, that don't use spoken or written words but can transmit information. They are used by people, who cannot use natural language, or it is not sufficient for them to express themselves. They are created to increase the communication capabilities of the people who use them.
+
+The AASCs do not arise naturally, but they need previous knowledge. There are two types of AASCs - those who need additional equipment such as objects, pictures, pictograms, etcetera, and those that do not need any equipment.
+
+AASC includes different systems of symbols: graphic and gestural. The gestural symbols can vary widely from mimics to hand signs. The graphic symbols can be used by both people with an intellectual disability or with a motor disability. Examples of graphic symbols are drawings and pictures, as well as pictograms, which will be better explained in the next chapter.
+
+Those systems provide various benefits for their users. They prevent or decrease the isolation of people with disabilities, helping with the improvement of social and communication abilities. Also, AASCs are relatively easy to learn and apply and adapted for modern technology.
+
+\section{Pictograms}
+\label{pictograms}
+
+Pictograms are AASCs that need additional equipment. They are written signs representing objects from the real world, as shown in Figure \ref{fig:icecream} where a pictogram of ice cream is shown. Pictograms are used in the day to day life at hospitals, malls, airports, etcetera. They are also widely used by people with special needs, to help with communication and social integration.
+
+\begin{figure}[!ht]
+\begin{center}
+\fcolorbox{black}{white}{\includegraphics[width=50mm,scale=0.5]%
+{Imagenes/Pict2Text2.0/icecream}}
+\caption{Pictogram representing an icecream.}
+\label{fig:icecream}
+\end{center}
+\end{figure}
+
+\subsection{Pictogram systems}
+
+As pictograms are not universal, various systems exist, such as Blissymbolics, CSUP, Minspeak, and ARASAAC, which we will see in more detail in the following subsections.
+
+\subsubsection{Blissymbolics}
+
+Blissymbolics\footnote{\href{https://www.blissymbolics.org/}{https://www.blissymbolics.org/}} was created in 1949. It is an ideographic language consisting of several hundred basic symbols, each representing a concept. Each symbol is represented by basic forms (circles, triangles) and universal signs (numbers, punctuation signs) and uses colour codification to mark the grammar category. They can be combined to generate new symbols that represent new concepts. Figure \ref{fig:Basicsymbols} shows Blissymbolics pictograms for a house, person, love, etcetera. Blissymbolics characters do not correspond to the sounds of any spoken language and have their use in the education of people with communication difficulties.
+
+\begin{figure}[!ht]
+\begin{center}
+\fcolorbox{black}{white}{\includegraphics[width=0.5\textwidth]%
+{Imagenes/Pict2Text2.0/Basicsymbols}}
+\caption{Example of Blissymbolics}
+\label{fig:Basicsymbols}
+\end{center}
+\end{figure}
+
+\subsubsection{CSUP}
+
+The Communication System Using Pictograms (CSUP)\footnote{\href{http://masquemayores.com/magazine/tipos-de-sistemas-alternativos-y-aumentativos-de-la-comunicacion-sistemas-pictograficos-de-comunicacion/}{http://masquemayores.com/magazine/tipos-de-sistemas-alternativos-y-aumentativos-de-la-comunicacion-sistemas-pictograficos-de-comunicacion/}}, developed in 1981 by Mayer-Johnson, is one of the systems that use pictograms to support interactive non-verbal communication. This AASC can be used with a physical or digital board. As shown in Figure \ref{fig:CSUP} CSUP uses pictograms for physical objects: school and mother, for events like talk, draw, and also for descriptions as big, cold, close, etcetera. It is designed in a way that it can be used between a person with a disability and a non-disabled person, child and adult, people speaking different languages, and so on.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/csup}
+\caption{Example of Communication System Using Pictograms (CSUP)}
+\label{fig:CSUP}
+\end{center}
+\end{figure}
+
+\subsubsection{Minspeak}
+
+Minspeak\footnote{\href{http://www.minspeak.com/}{http://www.minspeak.com/}} is a pictographic system created by Bruce Baker in 1992. Unlike other systems, this system is based on multi-meaning icons whose meaning is determined by the speech therapist and the user. Two or three icons can combine, determined by rule-driven patterns, to code vocabulary. An example of this can be seen in Figure \ref{fig:Minspeak}, where the icon for apple can mean not only apple but also food or eat. In the same figure, we can observe how combining the apple icon with house means grocery, and combining it with a rainbow means the colour red.
+
+\begin{figure}[!ht]
+\begin{center}
+\fcolorbox{black}{white}{\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/Minspeak}}
+\caption{Construction of symbologic in Minspeak.}
+\label{fig:Minspeak}
+\end{center}
+\end{figure}
+
+\subsubsection{ARASAAC}
+
+The ARASAAC\footnote{\href{https://arasaac.org/}{https://arasaac.org/}} system is the most used pictogram system in Spain. The ARASAAC project was created in 2007, and it currently consists of more than  30.000 pictograms, including complex pictograms with already constructed phrases, in more than 20 languages. The pictograms are separated into five groups: coloured pictograms, black and white, photographs, and sign language videos and pictures. Unlike other pictogram systems, ARASAAC makes a difference between singular and plural and genders. For example, in Figure \ref{fig:profesors} can be seen the difference between the pictograms for male and female teachers.
+
+\begin{figure}[!ht]
+\begin{center}
+\fcolorbox{black}{white}{\includegraphics[width=0.3\textwidth]%
+{Imagenes/Pict2Text2.0/profesor}}
+\fcolorbox{black}{white}{\includegraphics[width=0.3\textwidth]%
+{Imagenes/Pict2Text2.0/profesora}}
+\caption{Example for ARASAAC differentiation for the word `teacher`.}
+\label{fig:profesors}
+\end{center}
+\end{figure}
+ 
+In ARASAAC one word can be represented by various pictograms. In Figure \ref{fig:samepictogram}  we can observe the different pictograms for the word `teacher`.
+
+\begin{figure}[!ht]
+\begin{center}
+\fcolorbox{black}{white}{\includegraphics[width=0.2\textwidth]%
+{Imagenes/Pict2Text2.0/profesor}}
+\fcolorbox{black}{white}{\includegraphics[width=0.2\textwidth]%
+{Imagenes/Pict2Text2.0/profesor1}}
+\fcolorbox{black}{white}{\includegraphics[width=0.2\textwidth]%
+{Imagenes/Pict2Text2.0/profesor2}}
+\caption{Pictograms associated with the word `teacher` in ARASAAC.}
+\label{fig:samepictogram}
+\end{center}
+\end{figure}
+
+Verbs are not conjugated in ARASAAC, there is only a pictogram for the infinitive of the verb. The tense of the sentence must be determined by pictograms representing yesterday, today, and tomorrow.
+
+ARASAAC is free to use under the Creative Commons license. ARASAAC also provides a web page\footnote{\href{https://arasaac.org/pictograms/search}{https://arasaac.org/pictograms/search}} from where you can search or/and download the pictograms. For developers an API\footnote{\href{https://arasaac.org/developers/api}{https://arasaac.org/developers/api}\label{arasaacapi}} is provided that gives functionalities such as: 
+\begin{itemize}
+  \item obtaining a pictogram corresponding to a certain word\footnote{\href{https://api.arasaac.org/api/pictograms/es/search/'namePictoram'}{https://api.arasaac.org/api/pictograms/es/search/'namePictoram'}}: returns a JSON with the type of the word, the plural forms, and the id among other attributes. In Figure \ref{fig:jsonPictoName} can be seen the result from calling the ARASAAC API searching for the word "Spiderman".
+  
+  \begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.65\textwidth]%
+{Imagenes/Pict2Text2.0/jsonPictoName}
+\caption{ARASAAC API response for `Spiderman`.}
+\label{fig:jsonPictoName}
+\end{center}
+\end{figure}
+
+ \item obtaining a pictogram given the id\footnote{\href{https://api.arasaac.org/api/pictograms/es/idPictogram}{https://api.arasaac.org/api/pictograms/es/idPictogram}\label{arasaacid}}: returns a JSON with the information about the pictogram with that id. In Figure \ref{fig:jsonPictoId} you can observe the API result from searching a pictogram with id 8224.
+  
+  \begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.6\textwidth]%
+{Imagenes/Pict2Text2.0/jsonPictoId}
+\caption{Example of ARASAAC API response when called for pictogram id 8224.}
+\label{fig:jsonPictoId}
+\end{center}
+\end{figure}
+\end{itemize}
+
+
+\subsection{Communication based on pictograms}
+Communication via pictograms happens with the help of a board or a communication book. Figure \ref{fig:board} shows an ACC communication book, where the person points to the pictograms one by one to form a sentence. The complexity of the phrases with pictograms is limited, usually consisting only of subject, verb, and object. Often, only the most significant words are used, although ARASAAC has pictograms for determinatives and prepositions.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=50mm,scale=0.5]%
+{Imagenes/Pict2Text2.0/board}
+\caption{Example of ACC communication book.}
+\label{fig:board}
+\end{center}
+\end{figure}
+
+As it was explained above, in ARASAAC, the pictograms for verbs do not have conjugations. That means that no matter the tense, number, and person we want to construct the sentence for, we have to use the same pictogram - the one for the infinitive of the verb. In a phrase, past, present, and future are expressed by the pictograms for yesterday, today, and tomorrow respectively.
+
+\section{Pict2Text 1.0}
+\label{pict2test1}
+
+As described previously, Pict2Text 1.0 is the base of our project. The first version of this project is a web application that allows the translation of sentences written using pictograms to natural language (Spanish).
+
+When entering the website\footnote{\href{https://holstein.fdi.ucm.es/tfg-pict2text}{https://holstein.fdi.ucm.es/tfg-pict2text}} the user can see on the left part, the pictogram sentence panel, with a caption `Pictograms` above it, and a button `Traducir` below it. On the right part, an input box with the caption `Nombre del picto`, and a button `Buscar` on the left of it. The user can write and search a specific word from the ARASAAC pictogram database and display it in a panel on the right part of the web page. After that, they can include the chosen one into the pictogram sentence panel, from where later the message is translated into natural language.
+
+To search for a specific pictogram, the user should write the world they are looking for in the input box on the right side and click the button 'Buscar'. In Figure \ref{fig:pict2text_v1_2} it can be seen in the search for the word ``Hombre''.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/pict2text_v1_2}
+\caption{Searching for the word "Hombre" in PICT2Text 1.0.}
+\label{fig:pict2text_v1_2}
+\end{center}
+\end{figure}
+
+After searching the pictogram, the user needs to include it in the left panel with pictograms. This is done by clicking the button ``A\~{n}adir''. In Figure \ref{fig:pict2text_v1_3}, the pictogram corresponding to the word ``Hombre'' is included in the pictogram sentence panel.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/pict2text_v1_3}
+\caption{Adding the pictogram "Hombre" to the pictogram sentence panel.}
+\label{fig:pict2text_v1_3}
+\end{center}
+\end{figure}
+
+The user can form a sentence by repeating the previous actions with other words. Figure \ref{fig:pict2text_v1_4} displays a translation of a sentence written with the pictograms corresponding to the words ``Hombre'', ``Comer'', ``pizza''. As we can see, the sentence is translated to "El hombre come una pizza" ("The man is eating a pizza").
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/pict2text_v1_4}
+\caption{Translating the sentence "El hombre come una pizza."}
+\label{fig:pict2text_v1_4}
+\end{center}
+\end{figure}
+
+\subsection{Implementation}
+
+For the front-end of the project, Angular\footnote{\href{https://angular.io/}{https://angular.io/}} was used. As the website itself is a SPA (Single-Page Applications), which needs to respond fast, a framework like Angular fulfills this performance requirement.
+
+The framework Django\footnote{\href{https://www.djangoproject.com/}{https://www.djangoproject.com/}} was used for integration and intercommunication between the implemented web services.
+
+The API of ARASAAC\footnote{\href{https://arasaac.org/developers/api}{https://arasaac.org/developers/api}} provides the searching mechanism used to match words to pictograms, the graphical images of pictograms, and additional information about them.
+
+When the pictograms are selected, Pict2Text 1.0 constructs the sentence by looking for the subject, verb, and proper tense, object, etcetera. To do that Spacy\footnote{\href{https://spacy.io/}{https://spacy.io/}}, a Python library for advanced natural language processing with high accuracy was used.
+
+\subsection{Conclusions}
+
+Although Pict2Text 1.0 translates messages with pictograms into natural language, it requires the user to manually select the pictograms they want to use in the construction of the sentence with pictograms. But constructing the sentence in this way is not possible for end-users of the application.
+
+In addition, although Pict2Text 1.0 provides a good translation of simple sentences, having only one subject, verb, and object, some aspects should be improved in the translation to increase its coverage.
+
+\section{Machine Learning for image processing}
+\label{Image processing}
+
+To reach the first goal we have established in section \ref{Goals}, we need to process the image with the message written with pictograms uploaded by the user. The processing consists of two parts:
+
+\begin{enumerate}
+  \item To detect how many pictograms are in the picture and their location.
+  \item To identify which ARASAAC pictogram corresponds to each of the pictograms detected on the image.
+\end{enumerate}
+
+As the sequences of pictograms contain different elements and they could come from different sources, a black or whiteboard, a desk or a table, or else, we cannot assume that they will always have a  specific background. That increases the complexity of the problem because we cannot pass through the pixels of the image and separate the pictograms based on the color of the background.
+
+As the ARASAAC pictograms by default do not have a frame, a separation of the pictograms using it would not satisfy our use case. On the other hand, due to different light, angle, or colouring the image of the pictogram may appear different from the original digital version of it, which makes the comparison pixel by pixel impossible.
+
+For those reasons, we need machine learning algorithms for each of the tasks described above (detection of pictograms, and the identification of each pictogram detected). The concept of machine learning and some possible algorithms will be explained in the following subsections. 
+
+\subsection{Machine Learning}
+\label{Machine Learning}
+
+Machine learning (ML) \citep{machineLearning} is the study of computer algorithms that improve automatically through experience. It is seen as a subset of Artificial Intelligence. Machine learning algorithms build a model based on sample data, known as "training data", to make predictions or decisions without being explicitly programmed to do so. Machine learning algorithms are used in a wide variety of applications, such as email filtering and computer vision, where it is difficult or unfeasible to develop conventional algorithms to perform the needed tasks.
+
+A machine learning model\footnote{\href{https://docs.microsoft.com/en-us/windows/ai/windows-ml/what-is-a-machine-learning-model}{https://docs.microsoft.com/en-us/windows/ai/windows-ml/what-is-a-machine-learning-model}} is a file that has been trained to recognize certain types of patterns. You train a model over a set of data, providing it an algorithm that it can use to reason over and learn from those data.
+
+Once you have trained the model, you can use it to reason over data that it hasn't seen before and make predictions about that data.
+
+Deep learning is one of the many machine learning algorithms, which can learn complex relationships and can solve problems like predictions and classification. For this, deep learning uses neural networks, which will be explained in the following subsection.
+
+\subsubsection{Neural Network}
+Artificial neural networks (ANNs) \citep{neuralnet}, usually called neural networks (NNs), are computing systems vaguely inspired by the biological neural networks that constitute animal brains.
+
+An ANN is based on a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain. Each connection, like the synapses in a brain, can transmit a signal to other neurons. An artificial neuron that receives a signal then processes it and can signal neurons connected to it. The "signal" at a connection is a real number, and the output of each neuron is computed by some non-linear functions of the sum of its inputs. The connections are called edges. Neurons and edges typically have a weight that adjusts as learning proceeds. The weight increases or decreases the strength of the signal at a connection. Neurons may have a threshold such that a signal is sent only if the aggregate signal crosses that threshold. Typically, as presented in Figure \ref{fig:NN}, neurons are aggregated into layers. Different layers may perform different transformations on their inputs. Signals travel from the first layer (the input layer) to the last layer (the output layer), possibly after traversing the layers multiple times.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=50mm,scale=0.5]%
+{Imagenes/Pict2Text2.0/NN}
+\caption{A simple neural network architecture.}
+\label{fig:NN}
+\end{center}
+\end{figure}
+
+Supervised learning is learning through pre-labelled inputs, which act as targets. For each training example there will be a set of input values (vectors) and one or more associated designated output values. The goal of this form of training is to reduce the models overall classification error, through correct calculation of the output value of training example by training.
+
+Unsupervised learning differs in that the training set does not include any labels. Success is usually determined by whether the network can reduce or increase an associated cost function. However, it is important to note that most image-focused pattern-recognition tasks usually depend on classification using supervised learning \citep{cnn}.
+
+One of the largest limitations of traditional forms of ANN is that they tend to struggle with the computational complexity required to compute image data. Common machine learning benchmarking datasets such as the MNIST\footnote{\href{http://yann.lecun.com/exdb/mnist/}{http://yann.lecun.com/exdb/mnist/}} database of handwritten digits are suitable for most forms of ANN, due to its relatively small image dimensionality of just 28 x 28. With this dataset, a single neuron in the first hidden layer will contain 784 weights (28x28x1 where 1 bear in mind that MNIST is normalised to just black and white values), which is manageable for most forms of ANN. If you consider a more substantial coloured image input of 64 x 64, the number of weights on just a single neuron of the first layer increases substantially to 12.288 (64x64x3- Height, Width, RGB\footnote{\href{https://en.wikipedia.org/wiki/RGB_color_model}{https://en.wikipedia.org/wiki/RGB\_color\_model}}
+ channels). Also, it must be taken into account that to deal with this scale of input, the network will also need to be a lot larger than one used to classify colour-normalised MNIST digits, then you will understand the drawbacks of using such models.
+
+\subsubsection{Convolutional Neural Network}
+
+Convolutional Neural Networks (CNNs) are analogous to traditional ANNs in that they are composed of neurons that self-optimize through learning. Each neuron will still receive input and perform an operation, such as a scalar product followed by a nonlinear function - the basis of countless ANNs. From the input raw image vectors to the final output of the class score, the entire network will still express a single perceptive score function (the weight). The last layer will contain loss functions associated with the classes.
+
+One notable difference between CNNs and traditional ANNs is that CNNs are primarily used in the field of pattern recognition within images. This allows us to encode image-specific features into the architecture, making the network more suited for image-focused tasks - whilst further reducing the parameters required to set up the model.
+
+One of the fundamental building blocks of a Convolutional Neural Network is the convolution operation\footnote{\href{https://en.wikipedia.org/wiki/Convolution}{https://en.wikipedia.org/wiki/Convolution}}, which is explained in the next subsection. 
+
+\bigskip
+ 
+\textbf{Convolution operation}
+\bigskip
+
+In mathematics (in particular, functional analysis), convolution is a mathematical operation on two functions (f and g) that produces a third function that expresses how the shape of one is modified by the other. In computer vision, however, this term has a slightly different meaning: a linear operation that involves the multiplication of a set of weights with the input, much like in a traditional neural network. Given that the technique was designed for two-dimensional input, the multiplication is performed between an array of input data and a two-dimensional array of weights, called a filter or a kernel.
+
+As we can see in Figure \ref{fig:convolution}, the filter is smaller than the input data, and the type of multiplication is applied between a filter-sized patch of the input. The filter is a dot product - element-wise multiplication between the filter-sized patch of the input and filter, which is then summed, always resulting in a single value. Because it results in a single value, the operation is often referred to as the `scalar product`.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.5\textwidth]%
+{Imagenes/Pict2Text2.0/convolution}
+\caption{Filtering over the input image and constructing the feature map.}
+\label{fig:convolution}
+\end{center}
+\end{figure}
+
+Using a filter smaller than the input is intentional as it allows the same filter (set of weights) to be multiplied by the input array multiple times at different points on the input. Specifically, the filter is applied systematically to each overlapping part or filter-sized patch of the input data, left to right, top to bottom. If the filter is designed to detect a specific type of feature in the input, then the application of that filter systematically across the entire input image allows the filter an opportunity to discover that feature anywhere in the image.
+
+The output from multiplying the filter with the input array one time is a single value. As the filter is applied multiple times to the input array, the result is a two-dimensional array of output values that represent the filtering of the input. As such, the two-dimensional output array from this operation is called a `feature map` \citep{convolutionalLayers}.
+
+In Figure \ref{fig:convolution_operation} it can be observed a 3 by 3 filter for vertical edge detection applied to an image with height 6 and width 6 with stride 1 and no padding, and the calculations that need to be done in order to obtain the result for the first cell of the output.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/convolution_operation}
+\caption{Filtering over an input image, representing the convolution operation in CNN.}
+\label{fig:convolution_operation}
+\end{center}
+\end{figure}
+
+\bigskip
+ 
+\textbf{Convolutional Neural Network Architecture}
+\bigskip
+
+A typical CNN starts with the input image, sent to a network, formed by convolutional and pooling layers where the learning of the features of the image is performed. Later the final result of these is flattened, forming the input of the fully connected layers (neural network layers) with a classification (activation) function in the end. This way, the characteristics of the input image are detected in the beginning, and later, the picture is classified according to them. In Figure \ref{fig:cnn-architecture} a typical CNN architecture can be seen. The input image is converted into a matrix, where it goes through a series of convolution and pooling layers. The output is flattened and given as an input to a fully connected neural network that outputs the final result.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/CNN-architecture}
+\caption{A convolutional neural network formed by several features layers followed by classifications.}
+\label{fig:cnn-architecture}
+\end{center}
+\end{figure}
+
+This type of Neural Network works best with images, although it can be applied to any type of data. For that reason, CNN is widely used in object detection, object localization, and image classification algorithms, as will be explained in the following subsection.
+
+\subsection{Image processing}
+\label{Object detection vs object localization vs image classification}
+
+Nowadays, image processing is needed in a variety of different areas such as medical visualization, gaming, self-driving cars, and many more. To fulfill those needs, a completely new field of machine learning emerges - computer vision. Computer vision tasks include analysis, image restoration, pattern recognition, etcetera. In that group of algorithms are also: image detection, image localization, and object detection, which are of interest for our project.
+
+In Figure \ref{fig:algorithms} you can see the difference between object detection, instance segmentation, object localization, and image classification. First is the image classification, where you get a single object, such as an image, as an input, and the algorithm labels it. Object localization locates the presence of objects in an image and indicates their location with a bounding box. Object detection locates the presence of an object, puts a bounding box around it, and labels that object. One further extension of object detection is object segmentation, also called "object instance segmentation" or "semantic segmentation", where
+instances of recognized objects are indicated by highlighting the specific pixels of the object instead of a coarse bounding box. 
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/algorithms}
+\caption{Difference between image classification, object localization, object detection and instance segmentation.}
+\label{fig:algorithms}
+\end{center}
+\end{figure}
+
+Object localization\footnote{\href{https://towardsdatascience.com/object-localization-in-overfeat-5bb2f7328b62}{https://towardsdatascience.com/object-localization-in-overfeat-5bb2f7328b62}} is usually used to localize one object in a picture. Since we will have one or more pictograms in a picture, this algorithm doesn't work for us. We can't use an object detection algorithm to identify the classes because those algorithms are designed to work with a few classes and need a lot of data representing each one. In our case, we have more than 12.000 classes (the pictograms) and only one example of each. Therefore, to solve the problems, we need the following two machine learning algorithms:
+
+\begin{enumerate}
+  \item An object detection algorithm to detect the pictograms in an image.
+  \item An image classification algorithm that predicts which class the pictogram belongs to.
+\end{enumerate}
+
+In the following sections, we will explain how each of those two problems can be faced.
+
+\subsection{Object detection algorithm}
+\label{Object detection algorithm}
+
+Object detection \citep{objectRecognition} is a technology related to computer vision and image processing that deals with detecting instances of objects of a certain class (humans, buildings, cars, animals) in digital images or videos.
+
+Every object class has its special features that help in classifying the class (for example, all circles are round). Object class detection uses these special features when looking for a specific class (for example, when looking for squares, objects that are perpendicular at corners and have equal side lengths are needed). A similar approach is used for face identification where eyes, nose, and lips can be found and features like skin color and distance between eyes.
+
+Object detection methods generally are separated into two types: neural network-based and non-neural approaches. For the second type, it is necessary to define features using a method like: Viola-Jones object detection framework \citep{Viola01robustreal-time} and \citep{Viola01rapidobject} based on Haar features\footnote{\href{https://en.wikipedia.org/wiki/Haar-like_feature}{https://en.wikipedia.org/wiki/Haar-like\_feature}}, Scale-invariant feature transform (SIFT) \citep{local_scale-invariant} or Histogram of oriented gradients (HOG)\footnote{\href{https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients}{https://en.wikipedia.org/wiki/Histogram\_of\_oriented\_gradients}}, and then using a technique like a support vector machine (SVM) \citep{svm}. The neural network-based methods are able to do end-to-end object detection without the need to specifically define the features. They are typically based on convolutional neural networks. Common neural network approaches for object detections are Region Proposals (R-CNN \citep{rcnn}, Fast R-CNN \citep{fast_rcnn}, Faster R-CNN \citep{faster_rcnn}, cascade R-CNN \citep{cascade_rcnn}), Single Shot MultiBox Detector(SSD) \citep{ssd}, You Only Look Once (YOLO), Single-Shot Refinement Neural Network for Object Detection (RefineDet) \citep{RefineDet}, Retina-Net\footnote{\href{https://developers.arcgis.com/python/guide/how-retinanet-works/}{https://developers.arcgis.com/python/guide/how-retinanet-works/}} and Deformable convolutional networks \citep{dcnn}.
+
+In our project, we need a fast algorithm that can detect generalized objects (as our pictograms). For those reasons, we have chosen the YOLO algorithm, explained in continuation, since it suits our needs perfectly.
+
+\subsubsection{YOLO algorithm}
+\label{yolo}
+
+You Only Look Once (YOLO) \citep{yolo} is a popular family of object detection models. The approach involves a single neural network trained end to end that takes a photograph as input and predicts bounding boxes and class labels for each bounding box directly.
+
+YOLO achieves high accuracy while also being able to run in real-time. The algorithm "only looks once" at the image in the sense that it requires only one forward propagation pass through the neural network to make predictions. After non-max suppression (which makes sure the object detection algorithm only detects each object once), it then outputs recognized objects together with the bounding boxes.
+
+In Figure \ref{fig:yolo} it can be seen the flow of execution of the YOLO model. Starting from the input image, which is divided into a grid of S by S dimensions. Every cell of the grid predicts two bounding boxes. The class probabilities map and the bounding boxes with confidences are then combined into a final set of bounding boxes and the class labels.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/yolo}
+\caption{Summary of Predictions made by YOLO Model \citep{yolo}.}
+\label{fig:yolo}
+\end{center}
+\end{figure}
+
+With YOLO, a single CNN simultaneously predicts multiple bounding boxes and class probabilities for those boxes. YOLO trains on full images and directly optimizes detection performance. This model has several benefits over other object detection methods:
+
+\begin{itemize}
+  \item It is extremely fast.
+  \item It sees the entire image during training and test time, so it implicitly encodes contextual information about classes as well as their appearance.
+  \item It learns generalizable representations of objects so that when trained on natural images and tested on the artwork, the algorithm outperforms other top detection methods.
+\end{itemize}
+
+Further research \citep{yolo2} provided several improvements to the YOLO detection method including the detection of over 9.000 object categories by jointly optimizing detection and classification.
+
+In \citep{yolo3} progress with evolving YOLO is presented, with code available on a GitHub repository. In pursuit of better results for YOLOv3, the team tried many different ideas, but many of them did not work. A few of the modifications worth mentioning are a new network for performing feature extraction consisting of 53 convolutional layers, a new detection metric, predicting an "objectness" score for each bounding box using logistic regression, and using binary cross-entropy loss for the class predictions during training. The final result is that YOLOv3 runs significantly faster than other detection methods with comparable performance. In addition, YOLO no longer struggles with small objects.
+
+The main implementation of Redmon's YOLO is based on Darknet\footnote{\href{https://github.com/pjreddie/darknet}{https://github.com/pjreddie/darknet}}, which is an open-source neural network framework written in C and CUDA. Darknet sets the underlying architecture of the network and is used as the framework for training YOLO. This implementation is fast, easy to install, and supports CPU and GPU computation.
+
+Although the original creator of YOLO Redmon withdrew from the project, it was not its end, and in April 2020, a new version was released. The 4th generation of YOLO has been introduced in \citep{yolo4}.
+
+YOLO v4 takes influence from BoF (bag of freebies) and several BoS (bag of specials). BoF improves detection accuracy without increasing inference time. They only increase the training cost. On the other hand, BoS increases the inference cost by a small amount. However, they significantly improve the accuracy of object detection.
+
+YOLO v4 also based on the Darknet and has obtained an AP (Average Precision)\footnote{\href{https://jonathan-hui.medium.com/map-mean-average-precision-for-object-detection-45c121a31173}{https://jonathan-hui.medium.com/map-mean-average-precision-for-object-detection-45c121a31173}\label{map-mean-average-precision-for-object-detection}} value of 43.5\%t on the COCO dataset along with a real-time speed of 65 FPS on the Tesla V100, beating the fastest and most accurate detectors in terms of both speed and accuracy. The YOLO v4 has been considered the fastest, and most accurate real-time model for object detection.
+
+When compared with YOLO v3, the AP and FPS have increased by 10 percent and 12 percent, respectively. In Figure \ref{fig:yolo3vsyolo4} it is shown a comparison between YOLO v3 and v4 models where could be seen that the Average precision and FPS of version 4 is higher than the one from version 3.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/yolo3vsyolo4}
+\caption{The speed and accuracy of YOLO v4\textsuperscript{\ref{map-mean-average-precision-for-object-detection}}.}
+\label{fig:yolo3vsyolo4}
+\end{center}
+\end{figure}
+
+\subsection{Image classification algorithm}
+\label{Image classification algorithm}
+
+Image classification algorithms\footnote{\href{https://iq.opengenus.org/basics-of-machine-learning-image-classification-techniques/}{https://iq.opengenus.org/basics-of-machine-learning-image-classification-techniques/}} consist of labeling an image into one of a fixed set of categories. For example, we can build an image classification algorithm to recognize various objects, such as cars, pedestrians, and signs. Some of the challenges from a computer vision perspective that we will face in our project are viewpoint variation, scale variation, illumination conditions. Usually, those algorithms, as most neural network algorithms, require a large amount of training data to work well. Since, in our case, we don't have that much data, only one example per class, we decided to look at algorithms that can be trained even with a significantly smaller dataset. One of those algorithms is the One-shot learning algorithm using the Siamese neural network, which we will present next.
+
+\subsubsection{Siamese Neural Network}
+
+Usually, neural networks learn to predict a certain amount of classes. In that case, if we add a new class, we have to retrain the neural network with the new classes and the new data. Also, the traditional neural network requires a large volume of data to train on. On the other hand, the Siamese Neural Networks learns how to find similarity functions\footnote{\href{https://en.wikipedia.org/wiki/Similarity_measure}{https://en.wikipedia.org/wiki/Similarity\_measure}}, patterns that bring classes together, and that enables us to add new classes without training the model again.
+
+In Figure \ref{fig:snn-architecture} we can see the architecture of a Siamese neural network. It consists of two identical twin subnetworks joined at their outputs. The subnetworks have the same configuration with the same parameters and weights. We feed each input that we want to compare into one of the identical models, usually composed of various convolutional layers. Each model outputs an n-dimensional embedding where the dimensions represent a  pattern found in the input. Those embeddings are given to the similarity function. This is a real-valued function that quantifies the similarity between two objects by their feature vectors\footnote{\href{https://brilliant.org/wiki/feature-vector/}{https://brilliant.org/wiki/feature-vector/}} (vectors that represent numeric or symbolic characteristics in a way that is easier to analyze). In the end, the siamese neural network returns a similarity score that represents the level of similarity between the inputs. The smaller the similarity score is, the more similar the pictures are.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=1\textwidth]%
+{Imagenes/Pict2Text2.0/SNN-architecture}
+\caption{Architecture of the Siamese Neural Network.}
+\label{fig:snn-architecture}
+\end{center}
+\end{figure}
+
+On the other hand, this type of Neural Network requires much more training which takes more time than the traditional networks.
+
+In the following section, we will explain SNN based algorithm: One-shot learning algorithm and implementation of this algorithm.  
+
+\subsubsection{One-shot learning algorithm}
+\label{One-shot learning algorithm state of the art}
+
+One-shot learning\footnote{\href{https://en.wikipedia.org/wiki/One-shot_learning}{https://en.wikipedia.org/wiki/One-shot\_learning}} categorizes objects with one, or only a few, training examples. After the algorithm is trained, it takes two inputs and returns a value that shows the similarity between the two pictures. If the two inputs are similar, the algorithm returns a value smaller than a specific threshold, for example, 0.001, and if they are not the same object, the returned value is higher than the threshold. To do this the algorithm uses the Siamese neural network.
+
+During the training phase one-shot learning trains to be able to measure the distance between the features in two inputs. To achieve that, the algorithm uses a function called triplet loss. This function trains the network giving it 3 inputs: an anchor, a positive example, and a negative one. The network should adjust its parameters in a way that the feature values for the anchor and the positive example are very close, while those of the anchor and negative example are very different.
+
+An implementation for one-shot learning is the one presented in \citep{oneShot}. The problem that this implementation solves is letter recognition. The authors use the Omniglot dataset\footnote{\href{https://github.com/brendenlake/omniglot}{https://github.com/brendenlake/omniglot}}, which consists of 1.623 characters from 50 alphabets. The images are of handwritten characters in grayscale with 105x105 resolution, with only 20 examples of each of the 1.623 classes.
+
+The problem is a supervised learning task\footnote{\href{https://en.wikipedia.org/wiki/Supervised_learning}{https://en.wikipedia.org/wiki/Supervised\_learning}}, a function that maps an input to an output based on given input-output pair examples, where we have pairs of (Xi, Yi). Xi itself is a randomly generated pair of two images of letters, and Yi is a value between 0 and 1, indicating the similarity of the two examples given in Xi. Yi is 1 if the two images are similar and 0 if they are not.
+
+Each of the two subnetworks consists of a convolution layer and three MaxPooling layers, each with a ReLU as an activation function. The output of the third MaxPooling layer is flattened and given to the last layer - a regular densely connected NN layer with sigmoid as an activation function.
+
+The model uses Adam optimizer \citep{adam}, an algorithm for first-order gradient-based optimization, binary cross-entropy loss function\footnote{\href{https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a}{https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a}}, and low learning rate - 0,00006. The model was trained with 20.000 iterations and used 32 pairs of images per iteration.
+
+\section{Tools}
+\label{Tools}
+
+In this section, we will explain the tools we have used to develop our project. In section \ref{TensorFlow} we will explain one of the most used machine learning platforms: TensorFlow. In section \ref{Keras} we will explain Keras, an open-source Python library that works as an interface for the TensorFlow library. In section \ref{LabelImg} we will present LabelImg, the labeling tool we used to annotate our images. Finally, Flask and GitHub Actions will be presented in sections \ref{Flask} and \ref{githubactions} respectively.
+
+\subsection{TensorFlow}
+\label{TensorFlow}
+
+TensorFlow\footnote{\href{https://www.tensorflow.org/}{https://www.tensorflow.org/}} is an end-to-end open-source platform for machine learning. It has a comprehensive, flexible ecosystem of tools, libraries, and community resources that lets researchers push the state-of-the-art in ML and developers easily build and deploy ML-powered applications. 
+
+TensorFlow was originally developed by researchers and engineers working on the Google Brain team within Google's Machine Intelligence Research organization to conduct machine learning and deep learning research. The system is general enough to be applicable in a wide variety of other domains, as well.
+
+\subsection{Keras}
+\label{Keras}
+
+Keras\footnote{\href{https://keras.io/}{https://keras.io/}} is a deep learning API written in Python, running on top of the machine learning platform TensorFlow. It was developed with the aim of enabling fast experimentation.
+
+Keras is the high-level API of TensorFlow 2: an approachable, highly-productive interface for solving machine learning problems, with a focus on modern deep learning. It provides essential abstractions and building blocks for developing and shipping machine learning solutions with high iteration speed.
+
+The data preprocessing module is one of the essential modules in Keras. It provides different utilities for image, time-series, and text preprocessing. The image preprocessing submodule includes the following functions:
+
+\begin{itemize}
+  \item image\_dataset\_from\_directory. It provides the functionality to load in memory images from a specific directory. In addition to that, it can automatically generate the labels of the images, change their size, separate the loaded images into batches or in train and validation sets.
+  \item load\_img. It provides the functionality to load a single image in memory. It also allows the change of the size of the image, among other things.
+  \item img\_to\_array: converts a PIL Image (Pillow\footnote{\href{https://pillow.readthedocs.io/en/stable/}{https://pillow.readthedocs.io/en/stable/}} library format) instance to a NumPy array. Depending on the image color channels, the returned array will be 2D for grayscale, 3D for RGB, or 4D for RGB-A.
+\end{itemize}
+
+Also, Keras provides the ImageDataGenerator class, which allows the users to perform image augmentation on the fly. The class contains three methods: flow(), flow\_from\_directory() and flow\_from\_dataframe() to read images from NumPy arrays and folders.
+
+\subsection{LabelImg}
+\label{LabelImg}
+LabelImg \footnote{\href{https://github.com/tzutalin/labelImg}{https://github.com/tzutalin/labelImg}} is a graphical image annotation tool. It is written in Python and uses Qt\footnote{\href{https://www.qt.io/qt-for-python}{https://www.qt.io/qt-for-python}} for its graphical interface. It permits manual labeling of images, which by default are saved as XML files in PASCAL VOC format (a format used by ImageNet\footnote{\href{https://image-net.org/}{https://image-net.org/}}). LabelImg also supports YOLO and CreateML formats. Figure \ref{fig:labelimg} shows the labeling of an object "person" from an image of a football game.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=0.7\textwidth]%
+{Imagenes/Pict2Text2.0/labelimg}
+\caption{Labeling an object from class "person" from an image of a football game using the LabelImg tool.}
+\label{fig:labelimg}
+\end{center}
+\end{figure}
+
+\subsection{Flask}
+\label{Flask}
+
+Flask\footnote{\href{https://flask.palletsprojects.com/en/2.0.x/}{https://flask.palletsprojects.com/en/2.0.x/}} is one of the most popular Python web application frameworks. It is lightweight, open-source, and it is designed to start quickly and easily, although it can scale to complex applications. The framework provides various tools (object-relational mappers, open authentication systems, etcetera) as well as REST\footnote{\href{https://www.codecademy.com/articles/what-is-rest}{https://www.codecademy.com/articles/what-is-rest}} API support, and allows you to use multiple databases.
+
+Representational state transfer (REST) \citep{rest} is a software architecture style for providing standards between computer systems on the web. It's used to create interactive applications that use web services. A web service that follows these guidelines is called RESTful \citep{restful}. REST-compliant systems are stateless (the server does not need to know anything about what state the client is in and vice versa) and separate the concerns of client and server.
+
+\subsection{GitHub Actions}
+\label{githubactions}
+
+GitHub Actions\footnote{\href{https://github.com/features/actions}{https://github.com/features/actions}} is an API that allows you to automate, customize, and execute your software development workflows (a configurable automated process made up of one or more jobs) in your GitHub repository. The API allows you to perform any job you want, including continuous integration and continuous deployment. You can also combine actions while GitHub manages the execution, providing feedback and secures all the steps.
